@@ -37,3 +37,19 @@ Log In Met Gebruiker
 Sluit Test En Maak Screenshot Bij Fout
     # 'Run Keyword If Test Failed' is een ingebouwd commando
     Run Keyword If Test Failed    Take Screenshot    fullPage=True
+
+*** Keywords ***
+Start Test-Sessie
+    # Hier moet ruimte voor staan (2 spaties of 1 tab)
+    New Browser    browser=chromium    headless=${HEADLESS}
+    New Page       ${BASE_URL}
+
+Stop Test-Sessie
+    # Hier ook ruimte
+    Close Browser
+    New Browser    browser=chromium    headless=${HEADLESS}
+    New Context    viewport={'width': 1920, 'height': 1080}
+    New Page       ${BASE_URL}
+
+
+    Close Browser

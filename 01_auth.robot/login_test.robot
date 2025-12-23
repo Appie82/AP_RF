@@ -1,5 +1,6 @@
 *** Settings ***
 Resource         ../common.resource
+Test Setup       Start Test-Sessie
 Test Teardown    Sluit Test En Maak Screenshot Bij Fout
 # Hieronder wijzen we het keyword aan dat als 'sjabloon' dient
 Test Template    Inloggen Met Verschillende Gegevens
