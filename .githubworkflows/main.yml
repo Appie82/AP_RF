@@ -1,0 +1,37 @@
+name: Robot Framework Tests
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Code ophalen
+        uses: actions/checkout@v4
+
+      - name: Python instellen
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Afhankelijkheden installeren
+        run: |
+          pip install robotframework robotframework-browser
+          rfbrowser init
+
+      - name: Playwright Systeem-onderdelen installeren
+        # Dit is de officiële manier van Microsoft/Playwright zelf
+        run: npx playwright install-deps chromium
+
+      - name: Draai de Robot tests
+        run: |
+          # We overschrijven de 'headless' variabele hier direct vanuit de opdracht
+          python -m robot -d results --variable HEADLESS:True -v URL:https://the-internet.herokuapp.com .
+        
+      - name: Testrapport uploaden
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: robot-report
+          path: results/
