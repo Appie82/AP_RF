@@ -10,7 +10,7 @@ Documentation    Centraal bestand voor gedeelde instellingen en variabelen.
 ${BROWSER}         chromium
 ${HEADLESS}        True
 ${ENV}             test    # Dit is de standaardwaarde (default)
-${BASE_URL}        https://the-internet.herokuapp.com
+${URL}             https://the-internet.herokuapp.com
 ${SLOWMO}          0.5s
 
 # Specifieke pagina URL's
@@ -50,6 +50,10 @@ Stop Test-Sessie
     New Browser    browser=chromium    headless=${HEADLESS}
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page       ${BASE_URL}
-
-
     Close Browser
+    
+Vul Inloggegevens In En Verstuur
+    [Arguments]    ${user}    ${pass}
+    Fill Text    id=username    ${user}
+    Fill Text    id=password    ${pass}
+    Click        button[type="submit"]
