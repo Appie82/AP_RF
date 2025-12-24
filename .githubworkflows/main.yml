@@ -17,8 +17,10 @@ jobs:
 
       - name: Afhankelijkheden installeren
         run: |
-          pip install robotframework robotframework-browser
+          # Voeg hier de requests library toe aan de lijst
+          pip install robotframework robotframework-browser robotframework-requests
           rfbrowser init
+          npx playwright install-deps chromium
 
       - name: Playwright Systeem-onderdelen installeren
         # Dit is de officiële manier van Microsoft/Playwright zelf
