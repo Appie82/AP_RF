@@ -8,7 +8,7 @@ Documentation    Centraal bestand voor gedeelde instellingen en variabelen.
 *** Variables ***
 # Algemene instellingen
 ${BROWSER}         chromium
-${HEADLESS}        True
+${HEADLESS}        False
 ${ENV}             test    # Dit is de standaardwaarde (default)
 ${URL}             https://the-internet.herokuapp.com
 ${SLOWMO}          0.5s
@@ -40,9 +40,10 @@ Sluit Test En Maak Screenshot Bij Fout
 
 *** Keywords ***
 Start Test-Sessie
-    # Hier moet ruimte voor staan (2 spaties of 1 tab)
+    # We gebruiken nu de variabele in plaats van de tekst 'False'
     New Browser    browser=chromium    headless=${HEADLESS}
-    New Page       ${BASE_URL}
+    New Context    viewport={'width': 1920, 'height': 1080}
+    New Page       ${URL}
 
 Stop Test-Sessie
     # Hier ook ruimte
