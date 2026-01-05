@@ -15,12 +15,13 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Afhankelijkheden installeren
+      - name: Install dependencies
         run: |
-          pip install robotframework robotframework-browser
-          # De --pnpm vlag en de systeem-dependencies zijn nodig voor Linux runners
+          python -m pip install --upgrade pip
+          pip install robotframework
+          pip install robotframework-browser
+          pip install robotframework-requests
           rfbrowser init
-          npx playwright install-deps
 
       - name: Install Browser
         run: rfbrowser init
