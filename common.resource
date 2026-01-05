@@ -1,0 +1,60 @@
+*** Settings ***
+Library      Browser
+Library      RequestsLibrary
+# We laden het bestand op basis van de variabele ENV die we meegeven bij het opstarten
+Variables    env_${ENV}.py
+Documentation    Centraal bestand voor gedeelde instellingen en variabelen.
+
+*** Variables ***
+# Algemene instellingen
+${BROWSER}         chromium
+${HEADLESS}        False
+${ENV}             test    # Dit is de standaardwaarde (default)
+${URL}             https://the-internet.herokuapp.com
+${SLOWMO}          0.5s
+
+# Specifieke pagina URL's
+${LOGIN_URL}       ${BASE_URL}/login
+${TABEL_URL}       ${BASE_URL}/challenging_dom
+${DYNAMIC_URL}     ${BASE_URL}/dynamic_loading/1
+
+# Test data
+#${VALID_USER}      tomsmith    Niet meer nodig, vanwege de test_data.py
+#${VALID_PW}        SuperSecretPassword!  Niet meer nodig, vanwege de test_data.py
+
+*** Keywords ***
+Open De Browser Op De Inlogpagina
+    # We voegen slowMo direct toe aan de browser instellingen
+    New Browser    browser=${BROWSER}    headless=${HEADLESS}    slowMo=${SLOWMO}
+    New Page       ${LOGIN_URL}
+
+Log In Met Gebruiker
+    [Arguments]    ${username}    ${password}
+    Fill Text      id=username    ${username}
+    Fill Text      id=password    ${password}
+    Click          button[type="submit"]
+
+Sluit Test En Maak Screenshot Bij Fout
+    # 'Run Keyword If Test Failed' is een ingebouwd commando
+    Run Keyword If Test Failed    Take Screenshot    fullPage=True
+
+*** Keywords ***
+Start Test-Sessie
+    # We gebruiken nu de variabele in plaats van de tekst 'False'
+    New Browser    browser=chromium    headless=${HEADLESS}
+    New Context    viewport={'width': 1920, 'height': 1080}
+    New Page       ${URL}
+
+Stop Test-Sessie
+    # Hier ook ruimte
+    Close Browser
+    New Browser    browser=chromium    headless=${HEADLESS}
+    New Context    viewport={'width': 1920, 'height': 1080}
+    New Page       ${BASE_URL}
+    Close Browser
+    
+Vul Inloggegevens In En Verstuur
+    [Arguments]    ${user}    ${pass}
+    Fill Text    id=username    ${user}
+    Fill Text    id=password    ${pass}
+    Click        button[type="submit"]
