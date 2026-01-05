@@ -43,9 +43,10 @@ Sluit Test En Maak Screenshot Bij Fout
 
 *** Keywords ***
 Start Test-Sessie
+    # We gebruiken nu de variabele in plaats van de tekst 'False'
     New Browser    browser=chromium    headless=True
     New Context    viewport={'width': 1920, 'height': 1080}
-    New Page       https://jouwurl.nl
+    New Page       ${URL}
 
 Stop Test-Sessie
     # Hier ook ruimte
@@ -54,6 +55,11 @@ Stop Test-Sessie
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page       ${BASE_URL}
     Close Browser
+
+Verifieer Succesvolle Login
+    # Gebruik ALTIJD een Wait keyword op de server (GitHub)
+    Wait For Elements State    css=.flash.success    visible    timeout=5s
+    Get Text    h2    contains    Secure Area
     
 Vul Inloggegevens In En Verstuur
     [Arguments]    ${user}    ${pass}
@@ -65,3 +71,4 @@ Vul Inloggegevens In En Verstuur
 Afsluiten Test En Sessie
     Sluit Test En Maak Screenshot Bij Fout
     Stop Test-Sessie
+

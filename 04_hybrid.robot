@@ -31,4 +31,5 @@ Snel Inloggen Via API En Verifiëren In Browser
     
     # 5. Verificatie: We moeten nu direct "Secure Area" zien
     Get Text       h2    contains    Secure Area
+    Wait For Elements State    text=Secure Area    visible    timeout=10s
     Log            Succes! De browser is ingelogd zonder dat we de login-pagina hebben gebruikt.
