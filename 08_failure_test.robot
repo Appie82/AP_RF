@@ -7,6 +7,5 @@ Test Die Moet Falen Voor Screenshot
     New Browser    browser=${BROWSER}    headless=${HEADLESS}
     New Page       ${BASE_URL}/login
     
-    # We wachten kort op een knop die niet bestaat
-    # Dit zal een TimeoutError geven en automatisch een screenshot maken
+    # We voegen 'timeout=' toe zodat de library snapt dat dit geen muisknop is
     Click    button#niet-bestaande-knop    timeout=5s
