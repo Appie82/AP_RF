@@ -19,14 +19,14 @@ Snel Inloggen Via API En Verifiëren In Browser
     New Browser    browser=${BROWSER}    headless=${HEADLESS}
     New Context    # Verse omgeving
 
-# 3. Open de pagina zodat de browser context actief is
+# 3. Open de pagina
     New Page       ${BASE_URL}/login
 
-    # 4. Het cookie injecteren met de URL parameter
-    # Dit lost de "domain/path pair" error op
+    # 4. Het cookie injecteren met de domain/path combinatie
+    # We halen 'url=' weg en gebruiken een schoon domein
     Add Cookie     name=rack.session    
     ...            value=${cookie_value}    
-    ...            url=${BASE_URL}    
+    ...            domain=the-internet.herokuapp.com    
     ...            path=/
 
     # 5. Navigeer naar de beveiligde pagina

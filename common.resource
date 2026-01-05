@@ -11,7 +11,7 @@ Documentation    Centraal bestand voor gedeelde instellingen en variabelen.
 ${BROWSER}         chromium
 ${HEADLESS}        True
 ${ENV}             test    # Dit is de standaardwaarde (default)
-${URL}             https://the-internet.herokuapp.com
+${URL}             the-internet.herokuapp.com
 ${SLOWMO}          0.5s
 
 # Specifieke pagina URL's
