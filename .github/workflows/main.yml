@@ -22,7 +22,7 @@ jobs:
           rfbrowser init
           npx playwright install-deps
 
-      - name: Installeer Playwright Browsers
+      - name: Install Browser
         run: rfbrowser init
 
       - name: Draai de Robot tests
@@ -30,9 +30,12 @@ jobs:
           python -m robot -d results -v URL:https://the-internet.herokuapp.com .
         # De punt aan het einde betekent: draai alle .robot bestanden in deze map
 
-      - name: Testrapport uploaden
-        if: always() # Ook uploaden als een test faalt
+      - name: Upload Robot Framework Results
         uses: actions/upload-artifact@v4
+        if: always()
         with:
-          name: robot-report
-          path: results/
+        name: robot-results
+        path:
+         log.html
+         report.html
+         browser/screenshot/
