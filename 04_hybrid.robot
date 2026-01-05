@@ -30,11 +30,12 @@ Snel Inloggen Via API En Verifiëren In Browser
     ...            domain=the-internet.herokuapp.com    
     ...            path=/
 
-    # 5. Nu pas naar de beveiligde pagina gaan
-    Go To          ${BASE_URL}/secure
+    # 5. Navigeer naar de beveiligde pagina
+    Go To    ${BASE_URL}/secure
     
-    # 6. Verificatie: Eerst wachten, dan pas checken
-												
-    Wait For Elements State    text=Secure Area    visible    timeout=10s
-    Get Text    h2    contains    Secure Area
-    Log         Succes! De browser is ingelogd via de API sessie..
+    # 6. Verificatie: Wees specifiek door de HTML-tag (h2) te gebruiken
+    # Dit voorkomt dat hij de 'flash' melding of andere teksten pakt
+    Wait For Elements State    css=h2 >> text="Secure Area"    visible    timeout=10s
+    
+    # Extra check: controleer of de groene succes-bar er is
+    Get Text    css=.flash.success    contains    You logged into a secure area!
