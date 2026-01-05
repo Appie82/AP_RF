@@ -13,23 +13,28 @@ Snel Inloggen Via API En Verifiëren In Browser
     ${response}=      POST On Session    auth_session    url=/authenticate    data=${auth_data}
     
     # Haal het sessie-cookie (rack.session) uit de API response
-    ${cookie_value}=    Set Variable    ${response.cookies['rack.session']}
+    ${cookie_value}=  Set Variable    ${response.cookies['rack.session']}
 
     # 2. Browser Voorbereiden
     New Browser    browser=${BROWSER}    headless=${HEADLESS}
-    New Context    # Maak een verse browseromgeving aan
+    New Context    # Verse omgeving
 
-    # 3. Het "Magische" moment: Het cookie injecteren
-    # Hierdoor denkt de browser dat we al zijn ingelogd
-    Add Cookie    name=rack.session    
-    ...           value=${cookie_value}    
-    ...           domain=the-internet.herokuapp.com    
-    ...           path=/
+    # 3. Belangrijk: Open eerst de site (hoofdpagina) 
+    # De browser moet op het domein zijn voordat hij een cookie accepteert
+    New Page       ${BASE_URL}
 
-    # 4. Navigeer direct naar de beveiligde pagina
-    New Page       ${BASE_URL}/secure
+    # 4. Het cookie injecteren
+													   
+    Add Cookie     name=rack.session    
+    ...            value=${cookie_value}    
+    ...            domain=the-internet.herokuapp.com    
+    ...            path=/
+
+    # 5. Nu pas naar de beveiligde pagina gaan
+    Go To          ${BASE_URL}/secure
     
-    # 5. Verificatie: We moeten nu direct "Secure Area" zien
-    Get Text       h2    contains    Secure Area
+    # 6. Verificatie: Eerst wachten, dan pas checken
+												
     Wait For Elements State    text=Secure Area    visible    timeout=10s
-    Log            Succes! De browser is ingelogd zonder dat we de login-pagina hebben gebruikt.
+    Get Text    h2    contains    Secure Area
+    Log         Succes! De browser is ingelogd via de API sessie..
