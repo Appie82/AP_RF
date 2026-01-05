@@ -43,10 +43,9 @@ Sluit Test En Maak Screenshot Bij Fout
 
 *** Keywords ***
 Start Test-Sessie
-    # We gebruiken nu de variabele in plaats van de tekst 'False'
-    New Browser    browser=chromium    headless=${HEADLESS}
+    New Browser    browser=chromium    headless=True
     New Context    viewport={'width': 1920, 'height': 1080}
-    New Page       ${URL}
+    New Page       https://jouwurl.nl
 
 Stop Test-Sessie
     # Hier ook ruimte
