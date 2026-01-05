@@ -1,4 +1,5 @@
 *** Settings ***
+
 Library      Browser
 Library      RequestsLibrary
 # We laden het bestand op basis van de variabele ENV die we meegeven bij het opstarten
@@ -34,9 +35,11 @@ Log In Met Gebruiker
     Fill Text      id=password    ${password}
     Click          button[type="submit"]
 
+*** Keywords ***
 Sluit Test En Maak Screenshot Bij Fout
-    # 'Run Keyword If Test Failed' is een ingebouwd commando
-    Run Keyword If Test Failed    Take Screenshot    fullPage=True
+
+    Run Keyword If Test Failed    Take Screenshot
+    Close Browser
 
 *** Keywords ***
 Start Test-Sessie
@@ -58,3 +61,8 @@ Vul Inloggegevens In En Verstuur
     Fill Text    id=username    ${user}
     Fill Text    id=password    ${pass}
     Click        button[type="submit"]
+
+*** Keywords ***
+Afsluiten Test En Sessie
+    Sluit Test En Maak Screenshot Bij Fout
+    Stop Test-Sessie

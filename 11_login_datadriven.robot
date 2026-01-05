@@ -1,8 +1,8 @@
-*** Settings ***
-Resource          common.resource
-Test Setup        Start Test-Sessie
-Test Teardown     Stop Test-Sessie
-Test Template     Inloggen Met Verschillende Gegevens
+** Settings ***
+Resource         common.resource
+Test Setup       Start Test-Sessie
+Test Teardown    Afsluiten Test En Sessie
+Test Template    Inloggen Met Verschillende Gegevens
 
 *** Test Cases ***
 Correcte inlog                    tomsmith          SuperSecretPassword!    You logged into a secure area!
