@@ -19,17 +19,17 @@ Snel Inloggen Via API En Verifiëren In Browser
     New Browser    browser=${BROWSER}    headless=${HEADLESS}
     New Context    # Verse omgeving
 
-    # 3. Open de login pagina zodat de browser op het juiste domein is
+# 3. Open de pagina zodat de browser context actief is
     New Page       ${BASE_URL}/login
 
     # 4. Het cookie injecteren met de URL parameter
-    # Dit is de meest betrouwbare methode voor Playwright/Browser library
+    # Dit lost de "domain/path pair" error op
     Add Cookie     name=rack.session    
     ...            value=${cookie_value}    
-    ...            url=${BASE_URL}
+    ...            url=${BASE_URL}    
     ...            path=/
 
-    # 5. Refresh of navigeer naar de secure pagina
+    # 5. Navigeer naar de beveiligde pagina
     Go To          ${BASE_URL}/secure
     
     # 6. Verificatie
