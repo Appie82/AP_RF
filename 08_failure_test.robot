@@ -4,16 +4,14 @@ Resource    common.resource
 *** Test Cases ***
 Test Die Moet Falen Voor Screenshot
     [Documentation]    Deze test dwingt een fout af om de screenshot-functionaliteit te testen.
-    # We zorgen dat de browser niet in interactieve debug-modus gaat
     New Browser    browser=${BROWSER}    headless=${HEADLESS}
     
-    # Gebruik een schone context zonder pauzeer-instellingen
+    # We maken een nieuwe context aan en zorgen dat 'tracing' of 'pauze' niet aanstaat
     New Context    
     New Page       ${BASE_URL}/login
     
-    # Zet de timeout kort voor de snelle faal
+    # Zet de timeout kort
     Set Browser Timeout    5s
     
-    # Forceer de klik. Als dit faalt, zal de Browser library 
-    # automatisch een screenshot maken en de test stoppen.
+    # De test zal hier falen en direct afsluiten zonder te wachten op een Enter
     Click    button#niet-bestaande-knop
