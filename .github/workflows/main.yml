@@ -35,15 +35,12 @@ jobs:
         # De punt aan het einde betekent: draai alle .robot bestanden in deze map
 
       - name: Run Robot Framework Tests
-        run: python -m robot .
+        run: python -m robot -d results .  # De '-d results' zet alles in een mapje 'results'
         continue-on-error: true
 
-      - name: Upload Robot Framework Results
+      - name: Upload Results
         uses: actions/upload-artifact@v4
         if: always()
         with:
           name: robot-results
-          path: |
-            log.html
-            report.html
-            output.xml
+          path: results/ # We uploaden nu de hele map
