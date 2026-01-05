@@ -5,15 +5,22 @@ Library     Browser
 
 *** Test Cases ***
 Snel Inloggen Via API En Verifiëren In Browser
-    [Documentation]    Log in via de backend en geef het cookie door aan de browser om de login-pagina over te slaan.
+    [Documentation]    Log in via de backend en geef het cookie door.
     
-# 1. API Login
+    # 1. API Login
     Create Session    auth_session    ${BASE_URL}    verify=True
     ${auth_data}=     Create Dictionary    username=${VALID_USER}    password=${VALID_PW}
     
-    # Gebruik 'data=' voor form-encoded data (wat de login pagina verwacht)
-    # Zorg dat je RequestsLibrary versie up-to-date is
+    # We sturen de data expliciet als een formulier
     ${response}=      POST On Session    auth_session    url=/authenticate    data=${auth_data}
+    
+    # DEBUG: Hiermee zie je in je log.html wat de API precies zegt
+    Log    Status code: ${response.status_code}
+    Log    Cookies ontvangen: ${response.cookies}
+
+    # Haal het cookie veilig op
+    ${cookies}=       Get Variable Value    ${response.cookies}
+    ${cookie_value}=  Set Variable    ${response.cookies['rack.session']}
 
     # 2. Browser Voorbereiden
     New Browser    browser=${BROWSER}    headless=${HEADLESS}
