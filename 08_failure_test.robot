@@ -3,15 +3,21 @@ Resource    common.resource
 
 *** Test Cases ***
 Test Die Moet Falen Voor Screenshot
-    [Documentation]    Deze test dwingt een fout af om de screenshot-functionaliteit te testen.
+    [Documentation]    Dwingt een fout af zonder de CI-server te laten hangen.
+    
+    # Forceer de browser om NIET te pauzeren bij fouten
+    # Dit overschrijft eventuele debug-instellingen op de server
+    Set Browser Timeout    5s
+    
     New Browser    browser=${BROWSER}    headless=${HEADLESS}
     
-    # We maken een nieuwe context aan en zorgen dat 'tracing' of 'pauze' niet aanstaat
+    # Belangrijk: Maak een context aan ZONDER tracing of debug opties
     New Context    
     New Page       ${BASE_URL}/login
     
-    # Zet de timeout kort
-    Set Browser Timeout    5s
+    # We gebruiken Run Keyword And Expect Error om de EOFError te voorkomen
+    # Dit vangt de TimeoutError af voordat de library kan gaan 'pauzeren'
+    Run Keyword And Expect Error    *Timeout 5000ms exceeded* ...    Click    button#niet-bestaande-knop
     
-    # De test zal hier falen en direct afsluiten zonder te wachten op een Enter
-    Click    button#niet-bestaande-knop
+    # Omdat we de error verwachtten, gaat de test hierna door naar de screenshot
+    Take Screenshot    geplande-fout-screenshot
