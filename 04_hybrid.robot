@@ -17,17 +17,20 @@ Snel Inloggen Via API En Verifiëren In Browser
     Fill Secret    id=password    $VALID_PW
     Click          css=button[type="submit"]
     
-    # 2. Verifieer in de browser (Dit moet nu lukken)
-    Wait For Elements State    css=.flash.success    visible    timeout=10s
+    # 2. Browser Voorbereiden
+    New Browser    browser=${BROWSER}    headless=${HEADLESS}
+    New Context    viewport={'width': 1280, 'height': 720}
     
-    # 3. HYBRIDE STAP: Haal het cookie uit de browser en test de API
-    ${browser_cookies}=    Get Cookies
-    # We pakken het actieve cookie uit de browser om de API aan te roepen
-    ${session_cookie}=     Set Variable    ${browser_cookies[0].value}
-    
-    # 4. Inloggen via de browser (met de juiste secret syntax)
-    Fill Text      id=username    ${VALID_USER}
-    Fill Secret    id=password    $VALID_PW  # Let op: geen { } hier!
+    # 3. Open de pagina en wacht tot deze echt geladen is
+    New Page       ${BASE_URL}/login
+    # Wacht tot de browser zegt dat de pagina klaar is
+    Wait For Load State    networkidle    timeout=15s
+
+    # 4. Inloggen via de browser
+    # We gebruiken een iets specifiekere selector voor de zekerheid
+    Wait For Elements State    css=input#username    visible    timeout=10s
+    Fill Text      css=input#username    ${VALID_USER}
+    Fill Secret    css=input#password    $VALID_PW
     Click          css=button[type="submit"]
 
     # 5. Verificatie in de Browser
