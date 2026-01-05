@@ -19,23 +19,22 @@ Snel Inloggen Via API En Verifiëren In Browser
     New Browser    browser=${BROWSER}    headless=${HEADLESS}
     New Context    # Verse omgeving
 
-    # 3. Open eerst de site
+    # 3. Open de login pagina zodat de browser op het juiste domein is
     New Page       ${BASE_URL}/login
 
-    # 4. Het cookie injecteren 
-    # We laten 'domain' weg, de browser koppelt het automatisch aan de actieve pagina
+    # 4. Het cookie injecteren met de URL parameter
+    # Dit is de meest betrouwbare methode voor Playwright/Browser library
     Add Cookie     name=rack.session    
     ...            value=${cookie_value}    
+    ...            url=${BASE_URL}
     ...            path=/
-    ...            httpOnly=True
 
-    # 5. Nu naar de beveiligde pagina
+    # 5. Refresh of navigeer naar de secure pagina
     Go To          ${BASE_URL}/secure
     
-    # 6. Verificatie: Wacht op de koptekst
-    # We gebruiken een simpelere selector die op deze site altijd werkt
+    # 6. Verificatie
     Wait For Elements State    css=h2    visible    timeout=10s
     Get Text    css=h2    contains    Secure Area
-    
+
     # Extra check: controleer of de groene succes-bar er is
     Get Text    css=.flash.success    contains    You logged into a secure area!
