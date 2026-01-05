@@ -8,7 +8,7 @@ Documentation    Centraal bestand voor gedeelde instellingen en variabelen.
 *** Variables ***
 # Algemene instellingen
 ${BROWSER}         chromium
-${HEADLESS}        False
+${HEADLESS}        True
 ${ENV}             test    # Dit is de standaardwaarde (default)
 ${URL}             https://the-internet.herokuapp.com
 ${SLOWMO}          0.5s

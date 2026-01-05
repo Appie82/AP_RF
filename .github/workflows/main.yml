@@ -22,6 +22,9 @@ jobs:
           rfbrowser init
           npx playwright install-deps
 
+      - name: Installeer Playwright Browsers
+        run: rfbrowser init
+
       - name: Draai de Robot tests
         run: |
           python -m robot -d results -v URL:https://the-internet.herokuapp.com .
