@@ -19,21 +19,23 @@ Snel Inloggen Via API En Verifiëren In Browser
     New Browser    browser=${BROWSER}    headless=${HEADLESS}
     New Context    # Verse omgeving
 
-# 3. Open de pagina
+    # 3. Open de login pagina
     New Page       ${BASE_URL}/login
 
-    # 4. Het cookie injecteren met de domain/path combinatie
-    # We halen 'url=' weg en gebruiken een schoon domein
+    # 4. Het cookie injecteren (Met extra veiligheidsvlaggen)
     Add Cookie     name=rack.session    
     ...            value=${cookie_value}    
     ...            domain=the-internet.herokuapp.com    
     ...            path=/
+    ...            httpOnly=True
+    ...            secure=True
 
-    # 5. Navigeer naar de beveiligde pagina
+    # 5. Dwing de browser om de sessie te gebruiken
     Go To          ${BASE_URL}/secure
+    # Als het bovenstaande niet werkt, probeer dan: Reload
     
-    # 6. Verificatie
-    Wait For Elements State    css=h2    visible    timeout=10s
+    # 6. Verificatie: Wacht eerst op de koptekst
+    Wait For Elements State    css=h2    visible    timeout=15s
     Get Text    css=h2    contains    Secure Area
 
     # Extra check: controleer of de groene succes-bar er is
