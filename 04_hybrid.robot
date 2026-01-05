@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../common.resource
+Resource    common.resource
 Library     RequestsLibrary
 Library     Browser
 
