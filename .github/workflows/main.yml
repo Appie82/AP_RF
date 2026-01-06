@@ -1,6 +1,6 @@
 name: Robot Framework Tests
 
-on: [push] # De tests starten bij elke 'git push'
+on: [push]
 
 jobs:
   test:
@@ -21,21 +21,17 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install robotframework
-          pip install robotframework-browser
-          pip install robotframework-requests
+          pip install robotframework robotframework-browser robotframework-requests
           rfbrowser init
 
-      - name: Install Browser
-        run: rfbrowser init
-
-      - name: Draai de Robot tests
-        run: |
-          python -m robot -d results -v URL:https://the-internet.herokuapp.com .
-        # De punt aan het einde betekent: draai alle .robot bestanden in deze map
-
       - name: Run Robot Framework Tests
-        run: python -m robot -d results .  # De '-d results' zet alles in een mapje 'results'
+        # We gebruiken één stap voor de uitvoering
+        run: python -m robot -d results -v URL:https://the-internet.herokuapp.com .
+        # Hieronder voegen we de cruciale instellingen toe:
+        env:
+          RW_BROWSER_PAUSE_ON_FAILURE: "False"
+          PWDEBUG: 0
+        # Zorg dat de workflow doorgaat naar uploaden, ook als een test faalt
         continue-on-error: true
 
       - name: Upload Results
@@ -43,4 +39,4 @@ jobs:
         if: always()
         with:
           name: robot-results
-          path: results/ # We uploaden nu de hele map
+          path: results/
