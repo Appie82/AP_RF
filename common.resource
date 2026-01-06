@@ -1,5 +1,5 @@
 *** Settings ***
-Library    Browser    auto_stop_on_failure=${False}
+Library    Browser    enable_stop_on_failure=${False}
 Library      RequestsLibrary
 # We laden het bestand op basis van de variabele ENV die we meegeven bij het opstarten
 Variables    env_${ENV}.py

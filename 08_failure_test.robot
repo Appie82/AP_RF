@@ -10,8 +10,9 @@ Test Die Moet Falen Voor Screenshot
     
     Set Browser Timeout    5s
     
-    # We negeren de error zodat de test netjes afsluit, 
-    # maar het screenshot wordt nog steeds gemaakt bij de foute klik.
+    # We vangen de error af zodat de testrunner niet crasht, 
+    # maar de library maakt nog steeds automatisch de screenshot.
     Run Keyword And Ignore Error    Click    button#niet-bestaande-knop
     
+    # Optioneel: handmatig een extra screenshot ter bevestiging
     Take Screenshot    geplande-fout-screenshot
