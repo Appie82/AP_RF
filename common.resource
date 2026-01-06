@@ -69,5 +69,5 @@ Vul Inloggegevens In En Verstuur
 *** Keywords ***
 Afsluiten Test En Sessie
     Sluit Test En Maak Screenshot Bij Fout
-    Stop Test-Sessie
+    Stop Test-Sessie 
 
