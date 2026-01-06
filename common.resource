@@ -8,10 +8,11 @@ Documentation    Centraal bestand voor gedeelde instellingen en variabelen.
 
 *** Variables ***
 # Algemene instellingen
+${BASE_URL}        https://the-internet.herokuapp.com
+${URL}             ${BASE_URL}  # Hierdoor werkt zowel ${URL} als ${BASE_URL}
 ${BROWSER}         chromium
 ${HEADLESS}        True
 ${ENV}             test    # Dit is de standaardwaarde (default)
-${URL}             the-internet.herokuapp.com
 ${SLOWMO}          0.5s
 
 # Specifieke pagina URL's

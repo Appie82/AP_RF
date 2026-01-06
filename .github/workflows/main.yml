@@ -25,13 +25,9 @@ jobs:
           rfbrowser init
 
       - name: Run Robot Framework Tests
-        # We gebruiken één stap voor de uitvoering
-        run: python -m robot -d results -v URL:https://the-internet.herokuapp.com .
-        # Hieronder voegen we de cruciale instellingen toe:
+        run: python -m robot -d results -v BASE_URL:https://the-internet.herokuapp.com .
         env:
           RW_BROWSER_PAUSE_ON_FAILURE: "False"
-          PWDEBUG: 0
-        # Zorg dat de workflow doorgaat naar uploaden, ook als een test faalt
         continue-on-error: true
 
       - name: Upload Results

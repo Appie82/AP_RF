@@ -1,3 +1,5 @@
+Deze suite test het inlogsysteem van de applicatie door systematisch zowel positieve als negatieve scenario's af te lopen.
+
 *** Settings ***
 Resource         common.resource
 Test Setup       Start Test-Sessie
@@ -17,3 +19,4 @@ Inloggen Met Verschillende Gegevens
     Log In Met Gebruiker    ${user}    ${pass}
     # We checken of de verwachte tekst ergens op de pagina verschijnt
     Get Text    body    contains    ${check_tekst}
+

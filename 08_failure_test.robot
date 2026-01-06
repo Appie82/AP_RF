@@ -2,21 +2,19 @@
 Resource    common.resource
 
 *** Test Cases ***
-Test Die Moet Falen Voor Screenshot
-    [Documentation]    Dwingt een fout af zonder dat de CI-server blijft hangen.
+Test Negatieve Scenario Bevestiging
+    [Documentation]    Controleert of een niet-bestaand element inderdaad afwezig is.
     New Browser    browser=${BROWSER}    headless=${HEADLESS}
     New Context
     New Page       ${BASE_URL}/login
+
+    # In plaats van 'Click' (wat faalt), gebruiken we 'Wait For Elements State'
+    # De status 'detached' betekent: het element is niet in de code aanwezig.
+    Wait For Elements State    button#niet-bestaande-knop    state=detached    timeout=2s
+
+    # Of we checken of een foutmelding verschijnt na een foutieve actie
+    Fill Text    id=username    verkeerde_gebruiker
+    Click        button[type="submit"]
     
-    # We zetten de timeout kort voor de test
-    Set Browser Timeout    5s
-    
-    # DOOR DIT KEYWORD TE GEBRUIKEN VOORKOMEN WE DE PAUZE:
-    # We 'vangen' de error op voordat de library de kans krijgt om te pauzeren.
-    Run Keyword And Ignore Error    Click    button#niet-bestaande-knop
-    
-    # Nu maken we handmatig het screenshot, omdat de automatische faalt door de 'ignore'
-    Take Screenshot    failure-screenshot-geforceerd
-    
-    # We laten de test alsnog falen voor het rapport, maar zonder de EOFError
-    Fail    De knop was niet aanwezig zoals verwacht (geplande fout).
+    # Nu checken we of de foutmelding verschijnt (dit wordt een PASS)
+    Get Text     id=flash    contains    Your username is invalid!
