@@ -24,15 +24,18 @@ jobs:
           pip install robotframework robotframework-browser robotframework-requests
           rfbrowser init
 
-      - name: Run Robot Framework Tests
-        run: python -m robot -d results -v BASE_URL:https://the-internet.herokuapp.com .
+      - name: Run Robot Framework Tests     
+        # We voegen HEADLESS:True toe en draaien specifiek de tests map
+        run: python -m robot -d results -v BASE_URL:https://the-internet.herokuapp.com -v HEADLESS:True tests/
         env:
           RW_BROWSER_PAUSE_ON_FAILURE: "False"
-        continue-on-error: true
+        # We halen continue-on-error weg als je wilt dat GitHub een rood kruisje geeft bij falende tests
+        # Zo zie je direct of je suite 100% gezond is
+        continue-on-error: false 
 
       - name: Upload Results
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: robot-results
+          name: robot-results-${{ github.run_number }}
           path: results/
