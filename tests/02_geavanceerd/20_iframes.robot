@@ -1,3 +1,6 @@
+Nesting Validatie. Gebruikt de >>> selector om in een geneste website (iFrame) te stappen, 
+bijvoorbeeld om tekst te typen in een tekstverwerker zoals TinyMCE.
+
 *** Settings ***
 Resource          ../../common.resource
 Suite Setup       New Browser    browser=${BROWSER}    headless=${HEADLESS}

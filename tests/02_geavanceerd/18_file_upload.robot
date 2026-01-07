@@ -1,3 +1,7 @@
+Besturingssysteem Interactie. 
+Gebruikt ${CURDIR} om een lokaal bestand aan te maken en dit via de browser te uploaden. 
+Verifieert of de server de ontvangst bevestigt met "File Uploaded!".
+
 *** Settings ***
 Resource          ../../common.resource
 Suite Setup       New Browser    browser=${BROWSER}    headless=${HEADLESS}

@@ -4,10 +4,18 @@ echo ====================================================
 echo   BEZIG MET HET DRAAIEN VAN ALLE 20 TESTS...
 echo ====================================================
 
-:: We gebruiken %~dp0 om aan te geven: kijk in de map waar DIT bestand staat
+:: Voer de tests uit
 call python -m robot -d results/volledig "%~dp0tests"
 
 echo ====================================================
-echo   KLAAR!
+echo   KLAAR! RAPPORT WORDT GEOPEND...
 echo ====================================================
+
+:: Controleer of het logbestand bestaat en open het dan direct
+if exist "%~dp0results\volledig\log.html" (
+    start "" "%~dp0results\volledig\log.html"
+) else (
+    echo [FOUT] Logbestand niet gevonden in results/volledig/
+)
+
 pause

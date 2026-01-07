@@ -8,7 +8,7 @@ Library     Collections
 ${BASE_URL}         https://the-internet.herokuapp.com
 ${URL}              ${BASE_URL}
 ${DYNAMIC_URL}      ${BASE_URL}/dynamic_loading/1
-${TABEL_URL}        ${BASE_URL}/challenging_dom    # Voeg deze regel toe
+${TABEL_URL}        ${BASE_URL}/challenging_dom    
 
 # Test Data
 ${VALID_USER}       tomsmith
@@ -25,9 +25,9 @@ Open De Browser Op De Inlogpagina
     New Page       ${BASE_URL}/login
 
 Start Test-Sessie
-    New Browser    browser=${BROWSER}    headless=${HEADLESS}    slowMo=${SLOWMO}
-    New Context    viewport={'width': 1920, 'height': 1080}
-    New Page       ${URL}
+    New Browser    browser=${BROWSER}    headless=${HEADLESS}
+    New Context    viewport={'width': 1280, 'height': 720}
+    New Page       ${BASE_URL}
 
 Stop Test-Sessie
     Close Browser
