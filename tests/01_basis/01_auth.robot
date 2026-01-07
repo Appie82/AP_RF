@@ -15,3 +15,7 @@ Inloggen Met Verschillende Gegevens
     Open De Browser Op De Inlogpagina
     Log In Met Gebruiker    ${user}    ${pass}
     Get Text    body    contains    ${check_tekst}
+
+    #Controleert de standaard inlogfunctionaliteit. 
+    # De test vult handmatig gebruikersnaam en wachtwoord in 
+    # en verifieert of het dashboard geladen wordt.

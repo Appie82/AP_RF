@@ -1,5 +1,9 @@
+Logt in via een API-request om een sessie-cookie te verkrijgen 
+en controleert daarna in de browser 
+of de gebruiker direct is ingelogd zonder het formulier te gebruiken.
+
 *** Settings ***
-Resource    common.resource
+Resource    ../../common.resource
 Library     RequestsLibrary
 Library     Browser
 

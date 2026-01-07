@@ -1,5 +1,10 @@
+Synchronisatie-test. Navigeert naar de /dynamic_loading/2 pagina, 
+klikt op start en gebruikt Wait For Elements State om tot 10s te wachten 
+op de tekst "Hello World!". 
+Dit voorkomt het gebruik van onbetrouwbare Sleep commando's.
+
 *** Settings ***
-Resource    common.resource
+Resource    ../../common.resource
 
 *** Test Cases ***
 Wachten Op Dynamisch Element

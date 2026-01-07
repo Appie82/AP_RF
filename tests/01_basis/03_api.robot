@@ -1,5 +1,9 @@
+Backend-validatie (zonder browser). Gebruikt de RequestsLibrary om JSON-data 
+van een externe server te halen, de statuscode 200 te checken en nieuwe data 
+via POST te versturen.
+
 *** Settings ***
-Resource        common.resource
+Resource        ../../common.resource
 
 *** Variables ***
 ${API_BASE_URL}    https://jsonplaceholder.typicode.com

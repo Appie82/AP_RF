@@ -1,5 +1,10 @@
+#Afwezigheidscheck. Gebruikt de staat detached om te bewijzen dat een specifiek element 
+#(zoals een foutieve knop) niet bestaat in de DOM. 
+# Daarnaast wordt een foute inlog geprobeerd om de aanwezigheid 
+# van een foutmelding te verifiëren.
+
 *** Settings ***
-Resource    common.resource
+Resource    ../../common.resource
 
 *** Test Cases ***
 Test Negatieve Scenario Bevestiging

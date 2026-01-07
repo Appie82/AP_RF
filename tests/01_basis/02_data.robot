@@ -1,5 +1,8 @@
+# Test hoe de browser omgaat met elementen die traag laden via AJAX. 
+# De test wacht tot een verborgen tekst (Hello World!) zichtbaar wordt zonder te crashen.
+
 *** Settings ***
-Resource         common.resource
+Resource         ../../common.resource
 Documentation    Data-tests die gebruik maken van de centrale instellingen.
 Test Teardown    Sluit Test En Maak Screenshot Bij Fout
 
