@@ -105,4 +105,6 @@ Browser Library (Playwright)
 
 Requests Library
 
-![Robot Framework Tests](https://github.com/Appie82/AP_RF/actions/workflows/main.yml/badge.svg)
+[![Robot Framework Tests](https://github.com/Appie82/AP_RF/actions/workflows/main.yml/badge.svg)]
+(https://github.com/Appie82/AP_RF/actions/workflows/main.yml)
+[Robot Framework Tests](https://github.com/.../badge.svg)
