@@ -24,8 +24,8 @@ jobs:
           pip install robotframework robotframework-browser robotframework-requests
           rfbrowser init
 
-      - name: Run Robot Framework Tests     
-        # We voegen HEADLESS:True toe en draaien specifiek de tests map
+      - name: Run Robot Framework Tests
+        # We voegen -v HEADLESS:True toe om Playwright te dwingen zonder scherm te draaien
         run: python -m robot -d results -v BASE_URL:https://the-internet.herokuapp.com -v HEADLESS:True tests/
         env:
           RW_BROWSER_PAUSE_ON_FAILURE: "False"
