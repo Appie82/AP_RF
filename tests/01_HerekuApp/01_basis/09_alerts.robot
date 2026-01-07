@@ -1,7 +1,7 @@
 Veel applicaties gebruiken browser-popups voor belangrijke acties (zoals "Weet u zeker dat u wilt verwijderen?"). 
 Dit moet je framework blindelings kunnen afhandelen.
 *** Settings ***
-Resource          ../../common.resource
+Resource          ../../../common.resource
 Test Setup        Start Test-Sessie
 Test Teardown     Stop Test-Sessie
 

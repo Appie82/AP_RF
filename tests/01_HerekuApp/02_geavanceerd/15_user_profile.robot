@@ -2,7 +2,7 @@ Data-consistentie. Test het wijzigen van gebruikersinstellingen.
 De test verifieert of een wijziging in het profiel (zoals een naam of voorkeur) 
 correct wordt opgeslagen en getoond na een pagina-refresh.
 *** Settings ***
-Resource          ../../common.resource
+Resource          ../../../common.resource
 Suite Setup       New Browser    browser=${BROWSER}    headless=${HEADLESS}
 Test Setup        New Page       ${BASE_URL}/login
 Suite Teardown    Close Browser

@@ -2,7 +2,7 @@ Nesting Validatie. Gebruikt de >>> selector om in een geneste website (iFrame) t
 bijvoorbeeld om tekst te typen in een tekstverwerker zoals TinyMCE.
 
 *** Settings ***
-Resource          ../../common.resource
+Resource          ../../../common.resource
 Suite Setup       New Browser    browser=${BROWSER}    headless=${HEADLESS}
 Test Setup        New Page       ${BASE_URL}/tinymce
 Suite Teardown    Close Browser

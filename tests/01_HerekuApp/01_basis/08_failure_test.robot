@@ -4,7 +4,7 @@
 # van een foutmelding te verifiëren.
 
 *** Settings ***
-Resource    ../../common.resource
+Resource    ../../../../common.resource
 
 *** Test Cases ***
 Test Negatieve Scenario Bevestiging

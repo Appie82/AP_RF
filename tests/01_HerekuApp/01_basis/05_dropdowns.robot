@@ -1,5 +1,5 @@
 *** Settings ***
-Resource          ../../common.resource
+Resource          ../../../common.resource
 Test Setup        Start Test-Sessie
 Test Teardown     Stop Test-Sessie
 

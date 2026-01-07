@@ -3,7 +3,7 @@ Efficiëntie-test. Gebruikt een Test Template om drie negatieve scenario's
 in één run te testen en controleert op de foutmelding "is invalid".
 
 *** Settings ***
-Resource        ../../common.resource
+Resource        ../../../common.resource
 # Hier definiëren we welk keyword als 'sjabloon' dient
 Test Template   Inloggen Met Ongeldige Gegevens Zou Moeten Falen
 

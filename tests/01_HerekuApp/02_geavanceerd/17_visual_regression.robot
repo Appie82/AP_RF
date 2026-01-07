@@ -1,7 +1,7 @@
 Layout Validatie. Maakt een screenshot van een pagina en vergelijkt deze met een "Golden Master" (de perfecte versie). 
 Zo spoor je fouten op die een script niet ziet, zoals een knop die net buiten het scherm valt.
 *** Settings ***
-Resource          ../../common.resource
+Resource          ../../../common.resource
 Suite Setup       New Browser    browser=${BROWSER}    headless=${HEADLESS}
 Test Setup        New Page       ${BASE_URL}
 Suite Teardown    Close Browser

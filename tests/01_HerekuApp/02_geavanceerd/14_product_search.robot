@@ -1,5 +1,7 @@
+Functionele zoektest. Simuleert een gebruiker die een zoekterm invoert. 
+De test verifieert of de resultatenpagina de juiste items toont en hoe de UI reageert als er geen resultaten zijn.
 *** Settings ***
-Resource          ../../common.resource
+Resource          ../../../common.resource
 Suite Setup       New Browser    browser=${BROWSER}    headless=${HEADLESS}
 Test Setup        New Page       https://the-internet.herokuapp.com/login
 Suite Teardown    Close Browser

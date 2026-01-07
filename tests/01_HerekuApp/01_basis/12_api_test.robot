@@ -2,7 +2,7 @@ Protocol Validatie. Gebruikt het Http keyword binnen de browser om direct de sta
 en de ruwe body-content van de loginpagina te verifiëren.
 
 *** Settings ***
-Resource          ../../common.resource
+Resource          ../../../common.resource
 Library           Browser
 Test Setup        Start Test-Sessie
 Test Teardown     Stop Test-Sessie

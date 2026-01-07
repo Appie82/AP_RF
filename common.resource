@@ -4,11 +4,20 @@ Library     RequestsLibrary
 Library     Collections
 
 *** Variables ***
-# URL's
-${BASE_URL}         https://the-internet.herokuapp.com
-${URL}              ${BASE_URL}
-${DYNAMIC_URL}      ${BASE_URL}/dynamic_loading/1
-${TABEL_URL}        ${BASE_URL}/challenging_dom    
+# --- Algemene Instellingen ---
+${BROWSER}          chromium
+${HEADLESS}         False
+
+# --- Object 1: The Internet (Heroku) ---
+${HEROKU_URL}       https://the-internet.herokuapp.com
+${DYNAMIC_URL}      ${HEROKU_URL}/dynamic_loading/1
+${TABEL_URL}        ${HEROKU_URL}/challenging_dom
+
+# --- Object 2: SauceDemo ---
+${SAUCE_URL}        https://www.saucedemo.com
+
+# --- Default (voor achterwaartse compatibiliteit met je oude tests) ---
+${BASE_URL}         ${HEROKU_URL}
 
 # Test Data
 ${VALID_USER}       tomsmith
@@ -25,9 +34,11 @@ Open De Browser Op De Inlogpagina
     New Page       ${BASE_URL}/login
 
 Start Test-Sessie
+    [Arguments]    ${START_URL}=${HEROKU_URL}
     New Browser    browser=${BROWSER}    headless=${HEADLESS}
+    # We maken een context aan die groot genoeg is voor beide sites
     New Context    viewport={'width': 1280, 'height': 720}
-    New Page       ${BASE_URL}
+    New Page       ${START_URL}
 
 Stop Test-Sessie
     Close Browser

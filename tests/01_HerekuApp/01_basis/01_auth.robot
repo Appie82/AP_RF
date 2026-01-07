@@ -1,5 +1,5 @@
 *** Settings ***
-Resource          ../../common.resource
+Resource          ../../../common.resource
 Test Teardown     Sluit Test En Maak Screenshot Bij Fout
 Test Template     Inloggen Met Verschillende Gegevens
 
