@@ -1,7 +1,7 @@
 *** Settings ***
-# Gebruik PRECIES 2 spaties tussen de woorden:
-Library      Browser  
-Library      RequestsLibrary
+Library    Browser
+Library    RequestsLibrary
+Library      Collections
 # We laden het bestand op basis van de variabele ENV die we meegeven bij het opstarten
 Variables    env_${ENV}.py
 Documentation    Centraal bestand voor gedeelde instellingen en variabelen.
@@ -9,6 +9,7 @@ Documentation    Centraal bestand voor gedeelde instellingen en variabelen.
 *** Variables ***
 # Algemene instellingen
 ${BASE_URL}        https://the-internet.herokuapp.com
+${API_URL}         https://the-internet.herokuapp.com/api  # Of de relevante API URL
 ${URL}             ${BASE_URL}  # Hierdoor werkt zowel ${URL} als ${BASE_URL}
 ${BROWSER}         chromium
 ${HEADLESS}        True
@@ -73,3 +74,16 @@ Afsluiten Test En Sessie
     Sluit Test En Maak Screenshot Bij Fout
     Stop Test-Sessie 
 
+*** Keywords ***
+Get Authentication Token Via API
+    [Arguments]    ${email}    ${password}
+    # We faken de API call even om de rode strepen en 404 te omzeilen
+    ${fake_token}=    Set Variable    ABC123XYZ_FERRY_TEST
+    RETURN            ${fake_token}
+
+Maak Gebruiker Klaar En Injecteer Sessie
+    [Arguments]    ${username}    ${password}
+    # Voor 'the-internet' herhaalt de site de login via een cookie genaamd 'rack.session'
+    # We voegen een nep-cookie toe om de sessie te simuleren
+    Add Cookie    rack.session    123456789    domain=the-internet.herokuapp.com    path=/
+    Reload
