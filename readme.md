@@ -1,110 +1,55 @@
-Robot Framework Automation Suite
-Dit project is een robuust en schaalbaar testautomatisering framework gebouwd met Robot Framework. Het framework is ontworpen volgens moderne "best practices", waarbij de focus ligt op onderhoudbaarheid, snelheid en de combinatie van Frontend (UI) en Backend (API) testen.
+# 🤖 Robot Framework Automation Suite
+![Robot Framework Tests](https://github.com/Appie82/AP_RF/actions/workflows/main.yml/badge.svg)
 
-🚀 Project Architectuur
+Dit project is een robuust en schaalbaar testautomatisering framework gebouwd met **Robot Framework** en de **Browser (Playwright) Library**. Het framework is ontworpen volgens moderne "best practices", waarbij de focus ligt op onderhoudbaarheid, snelheid en de combinatie van Frontend (UI) en Backend (API) testen.
+
+---
+
+## 🚀 Project Architectuur
 Er is gekozen voor een modulaire opbouw om het framework "future-proof" te maken:
 
-common.resource: Het centrale zenuwcentrum. Bevat gedeelde instellingen, globale variabelen (URL's, credentials) en herbruikbare keywords.
+* **`common.resource`**: Het centrale zenuwcentrum. Bevat gedeelde instellingen, globale variabelen en herbruikbare keywords (DRY-principe).
+* **`.github/workflows/main.yml`**: De CI/CD motor die zorgt dat alle 20 tests automatisch draaien in de cloud bij elke push.
+* **`results/`**: Bevat de automatisch gegenereerde rapportages, logs en screenshots.
 
-.github/workflows/main.yml: De CI/CD motor die zorgt dat tests automatisch in de cloud draaien (Headless) bij elke push naar GitHub.
+---
 
-results/: Automatisch gegenereerde rapportages, logs en screenshots bij fouten.
+## 📂 Test Portfolio (20 Scenario's)
 
-📂 Testscenario's: 01_basis
-Focus op kernfunctionaliteit en betrouwbaarheid.
+### 01_basis: Fundamenten & Stabiliteit
+| Suite | Omschrijving |
+| :--- | :--- |
+| **01_auth** | Fundamentele tests voor het inlogproces (Happy Path). |
+| **02_navigatie** | Controleert of de hoofdelementen en landingpage correct laden. |
+| **03_api** | Backend validatie; communiceert rechtstreeks met endpoints (JSON). |
+| **04_hybrid** | Gebruikt API-auth om UI-acties te versnellen. |
+| **05_dropdowns** | Interactie met HTML select-menu's en dropdown validatie. |
+| **06_dynamic** | Test synchronisatie met AJAX-content (Wait For Elements). |
+| **07_data_driven** | Negatieve inlogscenario's via Test Templates. |
+| **08_negative** | Validatie van afwezige elementen (Detached state). |
+| **09_alerts** | Automatische afhandeling van JavaScript pop-ups en dialogen. |
+| **10_multi_window** | Context management tussen verschillende tabbladen. |
+| **11_login_dd** | Uitgebreide data-driven login met variabele variabelen. |
+| **12_http_health** | Protocol-check (Status 200) binnen actieve browser-sessie. |
 
-01_auth.robot: Fundamentele tests voor de "Happy Path" login.
+### 02_geavanceerd: Expert-level Scenario's
+| Suite | Omschrijving |
+| :--- | :--- |
+| **13_session_inject** | Injecteert direct sessie-cookies om UI-login over te slaan. |
+| **14_search** | Functionele test van zoekalgoritmes en resultaat-filters. |
+| **15_profile** | Validatie van data-persistentie na wijzigingen en refreshes. |
+| **16_api_deep_dive** | Testen van complexe geneste JSON-objecten en headers. |
+| **17_visual** | Visual Regression Testing (Screenshot vergelijking). |
+| **18_upload** | Test interactie met het OS voor het uploaden van bestanden. |
+| **19_shadow_dom** | Doorbreken van isolatielagen in moderne webcomponenten. |
+| **20_iframes** | Interactie met geneste frames en externe tekst-editors. |
 
-02_navigatie.robot: Verifieert of de hoofdelementen van de website correct laden.
+---
 
-03_api.robot: Pure backend validatie via JSON-responses.
+## 🛠️ Lokale Uitvoering
+Draai de volledige suite met één klik via de batch-file:
+1. Start `draai_alle_tests.bat`.
+2. Bekijk het resultaat in de automatisch geopende `log.html`.
 
-04_hybrid.robot: Combineert API-logins met UI-acties voor maximale snelheid.
-
-05_dropdowns.robot: Test interactie met select-menu's en keuzelijsten.
-
-06_dynamic_loading.robot: Test synchronisatie met AJAX-content via Wait For Elements State.
-
-07_data_driven.robot: Gebruikt templates voor bulk-validatie van negatieve inlogpogingen.
-
-08_negative_check.robot: Bewijst de afwezigheid van elementen via de detached state.
-
-09_js_alerts.robot: Handelt browser-native pop-ups en JavaScript-bevestigingen af.
-
-10_multi_window.robot: Beheert unieke Page ID's om te wisselen tussen tabbladen.
-
-11_login_datadriven.robot: Geavanceerde data-driven tests met variabele verwachte uitkomsten.
-
-12_http_health.robot: Directe protocol-validatie (Status 200 OK) binnen de browsercontext.
-
-📂 Testscenario's: 02_geavanceerd
-Focus op complexe webtechnieken en expert-level automatisering.
-
-13_session_injection.robot: Omzeilt de login-UI door direct cookies in de context te injecteren.
-
-14_product_search.robot: Valideert zoekalgoritmes en "geen resultaten" scenario's.
-
-15_profile_management.robot: Test data-persistentie na pagina-refreshes.
-
-16_api_complex.robot: Diepe duik in geneste JSON-data en headers.
-
-17_visual_regression.robot: Vergelijkt screenshots met een "Golden Master" voor layout-validatie.
-
-18_file_upload.robot: Simuleert interactie met het bestandssysteem voor uploads.
-
-19_shadow_dom.robot: Pikt door isolatielagen van moderne webcomponenten heen.
-
-20_iframes.robot: Schakelt context naar geneste iFrames voor interactie met externe editors.
-
-🛠️ Gebruik
-Om de volledige suite lokaal te draaien en direct het rapport in de browser te openen, gebruik je het meegeleverde batch-bestand:
-
-Dubbelklik op draai_alle_tests.bat.
-
-De tests draaien (Headed modus).
-
-Na afloop opent log.html automatisch voor analyse.
-
-
-
-
-Negative Testing (08): Bevestigt dat foutmeldingen correct worden afgehandeld zonder de pipeline te breken.
-
-keywords.resource.txt: Verzameling van project-specifieke keywords voor betere leesbaarheid.
-
-⚙️ Configuratie & Scripts
-env_test.py / env_acc.py: Python-configuraties voor verschillende testomgevingen.
-
-run_tests.bat / draai_test.bat: Snelkoppelingen om lokaal de juiste testset te starten.
-
-requirements.txt: Bevat alle dependencies voor een snelle installatie.
-
-🛠️ Testmethodieken
-In dit framework worden drie verschillende teststrategieën toegepast:
-
-UI Testing (Frontend): Gebruik van de Browser library (Playwright) voor stabiele browser-interactie. Dankzij de auto-waiting functionaliteit zijn deze tests minder foutgevoelig.
-
-API Testing (Backend): Directe communicatie met de server via de RequestsLibrary. Dit biedt razendsnelle validatie van de bedrijfslogica.
-
-Hybrid Testing: Inloggen via een API-call, waarna het sessie-cookie wordt geïnjecteerd in de browser. Dit bespaart tijd door trage UI-loginpaden over te slaan.
-
-📈 Waarom deze opzet?
-Onderhoudbaarheid: Centrale variabelen in .resource bestanden maken beheer eenvoudig.
-
-Stabiliteit: Geen onbetrouwbare Sleep commando's, maar intelligente wachtmechanismes.
-
-Foutanalyse: Automatische screenshots in de Test Teardown versnellen de "Root Cause Analysis".
-
-💻 Installatie & Gebruik
-Vereisten
-Python 3.x
-
-Robot Framework
-
-Browser Library (Playwright)
-
-Requests Library
-
-[![Robot Framework Tests](https://github.com/Appie82/AP_RF/actions/workflows/main.yml/badge.svg)]
-(https://github.com/Appie82/AP_RF/actions/workflows/main.yml)
-[Robot Framework Tests](https://github.com/.../badge.svg)
+---
+_Gerealiseerd met Robot Framework, Browser Library & GitHub Actions._
