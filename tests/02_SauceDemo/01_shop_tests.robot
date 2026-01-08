@@ -13,18 +13,28 @@ Scenario 21: Succesvolle Inlog en Product Check
     Get Text           .title    ==    Products
     Get Element Count  .inventory_item    >    5
 
-Scenario 22: Sorteren op Prijs (Low to High)
-    [Documentation]    Valideert of de sorteerfunctie van de webshop daadwerkelijk werkt.
+Scenario 22: Sorteren op Prijs en Validatie
+    [Documentation]    Controleert of de sortering van laag naar hoog correct werkt.
     [Tags]             sauce    regressie
+    
+    # Inloggen
     Fill Text          id=user-name    standard_user
     Fill Text          id=password     secret_sauce
     Click              id=login-button
     
-    # Selecteer sortering
+    # Selecteer de sorteeroptie 'Price (low to high)'
+    # De 'value' lohi staat voor Low to High
     Select Options By  .product_sort_container    value    lohi
     
-    # Check of het eerste product inderdaad de laagste prijs heeft ($7.99)
-    Get Text           css=.inventory_item_price >> nth=0    ==    $7.99
+    # Haal de prijzen op van de eerste twee producten
+    ${prijs_1}    Get Text    css=.inventory_item_price >> nth=0
+    ${prijs_2}    Get Text    css=.inventory_item_price >> nth=1
+    
+    # Log de prijzen voor je rapport
+    Log    Eerste product: ${prijs_1}, Tweede product: ${prijs_2}
+    
+    # Validatie: De eerste prijs moet $7.99 zijn bij deze site
+    Should Be Equal    ${prijs_1}    $7.99
 
 Scenario 23: Volledige Checkout Flow
     [Documentation]    Doorloopt het hele proces van mandje tot finish.
