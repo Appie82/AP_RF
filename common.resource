@@ -6,7 +6,7 @@ Library     Collections
 *** Variables ***
 # --- Algemene Instellingen ---
 ${BROWSER}          chromium
-${HEADLESS}         False
+${HEADLESS}         True
 
 # --- Object 1: The Internet (Heroku) ---
 ${HEROKU_URL}       https://the-internet.herokuapp.com
@@ -25,7 +25,7 @@ ${VALID_PW}         SuperSecretPassword!
 
 # Instellingen
 ${BROWSER}          chromium
-${HEADLESS}         False
+${HEADLESS}         True
 ${SLOWMO}           0.5s
 
 *** Keywords ***

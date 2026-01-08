@@ -28,13 +28,14 @@ jobs:
     - name: Initialize Browser Library
       run: rfbrowser init
 
-    - name: Run All Tests Parallel
-      run: pabot --processes 3 -d results tests
-      continue-on-error: true
+    - name: Run All Tests Parallel (Headless)
+      # We geven de variabele HEADLESS:True mee zodat de cloud-browser niet crasht
+      run: pabot --processes 3 --variable HEADLESS:True -d results tests
 
     - name: Deploy Report to GitHub Pages
+      # 'if: always()' zorgt dat het rapport ALTIJD wordt geüpload, ook als tests falen
+      if: always()
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./results
-        
