@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-08T15:17:23.247083" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-08T15:32:24.933171" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="02 Geavanceerd" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd">
 <suite id="s1-s1-s1-s1" name="19 Shadow Dom" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd/19_shadow_dom.robot">
 <kw name="New Browser" owner="Browser" type="SETUP">
-<msg time="2026-01-08T15:17:23.521468" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/18/browser/traces/temp/12bb9d0f-5664-4326-8175-42f14e0ea880"}</msg>
-<msg time="2026-01-08T15:17:23.526650" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:56547</msg>
-<msg time="2026-01-08T15:17:24.264562" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/18/browser/traces/temp/12bb9d0f-5664-4326-8175-42f14e0ea880"}</msg>
+<msg time="2026-01-08T15:32:25.201576" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/18/browser/traces/temp/81173916-2962-43e5-930f-21b5c1626836"}</msg>
+<msg time="2026-01-08T15:32:25.205877" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:58875</msg>
+<msg time="2026-01-08T15:32:25.806442" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/18/browser/traces/temp/81173916-2962-43e5-930f-21b5c1626836"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-08T15:17:23.520368" elapsed="0.744503"/>
+<status status="PASS" start="2026-01-08T15:32:25.200726" elapsed="0.606017"/>
 </kw>
 <test id="s1-s1-s1-s1-t1" name="Scenario 19: Tekst Lezen Uit Shadow DOM" line="10">
 <kw name="New Page" owner="Browser" type="SETUP">
-<msg time="2026-01-08T15:17:24.669915" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/shadowdom</msg>
-<msg time="2026-01-08T15:17:24.670033" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-01-08T15:32:34.186297" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/shadowdom</msg>
+<msg time="2026-01-08T15:32:34.186433" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${BASE_URL}/shadowdom</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-08T15:17:24.270249" elapsed="0.400016"/>
+<status status="PASS" start="2026-01-08T15:32:25.811837" elapsed="8.374871"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-01-08T15:17:24.748723" level="INFO">Text: "Let's have some different text!"</msg>
+<msg time="2026-01-08T15:32:34.246447" level="INFO">Text: "Let's have some different text!"</msg>
 <arg>css=span[slot="my-text"]</arg>
 <arg>contains</arg>
 <arg>Let's have some different text!</arg>
@@ -34,29 +34,29 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-08T15:17:24.670638" elapsed="0.078224"/>
+<status status="PASS" start="2026-01-08T15:32:34.187112" elapsed="0.059538"/>
 </kw>
-<msg time="2026-01-08T15:17:24.761469" level="INFO">Switching context to context=5dd03489-481c-4ce5-b601-2142d5386599 in CURRENT</msg>
-<msg time="2026-01-08T15:17:24.768306" level="INFO">Successfully changed active context: context=5dd03489-481c-4ce5-b601-2142d5386599</msg>
-<msg time="2026-01-08T15:17:24.784177" level="INFO">Successfully closed Context</msg>
+<msg time="2026-01-08T15:32:34.258925" level="INFO">Switching context to context=b002c210-f24c-4e3f-933e-7af46e86dbf2 in CURRENT</msg>
+<msg time="2026-01-08T15:32:34.264508" level="INFO">Successfully changed active context: context=b002c210-f24c-4e3f-933e-7af46e86dbf2</msg>
+<msg time="2026-01-08T15:32:34.271699" level="INFO">Successfully closed Context</msg>
 <doc>Verifieer dat we elementen binnen een Shadow Root kunnen vinden.</doc>
 <tag>shadowdom</tag>
-<status status="PASS" start="2026-01-08T15:17:24.265159" elapsed="0.483927"/>
+<status status="PASS" start="2026-01-08T15:32:25.807062" elapsed="8.439906"/>
 </test>
 <kw name="Close Browser" owner="Browser" type="TEARDOWN">
-<msg time="2026-01-08T15:17:24.831525" level="INFO">Closed browser</msg>
+<msg time="2026-01-08T15:32:34.296014" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-08T15:17:24.786866" elapsed="0.044951"/>
+<status status="PASS" start="2026-01-08T15:32:34.272529" elapsed="0.023735"/>
 </kw>
-<status status="PASS" start="2026-01-08T15:17:23.285021" elapsed="1.546942"/>
+<status status="PASS" start="2026-01-08T15:32:24.980299" elapsed="9.316117"/>
 </suite>
-<status status="PASS" start="2026-01-08T15:17:23.284108" elapsed="1.556062"/>
+<status status="PASS" start="2026-01-08T15:32:24.979110" elapsed="9.323274"/>
 </suite>
-<status status="PASS" start="2026-01-08T15:17:23.283185" elapsed="1.557773"/>
+<status status="PASS" start="2026-01-08T15:32:24.977816" elapsed="9.325051"/>
 </suite>
-<status status="PASS" start="2026-01-08T15:17:23.259283" elapsed="1.582383"/>
+<status status="PASS" start="2026-01-08T15:32:24.949090" elapsed="9.354212"/>
 </suite>
 <statistics>
 <total>
