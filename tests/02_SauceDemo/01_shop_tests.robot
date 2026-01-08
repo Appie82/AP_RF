@@ -36,24 +36,34 @@ Scenario 22: Sorteren op Prijs en Validatie
     # Validatie: De eerste prijs moet $7.99 zijn bij deze site
     Should Be Equal    ${prijs_1}    $7.99
 
-Scenario 23: Volledige Checkout Flow
-    [Documentation]    Doorloopt het hele proces van mandje tot finish.
-    [Tags]             sauce    e2e
+Scenario 23: Volledige Checkout Flow (Master)
+    [Documentation]    Doorloopt het hele proces van inloggen tot orderbevestiging.
+    [Tags]             sauce    e2e    critical
+    
+    # 1. Inloggen
     Fill Text          id=user-name    standard_user
     Fill Text          id=password     secret_sauce
     Click              id=login-button
     
-    # Voeg product toe en ga naar mandje
+    # 2. Product selecteren en toevoegen
     Click              id=add-to-cart-sauce-labs-backpack
+    Get Text           .shopping_cart_badge    ==    1
+    
+    # 3. Naar winkelwagen
     Click              .shopping_cart_link
+    Get Text           .inventory_item_name    ==    Sauce Labs Backpack
     Click              id=checkout
     
-    # Vul gegevens in
-    Fill Text          id=first-name    Test
-    Fill Text          id=last-name     User
+    # 4. Verzendgegevens invullen
+    Fill Text          id=first-name    Appie
+    Fill Text          id=last-name     Tester
     Fill Text          id=postal-code   1234AB
     Click              id=continue
     
-    # Afronden
+    # 5. Overzicht controleren en afronden
+    Get Text           .summary_subtotal_label    contains    29.99
     Click              id=finish
+    
+    # 6. Bevestiging
     Get Text           .complete-header    ==    Thank you for your order!
+    Get Element States     .pony_express       contains    visible
