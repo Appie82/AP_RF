@@ -24,7 +24,6 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install robotframework robotframework-browser robotframework-pabot robotframework-requests
-        # Installeer XVFB (het virtuele scherm)
         sudo apt-get update
         sudo apt-get install -y xvfb
 
@@ -36,16 +35,11 @@ jobs:
         xvfb-run pabot --processes 3 \
         --variable HEADLESS:True \
         --variable SLOWMO:0.0s \
-        --listener "Browser.NoContext" \
         -d results tests
 
     - name: Deploy Report to GitHub Pages
-      # 'if: always()' zorgt dat het rapport ALTIJD wordt geüpload, ook als tests falen
       if: always()
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./results
-
-        # Om alleen smoke tests te draaien:
-      run: xvfb-run pabot --include smoke -d results tests  
