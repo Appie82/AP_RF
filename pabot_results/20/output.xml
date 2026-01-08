@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-08T15:08:00.580166" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-08T15:17:24.861057" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="02 SauceDemo" source="/home/runner/work/AP_RF/AP_RF/tests/02_SauceDemo">
 <suite id="s1-s1-s1" name="01 Shop Tests" source="/home/runner/work/AP_RF/AP_RF/tests/02_SauceDemo/01_shop_tests.robot">
 <test id="s1-s1-s1-t1" name="Scenario 21: Succesvolle Inlog en Product Check" line="7">
 <kw name="Start Test-Sessie" owner="common" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-08T15:08:00.774848" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/20/browser/traces/temp/1d32f7ce-7597-41ff-a928-9784a2cd134f"}</msg>
-<msg time="2026-01-08T15:08:00.778098" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:60357</msg>
-<msg time="2026-01-08T15:08:01.391078" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/20/browser/traces/temp/1d32f7ce-7597-41ff-a928-9784a2cd134f"}</msg>
+<msg time="2026-01-08T15:17:25.099293" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/20/browser/traces/temp/0ba541bc-1495-4b9e-83ba-a8e16b49fb62"}</msg>
+<msg time="2026-01-08T15:17:25.103071" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:38445</msg>
+<msg time="2026-01-08T15:17:25.719977" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/20/browser/traces/temp/0ba541bc-1495-4b9e-83ba-a8e16b49fb62"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-08T15:08:00.774140" elapsed="0.617209"/>
+<status status="PASS" start="2026-01-08T15:17:25.098596" elapsed="0.621673"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2026-01-08T15:08:01.393741" level="INFO">{
+<msg time="2026-01-08T15:17:25.723911" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -31,53 +31,53 @@
     "height": 720
   }
 }</msg>
-<msg time="2026-01-08T15:08:01.404248" level="INFO">Successfully created context. </msg>
-<msg time="2026-01-08T15:08:01.404316" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2026-01-08T15:17:25.737263" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-08T15:17:25.737326" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
 <arg>viewport={'width': 1280, 'height': 720}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2026-01-08T15:08:01.391732" elapsed="0.012654"/>
+<status status="PASS" start="2026-01-08T15:17:25.720678" elapsed="0.016726"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-08T15:08:01.801128" level="INFO">Successfully initialized new page object and opened url: https://www.saucedemo.com</msg>
+<msg time="2026-01-08T15:17:26.013988" level="INFO">Successfully initialized new page object and opened url: https://www.saucedemo.com</msg>
 <arg>${START_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-08T15:08:01.404611" elapsed="0.396828"/>
+<status status="PASS" start="2026-01-08T15:17:25.737648" elapsed="0.276713"/>
 </kw>
 <arg>${SAUCE_URL}</arg>
-<status status="PASS" start="2026-01-08T15:08:00.773335" elapsed="1.028307"/>
+<status status="PASS" start="2026-01-08T15:17:25.097725" elapsed="0.916906"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-08T15:08:01.802654" level="INFO">Fills the text 'standard_user' in the given field.</msg>
+<msg time="2026-01-08T15:17:26.015700" level="INFO">Fills the text 'standard_user' in the given field.</msg>
 <arg>id=user-name</arg>
 <arg>standard_user</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-08T15:08:01.801912" elapsed="0.060538"/>
+<status status="PASS" start="2026-01-08T15:17:26.014991" elapsed="0.071127"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-08T15:08:01.863580" level="INFO">Fills the text 'secret_sauce' in the given field.</msg>
+<msg time="2026-01-08T15:17:26.087262" level="INFO">Fills the text 'secret_sauce' in the given field.</msg>
 <arg>id=password</arg>
 <arg>secret_sauce</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-08T15:08:01.862810" elapsed="0.015343"/>
+<status status="PASS" start="2026-01-08T15:17:26.086483" elapsed="0.016873"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-08T15:08:01.878900" level="INFO">Clicks the element 'id=login-button'.</msg>
+<msg time="2026-01-08T15:17:26.104348" level="INFO">Clicks the element 'id=login-button'.</msg>
 <arg>id=login-button</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-08T15:08:01.878420" elapsed="0.073473"/>
+<status status="PASS" start="2026-01-08T15:17:26.103709" elapsed="0.093452"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-01-08T15:08:01.994935" level="INFO">Text: 'Products'</msg>
+<msg time="2026-01-08T15:17:26.235956" level="INFO">Text: 'Products'</msg>
 <arg>.title</arg>
 <arg>==</arg>
 <arg>Products</arg>
@@ -85,7 +85,7 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-08T15:08:01.952268" elapsed="0.042795"/>
+<status status="PASS" start="2026-01-08T15:17:26.197539" elapsed="0.038625"/>
 </kw>
 <kw name="Get Element Count" owner="Browser">
 <arg>.inventory_item</arg>
@@ -95,37 +95,37 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the count of elements found with ``selector``.</doc>
-<status status="PASS" start="2026-01-08T15:08:01.995285" elapsed="0.005493"/>
+<status status="PASS" start="2026-01-08T15:17:26.236520" elapsed="0.005667"/>
 </kw>
 <kw name="Stop Test-Sessie" owner="common" type="TEARDOWN">
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-08T15:08:02.030540" level="INFO">Closed browser</msg>
+<msg time="2026-01-08T15:17:26.280347" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-08T15:08:02.001674" elapsed="0.029032"/>
+<status status="PASS" start="2026-01-08T15:17:26.242828" elapsed="0.037704"/>
 </kw>
-<status status="PASS" start="2026-01-08T15:08:02.001153" elapsed="0.029670"/>
+<status status="PASS" start="2026-01-08T15:17:26.242485" elapsed="0.038207"/>
 </kw>
 <doc>Controleert of een standaard gebruiker kan inloggen en de titels ziet.</doc>
 <tag>sauce</tag>
 <tag>smoke</tag>
-<status status="PASS" start="2026-01-08T15:08:00.772627" elapsed="1.258259"/>
+<status status="PASS" start="2026-01-08T15:17:25.096899" elapsed="1.183865"/>
 </test>
 <test id="s1-s1-s1-t2" name="Scenario 22: Sorteren op Prijs en Validatie" line="16">
 <kw name="Start Test-Sessie" owner="common" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-08T15:08:02.041499" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/20/browser/traces/temp/3851314b-d049-4d48-9079-e00d251dda4d"}</msg>
-<msg time="2026-01-08T15:08:02.087861" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/20/browser/traces/temp/3851314b-d049-4d48-9079-e00d251dda4d"}</msg>
+<msg time="2026-01-08T15:17:26.289979" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/20/browser/traces/temp/6a6b61a8-6950-43d7-baca-548d599c30d2"}</msg>
+<msg time="2026-01-08T15:17:26.341926" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/20/browser/traces/temp/6a6b61a8-6950-43d7-baca-548d599c30d2"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-08T15:08:02.040857" elapsed="0.047176"/>
+<status status="PASS" start="2026-01-08T15:17:26.289302" elapsed="0.052894"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2026-01-08T15:08:02.090110" level="INFO">{
+<msg time="2026-01-08T15:17:26.345273" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -139,124 +139,124 @@
     "height": 720
   }
 }</msg>
-<msg time="2026-01-08T15:08:02.095046" level="INFO">Successfully created context. </msg>
-<msg time="2026-01-08T15:08:02.095135" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2026-01-08T15:17:26.350621" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-08T15:17:26.350677" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
 <arg>viewport={'width': 1280, 'height': 720}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2026-01-08T15:08:02.088238" elapsed="0.006997"/>
+<status status="PASS" start="2026-01-08T15:17:26.342509" elapsed="0.008240"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-08T15:08:02.379646" level="INFO">Successfully initialized new page object and opened url: https://www.saucedemo.com</msg>
+<msg time="2026-01-08T15:17:26.582530" level="INFO">Successfully initialized new page object and opened url: https://www.saucedemo.com</msg>
 <arg>${START_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-08T15:08:02.095514" elapsed="0.284484"/>
+<status status="PASS" start="2026-01-08T15:17:26.350936" elapsed="0.231984"/>
 </kw>
 <arg>${SAUCE_URL}</arg>
-<status status="PASS" start="2026-01-08T15:08:02.040367" elapsed="0.339825"/>
+<status status="PASS" start="2026-01-08T15:17:26.288905" elapsed="0.294207"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-08T15:08:02.381078" level="INFO">Fills the text 'standard_user' in the given field.</msg>
+<msg time="2026-01-08T15:17:26.584118" level="INFO">Fills the text 'standard_user' in the given field.</msg>
 <arg>id=user-name</arg>
 <arg>standard_user</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-08T15:08:02.380439" elapsed="0.041696"/>
+<status status="PASS" start="2026-01-08T15:17:26.583384" elapsed="0.039778"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-08T15:08:02.423438" level="INFO">Fills the text 'secret_sauce' in the given field.</msg>
+<msg time="2026-01-08T15:17:26.624050" level="INFO">Fills the text 'secret_sauce' in the given field.</msg>
 <arg>id=password</arg>
 <arg>secret_sauce</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-08T15:08:02.422469" elapsed="0.014154"/>
+<status status="PASS" start="2026-01-08T15:17:26.623468" elapsed="0.010295"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-08T15:08:02.437663" level="INFO">Clicks the element 'id=login-button'.</msg>
+<msg time="2026-01-08T15:17:26.634816" level="INFO">Clicks the element 'id=login-button'.</msg>
 <arg>id=login-button</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-08T15:08:02.436937" elapsed="0.112569"/>
+<status status="PASS" start="2026-01-08T15:17:26.634102" elapsed="0.079010"/>
 </kw>
 <kw name="Select Options By" owner="Browser">
-<msg time="2026-01-08T15:08:02.550595" level="INFO">Selects the option(s) lohi by attribute SelectAttribute.value from element .product_sort_container.</msg>
+<msg time="2026-01-08T15:17:26.714218" level="INFO">Selects the option(s) lohi by attribute SelectAttribute.value from element .product_sort_container.</msg>
 <arg>.product_sort_container</arg>
 <arg>value</arg>
 <arg>lohi</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-08T15:08:02.549829" elapsed="0.049044"/>
+<status status="PASS" start="2026-01-08T15:17:26.713463" elapsed="0.045903"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-01-08T15:08:02.616168" level="INFO">Text: '$7.99'</msg>
-<msg time="2026-01-08T15:08:02.616335" level="INFO">${prijs_1} = $7.99</msg>
+<msg time="2026-01-08T15:17:26.777939" level="INFO">Text: '$7.99'</msg>
+<msg time="2026-01-08T15:17:26.778119" level="INFO">${prijs_1} = $7.99</msg>
 <var>${prijs_1}</var>
 <arg>css=.inventory_item_price &gt;&gt; nth=0</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-08T15:08:02.599094" elapsed="0.017267"/>
+<status status="PASS" start="2026-01-08T15:17:26.759629" elapsed="0.018522"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-01-08T15:08:02.634475" level="INFO">Text: '$9.99'</msg>
-<msg time="2026-01-08T15:08:02.634717" level="INFO">${prijs_2} = $9.99</msg>
+<msg time="2026-01-08T15:17:26.790810" level="INFO">Text: '$9.99'</msg>
+<msg time="2026-01-08T15:17:26.790976" level="INFO">${prijs_2} = $9.99</msg>
 <var>${prijs_2}</var>
 <arg>css=.inventory_item_price &gt;&gt; nth=1</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-08T15:08:02.616606" elapsed="0.018170"/>
+<status status="PASS" start="2026-01-08T15:17:26.778358" elapsed="0.012648"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-08T15:08:02.635725" level="INFO">Eerste product: $7.99, Tweede product: $9.99</msg>
+<msg time="2026-01-08T15:17:26.791637" level="INFO">Eerste product: $7.99, Tweede product: $9.99</msg>
 <arg>Eerste product: ${prijs_1}, Tweede product: ${prijs_2}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-08T15:08:02.635073" elapsed="0.000729"/>
+<status status="PASS" start="2026-01-08T15:17:26.791208" elapsed="0.000481"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${prijs_1}</arg>
 <arg>$7.99</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2026-01-08T15:08:02.636001" elapsed="0.000518"/>
+<status status="PASS" start="2026-01-08T15:17:26.791803" elapsed="0.000314"/>
 </kw>
 <kw name="Stop Test-Sessie" owner="common" type="TEARDOWN">
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-08T15:08:02.664993" level="INFO">Closed browser</msg>
+<msg time="2026-01-08T15:17:26.824324" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-08T15:08:02.637537" elapsed="0.027622"/>
+<status status="PASS" start="2026-01-08T15:17:26.792663" elapsed="0.031847"/>
 </kw>
-<status status="PASS" start="2026-01-08T15:08:02.636929" elapsed="0.028384"/>
+<status status="PASS" start="2026-01-08T15:17:26.792355" elapsed="0.032326"/>
 </kw>
 <doc>Controleert of de sortering van laag naar hoog correct werkt.</doc>
 <tag>regressie</tag>
 <tag>sauce</tag>
-<status status="PASS" start="2026-01-08T15:08:02.037767" elapsed="0.627728"/>
+<status status="PASS" start="2026-01-08T15:17:26.286973" elapsed="0.537778"/>
 </test>
 <test id="s1-s1-s1-t3" name="Scenario 23: Volledige Checkout Flow (Master)" line="39">
 <kw name="Start Test-Sessie" owner="common" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-08T15:08:02.676097" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/20/browser/traces/temp/427cc6ee-c433-4093-8875-cff96a007186"}</msg>
-<msg time="2026-01-08T15:08:02.728662" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/20/browser/traces/temp/427cc6ee-c433-4093-8875-cff96a007186"}</msg>
+<msg time="2026-01-08T15:17:26.831395" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/20/browser/traces/temp/ea8a9849-3424-49cc-ac11-5ac87018ccd1"}</msg>
+<msg time="2026-01-08T15:17:26.881332" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/20/browser/traces/temp/ea8a9849-3424-49cc-ac11-5ac87018ccd1"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-08T15:08:02.675177" elapsed="0.053742"/>
+<status status="PASS" start="2026-01-08T15:17:26.830720" elapsed="0.050812"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2026-01-08T15:08:02.733296" level="INFO">{
+<msg time="2026-01-08T15:17:26.884067" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -270,61 +270,61 @@
     "height": 720
   }
 }</msg>
-<msg time="2026-01-08T15:08:02.739139" level="INFO">Successfully created context. </msg>
-<msg time="2026-01-08T15:08:02.739226" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2026-01-08T15:17:26.890252" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-08T15:17:26.890322" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
 <arg>viewport={'width': 1280, 'height': 720}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2026-01-08T15:08:02.729199" elapsed="0.010122"/>
+<status status="PASS" start="2026-01-08T15:17:26.881805" elapsed="0.008593"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-08T15:08:03.030470" level="INFO">Successfully initialized new page object and opened url: https://www.saucedemo.com</msg>
+<msg time="2026-01-08T15:17:27.121840" level="INFO">Successfully initialized new page object and opened url: https://www.saucedemo.com</msg>
 <arg>${START_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-08T15:08:02.739582" elapsed="0.291159"/>
+<status status="PASS" start="2026-01-08T15:17:26.890615" elapsed="0.231531"/>
 </kw>
 <arg>${SAUCE_URL}</arg>
-<status status="PASS" start="2026-01-08T15:08:02.674677" elapsed="0.356237"/>
+<status status="PASS" start="2026-01-08T15:17:26.830283" elapsed="0.292018"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-08T15:08:03.031856" level="INFO">Fills the text 'standard_user' in the given field.</msg>
+<msg time="2026-01-08T15:17:27.123245" level="INFO">Fills the text 'standard_user' in the given field.</msg>
 <arg>id=user-name</arg>
 <arg>standard_user</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-08T15:08:03.031158" elapsed="0.032788"/>
+<status status="PASS" start="2026-01-08T15:17:27.122564" elapsed="0.036804"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-08T15:08:03.065097" level="INFO">Fills the text 'secret_sauce' in the given field.</msg>
+<msg time="2026-01-08T15:17:27.160473" level="INFO">Fills the text 'secret_sauce' in the given field.</msg>
 <arg>id=password</arg>
 <arg>secret_sauce</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-08T15:08:03.064329" elapsed="0.011511"/>
+<status status="PASS" start="2026-01-08T15:17:27.159740" elapsed="0.010920"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-08T15:08:03.076843" level="INFO">Clicks the element 'id=login-button'.</msg>
+<msg time="2026-01-08T15:17:27.171329" level="INFO">Clicks the element 'id=login-button'.</msg>
 <arg>id=login-button</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-08T15:08:03.076143" elapsed="0.078156"/>
+<status status="PASS" start="2026-01-08T15:17:27.170878" elapsed="0.074082"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-08T15:08:03.155315" level="INFO">Clicks the element 'id=add-to-cart-sauce-labs-backpack'.</msg>
+<msg time="2026-01-08T15:17:27.246058" level="INFO">Clicks the element 'id=add-to-cart-sauce-labs-backpack'.</msg>
 <arg>id=add-to-cart-sauce-labs-backpack</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-08T15:08:03.154678" elapsed="0.028257"/>
+<status status="PASS" start="2026-01-08T15:17:27.245314" elapsed="0.042759"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-01-08T15:08:03.211299" level="INFO">Text: '1'</msg>
+<msg time="2026-01-08T15:17:27.324316" level="INFO">Text: '1'</msg>
 <arg>.shopping_cart_badge</arg>
 <arg>==</arg>
 <arg>1</arg>
@@ -332,18 +332,18 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-08T15:08:03.183188" elapsed="0.028255"/>
+<status status="PASS" start="2026-01-08T15:17:27.288464" elapsed="0.035981"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-08T15:08:03.212071" level="INFO">Clicks the element '.shopping_cart_link'.</msg>
+<msg time="2026-01-08T15:17:27.325155" level="INFO">Clicks the element '.shopping_cart_link'.</msg>
 <arg>.shopping_cart_link</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-08T15:08:03.211642" elapsed="0.024023"/>
+<status status="PASS" start="2026-01-08T15:17:27.324698" elapsed="0.050682"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-01-08T15:08:03.251551" level="INFO">Text: 'Sauce Labs Backpack'</msg>
+<msg time="2026-01-08T15:17:27.390284" level="INFO">Text: 'Sauce Labs Backpack'</msg>
 <arg>.inventory_item_name</arg>
 <arg>==</arg>
 <arg>Sauce Labs Backpack</arg>
@@ -351,53 +351,53 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-08T15:08:03.235878" elapsed="0.015790"/>
+<status status="PASS" start="2026-01-08T15:17:27.375673" elapsed="0.014744"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-08T15:08:03.252306" level="INFO">Clicks the element 'id=checkout'.</msg>
+<msg time="2026-01-08T15:17:27.391129" level="INFO">Clicks the element 'id=checkout'.</msg>
 <arg>id=checkout</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-08T15:08:03.251868" elapsed="0.034452"/>
+<status status="PASS" start="2026-01-08T15:17:27.390655" elapsed="0.030533"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-08T15:08:03.287037" level="INFO">Fills the text 'Appie' in the given field.</msg>
+<msg time="2026-01-08T15:17:27.421936" level="INFO">Fills the text 'Appie' in the given field.</msg>
 <arg>id=first-name</arg>
 <arg>Appie</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-08T15:08:03.286565" elapsed="0.010000"/>
+<status status="PASS" start="2026-01-08T15:17:27.421421" elapsed="0.008098"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-08T15:08:03.297551" level="INFO">Fills the text 'Tester' in the given field.</msg>
+<msg time="2026-01-08T15:17:27.430452" level="INFO">Fills the text 'Tester' in the given field.</msg>
 <arg>id=last-name</arg>
 <arg>Tester</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-08T15:08:03.296864" elapsed="0.008950"/>
+<status status="PASS" start="2026-01-08T15:17:27.429835" elapsed="0.008437"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-08T15:08:03.306513" level="INFO">Fills the text '1234AB' in the given field.</msg>
+<msg time="2026-01-08T15:17:27.439006" level="INFO">Fills the text '1234AB' in the given field.</msg>
 <arg>id=postal-code</arg>
 <arg>1234AB</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-08T15:08:03.306037" elapsed="0.008860"/>
+<status status="PASS" start="2026-01-08T15:17:27.438504" elapsed="0.008176"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-08T15:08:03.315578" level="INFO">Clicks the element 'id=continue'.</msg>
+<msg time="2026-01-08T15:17:27.447469" level="INFO">Clicks the element 'id=continue'.</msg>
 <arg>id=continue</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-08T15:08:03.315116" elapsed="0.039953"/>
+<status status="PASS" start="2026-01-08T15:17:27.446970" elapsed="0.043900"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-01-08T15:08:03.368015" level="INFO">Text: 'Item total: $29.99'</msg>
+<msg time="2026-01-08T15:17:27.503516" level="INFO">Text: 'Item total: $29.99'</msg>
 <arg>.summary_subtotal_label</arg>
 <arg>contains</arg>
 <arg>29.99</arg>
@@ -405,18 +405,18 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-08T15:08:03.355280" elapsed="0.012847"/>
+<status status="PASS" start="2026-01-08T15:17:27.491104" elapsed="0.012554"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-08T15:08:03.368788" level="INFO">Clicks the element 'id=finish'.</msg>
+<msg time="2026-01-08T15:17:27.504309" level="INFO">Clicks the element 'id=finish'.</msg>
 <arg>id=finish</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-08T15:08:03.368320" elapsed="0.034313"/>
+<status status="PASS" start="2026-01-08T15:17:27.503860" elapsed="0.035013"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-01-08T15:08:03.416543" level="INFO">Text: 'Thank you for your order!'</msg>
+<msg time="2026-01-08T15:17:27.553930" level="INFO">Text: 'Thank you for your order!'</msg>
 <arg>.complete-header</arg>
 <arg>==</arg>
 <arg>Thank you for your order!</arg>
@@ -424,10 +424,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-08T15:08:03.402845" elapsed="0.013864"/>
+<status status="PASS" start="2026-01-08T15:17:27.539100" elapsed="0.015002"/>
 </kw>
 <kw name="Get Element States" owner="Browser">
-<msg time="2026-01-08T15:08:03.440845" level="INFO">States are: ['attached', 'visible', 'enabled', 'defocused']</msg>
+<msg time="2026-01-08T15:17:27.576185" level="INFO">States are: ['attached', 'visible', 'enabled', 'defocused']</msg>
 <arg>.pony_express</arg>
 <arg>contains</arg>
 <arg>visible</arg>
@@ -435,29 +435,29 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-08T15:08:03.416987" elapsed="0.023969"/>
+<status status="PASS" start="2026-01-08T15:17:27.554359" elapsed="0.021953"/>
 </kw>
 <kw name="Stop Test-Sessie" owner="common" type="TEARDOWN">
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-08T15:08:03.465189" level="INFO">Closed browser</msg>
+<msg time="2026-01-08T15:17:27.603649" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-08T15:08:03.441679" elapsed="0.023758"/>
+<status status="PASS" start="2026-01-08T15:17:27.577058" elapsed="0.026769"/>
 </kw>
-<status status="PASS" start="2026-01-08T15:08:03.441262" elapsed="0.024351"/>
+<status status="PASS" start="2026-01-08T15:17:27.576696" elapsed="0.027257"/>
 </kw>
 <doc>Doorloopt het hele proces van inloggen tot orderbevestiging.</doc>
 <tag>critical</tag>
 <tag>e2e</tag>
 <tag>sauce</tag>
-<status status="PASS" start="2026-01-08T15:08:02.669540" elapsed="0.796171"/>
+<status status="PASS" start="2026-01-08T15:17:26.828388" elapsed="0.775634"/>
 </test>
-<status status="PASS" start="2026-01-08T15:08:00.610466" elapsed="2.858645"/>
+<status status="PASS" start="2026-01-08T15:17:24.905222" elapsed="2.702192"/>
 </suite>
-<status status="PASS" start="2026-01-08T15:08:00.609653" elapsed="2.863187"/>
+<status status="PASS" start="2026-01-08T15:17:24.903933" elapsed="2.707042"/>
 </suite>
-<status status="PASS" start="2026-01-08T15:08:00.591933" elapsed="2.881264"/>
+<status status="PASS" start="2026-01-08T15:17:24.875047" elapsed="2.736349"/>
 </suite>
 <statistics>
 <total>
