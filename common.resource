@@ -5,9 +5,10 @@ Library     Collections
 
 *** Variables ***
 # --- Algemene Instellingen ---
-${BROWSER}          chromium
-${HEADLESS}         True
-
+*** Variables ***
+${BROWSER}           chromium
+${HEADLESS}          True
+${SLOWMO}            0.0s    # Zet dit op 0.0s voor de cloud (snelheid!)
 # --- Object 1: The Internet (Heroku) ---
 ${HEROKU_URL}       https://the-internet.herokuapp.com
 ${DYNAMIC_URL}      ${HEROKU_URL}/dynamic_loading/1
@@ -23,10 +24,7 @@ ${BASE_URL}         ${HEROKU_URL}
 ${VALID_USER}       tomsmith
 ${VALID_PW}         SuperSecretPassword!
 
-# Instellingen
-${BROWSER}          chromium
-${HEADLESS}         True
-${SLOWMO}           0.5s
+
 
 *** Keywords ***
 Open De Browser Op De Inlogpagina
