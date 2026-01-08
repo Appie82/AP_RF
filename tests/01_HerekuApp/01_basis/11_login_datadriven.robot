@@ -17,7 +17,7 @@ Lege velden                       ${EMPTY}          ${EMPTY}                Your
 *** Keywords ***
 Inloggen Met Verschillende Gegevens
     [Arguments]    ${username}    ${password}    ${expected_message}
-    Go To    ${URL}/login
+    Go To    ${BASE_URL}/login
     # Hier gebruiken we nu ons eigen "super-keyword"
     Vul Inloggegevens In En Verstuur    ${username}    ${password}
     Get Text     id=flash    contains    ${expected_message}
