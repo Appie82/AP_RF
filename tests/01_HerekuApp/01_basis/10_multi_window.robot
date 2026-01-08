@@ -3,7 +3,7 @@ en gebruikt een FOR-loop om doelgericht tussen tabbladen te schakelen en
 teksten te verifiëren.
 
 *** Settings ***
-Resource          ../../common.resource
+Resource          ../../../common.resource
 Test Setup        Start Test-Sessie
 Test Teardown     Stop Test-Sessie
 

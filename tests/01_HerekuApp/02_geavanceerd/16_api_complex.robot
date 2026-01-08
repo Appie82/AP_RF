@@ -1,7 +1,7 @@
 Geavanceerde Backend Test. Waar test 03 simpel was, gaat deze dieper: 
 het verifiëren van complexe geneste JSON-objecten, het controleren van headers en het werken met autorisatie-tokens.
 *** Settings ***
-Resource          ../../common.resource
+Resource          ../../../common.resource
 
 *** Test Cases ***
 Scenario 16: Volledige API Lifecycle

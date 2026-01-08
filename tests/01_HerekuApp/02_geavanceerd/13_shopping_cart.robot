@@ -1,7 +1,7 @@
 Snelheidsoptimalisatie. In plaats van inloggen via de UI, injecteert deze test direct een rack.session cookie in de browser-context. 
 Dit bewijst dat je weet hoe je de staat van een browser kunt manipuleren om tijdrovende stappen over te slaan.
 *** Settings ***
-Resource          ../../common.resource
+Resource          ../../../common.resource
 # De Setup opent de browser één keer op de juiste manier
 Test Setup        Start Test-Sessie
 Test Teardown     Stop Test-Sessie

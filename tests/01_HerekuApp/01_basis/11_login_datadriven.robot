@@ -3,7 +3,7 @@ Hierdoor kan één test zowel een succesvolle login (groene melding)
 als verschillende foutmeldingen (rode melding) in één run controleren.
 
 ** Settings ***
-Resource         ../../common.resource
+Resource         ../../../common.resource
 Test Setup       Start Test-Sessie
 Test Teardown    Afsluiten Test En Sessie
 Test Template    Inloggen Met Verschillende Gegevens

@@ -12,7 +12,7 @@ Check Of De Website Online Is Via API
     [Documentation]    We vuren een HTTP-verzoek af binnen een actieve browser-context.
     
     # Het Http keyword gebruikt de huidige browser-sessie
-    ${response}=    Http    ${URL}/login
+    ${response}=    Http    ${BASE_URL}/login
     
     # We controleren de statuscode (moet 200 zijn)
     Should Be Equal    ${response}[status]    ${200}

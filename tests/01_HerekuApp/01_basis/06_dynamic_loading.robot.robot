@@ -4,7 +4,7 @@ op de tekst "Hello World!".
 Dit voorkomt het gebruik van onbetrouwbare Sleep commando's.
 
 *** Settings ***
-Resource    ../../common.resource
+Resource    ../../../common.resource
 
 *** Test Cases ***
 Wachten Op Dynamisch Element
