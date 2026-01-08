@@ -1,5 +1,8 @@
 # 🤖 Robot Framework Automation Suite
-![Robot Framework Tests](https://github.com/Appie82/AP_RF/actions/workflows/main.yml/badge.svg)
+![Robot Framework CI](https://github.com/Appie82/AP_RF/actions/workflows/main.yml/badge.svg)
+[![View Test Report](https://img.shields.io/badge/View-Test%20Report-green)](https://appie82.github.io/AP_RF/log.html)
+
+Dit project bevat automatische UI en API tests voor SauceDemo en HerokuApp.
 
 Dit project is een robuust en schaalbaar testautomatisering framework gebouwd met **Robot Framework** en de **Browser (Playwright) Library**. Het framework is ontworpen volgens moderne "best practices", waarbij de focus ligt op onderhoudbaarheid, snelheid en de combinatie van Frontend (UI) en Backend (API) testen.
 
