@@ -1,91 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-08T14:51:46.777169" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-08T15:07:36.305117" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="01 Basis" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis">
 <suite id="s1-s1-s1-s1" name="02 Data" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/02_data.robot">
 <test id="s1-s1-s1-s1-t1" name="Wachten Op Dynamische Content" line="10">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-08T14:51:46.992223" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/1/browser/traces/temp/bc8ed5db-0fba-4d50-b512-644304c5bf44"}</msg>
-<msg time="2026-01-08T14:51:46.996378" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:55873</msg>
-<msg time="2026-01-08T14:51:47.727760" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
-Error: Tried to take screenshot, but no page was open.</msg>
-<msg time="2026-01-08T14:51:47.727920" level="INFO">See also file:///home/runner/work/AP_RF/AP_RF/results/pabot_results/1/playwright-log.txt for additional details.</msg>
-<msg time="2026-01-08T14:51:47.728401" level="FAIL">Error: browserType.launch: Target page, context or browser has been closed
-Browser logs:
-
-╔════════════════════════════════════════════════════════════════════════════════════════════════╗
-║ Looks like you launched a headed browser without having a XServer running.                     ║
-║ Set either 'headless: true' or use 'xvfb-run &lt;your-playwright-app&gt;' before running Playwright. ║
-║                                                                                                ║
-║ &lt;3 Playwright Team                                                                             ║
-╚════════════════════════════════════════════════════════════════════════════════════════════════╝
-Call log:
-  - &lt;launching&gt; /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-IDozSw --remote-debugging-pipe --no-startup-window
-  - &lt;launched&gt; pid=3086
-  - [pid=3086][err] [3086:3086:0108/145147.661243:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3086][err] [3086:3086:0108/145147.661279:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3086] &lt;gracefully close start&gt;
-  - [pid=3086] &lt;kill&gt;
-  - [pid=3086] &lt;will force kill&gt;
-  - [pid=3086] &lt;process did exit: exitCode=1, signal=null&gt;
-  - [pid=3086] starting temporary directories cleanup
-  - [pid=3086] finished temporary directories cleanup
-  - [pid=3086] &lt;gracefully close end&gt;
-</msg>
+<msg time="2026-01-08T15:07:36.551373" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/1/browser/traces/temp/583e2c5d-c6e0-4e53-be46-d2278042fc29"}</msg>
+<msg time="2026-01-08T15:07:36.554813" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:39245</msg>
+<msg time="2026-01-08T15:07:37.261385" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/1/browser/traces/temp/583e2c5d-c6e0-4e53-be46-d2278042fc29"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="FAIL" start="2026-01-08T14:51:46.991497" elapsed="0.928458">Error: browserType.launch: Target page, context or browser has been closed
-Browser logs:
-
-╔════════════════════════════════════════════════════════════════════════════════════════════════╗
-║ Looks like you launched a headed browser without having a XServer running.                     ║
-║ Set either 'headless: true' or use 'xvfb-run &lt;your-playwright-app&gt;' before running Playwright. ║
-║                                                                                                ║
-║ &lt;3 Playwright Team                                                                             ║
-╚════════════════════════════════════════════════════════════════════════════════════════════════╝
-Call log:
-  - &lt;launching&gt; /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
-    [ Message content over the limit has been removed. ]
-...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-IDozSw --remote-debugging-pipe --no-startup-window
-  - &lt;launched&gt; pid=3086
-  - [pid=3086][err] [3086:3086:0108/145147.661243:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3086][err] [3086:3086:0108/145147.661279:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3086] &lt;gracefully close start&gt;
-  - [pid=3086] &lt;kill&gt;
-  - [pid=3086] &lt;will force kill&gt;
-  - [pid=3086] &lt;process did exit: exitCode=1, signal=null&gt;
-  - [pid=3086] starting temporary directories cleanup
-  - [pid=3086] finished temporary directories cleanup
-  - [pid=3086] &lt;gracefully close end&gt;</status>
+<status status="PASS" start="2026-01-08T15:07:36.550653" elapsed="0.711026"/>
 </kw>
 <kw name="New Page" owner="Browser">
+<msg time="2026-01-08T15:07:38.057896" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/dynamic_loading/1</msg>
+<msg time="2026-01-08T15:07:38.058001" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${DYNAMIC_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="NOT RUN" start="2026-01-08T14:51:47.920650" elapsed="0.000186"/>
+<status status="PASS" start="2026-01-08T15:07:37.262047" elapsed="0.796168"/>
 </kw>
 <kw name="Click" owner="Browser">
+<msg time="2026-01-08T15:07:38.059231" level="INFO">Clicks the element 'button &gt;&gt; text=Start'.</msg>
 <arg>button &gt;&gt; text=Start</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-01-08T14:51:47.921068" elapsed="0.000167"/>
+<status status="PASS" start="2026-01-08T15:07:38.058556" elapsed="0.083556"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-08T15:07:43.468695" level="INFO">Waited for Element with selector text=Hello World! at state visible</msg>
 <arg>text=Hello World!</arg>
 <arg>visible</arg>
 <arg>timeout=10s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="NOT RUN" start="2026-01-08T14:51:47.921440" elapsed="0.000128"/>
+<status status="PASS" start="2026-01-08T15:07:38.142367" elapsed="5.326561"/>
 </kw>
 <kw name="Get Text" owner="Browser">
+<msg time="2026-01-08T15:07:43.500871" level="INFO">Text: 'Hello World!'</msg>
 <arg>text=Hello World!</arg>
 <arg>==</arg>
 <arg>Hello World!</arg>
@@ -93,159 +52,125 @@ Call log:
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-01-08T14:51:47.921769" elapsed="0.000111"/>
+<status status="PASS" start="2026-01-08T15:07:43.469246" elapsed="0.031774"/>
 </kw>
 <kw name="Sluit Test En Maak Screenshot Bij Fout" owner="common" type="TEARDOWN">
 <kw name="Run Keyword If Test Failed" owner="BuiltIn">
-<kw name="Take Screenshot" owner="Browser">
-<msg time="2026-01-08T14:51:47.933859" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
-Error: Tried to take screenshot, but no page was open.</msg>
-<msg time="2026-01-08T14:51:47.934016" level="INFO">See also file:///home/runner/work/AP_RF/AP_RF/results/pabot_results/1/playwright-log.txt for additional details.</msg>
-<msg time="2026-01-08T14:51:47.934211" level="FAIL">Error: Tried to take screenshot, but no page was open.</msg>
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="FAIL" start="2026-01-08T14:51:47.923721" elapsed="0.011781">Error: Tried to take screenshot, but no page was open.</status>
-</kw>
 <arg>Take Screenshot</arg>
 <doc>Runs the given keyword with the given arguments, if the test failed.</doc>
-<status status="FAIL" start="2026-01-08T14:51:47.923004" elapsed="0.012750">Error: Tried to take screenshot, but no page was open.</status>
+<status status="PASS" start="2026-01-08T15:07:43.502058" elapsed="0.000434"/>
 </kw>
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-08T14:51:47.939895" level="INFO">No browser open, doing nothing</msg>
+<msg time="2026-01-08T15:07:43.548636" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-08T14:51:47.936007" elapsed="0.004047"/>
+<status status="PASS" start="2026-01-08T15:07:43.502685" elapsed="0.046144"/>
 </kw>
-<status status="FAIL" start="2026-01-08T14:51:47.922477" elapsed="0.017836">Error: Tried to take screenshot, but no page was open.</status>
+<status status="PASS" start="2026-01-08T15:07:43.501656" elapsed="0.047308"/>
 </kw>
-<status status="FAIL" start="2026-01-08T14:51:46.990531" elapsed="0.949916">Error: browserType.launch: Target page, context or browser has been closed
-Browser logs:
-
-╔════════════════════════════════════════════════════════════════════════════════════════════════╗
-║ Looks like you launched a headed browser without having a XServer running.                     ║
-║ Set either 'headless: true' or use 'xvfb-run &lt;your-playwright-app&gt;' before running Playwright. ║
-║                                                                                                ║
-║ &lt;3 Playwright Team                                                                             ║
-╚════════════════════════════════════════════════════════════════════════════════════════════════╝
-Call log:
-  - &lt;launching&gt; /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
-    [ Message content over the limit has been removed. ]
-...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-IDozSw --remote-debugging-pipe --no-startup-window
-  - &lt;launched&gt; pid=3086
-  - [pid=3086][err] [3086:3086:0108/145147.661243:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3086][err] [3086:3086:0108/145147.661279:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3086] &lt;gracefully close start&gt;
-  - [pid=3086] &lt;kill&gt;
-  - [pid=3086] &lt;will force kill&gt;
-  - [pid=3086] &lt;process did exit: exitCode=1, signal=null&gt;
-  - [pid=3086] starting temporary directories cleanup
-  - [pid=3086] finished temporary directories cleanup
-  - [pid=3086] &lt;gracefully close end&gt;
-
-Also teardown failed:
-Error: Tried to take screenshot, but no page was open.</status>
+<status status="PASS" start="2026-01-08T15:07:36.549698" elapsed="6.999340"/>
 </test>
 <test id="s1-s1-s1-s1-t2" name="Zoek Waarde In Dynamische Tabel" line="19">
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-08T14:51:48.538641" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/challenging_dom</msg>
-<msg time="2026-01-08T14:51:48.538745" level="INFO">No browser and context was open. New browser and context was automatically opened when page is created.</msg>
+<msg time="2026-01-08T15:07:44.431580" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/challenging_dom</msg>
+<msg time="2026-01-08T15:07:44.431692" level="INFO">No browser and context was open. New browser and context was automatically opened when page is created.</msg>
 <arg>${TABEL_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-08T14:51:47.950392" elapsed="0.588536"/>
+<status status="PASS" start="2026-01-08T15:07:43.558691" elapsed="0.873197"/>
 </kw>
 <kw name="Get Elements" owner="Browser">
-<msg time="2026-01-08T14:51:48.579944" level="INFO">Found locator('table').locator('tbody').locator('tr').first(),locator('table').locator('tbody').locator('tr').nth(1),locator('table').locator('tbody').locator('tr').nth(2),locator('table').locator('tbody').locator('tr').nth(3),locator('table').locator('tbody').locator('tr').nth(4),locator('table').locator('tbody').locator('tr').nth(5),locator('table').locator('tbody').locator('tr').nth(6),locator('table').locator('tbody').locator('tr').nth(7),locator('table').locator('tbody').locator('tr').nth(8),locator('table').locator('tbody').locator('tr').nth(9) Locators successfully.</msg>
-<msg time="2026-01-08T14:51:48.580221" level="INFO">${rijen} = ['table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=0', 'table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=1', 'table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=2', 'table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=3', 'table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=4', 'table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=5', '...</msg>
+<msg time="2026-01-08T15:07:44.466132" level="INFO">Found locator('table').locator('tbody').locator('tr').first(),locator('table').locator('tbody').locator('tr').nth(1),locator('table').locator('tbody').locator('tr').nth(2),locator('table').locator('tbody').locator('tr').nth(3),locator('table').locator('tbody').locator('tr').nth(4),locator('table').locator('tbody').locator('tr').nth(5),locator('table').locator('tbody').locator('tr').nth(6),locator('table').locator('tbody').locator('tr').nth(7),locator('table').locator('tbody').locator('tr').nth(8),locator('table').locator('tbody').locator('tr').nth(9) Locators successfully.</msg>
+<msg time="2026-01-08T15:07:44.466565" level="INFO">${rijen} = ['table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=0', 'table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=1', 'table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=2', 'table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=3', 'table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=4', 'table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=5', '...</msg>
 <var>${rijen}</var>
 <arg>table &gt;&gt; tbody &gt;&gt; tr</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
 for all matched elements by ``selector``.</doc>
-<status status="PASS" start="2026-01-08T14:51:48.539205" elapsed="0.041051"/>
+<status status="PASS" start="2026-01-08T15:07:44.432167" elapsed="0.034464"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-01-08T14:51:48.612867" level="INFO">Text: 'Apeirian0'</msg>
-<msg time="2026-01-08T14:51:48.613045" level="INFO">${tekst} = Apeirian0</msg>
+<msg time="2026-01-08T15:07:44.499991" level="INFO">Text: 'Apeirian0'</msg>
+<msg time="2026-01-08T15:07:44.500146" level="INFO">${tekst} = Apeirian0</msg>
 <var>${tekst}</var>
 <arg>${rij} &gt;&gt; td:nth-child(2)</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-08T14:51:48.580950" elapsed="0.032128"/>
+<status status="PASS" start="2026-01-08T15:07:44.467626" elapsed="0.032546"/>
 </kw>
 <if>
 <branch type="IF" condition="&quot;Apeirian&quot; in &quot;${tekst}&quot;">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-08T14:51:48.613917" level="INFO">Gevonden: Apeirian0</msg>
+<msg time="2026-01-08T15:07:44.500974" level="INFO">Gevonden: Apeirian0</msg>
 <arg>Gevonden: ${tekst}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-08T14:51:48.613530" elapsed="0.000439"/>
+<status status="PASS" start="2026-01-08T15:07:44.500653" elapsed="0.000370"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2026-01-08T14:51:48.678071" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-08T15:07:44.566224" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <arg>selector=${rij}</arg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2026-01-08T14:51:48.614130" elapsed="0.064165"/>
+<status status="PASS" start="2026-01-08T15:07:44.501141" elapsed="0.065227"/>
 </kw>
 <break>
-<status status="PASS" start="2026-01-08T14:51:48.678455" elapsed="0.000187"/>
+<status status="PASS" start="2026-01-08T15:07:44.566516" elapsed="0.000128"/>
 </break>
-<status status="PASS" start="2026-01-08T14:51:48.613230" elapsed="0.065505"/>
+<status status="PASS" start="2026-01-08T15:07:44.500322" elapsed="0.066379"/>
 </branch>
-<status status="PASS" start="2026-01-08T14:51:48.613200" elapsed="0.065627"/>
+<status status="PASS" start="2026-01-08T15:07:44.500289" elapsed="0.066466"/>
 </if>
 <var name="${rij}">table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=0</var>
-<status status="PASS" start="2026-01-08T14:51:48.580760" elapsed="0.098126"/>
+<status status="PASS" start="2026-01-08T15:07:44.467315" elapsed="0.099471"/>
 </iter>
 <var>${rij}</var>
 <value>@{rijen}</value>
-<status status="PASS" start="2026-01-08T14:51:48.580389" elapsed="0.098608"/>
+<status status="PASS" start="2026-01-08T15:07:44.466819" elapsed="0.100073"/>
 </for>
 <kw name="Sluit Test En Maak Screenshot Bij Fout" owner="common" type="TEARDOWN">
 <kw name="Run Keyword If Test Failed" owner="BuiltIn">
 <arg>Take Screenshot</arg>
 <doc>Runs the given keyword with the given arguments, if the test failed.</doc>
-<status status="PASS" start="2026-01-08T14:51:48.679944" elapsed="0.000432"/>
+<status status="PASS" start="2026-01-08T15:07:44.567534" elapsed="0.000273"/>
 </kw>
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-08T14:51:48.722188" level="INFO">Closed browser</msg>
+<msg time="2026-01-08T15:07:44.592924" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-08T14:51:48.680579" elapsed="0.041841"/>
+<status status="PASS" start="2026-01-08T15:07:44.567913" elapsed="0.025180"/>
 </kw>
-<status status="PASS" start="2026-01-08T14:51:48.679428" elapsed="0.043217"/>
+<status status="PASS" start="2026-01-08T15:07:44.567188" elapsed="0.026024"/>
 </kw>
-<status status="PASS" start="2026-01-08T14:51:47.947207" elapsed="0.775554"/>
+<status status="PASS" start="2026-01-08T15:07:43.556235" elapsed="1.037039"/>
 </test>
 <doc>Data-tests die gebruik maken van de centrale instellingen.</doc>
-<status status="FAIL" start="2026-01-08T14:51:46.809858" elapsed="1.918617"/>
+<status status="PASS" start="2026-01-08T15:07:36.355103" elapsed="8.242741"/>
 </suite>
-<status status="FAIL" start="2026-01-08T14:51:46.809025" elapsed="1.924983"/>
+<status status="PASS" start="2026-01-08T15:07:36.353843" elapsed="8.248042"/>
 </suite>
-<status status="FAIL" start="2026-01-08T14:51:46.808164" elapsed="1.926564"/>
+<status status="PASS" start="2026-01-08T15:07:36.352474" elapsed="8.249789"/>
 </suite>
-<status status="FAIL" start="2026-01-08T14:51:46.787839" elapsed="1.947540"/>
+<status status="PASS" start="2026-01-08T15:07:36.320680" elapsed="8.281935"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="1" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Tests" id="s1" pass="1" fail="1" skip="0">Tests</stat>
-<stat name="01 HerekuApp" id="s1-s1" pass="1" fail="1" skip="0">Tests.01 HerekuApp</stat>
-<stat name="01 Basis" id="s1-s1-s1" pass="1" fail="1" skip="0">Tests.01 HerekuApp.01 Basis</stat>
-<stat name="02 Data" id="s1-s1-s1-s1" pass="1" fail="1" skip="0">Tests.01 HerekuApp.01 Basis.02 Data</stat>
+<stat name="Tests" id="s1" pass="2" fail="0" skip="0">Tests</stat>
+<stat name="01 HerekuApp" id="s1-s1" pass="2" fail="0" skip="0">Tests.01 HerekuApp</stat>
+<stat name="01 Basis" id="s1-s1-s1" pass="2" fail="0" skip="0">Tests.01 HerekuApp.01 Basis</stat>
+<stat name="02 Data" id="s1-s1-s1-s1" pass="2" fail="0" skip="0">Tests.01 HerekuApp.01 Basis.02 Data</stat>
 </suite>
 </statistics>
 <errors>

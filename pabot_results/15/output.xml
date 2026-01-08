@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-08T14:51:54.526968" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-08T15:07:56.867750" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="02 Geavanceerd" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd">
 <suite id="s1-s1-s1-s1" name="16 Api Complex" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd/16_api_complex.robot">
 <test id="s1-s1-s1-s1-t1" name="Scenario 16: Volledige API Lifecycle" line="7">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2026-01-08T14:51:54.816758" level="INFO">Creating Session using : alias=mysession, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2026-01-08T15:07:57.087981" level="INFO">Creating Session using : alias=mysession, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>mysession</arg>
 <arg>https://jsonplaceholder.typicode.com</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2026-01-08T14:51:54.816423" elapsed="0.000623"/>
+<status status="PASS" start="2026-01-08T15:07:57.087640" elapsed="0.000627"/>
 </kw>
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2026-01-08T14:51:54.818188" level="INFO">${body} = {'title': 'FerryTest', 'body': 'Testen is leuk', 'userId': '1'}</msg>
+<msg time="2026-01-08T15:07:57.089291" level="INFO">${body} = {'title': 'FerryTest', 'body': 'Testen is leuk', 'userId': '1'}</msg>
 <var>${body}</var>
 <arg>title=FerryTest</arg>
 <arg>body=Testen is leuk</arg>
 <arg>userId=1</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2026-01-08T14:51:54.817307" elapsed="0.000937"/>
+<status status="PASS" start="2026-01-08T15:07:57.088556" elapsed="0.000793"/>
 </kw>
 <kw name="POST On Session" owner="RequestsLibrary">
-<msg time="2026-01-08T14:51:54.901416" level="INFO">POST Request : url=https://jsonplaceholder.typicode.com/posts 
+<msg time="2026-01-08T15:07:57.243504" level="INFO">POST Request : url=https://jsonplaceholder.typicode.com/posts 
  path_url=/posts 
  headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '63', 'Content-Type': 'application/json'} 
  body=b'{"title": "FerryTest", "body": "Testen is leuk", "userId": "1"}' 
  </msg>
-<msg time="2026-01-08T14:51:54.901639" level="INFO">POST Response : url=https://jsonplaceholder.typicode.com/posts 
+<msg time="2026-01-08T15:07:57.243705" level="INFO">POST Response : url=https://jsonplaceholder.typicode.com/posts 
  status=201, reason=Created 
- headers={'Date': 'Thu, 08 Jan 2026 14:51:54 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '84', 'Connection': 'keep-alive', 'access-control-allow-credentials': 'true', 'access-control-expose-headers': 'Location', 'Cache-Control': 'no-cache', 'etag': 'W/"54-D1ssgUzOwUjRa4yrmkx2PEfWeko"', 'expires': '-1', 'location': 'https://jsonplaceholder.typicode.com/posts/101', 'nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'pragma': 'no-cache', 'report-to': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=41RnQ4kTxJ%2Bj1bwA8tnWZO4buWPPADpaPIZc7Qz%2Bo4g%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1767883914"}],"max_age":3600}', 'reporting-endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=41RnQ4kTxJ%2Bj1bwA8tnWZO4buWPPADpaPIZc7Qz%2Bo4g%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1767883914"', 'Server': 'cloudflare', 'vary': 'Origin, X-HTTP-Method-Override, Accept-Encoding', 'via': '2.0 heroku-router', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Express', 'x-ratelimit-limit': '1000', 'x-ratelimit-remaining': '999', 'x-ratelimit-reset': '1767883972', 'cf-cache-status': 'DYNAMIC', 'CF-RAY': '9bac8403e989a68b-ORD', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Thu, 08 Jan 2026 15:07:57 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '84', 'Connection': 'keep-alive', 'access-control-allow-credentials': 'true', 'access-control-expose-headers': 'Location', 'Cache-Control': 'no-cache', 'etag': 'W/"54-D1ssgUzOwUjRa4yrmkx2PEfWeko"', 'expires': '-1', 'location': 'https://jsonplaceholder.typicode.com/posts/101', 'nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'pragma': 'no-cache', 'report-to': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=QITH27iSY9jqUeU09hDr24HAuUOBRasxXvvS5gpZahA%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1767884877"}],"max_age":3600}', 'reporting-endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=QITH27iSY9jqUeU09hDr24HAuUOBRasxXvvS5gpZahA%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1767884877"', 'Server': 'cloudflare', 'vary': 'Origin, X-HTTP-Method-Override, Accept-Encoding', 'via': '2.0 heroku-router', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Express', 'x-ratelimit-limit': '1000', 'x-ratelimit-remaining': '999', 'x-ratelimit-reset': '1767884932', 'cf-cache-status': 'DYNAMIC', 'CF-RAY': '9bac9b824a4968e6-LAX', 'alt-svc': 'h3=":443"; ma=86400'} 
  body={
   "title": "FerryTest",
   "body": "Testen is leuk",
@@ -37,49 +37,49 @@
   "id": 101
 } 
  </msg>
-<msg time="2026-01-08T14:51:54.901764" level="INFO">/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+<msg time="2026-01-08T15:07:57.245288" level="INFO">/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
   warnings.warn(</msg>
-<msg time="2026-01-08T14:51:54.903452" level="INFO">${post_res} = &lt;Response [201]&gt;</msg>
+<msg time="2026-01-08T15:07:57.245574" level="INFO">${post_res} = &lt;Response [201]&gt;</msg>
 <var>${post_res}</var>
 <arg>mysession</arg>
 <arg>/posts</arg>
 <arg>json=${body}</arg>
 <doc>Sends a POST request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2026-01-08T14:51:54.818465" elapsed="0.085044"/>
+<status status="PASS" start="2026-01-08T15:07:57.089595" elapsed="0.156036"/>
 </kw>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
-<msg time="2026-01-08T14:51:54.905010" level="INFO">Argument types are:
+<msg time="2026-01-08T15:07:57.247093" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
 <arg>${post_res.status_code}</arg>
 <arg>201</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2026-01-08T14:51:54.903859" elapsed="0.001260"/>
+<status status="PASS" start="2026-01-08T15:07:57.245933" elapsed="0.001273"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-01-08T14:51:54.906321" level="INFO">${new_id} = 101</msg>
+<msg time="2026-01-08T15:07:57.248548" level="INFO">${new_id} = 101</msg>
 <var>${new_id}</var>
 <arg>${post_res.json()['id']}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2026-01-08T14:51:54.905331" elapsed="0.001035"/>
+<status status="PASS" start="2026-01-08T15:07:57.247457" elapsed="0.001144"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-08T14:51:54.906918" level="INFO">Nieuw item heeft ID: 101</msg>
+<msg time="2026-01-08T15:07:57.249242" level="INFO">Nieuw item heeft ID: 101</msg>
 <arg>Nieuw item heeft ID: ${new_id}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-08T14:51:54.906536" elapsed="0.000443"/>
+<status status="PASS" start="2026-01-08T15:07:57.248800" elapsed="0.000518"/>
 </kw>
-<msg time="2026-01-08T14:51:54.912609" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:55245</msg>
+<msg time="2026-01-08T15:07:57.254516" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:50055</msg>
 <tag>api</tag>
-<status status="PASS" start="2026-01-08T14:51:54.814904" elapsed="0.092240"/>
+<status status="PASS" start="2026-01-08T15:07:57.086343" elapsed="0.163187"/>
 </test>
-<status status="PASS" start="2026-01-08T14:51:54.581508" elapsed="0.884957"/>
+<status status="PASS" start="2026-01-08T15:07:56.897657" elapsed="0.910657"/>
 </suite>
-<status status="PASS" start="2026-01-08T14:51:54.580263" elapsed="0.892946"/>
+<status status="PASS" start="2026-01-08T15:07:56.896928" elapsed="0.915822"/>
 </suite>
-<status status="PASS" start="2026-01-08T14:51:54.578999" elapsed="0.895025"/>
+<status status="PASS" start="2026-01-08T15:07:56.896090" elapsed="0.917055"/>
 </suite>
-<status status="PASS" start="2026-01-08T14:51:54.543764" elapsed="0.930959"/>
+<status status="PASS" start="2026-01-08T15:07:56.878157" elapsed="0.935317"/>
 </suite>
 <statistics>
 <total>

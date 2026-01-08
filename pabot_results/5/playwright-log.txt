@@ -1,81 +1,45 @@
-{"level":30,"time":"2026-01-08T14:51:50.073Z","pid":3325,"hostname":"runnervmh13bl","msg":"Listening on 127.0.0.1:39903"}
-{"level":30,"time":"2026-01-08T14:51:50.091Z","pid":3325,"hostname":"runnervmh13bl","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2026-01-08T14:51:50.194Z","pid":3325,"hostname":"runnervmh13bl","msg":"Error of node method  newBrowser"}
-================= Original suppressed error =================
-browserType.launch: Target page, context or browser has been closed
-Browser logs:
-
-╔════════════════════════════════════════════════════════════════════════════════════════════════╗
-║ Looks like you launched a headed browser without having a XServer running.                     ║
-║ Set either 'headless: true' or use 'xvfb-run <your-playwright-app>' before running Playwright. ║
-║                                                                                                ║
-║ <3 Playwright Team                                                                             ║
-╚════════════════════════════════════════════════════════════════════════════════════════════════╝
-Call log:
-  - <launching> /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-7ooynN --remote-debugging-pipe --no-startup-window
-  - <launched> pid=3370
-  - [pid=3370][err] [3370:3370:0108/145150.172400:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3370][err] [3370:3370:0108/145150.172438:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3370] <gracefully close start>
-  - [pid=3370] <kill>
-  - [pid=3370] <will force kill>
-  - [pid=3370] <process did exit: exitCode=1, signal=null>
-  - [pid=3370] starting temporary directories cleanup
-  - [pid=3370] finished temporary directories cleanup
-  - [pid=3370] <gracefully close end>
-
-    at _newBrowser (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:12543:54)
-    at newBrowser (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:13065:33)
-    at PlaywrightServer.newBrowser (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:13635:34)
-    at Object.onReceiveHalfClose (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1464:25)
-    at BaseServerInterceptingCall.maybePushNextMessage (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:595:31)
-    at BaseServerInterceptingCall.handleEndEvent (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:635:14)
-    at ServerHttp2Stream.<anonymous> (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:394:18)
-=============================================================
-{"level":30,"time":"2026-01-08T14:51:50.203Z","pid":3325,"hostname":"runnervmh13bl","msg":"Start of node method takeScreenshot"}
-================= Original suppressed error =================
-Error: Tried to take screenshot, but no page was open.
-    at exists (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:11096:11)
-    at takeScreenshot (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:11152:3)
-    at PlaywrightServer.takeScreenshot (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:13635:34)
-    at Object.onReceiveHalfClose (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1464:25)
-    at BaseServerInterceptingCall.maybePushNextMessage (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:595:31)
-    at BaseServerInterceptingCall.handleEndEvent (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:635:14)
-    at ServerHttp2Stream.<anonymous> (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:394:18)
-    at ServerHttp2Stream.emit (node:events:536:35)
-    at endReadableNT (node:internal/streams/readable:1698:12)
-    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
-=============================================================
-{"level":30,"time":"2026-01-08T14:51:50.203Z","pid":3325,"hostname":"runnervmh13bl","msg":"Error of node method  takeScreenshot"}
-================= Original suppressed error =================
-Error: Browser has been closed.
-    at PlaywrightState.getActiveBrowser (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:12672:15)
-    at PlaywrightServer.getActiveBrowser (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:13622:59)
-    at PlaywrightServer.setTimeout (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:13873:57)
-    at Object.onReceiveHalfClose (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1464:25)
-    at BaseServerInterceptingCall.maybePushNextMessage (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:595:31)
-    at BaseServerInterceptingCall.handleEndEvent (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:635:14)
-    at ServerHttp2Stream.<anonymous> (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:394:18)
-    at ServerHttp2Stream.emit (node:events:536:35)
-    at endReadableNT (node:internal/streams/readable:1698:12)
-    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
-=============================================================
-{"level":30,"time":"2026-01-08T14:51:50.215Z","pid":3325,"hostname":"runnervmh13bl","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-08T14:51:50.215Z","pid":3325,"hostname":"runnervmh13bl","msg":"End of node method getBrowserCatalog"}
-================= Original suppressed error =================
-Error: Browser has been closed.
-    at PlaywrightState.getActiveBrowser (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:12672:15)
-    at PlaywrightServer.getActiveBrowser (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:13622:59)
-    at PlaywrightServer.setTimeout (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:13873:57)
-    at Object.onReceiveHalfClose (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1464:25)
-    at BaseServerInterceptingCall.maybePushNextMessage (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:595:31)
-    at BaseServerInterceptingCall.handleEndEvent (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:635:14)
-    at ServerHttp2Stream.<anonymous> (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:394:18)
-    at ServerHttp2Stream.emit (node:events:536:35)
-    at endReadableNT (node:internal/streams/readable:1698:12)
-    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
-=============================================================
-{"level":30,"time":"2026-01-08T14:51:50.221Z","pid":3325,"hostname":"runnervmh13bl","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-08T14:51:50.222Z","pid":3325,"hostname":"runnervmh13bl","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-08T14:51:50.228Z","pid":3325,"hostname":"runnervmh13bl","msg":"Start of node method closeAllBrowsers"}
-{"level":30,"time":"2026-01-08T14:51:50.228Z","pid":3325,"hostname":"runnervmh13bl","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2026-01-08T15:07:44.769Z","pid":3575,"hostname":"runnervmi13qx","msg":"Listening on 127.0.0.1:36321"}
+{"level":30,"time":"2026-01-08T15:07:44.791Z","pid":3575,"hostname":"runnervmi13qx","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-01-08T15:07:44.841Z","pid":3575,"hostname":"runnervmi13qx","msg":"Adding browser to stack: chromium, version: 143.0.7499.4"}
+{"level":30,"time":"2026-01-08T15:07:44.841Z","pid":3575,"hostname":"runnervmi13qx","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-01-08T15:07:44.841Z","pid":3575,"hostname":"runnervmi13qx","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-01-08T15:07:44.847Z","pid":3575,"hostname":"runnervmi13qx","msg":"Start of node method newContext"}
+{"level":30,"time":"2026-01-08T15:07:44.847Z","pid":3575,"hostname":"runnervmi13qx","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":true,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1280,\"height\":720}}"}
+{"level":30,"time":"2026-01-08T15:07:44.847Z","pid":3575,"hostname":"runnervmi13qx","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@e6faa24daaaff13a756948b06d3e4871\"},\"headless\":true,\"_contextStack\":[],\"id\":\"browser=fdbec8ea-fabc-4404-8796-156a6b3ebebf\"}"}
+{"level":30,"time":"2026-01-08T15:07:44.847Z","pid":3575,"hostname":"runnervmi13qx","msg":"Trace file: "}
+{"level":30,"time":"2026-01-08T15:07:44.855Z","pid":3575,"hostname":"runnervmi13qx","msg":"Setting default timeout for context context=754dc684-18b5-4ff7-89a0-47e3367dd016 to 10000"}
+{"level":30,"time":"2026-01-08T15:07:44.855Z","pid":3575,"hostname":"runnervmi13qx","msg":"Changed active context: context=754dc684-18b5-4ff7-89a0-47e3367dd016"}
+{"level":30,"time":"2026-01-08T15:07:44.855Z","pid":3575,"hostname":"runnervmi13qx","msg":"End of node method newContext"}
+{"level":30,"time":"2026-01-08T15:07:44.857Z","pid":3575,"hostname":"runnervmi13qx","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-01-08T15:07:44.858Z","pid":3575,"hostname":"runnervmi13qx","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@e6faa24daaaff13a756948b06d3e4871\"},\"headless\":true,\"_contextStack\":[{\"id\":\"context=754dc684-18b5-4ff7-89a0-47e3367dd016\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@742a629b07a51b9ecfdd2bbabc996b18\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":true,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1280,\"height\":720}},\"traceFile\":\"\"}],\"id\":\"browser=fdbec8ea-fabc-4404-8796-156a6b3ebebf\"}"}
+{"level":30,"time":"2026-01-08T15:07:44.885Z","pid":3575,"hostname":"runnervmi13qx","msg":"Video path: undefined"}
+{"level":30,"time":"2026-01-08T15:07:44.885Z","pid":3575,"hostname":"runnervmi13qx","msg":"Changed active page"}
+{"level":30,"time":"2026-01-08T15:07:45.589Z","pid":3575,"hostname":"runnervmi13qx","msg":"End of node method newPage"}
+{"level":30,"time":"2026-01-08T15:07:45.594Z","pid":3575,"hostname":"runnervmi13qx","msg":"Start of node method click"}
+{"level":30,"time":"2026-01-08T15:07:45.594Z","pid":3575,"hostname":"runnervmi13qx","msg":"Strict mode is enabled, find Locator with button >> text=Start in page."}
+{"level":30,"time":"2026-01-08T15:07:45.667Z","pid":3575,"hostname":"runnervmi13qx","msg":"End of node method click"}
+{"level":30,"time":"2026-01-08T15:07:45.670Z","pid":3575,"hostname":"runnervmi13qx","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-08T15:07:45.670Z","pid":3575,"hostname":"runnervmi13qx","msg":"Strict mode is enabled, find Locator with text=Hello World! in page."}
+{"level":30,"time":"2026-01-08T15:07:50.986Z","pid":3575,"hostname":"runnervmi13qx","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-08T15:07:50.990Z","pid":3575,"hostname":"runnervmi13qx","msg":"Start of node method getText"}
+{"level":30,"time":"2026-01-08T15:07:50.990Z","pid":3575,"hostname":"runnervmi13qx","msg":"Strict mode is enabled, find Locator with id=finish in page."}
+{"level":30,"time":"2026-01-08T15:07:51.030Z","pid":3575,"hostname":"runnervmi13qx","msg":"Retrieved text for element id=finish containing Hello World!"}
+{"level":30,"time":"2026-01-08T15:07:51.030Z","pid":3575,"hostname":"runnervmi13qx","msg":"End of node method getText"}
+{"level":30,"time":"2026-01-08T15:07:51.036Z","pid":3575,"hostname":"runnervmi13qx","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-08T15:07:51.038Z","pid":3575,"hostname":"runnervmi13qx","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-08T15:07:51.040Z","pid":3575,"hostname":"runnervmi13qx","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-08T15:07:51.041Z","pid":3575,"hostname":"runnervmi13qx","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-08T15:07:51.043Z","pid":3575,"hostname":"runnervmi13qx","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-08T15:07:51.044Z","pid":3575,"hostname":"runnervmi13qx","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-08T15:07:51.046Z","pid":3575,"hostname":"runnervmi13qx","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-08T15:07:51.047Z","pid":3575,"hostname":"runnervmi13qx","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-08T15:07:51.049Z","pid":3575,"hostname":"runnervmi13qx","msg":"Changed active context: context=754dc684-18b5-4ff7-89a0-47e3367dd016"}
+{"level":30,"time":"2026-01-08T15:07:51.049Z","pid":3575,"hostname":"runnervmi13qx","msg":"Changing current active page: page=98a6853a-e907-4ef4-9b5d-66f9541ebe22"}
+{"level":30,"time":"2026-01-08T15:07:51.049Z","pid":3575,"hostname":"runnervmi13qx","msg":"Changed active page"}
+{"level":30,"time":"2026-01-08T15:07:51.051Z","pid":3575,"hostname":"runnervmi13qx","msg":"Start of node method closeContext"}
+{"level":30,"time":"2026-01-08T15:07:51.055Z","pid":3575,"hostname":"runnervmi13qx","msg":"Removed page=a16426df-3694-45cc-827e-15f09bed1a92 from context=754dc684-18b5-4ff7-89a0-47e3367dd016 page stack"}
+{"level":30,"time":"2026-01-08T15:07:51.056Z","pid":3575,"hostname":"runnervmi13qx","msg":"End of node method closeContext"}
+{"level":30,"time":"2026-01-08T15:07:51.060Z","pid":3575,"hostname":"runnervmi13qx","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-08T15:07:51.060Z","pid":3575,"hostname":"runnervmi13qx","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-08T15:07:51.065Z","pid":3575,"hostname":"runnervmi13qx","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-01-08T15:07:51.085Z","pid":3575,"hostname":"runnervmi13qx","msg":"End of node method closeAllBrowsers"}
