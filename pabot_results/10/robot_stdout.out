@@ -1,0 +1,266 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.01 HerekuApp                                                            
+==============================================================================
+Tests.01 HerekuApp.01 Basis                                                   
+==============================================================================
+Tests.01 HerekuApp.01 Basis.11 Login Datadriven                               
+==============================================================================
+Correcte inlog                                                          
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/11_login_datadriven.robot:12
+    T:  Correcte inlog    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/11_login_datadriven.robot:7
+      Start Test-Sessie    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/common.resource:38
+      New Browser    browser=${BROWSER}    headless=${HEADLESS}
+      |  browser=${BROWSER} = browser=chromium (str)
+      |  headless=${HEADLESS} = headless=False (str)
+______________________________________________________________________________
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/11_login_datadriven.robot:12
+    T:  Correcte inlog    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/11_login_datadriven.robot:8
+      Afsluiten Test En Sessie    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/common.resource:62
+      Sluit Test En Maak Screenshot Bij Fout    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/common.resource:58
+      Run Keyword If Test Failed    Take Screenshot
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/common.resource:58
+      Take Screenshot    
+______________________________________________________________________________
+| FAIL |
+Setup failed:
+Error: browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+╔════════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Looks like you launched a headed browser without having a XServer running.                     ║
+║ Set either 'headless: true' or use 'xvfb-run <your-playwright-app>' before running Playwright. ║
+║                                                                                                ║
+║ <3 Playwright Team                                                                             ║
+╚════════════════════════════════════════════════════════════════════════════════════════════════╝
+Call log:
+  - <launching> /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
+    [ Message content over the limit has been removed. ]
+...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-KRx6Uc --remote-debugging-pipe --no-startup-window
+  - <launched> pid=3630
+  - [pid=3630][err] [3630:3630:0108/144610.490886:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3630][err] [3630:3630:0108/144610.490928:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3630] <gracefully close start>
+  - [pid=3630] <kill>
+  - [pid=3630] <will force kill>
+  - [pid=3630] <process did exit: exitCode=1, signal=null>
+  - [pid=3630] starting temporary directories cleanup
+  - [pid=3630] finished temporary directories cleanup
+  - [pid=3630] <gracefully close end>
+
+Also teardown failed:
+Error: Tried to take screenshot, but no page was open.
+------------------------------------------------------------------------------
+Foute gebruikersnaam                                                    
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/11_login_datadriven.robot:13
+    T:  Foute gebruikersnaam    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/11_login_datadriven.robot:7
+      Start Test-Sessie    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/common.resource:38
+      New Browser    browser=${BROWSER}    headless=${HEADLESS}
+      |  browser=${BROWSER} = browser=chromium (str)
+      |  headless=${HEADLESS} = headless=False (str)
+______________________________________________________________________________
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/11_login_datadriven.robot:13
+    T:  Foute gebruikersnaam    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/11_login_datadriven.robot:8
+      Afsluiten Test En Sessie    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/common.resource:62
+      Sluit Test En Maak Screenshot Bij Fout    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/common.resource:58
+      Run Keyword If Test Failed    Take Screenshot
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/common.resource:58
+      Take Screenshot    
+______________________________________________________________________________
+| FAIL |
+Setup failed:
+Error: browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+╔════════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Looks like you launched a headed browser without having a XServer running.                     ║
+║ Set either 'headless: true' or use 'xvfb-run <your-playwright-app>' before running Playwright. ║
+║                                                                                                ║
+║ <3 Playwright Team                                                                             ║
+╚════════════════════════════════════════════════════════════════════════════════════════════════╝
+Call log:
+  - <launching> /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
+    [ Message content over the limit has been removed. ]
+...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-tfY3P1 --remote-debugging-pipe --no-startup-window
+  - <launched> pid=3656
+  - [pid=3656][err] [3656:3656:0108/144610.624752:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3656][err] [3656:3656:0108/144610.624794:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3656] <gracefully close start>
+  - [pid=3656] <kill>
+  - [pid=3656] <will force kill>
+  - [pid=3656] <process did exit: exitCode=1, signal=null>
+  - [pid=3656] starting temporary directories cleanup
+  - [pid=3656] finished temporary directories cleanup
+  - [pid=3656] <gracefully close end>
+
+Also teardown failed:
+Error: Tried to take screenshot, but no page was open.
+------------------------------------------------------------------------------
+Fout wachtwoord                                                         
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/11_login_datadriven.robot:14
+    T:  Fout wachtwoord    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/11_login_datadriven.robot:7
+      Start Test-Sessie    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/common.resource:38
+      New Browser    browser=${BROWSER}    headless=${HEADLESS}
+      |  browser=${BROWSER} = browser=chromium (str)
+      |  headless=${HEADLESS} = headless=False (str)
+______________________________________________________________________________
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/11_login_datadriven.robot:14
+    T:  Fout wachtwoord    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/11_login_datadriven.robot:8
+      Afsluiten Test En Sessie    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/common.resource:62
+      Sluit Test En Maak Screenshot Bij Fout    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/common.resource:58
+      Run Keyword If Test Failed    Take Screenshot
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/common.resource:58
+      Take Screenshot    
+______________________________________________________________________________
+| FAIL |
+Setup failed:
+Error: browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+╔════════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Looks like you launched a headed browser without having a XServer running.                     ║
+║ Set either 'headless: true' or use 'xvfb-run <your-playwright-app>' before running Playwright. ║
+║                                                                                                ║
+║ <3 Playwright Team                                                                             ║
+╚════════════════════════════════════════════════════════════════════════════════════════════════╝
+Call log:
+  - <launching> /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
+    [ Message content over the limit has been removed. ]
+...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-Oant4f --remote-debugging-pipe --no-startup-window
+  - <launched> pid=3686
+  - [pid=3686][err] [3686:3686:0108/144610.762046:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3686][err] [3686:3686:0108/144610.762345:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3686] <gracefully close start>
+  - [pid=3686] <kill>
+  - [pid=3686] <will force kill>
+  - [pid=3686] <process did exit: exitCode=1, signal=null>
+  - [pid=3686] starting temporary directories cleanup
+  - [pid=3686] finished temporary directories cleanup
+  - [pid=3686] <gracefully close end>
+
+Also teardown failed:
+Error: Tried to take screenshot, but no page was open.
+------------------------------------------------------------------------------
+Lege velden                                                             
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/11_login_datadriven.robot:15
+    T:  Lege velden    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/11_login_datadriven.robot:7
+      Start Test-Sessie    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/common.resource:38
+      New Browser    browser=${BROWSER}    headless=${HEADLESS}
+      |  browser=${BROWSER} = browser=chromium (str)
+      |  headless=${HEADLESS} = headless=False (str)
+______________________________________________________________________________
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/11_login_datadriven.robot:15
+    T:  Lege velden    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/11_login_datadriven.robot:8
+      Afsluiten Test En Sessie    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/common.resource:62
+      Sluit Test En Maak Screenshot Bij Fout    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/common.resource:58
+      Run Keyword If Test Failed    Take Screenshot
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/common.resource:58
+      Take Screenshot    
+______________________________________________________________________________
+| FAIL |
+Setup failed:
+Error: browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+╔════════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Looks like you launched a headed browser without having a XServer running.                     ║
+║ Set either 'headless: true' or use 'xvfb-run <your-playwright-app>' before running Playwright. ║
+║                                                                                                ║
+║ <3 Playwright Team                                                                             ║
+╚════════════════════════════════════════════════════════════════════════════════════════════════╝
+Call log:
+  - <launching> /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
+    [ Message content over the limit has been removed. ]
+...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-XKPBHO --remote-debugging-pipe --no-startup-window
+  - <launched> pid=3724
+  - [pid=3724][err] [3724:3724:0108/144610.893139:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3724][err] [3724:3724:0108/144610.893178:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3724] <gracefully close start>
+  - [pid=3724] <kill>
+  - [pid=3724] <will force kill>
+  - [pid=3724] <process did exit: exitCode=1, signal=null>
+  - [pid=3724] starting temporary directories cleanup
+  - [pid=3724] finished temporary directories cleanup
+  - [pid=3724] <gracefully close end>
+
+Also teardown failed:
+Error: Tried to take screenshot, but no page was open.
+------------------------------------------------------------------------------
+Tests.01 HerekuApp.01 Basis.11 Login Datadriven                       | FAIL |
+4 tests, 0 passed, 4 failed
+==============================================================================
+Tests.01 HerekuApp.01 Basis                                           | FAIL |
+4 tests, 0 passed, 4 failed
+==============================================================================
+Tests.01 HerekuApp                                                    | FAIL |
+4 tests, 0 passed, 4 failed
+==============================================================================
+Tests                                                                 | FAIL |
+4 tests, 0 passed, 4 failed
+==============================================================================
+Output:  /home/runner/work/AP_RF/AP_RF/results/pabot_results/10/output.xml

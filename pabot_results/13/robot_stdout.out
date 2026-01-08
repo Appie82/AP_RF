@@ -1,0 +1,81 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.01 HerekuApp                                                            
+==============================================================================
+Tests.01 HerekuApp.02 Geavanceerd                                             
+==============================================================================
+Tests.01 HerekuApp.02 Geavanceerd.14 Product Search                           
+==============================================================================
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd/14_product_search.robot:5
+      New Browser    browser=${BROWSER}    headless=${HEADLESS}
+      |  browser=${BROWSER} = browser=chromium (str)
+      |  headless=${HEADLESS} = headless=False (str)
+______________________________________________________________________________
+Scenario 14: Data Driven Product Search                               | FAIL |
+Parent suite setup failed:
+Error: browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+╔════════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Looks like you launched a headed browser without having a XServer running.                     ║
+║ Set either 'headless: true' or use 'xvfb-run <your-playwright-app>' before running Playwright. ║
+║                                                                                                ║
+║ <3 Playwright Team                                                                             ║
+╚════════════════════════════════════════════════════════════════════════════════════════════════╝
+Call log:
+  - <launching> /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
+    [ Message content over the limit has been removed. ]
+...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-fMl5Oq --remote-debugging-pipe --no-startup-window
+  - <launched> pid=3820
+  - [pid=3820][err] [3820:3820:0108/144612.170087:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3820][err] [3820:3820:0108/144612.170136:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3820] <gracefully close start>
+  - [pid=3820] <kill>
+  - [pid=3820] <will force kill>
+  - [pid=3820] <process did exit: exitCode=1, signal=null>
+  - [pid=3820] starting temporary directories cleanup
+  - [pid=3820] finished temporary directories cleanup
+  - [pid=3820] <gracefully close end>
+------------------------------------------------------------------------------
+Tests.01 HerekuApp.02 Geavanceerd.14 Product Search                   | FAIL |
+Suite setup failed:
+Error: browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+╔════════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Looks like you launched a headed browser without having a XServer running.                     ║
+║ Set either 'headless: true' or use 'xvfb-run <your-playwright-app>' before running Playwright. ║
+║                                                                                                ║
+║ <3 Playwright Team                                                                             ║
+╚════════════════════════════════════════════════════════════════════════════════════════════════╝
+Call log:
+  - <launching> /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
+    [ Message content over the limit has been removed. ]
+...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-fMl5Oq --remote-debugging-pipe --no-startup-window
+  - <launched> pid=3820
+  - [pid=3820][err] [3820:3820:0108/144612.170087:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3820][err] [3820:3820:0108/144612.170136:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3820] <gracefully close start>
+  - [pid=3820] <kill>
+  - [pid=3820] <will force kill>
+  - [pid=3820] <process did exit: exitCode=1, signal=null>
+  - [pid=3820] starting temporary directories cleanup
+  - [pid=3820] finished temporary directories cleanup
+  - [pid=3820] <gracefully close end>
+
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests.01 HerekuApp.02 Geavanceerd                                     | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests.01 HerekuApp                                                    | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  /home/runner/work/AP_RF/AP_RF/results/pabot_results/13/output.xml

@@ -1,0 +1,78 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.01 HerekuApp                                                            
+==============================================================================
+Tests.01 HerekuApp.01 Basis                                                   
+==============================================================================
+Tests.01 HerekuApp.01 Basis.02 Data :: Data-tests die gebruik maken van de ...
+==============================================================================
+Wachten Op Dynamische Content                                           
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/02_data.robot:10
+    T:  Wachten Op Dynamische Content    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/02_data.robot:12
+      New Browser    browser=${BROWSER}    headless=${HEADLESS}
+      |  browser=${BROWSER} = browser=chromium (str)
+      |  headless=${HEADLESS} = headless=False (str)
+______________________________________________________________________________
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/02_data.robot:10
+    T:  Wachten Op Dynamische Content    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/02_data.robot:7
+      Sluit Test En Maak Screenshot Bij Fout    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/common.resource:58
+      Run Keyword If Test Failed    Take Screenshot
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/common.resource:58
+      Take Screenshot    
+______________________________________________________________________________
+| FAIL |
+Error: browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+╔════════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Looks like you launched a headed browser without having a XServer running.                     ║
+║ Set either 'headless: true' or use 'xvfb-run <your-playwright-app>' before running Playwright. ║
+║                                                                                                ║
+║ <3 Playwright Team                                                                             ║
+╚════════════════════════════════════════════════════════════════════════════════════════════════╝
+Call log:
+  - <launching> /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
+    [ Message content over the limit has been removed. ]
+...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-9cgmnN --remote-debugging-pipe --no-startup-window
+  - <launched> pid=3093
+  - [pid=3093][err] [3093:3093:0108/144604.686296:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3093][err] [3093:3093:0108/144604.686341:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3093] <gracefully close start>
+  - [pid=3093] <kill>
+  - [pid=3093] <will force kill>
+  - [pid=3093] <process did exit: exitCode=1, signal=null>
+  - [pid=3093] starting temporary directories cleanup
+  - [pid=3093] finished temporary directories cleanup
+  - [pid=3093] <gracefully close end>
+
+Also teardown failed:
+Error: Tried to take screenshot, but no page was open.
+------------------------------------------------------------------------------
+Zoek Waarde In Dynamische Tabel                                       | PASS |
+------------------------------------------------------------------------------
+Tests.01 HerekuApp.01 Basis.02 Data :: Data-tests die gebruik make... | FAIL |
+2 tests, 1 passed, 1 failed
+==============================================================================
+Tests.01 HerekuApp.01 Basis                                           | FAIL |
+2 tests, 1 passed, 1 failed
+==============================================================================
+Tests.01 HerekuApp                                                    | FAIL |
+2 tests, 1 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+2 tests, 1 passed, 1 failed
+==============================================================================
+Output:  /home/runner/work/AP_RF/AP_RF/results/pabot_results/1/output.xml

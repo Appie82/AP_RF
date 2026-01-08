@@ -1,0 +1,140 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.02 SauceDemo                                                            
+==============================================================================
+Tests.02 SauceDemo.01 Shop Tests                                              
+==============================================================================
+Scenario 21: Succesvolle Inlog en Product Check :: Controleert of ...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/02_SauceDemo/01_shop_tests.robot:7
+    T:  Scenario 21: Succesvolle Inlog en Product Check    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/02_SauceDemo/01_shop_tests.robot:3
+      Start Test-Sessie    ${SAUCE_URL}
+      |  ${SAUCE_URL} = https://www.saucedemo.com (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/common.resource:38
+      New Browser    browser=${BROWSER}    headless=${HEADLESS}
+      |  browser=${BROWSER} = browser=chromium (str)
+      |  headless=${HEADLESS} = headless=False (str)
+______________________________________________________________________________
+| FAIL |
+Setup failed:
+Error: browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+╔════════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Looks like you launched a headed browser without having a XServer running.                     ║
+║ Set either 'headless: true' or use 'xvfb-run <your-playwright-app>' before running Playwright. ║
+║                                                                                                ║
+║ <3 Playwright Team                                                                             ║
+╚════════════════════════════════════════════════════════════════════════════════════════════════╝
+Call log:
+  - <launching> /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
+    [ Message content over the limit has been removed. ]
+...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-5E8scL --remote-debugging-pipe --no-startup-window
+  - <launched> pid=4059
+  - [pid=4059][err] [4059:4059:0108/144615.285371:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=4059][err] [4059:4059:0108/144615.285404:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=4059] <gracefully close start>
+  - [pid=4059] <kill>
+  - [pid=4059] <will force kill>
+  - [pid=4059] <process did exit: exitCode=1, signal=null>
+  - [pid=4059] starting temporary directories cleanup
+  - [pid=4059] finished temporary directories cleanup
+  - [pid=4059] <gracefully close end>
+------------------------------------------------------------------------------
+Scenario 22: Sorteren op Prijs en Validatie :: Controleert of de s...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/02_SauceDemo/01_shop_tests.robot:16
+    T:  Scenario 22: Sorteren op Prijs en Validatie    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/02_SauceDemo/01_shop_tests.robot:3
+      Start Test-Sessie    ${SAUCE_URL}
+      |  ${SAUCE_URL} = https://www.saucedemo.com (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/common.resource:38
+      New Browser    browser=${BROWSER}    headless=${HEADLESS}
+      |  browser=${BROWSER} = browser=chromium (str)
+      |  headless=${HEADLESS} = headless=False (str)
+______________________________________________________________________________
+| FAIL |
+Setup failed:
+Error: browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+╔════════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Looks like you launched a headed browser without having a XServer running.                     ║
+║ Set either 'headless: true' or use 'xvfb-run <your-playwright-app>' before running Playwright. ║
+║                                                                                                ║
+║ <3 Playwright Team                                                                             ║
+╚════════════════════════════════════════════════════════════════════════════════════════════════╝
+Call log:
+  - <launching> /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
+    [ Message content over the limit has been removed. ]
+...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-OKCEYD --remote-debugging-pipe --no-startup-window
+  - <launched> pid=4081
+  - [pid=4081][err] [4081:4081:0108/144615.390822:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=4081][err] [4081:4081:0108/144615.390862:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=4081] <gracefully close start>
+  - [pid=4081] <kill>
+  - [pid=4081] <will force kill>
+  - [pid=4081] <process did exit: exitCode=1, signal=null>
+  - [pid=4081] starting temporary directories cleanup
+  - [pid=4081] finished temporary directories cleanup
+  - [pid=4081] <gracefully close end>
+------------------------------------------------------------------------------
+Scenario 23: Volledige Checkout Flow (Master) :: Doorloopt het hel...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/02_SauceDemo/01_shop_tests.robot:39
+    T:  Scenario 23: Volledige Checkout Flow (Master)    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/02_SauceDemo/01_shop_tests.robot:3
+      Start Test-Sessie    ${SAUCE_URL}
+      |  ${SAUCE_URL} = https://www.saucedemo.com (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/common.resource:38
+      New Browser    browser=${BROWSER}    headless=${HEADLESS}
+      |  browser=${BROWSER} = browser=chromium (str)
+      |  headless=${HEADLESS} = headless=False (str)
+______________________________________________________________________________
+| FAIL |
+Setup failed:
+Error: browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+╔════════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Looks like you launched a headed browser without having a XServer running.                     ║
+║ Set either 'headless: true' or use 'xvfb-run <your-playwright-app>' before running Playwright. ║
+║                                                                                                ║
+║ <3 Playwright Team                                                                             ║
+╚════════════════════════════════════════════════════════════════════════════════════════════════╝
+Call log:
+  - <launching> /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
+    [ Message content over the limit has been removed. ]
+...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-DHYeTR --remote-debugging-pipe --no-startup-window
+  - <launched> pid=4102
+  - [pid=4102][err] [4102:4102:0108/144615.479890:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=4102][err] [4102:4102:0108/144615.479919:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=4102] <gracefully close start>
+  - [pid=4102] <kill>
+  - [pid=4102] <will force kill>
+  - [pid=4102] <process did exit: exitCode=1, signal=null>
+  - [pid=4102] starting temporary directories cleanup
+  - [pid=4102] finished temporary directories cleanup
+  - [pid=4102] <gracefully close end>
+------------------------------------------------------------------------------
+Tests.02 SauceDemo.01 Shop Tests                                      | FAIL |
+3 tests, 0 passed, 3 failed
+==============================================================================
+Tests.02 SauceDemo                                                    | FAIL |
+3 tests, 0 passed, 3 failed
+==============================================================================
+Tests                                                                 | FAIL |
+3 tests, 0 passed, 3 failed
+==============================================================================
+Output:  /home/runner/work/AP_RF/AP_RF/results/pabot_results/20/output.xml
