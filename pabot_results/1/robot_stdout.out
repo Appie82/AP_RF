@@ -46,17 +46,17 @@ Browser logs:
 Call log:
   - <launching> /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
     [ Message content over the limit has been removed. ]
-...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-9cgmnN --remote-debugging-pipe --no-startup-window
-  - <launched> pid=3093
-  - [pid=3093][err] [3093:3093:0108/144604.686296:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3093][err] [3093:3093:0108/144604.686341:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3093] <gracefully close start>
-  - [pid=3093] <kill>
-  - [pid=3093] <will force kill>
-  - [pid=3093] <process did exit: exitCode=1, signal=null>
-  - [pid=3093] starting temporary directories cleanup
-  - [pid=3093] finished temporary directories cleanup
-  - [pid=3093] <gracefully close end>
+...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-IDozSw --remote-debugging-pipe --no-startup-window
+  - <launched> pid=3086
+  - [pid=3086][err] [3086:3086:0108/145147.661243:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3086][err] [3086:3086:0108/145147.661279:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3086] <gracefully close start>
+  - [pid=3086] <kill>
+  - [pid=3086] <will force kill>
+  - [pid=3086] <process did exit: exitCode=1, signal=null>
+  - [pid=3086] starting temporary directories cleanup
+  - [pid=3086] finished temporary directories cleanup
+  - [pid=3086] <gracefully close end>
 
 Also teardown failed:
 Error: Tried to take screenshot, but no page was open.

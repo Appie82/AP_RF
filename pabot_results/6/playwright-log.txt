@@ -1,6 +1,6 @@
-{"level":30,"time":"2026-01-08T14:46:07.558Z","pid":3332,"hostname":"runnervmh13bl","msg":"Listening on 127.0.0.1:54721"}
-{"level":30,"time":"2026-01-08T14:46:07.658Z","pid":3332,"hostname":"runnervmh13bl","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2026-01-08T14:46:07.776Z","pid":3332,"hostname":"runnervmh13bl","msg":"Error of node method  newBrowser"}
+{"level":30,"time":"2026-01-08T14:51:50.727Z","pid":3395,"hostname":"runnervmh13bl","msg":"Listening on 127.0.0.1:54745"}
+{"level":30,"time":"2026-01-08T14:51:50.925Z","pid":3395,"hostname":"runnervmh13bl","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-01-08T14:51:51.041Z","pid":3395,"hostname":"runnervmh13bl","msg":"Error of node method  newBrowser"}
 ================= Original suppressed error =================
 browserType.launch: Target page, context or browser has been closed
 Browser logs:
@@ -12,17 +12,17 @@ Browser logs:
 ║ <3 Playwright Team                                                                             ║
 ╚════════════════════════════════════════════════════════════════════════════════════════════════╝
 Call log:
-  - <launching> /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-pVSMi1 --remote-debugging-pipe --no-startup-window
-  - <launched> pid=3372
-  - [pid=3372][err] [3372:3372:0108/144607.754492:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3372][err] [3372:3372:0108/144607.754535:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3372] <gracefully close start>
-  - [pid=3372] <kill>
-  - [pid=3372] <will force kill>
-  - [pid=3372] <process did exit: exitCode=1, signal=null>
-  - [pid=3372] starting temporary directories cleanup
-  - [pid=3372] finished temporary directories cleanup
-  - [pid=3372] <gracefully close end>
+  - <launching> /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-vYKmEy --remote-debugging-pipe --no-startup-window
+  - <launched> pid=3428
+  - [pid=3428][err] [3428:3428:0108/145151.022752:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3428][err] [3428:3428:0108/145151.023409:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3428] <gracefully close start>
+  - [pid=3428] <kill>
+  - [pid=3428] <will force kill>
+  - [pid=3428] <process did exit: exitCode=1, signal=null>
+  - [pid=3428] starting temporary directories cleanup
+  - [pid=3428] finished temporary directories cleanup
+  - [pid=3428] <gracefully close end>
 
     at _newBrowser (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:12543:54)
     at newBrowser (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:13065:33)
@@ -32,7 +32,7 @@ Call log:
     at BaseServerInterceptingCall.handleEndEvent (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:635:14)
     at ServerHttp2Stream.<anonymous> (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:394:18)
 =============================================================
-{"level":30,"time":"2026-01-08T14:46:07.782Z","pid":3332,"hostname":"runnervmh13bl","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-01-08T14:51:51.049Z","pid":3395,"hostname":"runnervmh13bl","msg":"Start of node method takeScreenshot"}
 ================= Original suppressed error =================
 Error: Tried to take screenshot, but no page was open.
     at exists (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:11096:11)
@@ -46,7 +46,7 @@ Error: Tried to take screenshot, but no page was open.
     at endReadableNT (node:internal/streams/readable:1698:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 =============================================================
-{"level":30,"time":"2026-01-08T14:46:07.783Z","pid":3332,"hostname":"runnervmh13bl","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2026-01-08T14:51:51.049Z","pid":3395,"hostname":"runnervmh13bl","msg":"Error of node method  takeScreenshot"}
 ================= Original suppressed error =================
 Error: Browser has been closed.
     at PlaywrightState.getActiveBrowser (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:12672:15)
@@ -60,12 +60,11 @@ Error: Browser has been closed.
     at endReadableNT (node:internal/streams/readable:1698:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 =============================================================
-{"level":30,"time":"2026-01-08T14:46:07.796Z","pid":3332,"hostname":"runnervmh13bl","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-08T14:46:07.796Z","pid":3332,"hostname":"runnervmh13bl","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-08T14:46:07.799Z","pid":3332,"hostname":"runnervmh13bl","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-08T14:46:07.799Z","pid":3332,"hostname":"runnervmh13bl","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-08T14:46:07.804Z","pid":3332,"hostname":"runnervmh13bl","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2026-01-08T14:46:07.901Z","pid":3332,"hostname":"runnervmh13bl","msg":"Error of node method  newBrowser"}
+{"level":30,"time":"2026-01-08T14:51:51.062Z","pid":3395,"hostname":"runnervmh13bl","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-08T14:51:51.063Z","pid":3395,"hostname":"runnervmh13bl","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-08T14:51:51.066Z","pid":3395,"hostname":"runnervmh13bl","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-08T14:51:51.066Z","pid":3395,"hostname":"runnervmh13bl","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-08T14:51:51.071Z","pid":3395,"hostname":"runnervmh13bl","msg":"Start of node method newBrowser"}
 ================= Original suppressed error =================
 browserType.launch: Target page, context or browser has been closed
 Browser logs:
@@ -77,17 +76,17 @@ Browser logs:
 ║ <3 Playwright Team                                                                             ║
 ╚════════════════════════════════════════════════════════════════════════════════════════════════╝
 Call log:
-  - <launching> /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-OcimX0 --remote-debugging-pipe --no-startup-window
-  - <launched> pid=3414
-  - [pid=3414][err] [3414:3414:0108/144607.888825:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3414][err] [3414:3414:0108/144607.888863:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3414] <gracefully close start>
-  - [pid=3414] <kill>
-  - [pid=3414] <will force kill>
-  - [pid=3414] <process did exit: exitCode=1, signal=null>
-  - [pid=3414] starting temporary directories cleanup
-  - [pid=3414] finished temporary directories cleanup
-  - [pid=3414] <gracefully close end>
+  - <launching> /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-2fR6rg --remote-debugging-pipe --no-startup-window
+  - <launched> pid=3463
+  - [pid=3463][err] [3463:3463:0108/145151.147990:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3463][err] [3463:3463:0108/145151.148027:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3463] <gracefully close start>
+  - [pid=3463] <kill>
+  - [pid=3463] <will force kill>
+  - [pid=3463] <process did exit: exitCode=1, signal=null>
+  - [pid=3463] starting temporary directories cleanup
+  - [pid=3463] finished temporary directories cleanup
+  - [pid=3463] <gracefully close end>
 
     at _newBrowser (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:12543:54)
     at newBrowser (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:13065:33)
@@ -97,7 +96,8 @@ Call log:
     at BaseServerInterceptingCall.handleEndEvent (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:635:14)
     at ServerHttp2Stream.<anonymous> (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:394:18)
 =============================================================
-{"level":30,"time":"2026-01-08T14:46:07.904Z","pid":3332,"hostname":"runnervmh13bl","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-01-08T14:51:51.170Z","pid":3395,"hostname":"runnervmh13bl","msg":"Error of node method  newBrowser"}
+{"level":30,"time":"2026-01-08T14:51:51.176Z","pid":3395,"hostname":"runnervmh13bl","msg":"Start of node method takeScreenshot"}
 ================= Original suppressed error =================
 Error: Tried to take screenshot, but no page was open.
     at exists (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:11096:11)
@@ -111,7 +111,7 @@ Error: Tried to take screenshot, but no page was open.
     at endReadableNT (node:internal/streams/readable:1698:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 =============================================================
-{"level":30,"time":"2026-01-08T14:46:07.905Z","pid":3332,"hostname":"runnervmh13bl","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2026-01-08T14:51:51.176Z","pid":3395,"hostname":"runnervmh13bl","msg":"Error of node method  takeScreenshot"}
 ================= Original suppressed error =================
 Error: Browser has been closed.
     at PlaywrightState.getActiveBrowser (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:12672:15)
@@ -125,12 +125,12 @@ Error: Browser has been closed.
     at endReadableNT (node:internal/streams/readable:1698:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 =============================================================
-{"level":30,"time":"2026-01-08T14:46:07.911Z","pid":3332,"hostname":"runnervmh13bl","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-08T14:46:07.911Z","pid":3332,"hostname":"runnervmh13bl","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-08T14:46:07.913Z","pid":3332,"hostname":"runnervmh13bl","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-08T14:46:07.914Z","pid":3332,"hostname":"runnervmh13bl","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-08T14:46:07.917Z","pid":3332,"hostname":"runnervmh13bl","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2026-01-08T14:46:08.001Z","pid":3332,"hostname":"runnervmh13bl","msg":"Error of node method  newBrowser"}
+{"level":30,"time":"2026-01-08T14:51:51.186Z","pid":3395,"hostname":"runnervmh13bl","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-08T14:51:51.186Z","pid":3395,"hostname":"runnervmh13bl","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-08T14:51:51.189Z","pid":3395,"hostname":"runnervmh13bl","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-08T14:51:51.189Z","pid":3395,"hostname":"runnervmh13bl","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-08T14:51:51.194Z","pid":3395,"hostname":"runnervmh13bl","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-01-08T14:51:51.270Z","pid":3395,"hostname":"runnervmh13bl","msg":"Error of node method  newBrowser"}
 ================= Original suppressed error =================
 browserType.launch: Target page, context or browser has been closed
 Browser logs:
@@ -142,17 +142,17 @@ Browser logs:
 ║ <3 Playwright Team                                                                             ║
 ╚════════════════════════════════════════════════════════════════════════════════════════════════╝
 Call log:
-  - <launching> /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-FQk0OH --remote-debugging-pipe --no-startup-window
-  - <launched> pid=3436
-  - [pid=3436][err] [3436:3436:0108/144607.989136:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3436][err] [3436:3436:0108/144607.989177:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3436] <gracefully close start>
-  - [pid=3436] <kill>
-  - [pid=3436] <will force kill>
-  - [pid=3436] <process did exit: exitCode=1, signal=null>
-  - [pid=3436] starting temporary directories cleanup
-  - [pid=3436] finished temporary directories cleanup
-  - [pid=3436] <gracefully close end>
+  - <launching> /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-qe8eeh --remote-debugging-pipe --no-startup-window
+  - <launched> pid=3488
+  - [pid=3488][err] [3488:3488:0108/145151.258316:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3488][err] [3488:3488:0108/145151.258349:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3488] <gracefully close start>
+  - [pid=3488] <kill>
+  - [pid=3488] <will force kill>
+  - [pid=3488] <process did exit: exitCode=1, signal=null>
+  - [pid=3488] starting temporary directories cleanup
+  - [pid=3488] finished temporary directories cleanup
+  - [pid=3488] <gracefully close end>
 
     at _newBrowser (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:12543:54)
     at newBrowser (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:13065:33)
@@ -162,7 +162,7 @@ Call log:
     at BaseServerInterceptingCall.handleEndEvent (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:635:14)
     at ServerHttp2Stream.<anonymous> (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:394:18)
 =============================================================
-{"level":30,"time":"2026-01-08T14:46:08.005Z","pid":3332,"hostname":"runnervmh13bl","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-01-08T14:51:51.275Z","pid":3395,"hostname":"runnervmh13bl","msg":"Start of node method takeScreenshot"}
 ================= Original suppressed error =================
 Error: Tried to take screenshot, but no page was open.
     at exists (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:11096:11)
@@ -176,7 +176,7 @@ Error: Tried to take screenshot, but no page was open.
     at endReadableNT (node:internal/streams/readable:1698:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 =============================================================
-{"level":30,"time":"2026-01-08T14:46:08.005Z","pid":3332,"hostname":"runnervmh13bl","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2026-01-08T14:51:51.275Z","pid":3395,"hostname":"runnervmh13bl","msg":"Error of node method  takeScreenshot"}
 ================= Original suppressed error =================
 Error: Browser has been closed.
     at PlaywrightState.getActiveBrowser (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:12672:15)
@@ -190,8 +190,8 @@ Error: Browser has been closed.
     at endReadableNT (node:internal/streams/readable:1698:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 =============================================================
-{"level":30,"time":"2026-01-08T14:46:08.013Z","pid":3332,"hostname":"runnervmh13bl","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-08T14:46:08.013Z","pid":3332,"hostname":"runnervmh13bl","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-08T14:51:51.285Z","pid":3395,"hostname":"runnervmh13bl","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-08T14:51:51.285Z","pid":3395,"hostname":"runnervmh13bl","msg":"End of node method getBrowserCatalog"}
 ================= Original suppressed error =================
 Error: Browser has been closed.
     at PlaywrightState.getActiveBrowser (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:12672:15)
@@ -205,7 +205,7 @@ Error: Browser has been closed.
     at endReadableNT (node:internal/streams/readable:1698:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 =============================================================
-{"level":30,"time":"2026-01-08T14:46:08.017Z","pid":3332,"hostname":"runnervmh13bl","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-08T14:46:08.017Z","pid":3332,"hostname":"runnervmh13bl","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-08T14:46:08.021Z","pid":3332,"hostname":"runnervmh13bl","msg":"Start of node method closeAllBrowsers"}
-{"level":30,"time":"2026-01-08T14:46:08.021Z","pid":3332,"hostname":"runnervmh13bl","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2026-01-08T14:51:51.291Z","pid":3395,"hostname":"runnervmh13bl","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-08T14:51:51.291Z","pid":3395,"hostname":"runnervmh13bl","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-08T14:51:51.298Z","pid":3395,"hostname":"runnervmh13bl","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-01-08T14:51:51.298Z","pid":3395,"hostname":"runnervmh13bl","msg":"End of node method closeAllBrowsers"}

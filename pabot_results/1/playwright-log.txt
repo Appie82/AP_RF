@@ -1,6 +1,6 @@
-{"level":30,"time":"2026-01-08T14:46:04.572Z","pid":3036,"hostname":"runnervmh13bl","msg":"Listening on 127.0.0.1:41409"}
-{"level":30,"time":"2026-01-08T14:46:04.594Z","pid":3036,"hostname":"runnervmh13bl","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2026-01-08T14:46:04.715Z","pid":3036,"hostname":"runnervmh13bl","msg":"Error of node method  newBrowser"}
+{"level":30,"time":"2026-01-08T14:51:47.496Z","pid":3041,"hostname":"runnervmh13bl","msg":"Listening on 127.0.0.1:55873"}
+{"level":30,"time":"2026-01-08T14:51:47.562Z","pid":3041,"hostname":"runnervmh13bl","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-01-08T14:51:47.718Z","pid":3041,"hostname":"runnervmh13bl","msg":"Error of node method  newBrowser"}
 ================= Original suppressed error =================
 browserType.launch: Target page, context or browser has been closed
 Browser logs:
@@ -12,17 +12,17 @@ Browser logs:
 ║ <3 Playwright Team                                                                             ║
 ╚════════════════════════════════════════════════════════════════════════════════════════════════╝
 Call log:
-  - <launching> /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-9cgmnN --remote-debugging-pipe --no-startup-window
-  - <launched> pid=3093
-  - [pid=3093][err] [3093:3093:0108/144604.686296:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3093][err] [3093:3093:0108/144604.686341:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3093] <gracefully close start>
-  - [pid=3093] <kill>
-  - [pid=3093] <will force kill>
-  - [pid=3093] <process did exit: exitCode=1, signal=null>
-  - [pid=3093] starting temporary directories cleanup
-  - [pid=3093] finished temporary directories cleanup
-  - [pid=3093] <gracefully close end>
+  - <launching> /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-IDozSw --remote-debugging-pipe --no-startup-window
+  - <launched> pid=3086
+  - [pid=3086][err] [3086:3086:0108/145147.661243:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3086][err] [3086:3086:0108/145147.661279:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3086] <gracefully close start>
+  - [pid=3086] <kill>
+  - [pid=3086] <will force kill>
+  - [pid=3086] <process did exit: exitCode=1, signal=null>
+  - [pid=3086] starting temporary directories cleanup
+  - [pid=3086] finished temporary directories cleanup
+  - [pid=3086] <gracefully close end>
 
     at _newBrowser (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:12543:54)
     at newBrowser (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:13065:33)
@@ -32,7 +32,7 @@ Call log:
     at BaseServerInterceptingCall.handleEndEvent (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:635:14)
     at ServerHttp2Stream.<anonymous> (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:394:18)
 =============================================================
-{"level":30,"time":"2026-01-08T14:46:04.723Z","pid":3036,"hostname":"runnervmh13bl","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-01-08T14:51:47.726Z","pid":3041,"hostname":"runnervmh13bl","msg":"Start of node method takeScreenshot"}
 ================= Original suppressed error =================
 Error: Tried to take screenshot, but no page was open.
     at exists (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:11096:11)
@@ -46,7 +46,8 @@ Error: Tried to take screenshot, but no page was open.
     at endReadableNT (node:internal/streams/readable:1698:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 =============================================================
-{"level":30,"time":"2026-01-08T14:46:04.724Z","pid":3036,"hostname":"runnervmh13bl","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2026-01-08T14:51:47.726Z","pid":3041,"hostname":"runnervmh13bl","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2026-01-08T14:51:47.928Z","pid":3041,"hostname":"runnervmh13bl","msg":"Start of node method takeScreenshot"}
 ================= Original suppressed error =================
 Error: Tried to take screenshot, but no page was open.
     at exists (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:11096:11)
@@ -60,8 +61,8 @@ Error: Tried to take screenshot, but no page was open.
     at endReadableNT (node:internal/streams/readable:1698:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 =============================================================
-{"level":30,"time":"2026-01-08T14:46:04.739Z","pid":3036,"hostname":"runnervmh13bl","msg":"Start of node method takeScreenshot"}
-{"level":30,"time":"2026-01-08T14:46:04.739Z","pid":3036,"hostname":"runnervmh13bl","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2026-01-08T14:51:47.928Z","pid":3041,"hostname":"runnervmh13bl","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2026-01-08T14:51:47.932Z","pid":3041,"hostname":"runnervmh13bl","msg":"Start of node method takeScreenshot"}
 ================= Original suppressed error =================
 Error: Tried to take screenshot, but no page was open.
     at exists (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:11096:11)
@@ -75,10 +76,9 @@ Error: Tried to take screenshot, but no page was open.
     at endReadableNT (node:internal/streams/readable:1698:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 =============================================================
-{"level":30,"time":"2026-01-08T14:46:04.745Z","pid":3036,"hostname":"runnervmh13bl","msg":"Start of node method takeScreenshot"}
-{"level":30,"time":"2026-01-08T14:46:04.745Z","pid":3036,"hostname":"runnervmh13bl","msg":"Error of node method  takeScreenshot"}
-{"level":30,"time":"2026-01-08T14:46:04.752Z","pid":3036,"hostname":"runnervmh13bl","msg":"Start of node method closeBrowser"}
-{"level":30,"time":"2026-01-08T14:46:04.752Z","pid":3036,"hostname":"runnervmh13bl","msg":"End of node method closeBrowser"}
+{"level":30,"time":"2026-01-08T14:51:47.932Z","pid":3041,"hostname":"runnervmh13bl","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2026-01-08T14:51:47.938Z","pid":3041,"hostname":"runnervmh13bl","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2026-01-08T14:51:47.938Z","pid":3041,"hostname":"runnervmh13bl","msg":"End of node method closeBrowser"}
 ================= Original suppressed error =================
 Error: Browser has been closed.
     at PlaywrightState.getActiveBrowser (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:12672:15)
@@ -92,34 +92,34 @@ Error: Browser has been closed.
     at endReadableNT (node:internal/streams/readable:1698:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 =============================================================
-{"level":30,"time":"2026-01-08T14:46:04.759Z","pid":3036,"hostname":"runnervmh13bl","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-08T14:46:04.760Z","pid":3036,"hostname":"runnervmh13bl","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-08T14:46:04.763Z","pid":3036,"hostname":"runnervmh13bl","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-08T14:46:04.763Z","pid":3036,"hostname":"runnervmh13bl","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-08T14:46:04.766Z","pid":3036,"hostname":"runnervmh13bl","msg":"Start of node method newPage"}
-{"level":30,"time":"2026-01-08T14:46:04.766Z","pid":3036,"hostname":"runnervmh13bl","msg":"No active browser, creating a new one"}
-{"level":30,"time":"2026-01-08T14:46:06.661Z","pid":3036,"hostname":"runnervmh13bl","msg":"Setting default timeout for context context=f01e3d1f-5a25-4dbd-a9e3-027d4b69c056 to 10000"}
-{"level":30,"time":"2026-01-08T14:46:06.662Z","pid":3036,"hostname":"runnervmh13bl","msg":"Changed active context: context=f01e3d1f-5a25-4dbd-a9e3-027d4b69c056"}
-{"level":30,"time":"2026-01-08T14:46:06.701Z","pid":3036,"hostname":"runnervmh13bl","msg":"Video path: undefined"}
-{"level":30,"time":"2026-01-08T14:46:06.702Z","pid":3036,"hostname":"runnervmh13bl","msg":"Changed active page"}
-{"level":30,"time":"2026-01-08T14:46:07.147Z","pid":3036,"hostname":"runnervmh13bl","msg":"End of node method newPage"}
-{"level":30,"time":"2026-01-08T14:46:07.159Z","pid":3036,"hostname":"runnervmh13bl","msg":"Start of node method getElements"}
-{"level":30,"time":"2026-01-08T14:46:07.160Z","pid":3036,"hostname":"runnervmh13bl","msg":"Strict mode is disabled, return Locator: table >> tbody >> tr in page."}
-{"level":30,"time":"2026-01-08T14:46:07.164Z","pid":3036,"hostname":"runnervmh13bl","msg":"Wait element to reach attached state."}
-{"level":30,"time":"2026-01-08T14:46:07.211Z","pid":3036,"hostname":"runnervmh13bl","msg":"Found 10 elements."}
-{"level":30,"time":"2026-01-08T14:46:07.214Z","pid":3036,"hostname":"runnervmh13bl","msg":"End of node method getElements"}
-{"level":30,"time":"2026-01-08T14:46:07.220Z","pid":3036,"hostname":"runnervmh13bl","msg":"Start of node method getText"}
-{"level":30,"time":"2026-01-08T14:46:07.220Z","pid":3036,"hostname":"runnervmh13bl","msg":"Strict mode is enabled, find Locator with table >> tbody >> tr >> nth=0 >> td:nth-child(2) in page."}
-{"level":30,"time":"2026-01-08T14:46:07.262Z","pid":3036,"hostname":"runnervmh13bl","msg":"Retrieved text for element table >> tbody >> tr >> nth=0 >> td:nth-child(2) containing Apeirian0"}
-{"level":30,"time":"2026-01-08T14:46:07.262Z","pid":3036,"hostname":"runnervmh13bl","msg":"End of node method getText"}
-{"level":30,"time":"2026-01-08T14:46:07.270Z","pid":3036,"hostname":"runnervmh13bl","msg":"Start of node method takeScreenshot"}
-{"level":30,"time":"2026-01-08T14:46:07.271Z","pid":3036,"hostname":"runnervmh13bl","msg":"Strict mode is enabled, find Locator with table >> tbody >> tr >> nth=0 in page."}
-{"level":30,"time":"2026-01-08T14:46:07.271Z","pid":3036,"hostname":"runnervmh13bl","Take screenshot with options: ":{"path":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/1/browser/screenshot/robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
-{"level":30,"time":"2026-01-08T14:46:07.271Z","pid":3036,"hostname":"runnervmh13bl","Using selecotr: ":"table >> tbody >> tr >> nth=0"}
-{"level":30,"time":"2026-01-08T14:46:07.344Z","pid":3036,"hostname":"runnervmh13bl","msg":"End of node method takeScreenshot"}
-{"level":30,"time":"2026-01-08T14:46:07.351Z","pid":3036,"hostname":"runnervmh13bl","msg":"Start of node method closeBrowser"}
-{"level":30,"time":"2026-01-08T14:46:07.356Z","pid":3036,"hostname":"runnervmh13bl","msg":"Removed page=3eb94179-e712-4e66-a165-bbe9732a5a7f from context=f01e3d1f-5a25-4dbd-a9e3-027d4b69c056 page stack"}
-{"level":30,"time":"2026-01-08T14:46:07.395Z","pid":3036,"hostname":"runnervmh13bl","msg":"End of node method closeBrowser"}
+{"level":30,"time":"2026-01-08T14:51:47.945Z","pid":3041,"hostname":"runnervmh13bl","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-08T14:51:47.945Z","pid":3041,"hostname":"runnervmh13bl","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-08T14:51:47.949Z","pid":3041,"hostname":"runnervmh13bl","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-08T14:51:47.949Z","pid":3041,"hostname":"runnervmh13bl","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-08T14:51:47.953Z","pid":3041,"hostname":"runnervmh13bl","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-01-08T14:51:47.953Z","pid":3041,"hostname":"runnervmh13bl","msg":"No active browser, creating a new one"}
+{"level":30,"time":"2026-01-08T14:51:48.126Z","pid":3041,"hostname":"runnervmh13bl","msg":"Setting default timeout for context context=c19d06e2-2a25-4443-82b1-546ce1359094 to 10000"}
+{"level":30,"time":"2026-01-08T14:51:48.127Z","pid":3041,"hostname":"runnervmh13bl","msg":"Changed active context: context=c19d06e2-2a25-4443-82b1-546ce1359094"}
+{"level":30,"time":"2026-01-08T14:51:48.161Z","pid":3041,"hostname":"runnervmh13bl","msg":"Video path: undefined"}
+{"level":30,"time":"2026-01-08T14:51:48.161Z","pid":3041,"hostname":"runnervmh13bl","msg":"Changed active page"}
+{"level":30,"time":"2026-01-08T14:51:48.536Z","pid":3041,"hostname":"runnervmh13bl","msg":"End of node method newPage"}
+{"level":30,"time":"2026-01-08T14:51:48.542Z","pid":3041,"hostname":"runnervmh13bl","msg":"Start of node method getElements"}
+{"level":30,"time":"2026-01-08T14:51:48.542Z","pid":3041,"hostname":"runnervmh13bl","msg":"Strict mode is disabled, return Locator: table >> tbody >> tr in page."}
+{"level":30,"time":"2026-01-08T14:51:48.542Z","pid":3041,"hostname":"runnervmh13bl","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2026-01-08T14:51:48.577Z","pid":3041,"hostname":"runnervmh13bl","msg":"Found 10 elements."}
+{"level":30,"time":"2026-01-08T14:51:48.579Z","pid":3041,"hostname":"runnervmh13bl","msg":"End of node method getElements"}
+{"level":30,"time":"2026-01-08T14:51:48.582Z","pid":3041,"hostname":"runnervmh13bl","msg":"Start of node method getText"}
+{"level":30,"time":"2026-01-08T14:51:48.582Z","pid":3041,"hostname":"runnervmh13bl","msg":"Strict mode is enabled, find Locator with table >> tbody >> tr >> nth=0 >> td:nth-child(2) in page."}
+{"level":30,"time":"2026-01-08T14:51:48.611Z","pid":3041,"hostname":"runnervmh13bl","msg":"Retrieved text for element table >> tbody >> tr >> nth=0 >> td:nth-child(2) containing Apeirian0"}
+{"level":30,"time":"2026-01-08T14:51:48.611Z","pid":3041,"hostname":"runnervmh13bl","msg":"End of node method getText"}
+{"level":30,"time":"2026-01-08T14:51:48.617Z","pid":3041,"hostname":"runnervmh13bl","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-01-08T14:51:48.617Z","pid":3041,"hostname":"runnervmh13bl","msg":"Strict mode is enabled, find Locator with table >> tbody >> tr >> nth=0 in page."}
+{"level":30,"time":"2026-01-08T14:51:48.617Z","pid":3041,"hostname":"runnervmh13bl","Take screenshot with options: ":{"path":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/1/browser/screenshot/robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2026-01-08T14:51:48.617Z","pid":3041,"hostname":"runnervmh13bl","Using selecotr: ":"table >> tbody >> tr >> nth=0"}
+{"level":30,"time":"2026-01-08T14:51:48.676Z","pid":3041,"hostname":"runnervmh13bl","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-01-08T14:51:48.682Z","pid":3041,"hostname":"runnervmh13bl","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2026-01-08T14:51:48.687Z","pid":3041,"hostname":"runnervmh13bl","msg":"Removed page=5c0422fa-e37a-4881-82fb-9c2cfec783c6 from context=c19d06e2-2a25-4443-82b1-546ce1359094 page stack"}
+{"level":30,"time":"2026-01-08T14:51:48.721Z","pid":3041,"hostname":"runnervmh13bl","msg":"End of node method closeBrowser"}
 ================= Original suppressed error =================
 Error: Browser has been closed.
     at PlaywrightState.getActiveBrowser (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:12672:15)
@@ -133,8 +133,8 @@ Error: Browser has been closed.
     at endReadableNT (node:internal/streams/readable:1698:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 =============================================================
-{"level":30,"time":"2026-01-08T14:46:07.401Z","pid":3036,"hostname":"runnervmh13bl","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-08T14:46:07.401Z","pid":3036,"hostname":"runnervmh13bl","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-08T14:51:48.726Z","pid":3041,"hostname":"runnervmh13bl","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-08T14:51:48.726Z","pid":3041,"hostname":"runnervmh13bl","msg":"End of node method getBrowserCatalog"}
 ================= Original suppressed error =================
 Error: Browser has been closed.
     at PlaywrightState.getActiveBrowser (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:12672:15)
@@ -148,7 +148,7 @@ Error: Browser has been closed.
     at endReadableNT (node:internal/streams/readable:1698:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 =============================================================
-{"level":30,"time":"2026-01-08T14:46:07.407Z","pid":3036,"hostname":"runnervmh13bl","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-08T14:46:07.407Z","pid":3036,"hostname":"runnervmh13bl","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-08T14:46:07.414Z","pid":3036,"hostname":"runnervmh13bl","msg":"Start of node method closeAllBrowsers"}
-{"level":30,"time":"2026-01-08T14:46:07.414Z","pid":3036,"hostname":"runnervmh13bl","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2026-01-08T14:51:48.732Z","pid":3041,"hostname":"runnervmh13bl","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-08T14:51:48.732Z","pid":3041,"hostname":"runnervmh13bl","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-08T14:51:48.738Z","pid":3041,"hostname":"runnervmh13bl","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-01-08T14:51:48.739Z","pid":3041,"hostname":"runnervmh13bl","msg":"End of node method closeAllBrowsers"}

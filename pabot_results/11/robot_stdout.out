@@ -35,17 +35,17 @@ Browser logs:
 Call log:
   - <launching> /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
     [ Message content over the limit has been removed. ]
-...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-pURojn --remote-debugging-pipe --no-startup-window
-  - <launched> pid=3677
-  - [pid=3677][err] [3677:3677:0108/144610.718506:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3677][err] [3677:3677:0108/144610.718542:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3677] <gracefully close start>
-  - [pid=3677] <kill>
-  - [pid=3677] <will force kill>
-  - [pid=3677] <process did exit: exitCode=1, signal=null>
-  - [pid=3677] starting temporary directories cleanup
-  - [pid=3677] finished temporary directories cleanup
-  - [pid=3677] <gracefully close end>
+...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-eLOQXQ --remote-debugging-pipe --no-startup-window
+  - <launched> pid=3671
+  - [pid=3671][err] [3671:3671:0108/145153.234504:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3671][err] [3671:3671:0108/145153.234545:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3671] <gracefully close start>
+  - [pid=3671] <kill>
+  - [pid=3671] <will force kill>
+  - [pid=3671] <process did exit: exitCode=1, signal=null>
+  - [pid=3671] starting temporary directories cleanup
+  - [pid=3671] finished temporary directories cleanup
+  - [pid=3671] <gracefully close end>
 ------------------------------------------------------------------------------
 Tests.01 HerekuApp.01 Basis.12 Api Test                               | FAIL |
 1 test, 0 passed, 1 failed

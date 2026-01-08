@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-08T14:46:05.323548" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-08T14:51:48.532393" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="01 Basis" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis">
 <suite id="s1-s1-s1-s1" name="04 Hybrid" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/04_hybrid.robot">
 <test id="s1-s1-s1-s1-t1" name="Snel Inloggen Via API En Verifiëren In Browser" line="11">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-08T14:46:05.573164" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/3/browser/traces/temp/47d02fba-b300-44e6-bebc-ec678b314bca"}</msg>
-<msg time="2026-01-08T14:46:05.577056" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:36707</msg>
-<msg time="2026-01-08T14:46:06.210833" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+<msg time="2026-01-08T14:51:48.822843" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/3/browser/traces/temp/ca583e2d-8921-40a7-a126-699da8e0217c"}</msg>
+<msg time="2026-01-08T14:51:48.828373" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:42365</msg>
+<msg time="2026-01-08T14:51:49.510332" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
 Error: Tried to take screenshot, but no page was open.</msg>
-<msg time="2026-01-08T14:46:06.211059" level="INFO">See also file:///home/runner/work/AP_RF/AP_RF/results/pabot_results/3/playwright-log.txt for additional details.</msg>
-<msg time="2026-01-08T14:46:06.211657" level="FAIL">Error: browserType.launch: Target page, context or browser has been closed
+<msg time="2026-01-08T14:51:49.510500" level="INFO">See also file:///home/runner/work/AP_RF/AP_RF/results/pabot_results/3/playwright-log.txt for additional details.</msg>
+<msg time="2026-01-08T14:51:49.511047" level="FAIL">Error: browserType.launch: Target page, context or browser has been closed
 Browser logs:
 
 ╔════════════════════════════════════════════════════════════════════════════════════════════════╗
@@ -21,24 +21,24 @@ Browser logs:
 ║ &lt;3 Playwright Team                                                                             ║
 ╚════════════════════════════════════════════════════════════════════════════════════════════════╝
 Call log:
-  - &lt;launching&gt; /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-EfirGj --remote-debugging-pipe --no-startup-window
-  - &lt;launched&gt; pid=3257
-  - [pid=3257][err] [3257:3257:0108/144606.187429:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3257][err] [3257:3257:0108/144606.187465:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3257] &lt;gracefully close start&gt;
-  - [pid=3257] &lt;kill&gt;
-  - [pid=3257] &lt;will force kill&gt;
-  - [pid=3257] &lt;process did exit: exitCode=1, signal=null&gt;
-  - [pid=3257] starting temporary directories cleanup
-  - [pid=3257] finished temporary directories cleanup
-  - [pid=3257] &lt;gracefully close end&gt;
+  - &lt;launching&gt; /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-LIaapS --remote-debugging-pipe --no-startup-window
+  - &lt;launched&gt; pid=3302
+  - [pid=3302][err] [3302:3302:0108/145149.477709:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3302][err] [3302:3302:0108/145149.477746:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3302] &lt;gracefully close start&gt;
+  - [pid=3302] &lt;kill&gt;
+  - [pid=3302] &lt;will force kill&gt;
+  - [pid=3302] &lt;process did exit: exitCode=1, signal=null&gt;
+  - [pid=3302] starting temporary directories cleanup
+  - [pid=3302] finished temporary directories cleanup
+  - [pid=3302] &lt;gracefully close end&gt;
 </msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="FAIL" start="2026-01-08T14:46:05.572417" elapsed="0.642303">Error: browserType.launch: Target page, context or browser has been closed
+<status status="FAIL" start="2026-01-08T14:51:48.821959" elapsed="0.692080">Error: browserType.launch: Target page, context or browser has been closed
 Browser logs:
 
 ╔════════════════════════════════════════════════════════════════════════════════════════════════╗
@@ -50,30 +50,30 @@ Browser logs:
 Call log:
   - &lt;launching&gt; /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
     [ Message content over the limit has been removed. ]
-...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-EfirGj --remote-debugging-pipe --no-startup-window
-  - &lt;launched&gt; pid=3257
-  - [pid=3257][err] [3257:3257:0108/144606.187429:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3257][err] [3257:3257:0108/144606.187465:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3257] &lt;gracefully close start&gt;
-  - [pid=3257] &lt;kill&gt;
-  - [pid=3257] &lt;will force kill&gt;
-  - [pid=3257] &lt;process did exit: exitCode=1, signal=null&gt;
-  - [pid=3257] starting temporary directories cleanup
-  - [pid=3257] finished temporary directories cleanup
-  - [pid=3257] &lt;gracefully close end&gt;</status>
+...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-LIaapS --remote-debugging-pipe --no-startup-window
+  - &lt;launched&gt; pid=3302
+  - [pid=3302][err] [3302:3302:0108/145149.477709:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3302][err] [3302:3302:0108/145149.477746:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3302] &lt;gracefully close start&gt;
+  - [pid=3302] &lt;kill&gt;
+  - [pid=3302] &lt;will force kill&gt;
+  - [pid=3302] &lt;process did exit: exitCode=1, signal=null&gt;
+  - [pid=3302] starting temporary directories cleanup
+  - [pid=3302] finished temporary directories cleanup
+  - [pid=3302] &lt;gracefully close end&gt;</status>
 </kw>
 <kw name="New Context" owner="Browser">
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="NOT RUN" start="2026-01-08T14:46:06.215281" elapsed="0.000170"/>
+<status status="NOT RUN" start="2026-01-08T14:51:49.514620" elapsed="0.000143"/>
 </kw>
 <kw name="New Page" owner="Browser">
 <arg>${BASE_URL}/login</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="NOT RUN" start="2026-01-08T14:46:06.215692" elapsed="0.000117"/>
+<status status="NOT RUN" start="2026-01-08T14:51:49.515010" elapsed="0.000110"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
 <arg>id=username</arg>
@@ -81,7 +81,7 @@ Call log:
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-01-08T14:46:06.216033" elapsed="0.000112"/>
+<status status="NOT RUN" start="2026-01-08T14:51:49.515310" elapsed="0.000119"/>
 </kw>
 <kw name="Fill Secret" owner="Browser">
 <arg>id=password</arg>
@@ -90,14 +90,14 @@ Call log:
 <tag>Setter</tag>
 <doc>Fills the given secret from ``variable_name`` into the
 text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-01-08T14:46:06.216351" elapsed="0.000142"/>
+<status status="NOT RUN" start="2026-01-08T14:51:49.515646" elapsed="0.000131"/>
 </kw>
 <kw name="Click" owner="Browser">
 <arg>css=button[type="submit"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-01-08T14:46:06.216734" elapsed="0.000118"/>
+<status status="NOT RUN" start="2026-01-08T14:51:49.516008" elapsed="0.000107"/>
 </kw>
 <kw name="New Browser" owner="Browser">
 <arg>browser=${BROWSER}</arg>
@@ -105,21 +105,21 @@ text field found by ``selector``.</doc>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="NOT RUN" start="2026-01-08T14:46:06.217079" elapsed="0.000128"/>
+<status status="NOT RUN" start="2026-01-08T14:51:49.516307" elapsed="0.000104"/>
 </kw>
 <kw name="New Context" owner="Browser">
 <arg>viewport={'width': 1280, 'height': 720}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="NOT RUN" start="2026-01-08T14:46:06.217463" elapsed="0.000138"/>
+<status status="NOT RUN" start="2026-01-08T14:51:49.516638" elapsed="0.000126"/>
 </kw>
 <kw name="New Page" owner="Browser">
 <arg>${BASE_URL}/login</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="NOT RUN" start="2026-01-08T14:46:06.217811" elapsed="0.000113"/>
+<status status="NOT RUN" start="2026-01-08T14:51:49.516959" elapsed="0.000121"/>
 </kw>
 <kw name="Wait For Load State" owner="Browser">
 <arg>networkidle</arg>
@@ -127,7 +127,7 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits that the page reaches the required load state.</doc>
-<status status="NOT RUN" start="2026-01-08T14:46:06.218132" elapsed="0.000109"/>
+<status status="NOT RUN" start="2026-01-08T14:51:49.517262" elapsed="0.000094"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
 <arg>css=input#username</arg>
@@ -136,7 +136,7 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="NOT RUN" start="2026-01-08T14:46:06.218452" elapsed="0.000108"/>
+<status status="NOT RUN" start="2026-01-08T14:51:49.517540" elapsed="0.000120"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
 <arg>css=input#username</arg>
@@ -144,7 +144,7 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-01-08T14:46:06.218751" elapsed="0.000098"/>
+<status status="NOT RUN" start="2026-01-08T14:51:49.517844" elapsed="0.000097"/>
 </kw>
 <kw name="Fill Secret" owner="Browser">
 <arg>css=input#password</arg>
@@ -153,14 +153,14 @@ text field found by ``selector``.</doc>
 <tag>Setter</tag>
 <doc>Fills the given secret from ``variable_name`` into the
 text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-01-08T14:46:06.219051" elapsed="0.000118"/>
+<status status="NOT RUN" start="2026-01-08T14:51:49.518111" elapsed="0.000193"/>
 </kw>
 <kw name="Click" owner="Browser">
 <arg>css=button[type="submit"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-01-08T14:46:06.219372" elapsed="0.000115"/>
+<status status="NOT RUN" start="2026-01-08T14:51:49.518493" elapsed="0.000115"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
 <arg>css=.flash.success</arg>
@@ -169,7 +169,7 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="NOT RUN" start="2026-01-08T14:46:06.219680" elapsed="0.000112"/>
+<status status="NOT RUN" start="2026-01-08T14:51:49.518787" elapsed="0.000105"/>
 </kw>
 <kw name="Get Text" owner="Browser">
 <arg>h2</arg>
@@ -179,39 +179,39 @@ text field found by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-01-08T14:46:06.220032" elapsed="0.000112"/>
+<status status="NOT RUN" start="2026-01-08T14:51:49.519063" elapsed="0.000089"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser">
 <arg>success-login</arg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="NOT RUN" start="2026-01-08T14:46:06.220342" elapsed="0.000113"/>
+<status status="NOT RUN" start="2026-01-08T14:51:49.519322" elapsed="0.000094"/>
 </kw>
 <kw name="Get Cookies" owner="Browser">
 <var>${browser_cookies}</var>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns cookies from the current active browser context.</doc>
-<status status="NOT RUN" start="2026-01-08T14:46:06.220633" elapsed="0.000099"/>
+<status status="NOT RUN" start="2026-01-08T14:51:49.519610" elapsed="0.000097"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
 <var>${session_value}</var>
 <arg>${browser_cookies[0].value}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2026-01-08T14:46:06.220912" elapsed="0.000133"/>
+<status status="NOT RUN" start="2026-01-08T14:51:49.519877" elapsed="0.000098"/>
 </kw>
 <kw name="Create Session" owner="RequestsLibrary">
 <arg>api_check</arg>
 <arg>${BASE_URL}</arg>
 <arg>verify=True</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="NOT RUN" start="2026-01-08T14:46:06.221261" elapsed="0.000112"/>
+<status status="NOT RUN" start="2026-01-08T14:51:49.520131" elapsed="0.000090"/>
 </kw>
 <kw name="Create Dictionary" owner="BuiltIn">
 <var>${cookies_dict}</var>
 <arg>rack.session=${session_value}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="NOT RUN" start="2026-01-08T14:46:06.221574" elapsed="0.000100"/>
+<status status="NOT RUN" start="2026-01-08T14:51:49.520401" elapsed="0.000093"/>
 </kw>
 <kw name="GET On Session" owner="RequestsLibrary">
 <var>${response}</var>
@@ -219,21 +219,21 @@ text field found by ``selector``.</doc>
 <arg>url=/secure</arg>
 <arg>cookies=${cookies_dict}</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<status status="NOT RUN" start="2026-01-08T14:46:06.221821" elapsed="0.000135"/>
+<status status="NOT RUN" start="2026-01-08T14:51:49.520686" elapsed="0.000098"/>
 </kw>
 <kw name="Status Should Be" owner="RequestsLibrary">
 <arg>200</arg>
 <arg>${response}</arg>
 <doc>Fails if response status code is different than the expected.</doc>
-<status status="NOT RUN" start="2026-01-08T14:46:06.222152" elapsed="0.000142"/>
+<status status="NOT RUN" start="2026-01-08T14:51:49.520957" elapsed="0.000123"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
 <arg>Hybride test geslaagd!</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2026-01-08T14:46:06.222478" elapsed="0.000102"/>
+<status status="NOT RUN" start="2026-01-08T14:51:49.521256" elapsed="0.000102"/>
 </kw>
 <doc>Log in via de browser en gebruik de sessie voor een API check.</doc>
-<status status="FAIL" start="2026-01-08T14:46:05.571189" elapsed="0.651697">Error: browserType.launch: Target page, context or browser has been closed
+<status status="FAIL" start="2026-01-08T14:51:48.820420" elapsed="0.701235">Error: browserType.launch: Target page, context or browser has been closed
 Browser logs:
 
 ╔════════════════════════════════════════════════════════════════════════════════════════════════╗
@@ -245,25 +245,25 @@ Browser logs:
 Call log:
   - &lt;launching&gt; /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
     [ Message content over the limit has been removed. ]
-...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-EfirGj --remote-debugging-pipe --no-startup-window
-  - &lt;launched&gt; pid=3257
-  - [pid=3257][err] [3257:3257:0108/144606.187429:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3257][err] [3257:3257:0108/144606.187465:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3257] &lt;gracefully close start&gt;
-  - [pid=3257] &lt;kill&gt;
-  - [pid=3257] &lt;will force kill&gt;
-  - [pid=3257] &lt;process did exit: exitCode=1, signal=null&gt;
-  - [pid=3257] starting temporary directories cleanup
-  - [pid=3257] finished temporary directories cleanup
-  - [pid=3257] &lt;gracefully close end&gt;</status>
+...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-LIaapS --remote-debugging-pipe --no-startup-window
+  - &lt;launched&gt; pid=3302
+  - [pid=3302][err] [3302:3302:0108/145149.477709:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3302][err] [3302:3302:0108/145149.477746:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3302] &lt;gracefully close start&gt;
+  - [pid=3302] &lt;kill&gt;
+  - [pid=3302] &lt;will force kill&gt;
+  - [pid=3302] &lt;process did exit: exitCode=1, signal=null&gt;
+  - [pid=3302] starting temporary directories cleanup
+  - [pid=3302] finished temporary directories cleanup
+  - [pid=3302] &lt;gracefully close end&gt;</status>
 </test>
-<status status="FAIL" start="2026-01-08T14:46:05.366239" elapsed="0.863076"/>
+<status status="FAIL" start="2026-01-08T14:51:48.575963" elapsed="0.953471"/>
 </suite>
-<status status="FAIL" start="2026-01-08T14:46:05.365144" elapsed="0.868346"/>
+<status status="FAIL" start="2026-01-08T14:51:48.574749" elapsed="0.961023"/>
 </suite>
-<status status="FAIL" start="2026-01-08T14:46:05.364126" elapsed="0.869834"/>
+<status status="FAIL" start="2026-01-08T14:51:48.573459" elapsed="0.963082"/>
 </suite>
-<status status="FAIL" start="2026-01-08T14:46:05.341294" elapsed="0.893092"/>
+<status status="FAIL" start="2026-01-08T14:51:48.548004" elapsed="0.989232"/>
 </suite>
 <statistics>
 <total>

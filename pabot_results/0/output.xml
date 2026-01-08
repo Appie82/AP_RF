@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-08T14:46:03.593421" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-08T14:51:46.860123" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="01 Basis" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis">
@@ -8,12 +8,12 @@
 <kw name="Inloggen Met Verschillende Gegevens">
 <kw name="Open De Browser Op De Inlogpagina" owner="common">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-08T14:46:03.837479" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 500.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/0/browser/traces/temp/3feb8a6b-0924-4ccd-bd8f-da651c6d61ad"}</msg>
-<msg time="2026-01-08T14:46:03.841659" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:49425</msg>
-<msg time="2026-01-08T14:46:04.608639" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+<msg time="2026-01-08T14:51:47.206229" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 500.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/0/browser/traces/temp/d20e795b-8e61-4bf7-888e-54d5a8d88f53"}</msg>
+<msg time="2026-01-08T14:51:47.210271" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:37861</msg>
+<msg time="2026-01-08T14:51:47.988094" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
 Error: Tried to take screenshot, but no page was open.</msg>
-<msg time="2026-01-08T14:46:04.608820" level="INFO">See also file:///home/runner/work/AP_RF/AP_RF/results/pabot_results/0/playwright-log.txt for additional details.</msg>
-<msg time="2026-01-08T14:46:04.609523" level="FAIL">Error: browserType.launch: Target page, context or browser has been closed
+<msg time="2026-01-08T14:51:47.988267" level="INFO">See also file:///home/runner/work/AP_RF/AP_RF/results/pabot_results/0/playwright-log.txt for additional details.</msg>
+<msg time="2026-01-08T14:51:47.988818" level="FAIL">Error: browserType.launch: Target page, context or browser has been closed
 Browser logs:
 
 ╔════════════════════════════════════════════════════════════════════════════════════════════════╗
@@ -23,17 +23,17 @@ Browser logs:
 ║ &lt;3 Playwright Team                                                                             ║
 ╚════════════════════════════════════════════════════════════════════════════════════════════════╝
 Call log:
-  - &lt;launching&gt; /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-voITi0 --remote-debugging-pipe --no-startup-window
-  - &lt;launched&gt; pid=3067
-  - [pid=3067][err] [3067:3067:0108/144604.567659:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3067][err] [3067:3067:0108/144604.567697:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3067] &lt;gracefully close start&gt;
-  - [pid=3067] &lt;kill&gt;
-  - [pid=3067] &lt;will force kill&gt;
-  - [pid=3067] &lt;process did exit: exitCode=1, signal=null&gt;
-  - [pid=3067] starting temporary directories cleanup
-  - [pid=3067] finished temporary directories cleanup
-  - [pid=3067] &lt;gracefully close end&gt;
+  - &lt;launching&gt; /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-5HxysP --remote-debugging-pipe --no-startup-window
+  - &lt;launched&gt; pid=3112
+  - [pid=3112][err] [3112:3112:0108/145147.958479:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3112][err] [3112:3112:0108/145147.958514:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3112] &lt;gracefully close start&gt;
+  - [pid=3112] &lt;kill&gt;
+  - [pid=3112] &lt;will force kill&gt;
+  - [pid=3112] &lt;process did exit: exitCode=1, signal=null&gt;
+  - [pid=3112] starting temporary directories cleanup
+  - [pid=3112] finished temporary directories cleanup
+  - [pid=3112] &lt;gracefully close end&gt;
 </msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
@@ -41,7 +41,7 @@ Call log:
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="FAIL" start="2026-01-08T14:46:03.836668" elapsed="0.776757">Error: browserType.launch: Target page, context or browser has been closed
+<status status="FAIL" start="2026-01-08T14:51:47.204971" elapsed="0.786690">Error: browserType.launch: Target page, context or browser has been closed
 Browser logs:
 
 ╔════════════════════════════════════════════════════════════════════════════════════════════════╗
@@ -53,26 +53,26 @@ Browser logs:
 Call log:
   - &lt;launching&gt; /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
     [ Message content over the limit has been removed. ]
-...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-voITi0 --remote-debugging-pipe --no-startup-window
-  - &lt;launched&gt; pid=3067
-  - [pid=3067][err] [3067:3067:0108/144604.567659:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3067][err] [3067:3067:0108/144604.567697:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3067] &lt;gracefully close start&gt;
-  - [pid=3067] &lt;kill&gt;
-  - [pid=3067] &lt;will force kill&gt;
-  - [pid=3067] &lt;process did exit: exitCode=1, signal=null&gt;
-  - [pid=3067] starting temporary directories cleanup
-  - [pid=3067] finished temporary directories cleanup
-  - [pid=3067] &lt;gracefully close end&gt;</status>
+...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-5HxysP --remote-debugging-pipe --no-startup-window
+  - &lt;launched&gt; pid=3112
+  - [pid=3112][err] [3112:3112:0108/145147.958479:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3112][err] [3112:3112:0108/145147.958514:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3112] &lt;gracefully close start&gt;
+  - [pid=3112] &lt;kill&gt;
+  - [pid=3112] &lt;will force kill&gt;
+  - [pid=3112] &lt;process did exit: exitCode=1, signal=null&gt;
+  - [pid=3112] starting temporary directories cleanup
+  - [pid=3112] finished temporary directories cleanup
+  - [pid=3112] &lt;gracefully close end&gt;</status>
 </kw>
 <kw name="New Page" owner="Browser">
 <arg>${BASE_URL}/login</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="NOT RUN" start="2026-01-08T14:46:04.614142" elapsed="0.000167"/>
+<status status="NOT RUN" start="2026-01-08T14:51:47.992254" elapsed="0.000108"/>
 </kw>
-<status status="FAIL" start="2026-01-08T14:46:03.835927" elapsed="0.778713">Error: browserType.launch: Target page, context or browser has been closed
+<status status="FAIL" start="2026-01-08T14:51:47.204196" elapsed="0.788415">Error: browserType.launch: Target page, context or browser has been closed
 Browser logs:
 
 ╔════════════════════════════════════════════════════════════════════════════════════════════════╗
@@ -84,22 +84,22 @@ Browser logs:
 Call log:
   - &lt;launching&gt; /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
     [ Message content over the limit has been removed. ]
-...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-voITi0 --remote-debugging-pipe --no-startup-window
-  - &lt;launched&gt; pid=3067
-  - [pid=3067][err] [3067:3067:0108/144604.567659:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3067][err] [3067:3067:0108/144604.567697:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3067] &lt;gracefully close start&gt;
-  - [pid=3067] &lt;kill&gt;
-  - [pid=3067] &lt;will force kill&gt;
-  - [pid=3067] &lt;process did exit: exitCode=1, signal=null&gt;
-  - [pid=3067] starting temporary directories cleanup
-  - [pid=3067] finished temporary directories cleanup
-  - [pid=3067] &lt;gracefully close end&gt;</status>
+...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-5HxysP --remote-debugging-pipe --no-startup-window
+  - &lt;launched&gt; pid=3112
+  - [pid=3112][err] [3112:3112:0108/145147.958479:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3112][err] [3112:3112:0108/145147.958514:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3112] &lt;gracefully close start&gt;
+  - [pid=3112] &lt;kill&gt;
+  - [pid=3112] &lt;will force kill&gt;
+  - [pid=3112] &lt;process did exit: exitCode=1, signal=null&gt;
+  - [pid=3112] starting temporary directories cleanup
+  - [pid=3112] finished temporary directories cleanup
+  - [pid=3112] &lt;gracefully close end&gt;</status>
 </kw>
 <kw name="Log In Met Gebruiker" owner="common">
 <arg>${user}</arg>
 <arg>${pass}</arg>
-<status status="NOT RUN" start="2026-01-08T14:46:04.615028" elapsed="0.000135"/>
+<status status="NOT RUN" start="2026-01-08T14:51:47.992838" elapsed="0.000085"/>
 </kw>
 <kw name="Get Text" owner="Browser">
 <arg>body</arg>
@@ -109,12 +109,12 @@ Call log:
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-01-08T14:46:04.615367" elapsed="0.000133"/>
+<status status="NOT RUN" start="2026-01-08T14:51:47.993047" elapsed="0.000068"/>
 </kw>
 <arg>tomsmith</arg>
 <arg>SuperSecretPassword!</arg>
 <arg>Secure Area</arg>
-<status status="FAIL" start="2026-01-08T14:46:03.835420" elapsed="0.780349">Error: browserType.launch: Target page, context or browser has been closed
+<status status="FAIL" start="2026-01-08T14:51:47.203682" elapsed="0.789588">Error: browserType.launch: Target page, context or browser has been closed
 Browser logs:
 
 ╔════════════════════════════════════════════════════════════════════════════════════════════════╗
@@ -126,43 +126,43 @@ Browser logs:
 Call log:
   - &lt;launching&gt; /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
     [ Message content over the limit has been removed. ]
-...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-voITi0 --remote-debugging-pipe --no-startup-window
-  - &lt;launched&gt; pid=3067
-  - [pid=3067][err] [3067:3067:0108/144604.567659:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3067][err] [3067:3067:0108/144604.567697:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3067] &lt;gracefully close start&gt;
-  - [pid=3067] &lt;kill&gt;
-  - [pid=3067] &lt;will force kill&gt;
-  - [pid=3067] &lt;process did exit: exitCode=1, signal=null&gt;
-  - [pid=3067] starting temporary directories cleanup
-  - [pid=3067] finished temporary directories cleanup
-  - [pid=3067] &lt;gracefully close end&gt;</status>
+...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-5HxysP --remote-debugging-pipe --no-startup-window
+  - &lt;launched&gt; pid=3112
+  - [pid=3112][err] [3112:3112:0108/145147.958479:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3112][err] [3112:3112:0108/145147.958514:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3112] &lt;gracefully close start&gt;
+  - [pid=3112] &lt;kill&gt;
+  - [pid=3112] &lt;will force kill&gt;
+  - [pid=3112] &lt;process did exit: exitCode=1, signal=null&gt;
+  - [pid=3112] starting temporary directories cleanup
+  - [pid=3112] finished temporary directories cleanup
+  - [pid=3112] &lt;gracefully close end&gt;</status>
 </kw>
 <kw name="Sluit Test En Maak Screenshot Bij Fout" owner="common" type="TEARDOWN">
 <kw name="Run Keyword If Test Failed" owner="BuiltIn">
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2026-01-08T14:46:04.628989" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+<msg time="2026-01-08T14:51:48.004094" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
 Error: Tried to take screenshot, but no page was open.</msg>
-<msg time="2026-01-08T14:46:04.629150" level="INFO">See also file:///home/runner/work/AP_RF/AP_RF/results/pabot_results/0/playwright-log.txt for additional details.</msg>
-<msg time="2026-01-08T14:46:04.629354" level="FAIL">Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2026-01-08T14:51:48.004194" level="INFO">See also file:///home/runner/work/AP_RF/AP_RF/results/pabot_results/0/playwright-log.txt for additional details.</msg>
+<msg time="2026-01-08T14:51:48.004378" level="FAIL">Error: Tried to take screenshot, but no page was open.</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="FAIL" start="2026-01-08T14:46:04.617592" elapsed="0.013057">Error: Tried to take screenshot, but no page was open.</status>
+<status status="FAIL" start="2026-01-08T14:51:47.994792" elapsed="0.010572">Error: Tried to take screenshot, but no page was open.</status>
 </kw>
 <arg>Take Screenshot</arg>
 <doc>Runs the given keyword with the given arguments, if the test failed.</doc>
-<status status="FAIL" start="2026-01-08T14:46:04.616874" elapsed="0.014016">Error: Tried to take screenshot, but no page was open.</status>
+<status status="FAIL" start="2026-01-08T14:51:47.994228" elapsed="0.011300">Error: Tried to take screenshot, but no page was open.</status>
 </kw>
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-08T14:46:04.634732" level="INFO">No browser open, doing nothing</msg>
+<msg time="2026-01-08T14:51:48.008576" level="INFO">No browser open, doing nothing</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-08T14:46:04.631178" elapsed="0.003700"/>
+<status status="PASS" start="2026-01-08T14:51:48.005725" elapsed="0.002987"/>
 </kw>
-<status status="FAIL" start="2026-01-08T14:46:04.616304" elapsed="0.018816">Error: Tried to take screenshot, but no page was open.</status>
+<status status="FAIL" start="2026-01-08T14:51:47.993753" elapsed="0.015112">Error: Tried to take screenshot, but no page was open.</status>
 </kw>
-<status status="FAIL" start="2026-01-08T14:46:03.834749" elapsed="0.800502">Error: browserType.launch: Target page, context or browser has been closed
+<status status="FAIL" start="2026-01-08T14:51:47.202839" elapsed="0.806125">Error: browserType.launch: Target page, context or browser has been closed
 Browser logs:
 
 ╔════════════════════════════════════════════════════════════════════════════════════════════════╗
@@ -174,17 +174,17 @@ Browser logs:
 Call log:
   - &lt;launching&gt; /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
     [ Message content over the limit has been removed. ]
-...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-voITi0 --remote-debugging-pipe --no-startup-window
-  - &lt;launched&gt; pid=3067
-  - [pid=3067][err] [3067:3067:0108/144604.567659:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3067][err] [3067:3067:0108/144604.567697:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3067] &lt;gracefully close start&gt;
-  - [pid=3067] &lt;kill&gt;
-  - [pid=3067] &lt;will force kill&gt;
-  - [pid=3067] &lt;process did exit: exitCode=1, signal=null&gt;
-  - [pid=3067] starting temporary directories cleanup
-  - [pid=3067] finished temporary directories cleanup
-  - [pid=3067] &lt;gracefully close end&gt;
+...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-5HxysP --remote-debugging-pipe --no-startup-window
+  - &lt;launched&gt; pid=3112
+  - [pid=3112][err] [3112:3112:0108/145147.958479:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3112][err] [3112:3112:0108/145147.958514:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3112] &lt;gracefully close start&gt;
+  - [pid=3112] &lt;kill&gt;
+  - [pid=3112] &lt;will force kill&gt;
+  - [pid=3112] &lt;process did exit: exitCode=1, signal=null&gt;
+  - [pid=3112] starting temporary directories cleanup
+  - [pid=3112] finished temporary directories cleanup
+  - [pid=3112] &lt;gracefully close end&gt;
 
 Also teardown failed:
 Error: Tried to take screenshot, but no page was open.</status>
@@ -193,11 +193,11 @@ Error: Tried to take screenshot, but no page was open.</status>
 <kw name="Inloggen Met Verschillende Gegevens">
 <kw name="Open De Browser Op De Inlogpagina" owner="common">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-08T14:46:04.647862" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 500.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/0/browser/traces/temp/7bd18dfd-a4a7-47e1-bc22-6532c15178a6"}</msg>
-<msg time="2026-01-08T14:46:04.755854" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+<msg time="2026-01-08T14:51:48.019790" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 500.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/0/browser/traces/temp/8fe7f257-d546-4a9f-992b-f7c7a8a86e60"}</msg>
+<msg time="2026-01-08T14:51:48.117595" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
 Error: Tried to take screenshot, but no page was open.</msg>
-<msg time="2026-01-08T14:46:04.756046" level="INFO">See also file:///home/runner/work/AP_RF/AP_RF/results/pabot_results/0/playwright-log.txt for additional details.</msg>
-<msg time="2026-01-08T14:46:04.756312" level="FAIL">Error: browserType.launch: Target page, context or browser has been closed
+<msg time="2026-01-08T14:51:48.117752" level="INFO">See also file:///home/runner/work/AP_RF/AP_RF/results/pabot_results/0/playwright-log.txt for additional details.</msg>
+<msg time="2026-01-08T14:51:48.117988" level="FAIL">Error: browserType.launch: Target page, context or browser has been closed
 Browser logs:
 
 ╔════════════════════════════════════════════════════════════════════════════════════════════════╗
@@ -207,17 +207,17 @@ Browser logs:
 ║ &lt;3 Playwright Team                                                                             ║
 ╚════════════════════════════════════════════════════════════════════════════════════════════════╝
 Call log:
-  - &lt;launching&gt; /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-7fmiXr --remote-debugging-pipe --no-startup-window
-  - &lt;launched&gt; pid=3102
-  - [pid=3102][err] [3102:3102:0108/144604.730891:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3102][err] [3102:3102:0108/144604.730970:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3102] &lt;gracefully close start&gt;
-  - [pid=3102] &lt;kill&gt;
-  - [pid=3102] &lt;will force kill&gt;
-  - [pid=3102] &lt;process did exit: exitCode=1, signal=null&gt;
-  - [pid=3102] starting temporary directories cleanup
-  - [pid=3102] finished temporary directories cleanup
-  - [pid=3102] &lt;gracefully close end&gt;
+  - &lt;launching&gt; /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-idD8Oz --remote-debugging-pipe --no-startup-window
+  - &lt;launched&gt; pid=3169
+  - [pid=3169][err] [3169:3169:0108/145148.091534:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3169][err] [3169:3169:0108/145148.091593:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3169] &lt;gracefully close start&gt;
+  - [pid=3169] &lt;kill&gt;
+  - [pid=3169] &lt;will force kill&gt;
+  - [pid=3169] &lt;process did exit: exitCode=1, signal=null&gt;
+  - [pid=3169] starting temporary directories cleanup
+  - [pid=3169] finished temporary directories cleanup
+  - [pid=3169] &lt;gracefully close end&gt;
 </msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
@@ -225,7 +225,7 @@ Call log:
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="FAIL" start="2026-01-08T14:46:04.646593" elapsed="0.111037">Error: browserType.launch: Target page, context or browser has been closed
+<status status="FAIL" start="2026-01-08T14:51:48.018913" elapsed="0.101185">Error: browserType.launch: Target page, context or browser has been closed
 Browser logs:
 
 ╔════════════════════════════════════════════════════════════════════════════════════════════════╗
@@ -237,26 +237,26 @@ Browser logs:
 Call log:
   - &lt;launching&gt; /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
     [ Message content over the limit has been removed. ]
-...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-7fmiXr --remote-debugging-pipe --no-startup-window
-  - &lt;launched&gt; pid=3102
-  - [pid=3102][err] [3102:3102:0108/144604.730891:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3102][err] [3102:3102:0108/144604.730970:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3102] &lt;gracefully close start&gt;
-  - [pid=3102] &lt;kill&gt;
-  - [pid=3102] &lt;will force kill&gt;
-  - [pid=3102] &lt;process did exit: exitCode=1, signal=null&gt;
-  - [pid=3102] starting temporary directories cleanup
-  - [pid=3102] finished temporary directories cleanup
-  - [pid=3102] &lt;gracefully close end&gt;</status>
+...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-idD8Oz --remote-debugging-pipe --no-startup-window
+  - &lt;launched&gt; pid=3169
+  - [pid=3169][err] [3169:3169:0108/145148.091534:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3169][err] [3169:3169:0108/145148.091593:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3169] &lt;gracefully close start&gt;
+  - [pid=3169] &lt;kill&gt;
+  - [pid=3169] &lt;will force kill&gt;
+  - [pid=3169] &lt;process did exit: exitCode=1, signal=null&gt;
+  - [pid=3169] starting temporary directories cleanup
+  - [pid=3169] finished temporary directories cleanup
+  - [pid=3169] &lt;gracefully close end&gt;</status>
 </kw>
 <kw name="New Page" owner="Browser">
 <arg>${BASE_URL}/login</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="NOT RUN" start="2026-01-08T14:46:04.758161" elapsed="0.000093"/>
+<status status="NOT RUN" start="2026-01-08T14:51:48.120632" elapsed="0.000120"/>
 </kw>
-<status status="FAIL" start="2026-01-08T14:46:04.646099" elapsed="0.112324">Error: browserType.launch: Target page, context or browser has been closed
+<status status="FAIL" start="2026-01-08T14:51:48.018567" elapsed="0.102412">Error: browserType.launch: Target page, context or browser has been closed
 Browser logs:
 
 ╔════════════════════════════════════════════════════════════════════════════════════════════════╗
@@ -268,22 +268,22 @@ Browser logs:
 Call log:
   - &lt;launching&gt; /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
     [ Message content over the limit has been removed. ]
-...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-7fmiXr --remote-debugging-pipe --no-startup-window
-  - &lt;launched&gt; pid=3102
-  - [pid=3102][err] [3102:3102:0108/144604.730891:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3102][err] [3102:3102:0108/144604.730970:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3102] &lt;gracefully close start&gt;
-  - [pid=3102] &lt;kill&gt;
-  - [pid=3102] &lt;will force kill&gt;
-  - [pid=3102] &lt;process did exit: exitCode=1, signal=null&gt;
-  - [pid=3102] starting temporary directories cleanup
-  - [pid=3102] finished temporary directories cleanup
-  - [pid=3102] &lt;gracefully close end&gt;</status>
+...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-idD8Oz --remote-debugging-pipe --no-startup-window
+  - &lt;launched&gt; pid=3169
+  - [pid=3169][err] [3169:3169:0108/145148.091534:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3169][err] [3169:3169:0108/145148.091593:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3169] &lt;gracefully close start&gt;
+  - [pid=3169] &lt;kill&gt;
+  - [pid=3169] &lt;will force kill&gt;
+  - [pid=3169] &lt;process did exit: exitCode=1, signal=null&gt;
+  - [pid=3169] starting temporary directories cleanup
+  - [pid=3169] finished temporary directories cleanup
+  - [pid=3169] &lt;gracefully close end&gt;</status>
 </kw>
 <kw name="Log In Met Gebruiker" owner="common">
 <arg>${user}</arg>
 <arg>${pass}</arg>
-<status status="NOT RUN" start="2026-01-08T14:46:04.758663" elapsed="0.000099"/>
+<status status="NOT RUN" start="2026-01-08T14:51:48.121289" elapsed="0.000103"/>
 </kw>
 <kw name="Get Text" owner="Browser">
 <arg>body</arg>
@@ -293,12 +293,12 @@ Call log:
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-01-08T14:46:04.758986" elapsed="0.000118"/>
+<status status="NOT RUN" start="2026-01-08T14:51:48.121574" elapsed="0.000113"/>
 </kw>
 <arg>tomsmith</arg>
 <arg>FoutWachtwoord</arg>
 <arg>Your password is invalid!</arg>
-<status status="FAIL" start="2026-01-08T14:46:04.645409" elapsed="0.113941">Error: browserType.launch: Target page, context or browser has been closed
+<status status="FAIL" start="2026-01-08T14:51:48.018054" elapsed="0.103844">Error: browserType.launch: Target page, context or browser has been closed
 Browser logs:
 
 ╔════════════════════════════════════════════════════════════════════════════════════════════════╗
@@ -310,43 +310,43 @@ Browser logs:
 Call log:
   - &lt;launching&gt; /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
     [ Message content over the limit has been removed. ]
-...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-7fmiXr --remote-debugging-pipe --no-startup-window
-  - &lt;launched&gt; pid=3102
-  - [pid=3102][err] [3102:3102:0108/144604.730891:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3102][err] [3102:3102:0108/144604.730970:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3102] &lt;gracefully close start&gt;
-  - [pid=3102] &lt;kill&gt;
-  - [pid=3102] &lt;will force kill&gt;
-  - [pid=3102] &lt;process did exit: exitCode=1, signal=null&gt;
-  - [pid=3102] starting temporary directories cleanup
-  - [pid=3102] finished temporary directories cleanup
-  - [pid=3102] &lt;gracefully close end&gt;</status>
+...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-idD8Oz --remote-debugging-pipe --no-startup-window
+  - &lt;launched&gt; pid=3169
+  - [pid=3169][err] [3169:3169:0108/145148.091534:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3169][err] [3169:3169:0108/145148.091593:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3169] &lt;gracefully close start&gt;
+  - [pid=3169] &lt;kill&gt;
+  - [pid=3169] &lt;will force kill&gt;
+  - [pid=3169] &lt;process did exit: exitCode=1, signal=null&gt;
+  - [pid=3169] starting temporary directories cleanup
+  - [pid=3169] finished temporary directories cleanup
+  - [pid=3169] &lt;gracefully close end&gt;</status>
 </kw>
 <kw name="Sluit Test En Maak Screenshot Bij Fout" owner="common" type="TEARDOWN">
 <kw name="Run Keyword If Test Failed" owner="BuiltIn">
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2026-01-08T14:46:04.768691" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+<msg time="2026-01-08T14:51:48.134437" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
 Error: Tried to take screenshot, but no page was open.</msg>
-<msg time="2026-01-08T14:46:04.768789" level="INFO">See also file:///home/runner/work/AP_RF/AP_RF/results/pabot_results/0/playwright-log.txt for additional details.</msg>
-<msg time="2026-01-08T14:46:04.768927" level="FAIL">Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2026-01-08T14:51:48.134623" level="INFO">See also file:///home/runner/work/AP_RF/AP_RF/results/pabot_results/0/playwright-log.txt for additional details.</msg>
+<msg time="2026-01-08T14:51:48.134817" level="FAIL">Error: Tried to take screenshot, but no page was open.</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="FAIL" start="2026-01-08T14:46:04.761019" elapsed="0.008593">Error: Tried to take screenshot, but no page was open.</status>
+<status status="FAIL" start="2026-01-08T14:51:48.123493" elapsed="0.012855">Error: Tried to take screenshot, but no page was open.</status>
 </kw>
 <arg>Take Screenshot</arg>
 <doc>Runs the given keyword with the given arguments, if the test failed.</doc>
-<status status="FAIL" start="2026-01-08T14:46:04.760387" elapsed="0.009365">Error: Tried to take screenshot, but no page was open.</status>
+<status status="FAIL" start="2026-01-08T14:51:48.123004" elapsed="0.013513">Error: Tried to take screenshot, but no page was open.</status>
 </kw>
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-08T14:46:04.772490" level="INFO">No browser open, doing nothing</msg>
+<msg time="2026-01-08T14:51:48.139382" level="INFO">No browser open, doing nothing</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-08T14:46:04.769918" elapsed="0.002684"/>
+<status status="PASS" start="2026-01-08T14:51:48.136734" elapsed="0.002780"/>
 </kw>
-<status status="FAIL" start="2026-01-08T14:46:04.759854" elapsed="0.012922">Error: Tried to take screenshot, but no page was open.</status>
+<status status="FAIL" start="2026-01-08T14:51:48.122452" elapsed="0.017241">Error: Tried to take screenshot, but no page was open.</status>
 </kw>
-<status status="FAIL" start="2026-01-08T14:46:04.641852" elapsed="0.131023">Error: browserType.launch: Target page, context or browser has been closed
+<status status="FAIL" start="2026-01-08T14:51:48.015053" elapsed="0.124755">Error: browserType.launch: Target page, context or browser has been closed
 Browser logs:
 
 ╔════════════════════════════════════════════════════════════════════════════════════════════════╗
@@ -358,17 +358,17 @@ Browser logs:
 Call log:
   - &lt;launching&gt; /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
     [ Message content over the limit has been removed. ]
-...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-7fmiXr --remote-debugging-pipe --no-startup-window
-  - &lt;launched&gt; pid=3102
-  - [pid=3102][err] [3102:3102:0108/144604.730891:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3102][err] [3102:3102:0108/144604.730970:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3102] &lt;gracefully close start&gt;
-  - [pid=3102] &lt;kill&gt;
-  - [pid=3102] &lt;will force kill&gt;
-  - [pid=3102] &lt;process did exit: exitCode=1, signal=null&gt;
-  - [pid=3102] starting temporary directories cleanup
-  - [pid=3102] finished temporary directories cleanup
-  - [pid=3102] &lt;gracefully close end&gt;
+...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-idD8Oz --remote-debugging-pipe --no-startup-window
+  - &lt;launched&gt; pid=3169
+  - [pid=3169][err] [3169:3169:0108/145148.091534:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3169][err] [3169:3169:0108/145148.091593:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3169] &lt;gracefully close start&gt;
+  - [pid=3169] &lt;kill&gt;
+  - [pid=3169] &lt;will force kill&gt;
+  - [pid=3169] &lt;process did exit: exitCode=1, signal=null&gt;
+  - [pid=3169] starting temporary directories cleanup
+  - [pid=3169] finished temporary directories cleanup
+  - [pid=3169] &lt;gracefully close end&gt;
 
 Also teardown failed:
 Error: Tried to take screenshot, but no page was open.</status>
@@ -377,11 +377,11 @@ Error: Tried to take screenshot, but no page was open.</status>
 <kw name="Inloggen Met Verschillende Gegevens">
 <kw name="Open De Browser Op De Inlogpagina" owner="common">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-08T14:46:04.780768" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 500.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/0/browser/traces/temp/8a52cd13-fc78-434d-bcf3-81d51780e934"}</msg>
-<msg time="2026-01-08T14:46:04.880962" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+<msg time="2026-01-08T14:51:48.147919" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 500.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/0/browser/traces/temp/f675b7f7-6817-437b-8ef6-5957213514f6"}</msg>
+<msg time="2026-01-08T14:51:48.232394" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
 Error: Tried to take screenshot, but no page was open.</msg>
-<msg time="2026-01-08T14:46:04.881094" level="INFO">See also file:///home/runner/work/AP_RF/AP_RF/results/pabot_results/0/playwright-log.txt for additional details.</msg>
-<msg time="2026-01-08T14:46:04.881268" level="FAIL">Error: browserType.launch: Target page, context or browser has been closed
+<msg time="2026-01-08T14:51:48.232506" level="INFO">See also file:///home/runner/work/AP_RF/AP_RF/results/pabot_results/0/playwright-log.txt for additional details.</msg>
+<msg time="2026-01-08T14:51:48.232708" level="FAIL">Error: browserType.launch: Target page, context or browser has been closed
 Browser logs:
 
 ╔════════════════════════════════════════════════════════════════════════════════════════════════╗
@@ -391,17 +391,17 @@ Browser logs:
 ║ &lt;3 Playwright Team                                                                             ║
 ╚════════════════════════════════════════════════════════════════════════════════════════════════╝
 Call log:
-  - &lt;launching&gt; /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-Ewn1Tp --remote-debugging-pipe --no-startup-window
-  - &lt;launched&gt; pid=3141
-  - [pid=3141][err] [3141:3141:0108/144604.864335:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3141][err] [3141:3141:0108/144604.864383:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3141] &lt;gracefully close start&gt;
-  - [pid=3141] &lt;kill&gt;
-  - [pid=3141] &lt;will force kill&gt;
-  - [pid=3141] &lt;process did exit: exitCode=1, signal=null&gt;
-  - [pid=3141] starting temporary directories cleanup
-  - [pid=3141] finished temporary directories cleanup
-  - [pid=3141] &lt;gracefully close end&gt;
+  - &lt;launching&gt; /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-zclKXM --remote-debugging-pipe --no-startup-window
+  - &lt;launched&gt; pid=3213
+  - [pid=3213][err] [3213:3213:0108/145148.218035:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3213][err] [3213:3213:0108/145148.218062:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3213] &lt;gracefully close start&gt;
+  - [pid=3213] &lt;kill&gt;
+  - [pid=3213] &lt;will force kill&gt;
+  - [pid=3213] &lt;process did exit: exitCode=1, signal=null&gt;
+  - [pid=3213] starting temporary directories cleanup
+  - [pid=3213] finished temporary directories cleanup
+  - [pid=3213] &lt;gracefully close end&gt;
 </msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
@@ -409,7 +409,7 @@ Call log:
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="FAIL" start="2026-01-08T14:46:04.779985" elapsed="0.102111">Error: browserType.launch: Target page, context or browser has been closed
+<status status="FAIL" start="2026-01-08T14:51:48.147001" elapsed="0.086432">Error: browserType.launch: Target page, context or browser has been closed
 Browser logs:
 
 ╔════════════════════════════════════════════════════════════════════════════════════════════════╗
@@ -421,26 +421,26 @@ Browser logs:
 Call log:
   - &lt;launching&gt; /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
     [ Message content over the limit has been removed. ]
-...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-Ewn1Tp --remote-debugging-pipe --no-startup-window
-  - &lt;launched&gt; pid=3141
-  - [pid=3141][err] [3141:3141:0108/144604.864335:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3141][err] [3141:3141:0108/144604.864383:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3141] &lt;gracefully close start&gt;
-  - [pid=3141] &lt;kill&gt;
-  - [pid=3141] &lt;will force kill&gt;
-  - [pid=3141] &lt;process did exit: exitCode=1, signal=null&gt;
-  - [pid=3141] starting temporary directories cleanup
-  - [pid=3141] finished temporary directories cleanup
-  - [pid=3141] &lt;gracefully close end&gt;</status>
+...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-zclKXM --remote-debugging-pipe --no-startup-window
+  - &lt;launched&gt; pid=3213
+  - [pid=3213][err] [3213:3213:0108/145148.218035:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3213][err] [3213:3213:0108/145148.218062:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3213] &lt;gracefully close start&gt;
+  - [pid=3213] &lt;kill&gt;
+  - [pid=3213] &lt;will force kill&gt;
+  - [pid=3213] &lt;process did exit: exitCode=1, signal=null&gt;
+  - [pid=3213] starting temporary directories cleanup
+  - [pid=3213] finished temporary directories cleanup
+  - [pid=3213] &lt;gracefully close end&gt;</status>
 </kw>
 <kw name="New Page" owner="Browser">
 <arg>${BASE_URL}/login</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="NOT RUN" start="2026-01-08T14:46:04.882487" elapsed="0.000094"/>
+<status status="NOT RUN" start="2026-01-08T14:51:48.233820" elapsed="0.000088"/>
 </kw>
-<status status="FAIL" start="2026-01-08T14:46:04.779656" elapsed="0.103093">Error: browserType.launch: Target page, context or browser has been closed
+<status status="FAIL" start="2026-01-08T14:51:48.146678" elapsed="0.087393">Error: browserType.launch: Target page, context or browser has been closed
 Browser logs:
 
 ╔════════════════════════════════════════════════════════════════════════════════════════════════╗
@@ -452,22 +452,22 @@ Browser logs:
 Call log:
   - &lt;launching&gt; /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
     [ Message content over the limit has been removed. ]
-...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-Ewn1Tp --remote-debugging-pipe --no-startup-window
-  - &lt;launched&gt; pid=3141
-  - [pid=3141][err] [3141:3141:0108/144604.864335:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3141][err] [3141:3141:0108/144604.864383:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3141] &lt;gracefully close start&gt;
-  - [pid=3141] &lt;kill&gt;
-  - [pid=3141] &lt;will force kill&gt;
-  - [pid=3141] &lt;process did exit: exitCode=1, signal=null&gt;
-  - [pid=3141] starting temporary directories cleanup
-  - [pid=3141] finished temporary directories cleanup
-  - [pid=3141] &lt;gracefully close end&gt;</status>
+...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-zclKXM --remote-debugging-pipe --no-startup-window
+  - &lt;launched&gt; pid=3213
+  - [pid=3213][err] [3213:3213:0108/145148.218035:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3213][err] [3213:3213:0108/145148.218062:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3213] &lt;gracefully close start&gt;
+  - [pid=3213] &lt;kill&gt;
+  - [pid=3213] &lt;will force kill&gt;
+  - [pid=3213] &lt;process did exit: exitCode=1, signal=null&gt;
+  - [pid=3213] starting temporary directories cleanup
+  - [pid=3213] finished temporary directories cleanup
+  - [pid=3213] &lt;gracefully close end&gt;</status>
 </kw>
 <kw name="Log In Met Gebruiker" owner="common">
 <arg>${user}</arg>
 <arg>${pass}</arg>
-<status status="NOT RUN" start="2026-01-08T14:46:04.883044" elapsed="0.000095"/>
+<status status="NOT RUN" start="2026-01-08T14:51:48.234295" elapsed="0.000077"/>
 </kw>
 <kw name="Get Text" owner="Browser">
 <arg>body</arg>
@@ -477,12 +477,12 @@ Call log:
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-01-08T14:46:04.883269" elapsed="0.000067"/>
+<status status="NOT RUN" start="2026-01-08T14:51:48.234482" elapsed="0.000062"/>
 </kw>
 <arg>Alber123</arg>
 <arg>SuperSecretPassword!</arg>
 <arg>Your username is invalid!</arg>
-<status status="FAIL" start="2026-01-08T14:46:04.779191" elapsed="0.104302">Error: browserType.launch: Target page, context or browser has been closed
+<status status="FAIL" start="2026-01-08T14:51:48.146281" elapsed="0.088437">Error: browserType.launch: Target page, context or browser has been closed
 Browser logs:
 
 ╔════════════════════════════════════════════════════════════════════════════════════════════════╗
@@ -494,43 +494,43 @@ Browser logs:
 Call log:
   - &lt;launching&gt; /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
     [ Message content over the limit has been removed. ]
-...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-Ewn1Tp --remote-debugging-pipe --no-startup-window
-  - &lt;launched&gt; pid=3141
-  - [pid=3141][err] [3141:3141:0108/144604.864335:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3141][err] [3141:3141:0108/144604.864383:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3141] &lt;gracefully close start&gt;
-  - [pid=3141] &lt;kill&gt;
-  - [pid=3141] &lt;will force kill&gt;
-  - [pid=3141] &lt;process did exit: exitCode=1, signal=null&gt;
-  - [pid=3141] starting temporary directories cleanup
-  - [pid=3141] finished temporary directories cleanup
-  - [pid=3141] &lt;gracefully close end&gt;</status>
+...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-zclKXM --remote-debugging-pipe --no-startup-window
+  - &lt;launched&gt; pid=3213
+  - [pid=3213][err] [3213:3213:0108/145148.218035:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3213][err] [3213:3213:0108/145148.218062:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3213] &lt;gracefully close start&gt;
+  - [pid=3213] &lt;kill&gt;
+  - [pid=3213] &lt;will force kill&gt;
+  - [pid=3213] &lt;process did exit: exitCode=1, signal=null&gt;
+  - [pid=3213] starting temporary directories cleanup
+  - [pid=3213] finished temporary directories cleanup
+  - [pid=3213] &lt;gracefully close end&gt;</status>
 </kw>
 <kw name="Sluit Test En Maak Screenshot Bij Fout" owner="common" type="TEARDOWN">
 <kw name="Run Keyword If Test Failed" owner="BuiltIn">
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2026-01-08T14:46:04.892161" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+<msg time="2026-01-08T14:51:48.242865" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
 Error: Tried to take screenshot, but no page was open.</msg>
-<msg time="2026-01-08T14:46:04.892261" level="INFO">See also file:///home/runner/work/AP_RF/AP_RF/results/pabot_results/0/playwright-log.txt for additional details.</msg>
-<msg time="2026-01-08T14:46:04.892387" level="FAIL">Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2026-01-08T14:51:48.242954" level="INFO">See also file:///home/runner/work/AP_RF/AP_RF/results/pabot_results/0/playwright-log.txt for additional details.</msg>
+<msg time="2026-01-08T14:51:48.243055" level="FAIL">Error: Tried to take screenshot, but no page was open.</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="FAIL" start="2026-01-08T14:46:04.884510" elapsed="0.008546">Error: Tried to take screenshot, but no page was open.</status>
+<status status="FAIL" start="2026-01-08T14:51:48.235758" elapsed="0.007996">Error: Tried to take screenshot, but no page was open.</status>
 </kw>
 <arg>Take Screenshot</arg>
 <doc>Runs the given keyword with the given arguments, if the test failed.</doc>
-<status status="FAIL" start="2026-01-08T14:46:04.884144" elapsed="0.009046">Error: Tried to take screenshot, but no page was open.</status>
+<status status="FAIL" start="2026-01-08T14:51:48.235337" elapsed="0.008544">Error: Tried to take screenshot, but no page was open.</status>
 </kw>
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-08T14:46:04.895348" level="INFO">No browser open, doing nothing</msg>
+<msg time="2026-01-08T14:51:48.246061" level="INFO">No browser open, doing nothing</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-08T14:46:04.893333" elapsed="0.002111"/>
+<status status="PASS" start="2026-01-08T14:51:48.244019" elapsed="0.002159"/>
 </kw>
-<status status="FAIL" start="2026-01-08T14:46:04.883812" elapsed="0.011775">Error: Tried to take screenshot, but no page was open.</status>
+<status status="FAIL" start="2026-01-08T14:51:48.235006" elapsed="0.011344">Error: Tried to take screenshot, but no page was open.</status>
 </kw>
-<status status="FAIL" start="2026-01-08T14:46:04.776998" elapsed="0.118683">Error: browserType.launch: Target page, context or browser has been closed
+<status status="FAIL" start="2026-01-08T14:51:48.144372" elapsed="0.102090">Error: browserType.launch: Target page, context or browser has been closed
 Browser logs:
 
 ╔════════════════════════════════════════════════════════════════════════════════════════════════╗
@@ -542,17 +542,17 @@ Browser logs:
 Call log:
   - &lt;launching&gt; /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
     [ Message content over the limit has been removed. ]
-...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-Ewn1Tp --remote-debugging-pipe --no-startup-window
-  - &lt;launched&gt; pid=3141
-  - [pid=3141][err] [3141:3141:0108/144604.864335:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3141][err] [3141:3141:0108/144604.864383:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3141] &lt;gracefully close start&gt;
-  - [pid=3141] &lt;kill&gt;
-  - [pid=3141] &lt;will force kill&gt;
-  - [pid=3141] &lt;process did exit: exitCode=1, signal=null&gt;
-  - [pid=3141] starting temporary directories cleanup
-  - [pid=3141] finished temporary directories cleanup
-  - [pid=3141] &lt;gracefully close end&gt;
+...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-zclKXM --remote-debugging-pipe --no-startup-window
+  - &lt;launched&gt; pid=3213
+  - [pid=3213][err] [3213:3213:0108/145148.218035:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3213][err] [3213:3213:0108/145148.218062:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3213] &lt;gracefully close start&gt;
+  - [pid=3213] &lt;kill&gt;
+  - [pid=3213] &lt;will force kill&gt;
+  - [pid=3213] &lt;process did exit: exitCode=1, signal=null&gt;
+  - [pid=3213] starting temporary directories cleanup
+  - [pid=3213] finished temporary directories cleanup
+  - [pid=3213] &lt;gracefully close end&gt;
 
 Also teardown failed:
 Error: Tried to take screenshot, but no page was open.</status>
@@ -561,11 +561,11 @@ Error: Tried to take screenshot, but no page was open.</status>
 <kw name="Inloggen Met Verschillende Gegevens">
 <kw name="Open De Browser Op De Inlogpagina" owner="common">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-08T14:46:04.903364" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 500.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/0/browser/traces/temp/9f9f330f-0cec-487a-a37f-56177bcf2dc0"}</msg>
-<msg time="2026-01-08T14:46:04.994190" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+<msg time="2026-01-08T14:51:48.254573" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 500.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/0/browser/traces/temp/7f877a77-eeda-4ef9-9ca0-756b37772811"}</msg>
+<msg time="2026-01-08T14:51:48.332177" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
 Error: Tried to take screenshot, but no page was open.</msg>
-<msg time="2026-01-08T14:46:04.994340" level="INFO">See also file:///home/runner/work/AP_RF/AP_RF/results/pabot_results/0/playwright-log.txt for additional details.</msg>
-<msg time="2026-01-08T14:46:04.994517" level="FAIL">Error: browserType.launch: Target page, context or browser has been closed
+<msg time="2026-01-08T14:51:48.332346" level="INFO">See also file:///home/runner/work/AP_RF/AP_RF/results/pabot_results/0/playwright-log.txt for additional details.</msg>
+<msg time="2026-01-08T14:51:48.332599" level="FAIL">Error: browserType.launch: Target page, context or browser has been closed
 Browser logs:
 
 ╔════════════════════════════════════════════════════════════════════════════════════════════════╗
@@ -575,17 +575,17 @@ Browser logs:
 ║ &lt;3 Playwright Team                                                                             ║
 ╚════════════════════════════════════════════════════════════════════════════════════════════════╝
 Call log:
-  - &lt;launching&gt; /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-Qr8iB9 --remote-debugging-pipe --no-startup-window
-  - &lt;launched&gt; pid=3194
-  - [pid=3194][err] [3194:3194:0108/144604.976367:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3194][err] [3194:3194:0108/144604.976421:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3194] &lt;gracefully close start&gt;
-  - [pid=3194] &lt;kill&gt;
-  - [pid=3194] &lt;will force kill&gt;
-  - [pid=3194] &lt;process did exit: exitCode=1, signal=null&gt;
-  - [pid=3194] starting temporary directories cleanup
-  - [pid=3194] finished temporary directories cleanup
-  - [pid=3194] &lt;gracefully close end&gt;
+  - &lt;launching&gt; /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-XDsz2i --remote-debugging-pipe --no-startup-window
+  - &lt;launched&gt; pid=3234
+  - [pid=3234][err] [3234:3234:0108/145148.314445:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3234][err] [3234:3234:0108/145148.314475:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3234] &lt;gracefully close start&gt;
+  - [pid=3234] &lt;kill&gt;
+  - [pid=3234] &lt;will force kill&gt;
+  - [pid=3234] &lt;process did exit: exitCode=1, signal=null&gt;
+  - [pid=3234] starting temporary directories cleanup
+  - [pid=3234] finished temporary directories cleanup
+  - [pid=3234] &lt;gracefully close end&gt;
 </msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
@@ -593,7 +593,7 @@ Call log:
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="FAIL" start="2026-01-08T14:46:04.902643" elapsed="0.092627">Error: browserType.launch: Target page, context or browser has been closed
+<status status="FAIL" start="2026-01-08T14:51:48.253669" elapsed="0.080058">Error: browserType.launch: Target page, context or browser has been closed
 Browser logs:
 
 ╔════════════════════════════════════════════════════════════════════════════════════════════════╗
@@ -605,26 +605,26 @@ Browser logs:
 Call log:
   - &lt;launching&gt; /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
     [ Message content over the limit has been removed. ]
-...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-Qr8iB9 --remote-debugging-pipe --no-startup-window
-  - &lt;launched&gt; pid=3194
-  - [pid=3194][err] [3194:3194:0108/144604.976367:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3194][err] [3194:3194:0108/144604.976421:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3194] &lt;gracefully close start&gt;
-  - [pid=3194] &lt;kill&gt;
-  - [pid=3194] &lt;will force kill&gt;
-  - [pid=3194] &lt;process did exit: exitCode=1, signal=null&gt;
-  - [pid=3194] starting temporary directories cleanup
-  - [pid=3194] finished temporary directories cleanup
-  - [pid=3194] &lt;gracefully close end&gt;</status>
+...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-XDsz2i --remote-debugging-pipe --no-startup-window
+  - &lt;launched&gt; pid=3234
+  - [pid=3234][err] [3234:3234:0108/145148.314445:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3234][err] [3234:3234:0108/145148.314475:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3234] &lt;gracefully close start&gt;
+  - [pid=3234] &lt;kill&gt;
+  - [pid=3234] &lt;will force kill&gt;
+  - [pid=3234] &lt;process did exit: exitCode=1, signal=null&gt;
+  - [pid=3234] starting temporary directories cleanup
+  - [pid=3234] finished temporary directories cleanup
+  - [pid=3234] &lt;gracefully close end&gt;</status>
 </kw>
 <kw name="New Page" owner="Browser">
 <arg>${BASE_URL}/login</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="NOT RUN" start="2026-01-08T14:46:04.996237" elapsed="0.000100"/>
+<status status="NOT RUN" start="2026-01-08T14:51:48.335263" elapsed="0.000118"/>
 </kw>
-<status status="FAIL" start="2026-01-08T14:46:04.902399" elapsed="0.094100">Error: browserType.launch: Target page, context or browser has been closed
+<status status="FAIL" start="2026-01-08T14:51:48.253311" elapsed="0.082321">Error: browserType.launch: Target page, context or browser has been closed
 Browser logs:
 
 ╔════════════════════════════════════════════════════════════════════════════════════════════════╗
@@ -636,22 +636,22 @@ Browser logs:
 Call log:
   - &lt;launching&gt; /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
     [ Message content over the limit has been removed. ]
-...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-Qr8iB9 --remote-debugging-pipe --no-startup-window
-  - &lt;launched&gt; pid=3194
-  - [pid=3194][err] [3194:3194:0108/144604.976367:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3194][err] [3194:3194:0108/144604.976421:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3194] &lt;gracefully close start&gt;
-  - [pid=3194] &lt;kill&gt;
-  - [pid=3194] &lt;will force kill&gt;
-  - [pid=3194] &lt;process did exit: exitCode=1, signal=null&gt;
-  - [pid=3194] starting temporary directories cleanup
-  - [pid=3194] finished temporary directories cleanup
-  - [pid=3194] &lt;gracefully close end&gt;</status>
+...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-XDsz2i --remote-debugging-pipe --no-startup-window
+  - &lt;launched&gt; pid=3234
+  - [pid=3234][err] [3234:3234:0108/145148.314445:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3234][err] [3234:3234:0108/145148.314475:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3234] &lt;gracefully close start&gt;
+  - [pid=3234] &lt;kill&gt;
+  - [pid=3234] &lt;will force kill&gt;
+  - [pid=3234] &lt;process did exit: exitCode=1, signal=null&gt;
+  - [pid=3234] starting temporary directories cleanup
+  - [pid=3234] finished temporary directories cleanup
+  - [pid=3234] &lt;gracefully close end&gt;</status>
 </kw>
 <kw name="Log In Met Gebruiker" owner="common">
 <arg>${user}</arg>
 <arg>${pass}</arg>
-<status status="NOT RUN" start="2026-01-08T14:46:04.996748" elapsed="0.000090"/>
+<status status="NOT RUN" start="2026-01-08T14:51:48.335939" elapsed="0.000104"/>
 </kw>
 <kw name="Get Text" owner="Browser">
 <arg>body</arg>
@@ -661,12 +661,12 @@ Call log:
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-01-08T14:46:04.997001" elapsed="0.000077"/>
+<status status="NOT RUN" start="2026-01-08T14:51:48.336196" elapsed="0.000089"/>
 </kw>
 <arg>${EMPTY}</arg>
 <arg>${EMPTY}</arg>
 <arg>Your username is invalid!</arg>
-<status status="FAIL" start="2026-01-08T14:46:04.901459" elapsed="0.095778">Error: browserType.launch: Target page, context or browser has been closed
+<status status="FAIL" start="2026-01-08T14:51:48.251956" elapsed="0.084529">Error: browserType.launch: Target page, context or browser has been closed
 Browser logs:
 
 ╔════════════════════════════════════════════════════════════════════════════════════════════════╗
@@ -678,43 +678,43 @@ Browser logs:
 Call log:
   - &lt;launching&gt; /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
     [ Message content over the limit has been removed. ]
-...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-Qr8iB9 --remote-debugging-pipe --no-startup-window
-  - &lt;launched&gt; pid=3194
-  - [pid=3194][err] [3194:3194:0108/144604.976367:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3194][err] [3194:3194:0108/144604.976421:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3194] &lt;gracefully close start&gt;
-  - [pid=3194] &lt;kill&gt;
-  - [pid=3194] &lt;will force kill&gt;
-  - [pid=3194] &lt;process did exit: exitCode=1, signal=null&gt;
-  - [pid=3194] starting temporary directories cleanup
-  - [pid=3194] finished temporary directories cleanup
-  - [pid=3194] &lt;gracefully close end&gt;</status>
+...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-XDsz2i --remote-debugging-pipe --no-startup-window
+  - &lt;launched&gt; pid=3234
+  - [pid=3234][err] [3234:3234:0108/145148.314445:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3234][err] [3234:3234:0108/145148.314475:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3234] &lt;gracefully close start&gt;
+  - [pid=3234] &lt;kill&gt;
+  - [pid=3234] &lt;will force kill&gt;
+  - [pid=3234] &lt;process did exit: exitCode=1, signal=null&gt;
+  - [pid=3234] starting temporary directories cleanup
+  - [pid=3234] finished temporary directories cleanup
+  - [pid=3234] &lt;gracefully close end&gt;</status>
 </kw>
 <kw name="Sluit Test En Maak Screenshot Bij Fout" owner="common" type="TEARDOWN">
 <kw name="Run Keyword If Test Failed" owner="BuiltIn">
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2026-01-08T14:46:05.004863" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+<msg time="2026-01-08T14:51:48.344139" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
 Error: Tried to take screenshot, but no page was open.</msg>
-<msg time="2026-01-08T14:46:05.005017" level="INFO">See also file:///home/runner/work/AP_RF/AP_RF/results/pabot_results/0/playwright-log.txt for additional details.</msg>
-<msg time="2026-01-08T14:46:05.005178" level="FAIL">Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2026-01-08T14:51:48.344220" level="INFO">See also file:///home/runner/work/AP_RF/AP_RF/results/pabot_results/0/playwright-log.txt for additional details.</msg>
+<msg time="2026-01-08T14:51:48.344322" level="FAIL">Error: Tried to take screenshot, but no page was open.</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="FAIL" start="2026-01-08T14:46:04.998286" elapsed="0.007528">Error: Tried to take screenshot, but no page was open.</status>
+<status status="FAIL" start="2026-01-08T14:51:48.338518" elapsed="0.006482">Error: Tried to take screenshot, but no page was open.</status>
 </kw>
 <arg>Take Screenshot</arg>
 <doc>Runs the given keyword with the given arguments, if the test failed.</doc>
-<status status="FAIL" start="2026-01-08T14:46:04.997871" elapsed="0.008126">Error: Tried to take screenshot, but no page was open.</status>
+<status status="FAIL" start="2026-01-08T14:51:48.338166" elapsed="0.006984">Error: Tried to take screenshot, but no page was open.</status>
 </kw>
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-08T14:46:05.008353" level="INFO">No browser open, doing nothing</msg>
+<msg time="2026-01-08T14:51:48.347255" level="INFO">No browser open, doing nothing</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-08T14:46:05.006174" elapsed="0.002282"/>
+<status status="PASS" start="2026-01-08T14:51:48.345321" elapsed="0.002018"/>
 </kw>
-<status status="FAIL" start="2026-01-08T14:46:04.997557" elapsed="0.011051">Error: Tried to take screenshot, but no page was open.</status>
+<status status="FAIL" start="2026-01-08T14:51:48.337853" elapsed="0.009608">Error: Tried to take screenshot, but no page was open.</status>
 </kw>
-<status status="FAIL" start="2026-01-08T14:46:04.899356" elapsed="0.109354">Error: browserType.launch: Target page, context or browser has been closed
+<status status="FAIL" start="2026-01-08T14:51:48.249988" elapsed="0.097557">Error: browserType.launch: Target page, context or browser has been closed
 Browser logs:
 
 ╔════════════════════════════════════════════════════════════════════════════════════════════════╗
@@ -726,28 +726,28 @@ Browser logs:
 Call log:
   - &lt;launching&gt; /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1200/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occl...
     [ Message content over the limit has been removed. ]
-...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-Qr8iB9 --remote-debugging-pipe --no-startup-window
-  - &lt;launched&gt; pid=3194
-  - [pid=3194][err] [3194:3194:0108/144604.976367:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
-  - [pid=3194][err] [3194:3194:0108/144604.976421:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
-  - [pid=3194] &lt;gracefully close start&gt;
-  - [pid=3194] &lt;kill&gt;
-  - [pid=3194] &lt;will force kill&gt;
-  - [pid=3194] &lt;process did exit: exitCode=1, signal=null&gt;
-  - [pid=3194] starting temporary directories cleanup
-  - [pid=3194] finished temporary directories cleanup
-  - [pid=3194] &lt;gracefully close end&gt;
+...ut --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-XDsz2i --remote-debugging-pipe --no-startup-window
+  - &lt;launched&gt; pid=3234
+  - [pid=3234][err] [3234:3234:0108/145148.314445:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY
+  - [pid=3234][err] [3234:3234:0108/145148.314475:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.
+  - [pid=3234] &lt;gracefully close start&gt;
+  - [pid=3234] &lt;kill&gt;
+  - [pid=3234] &lt;will force kill&gt;
+  - [pid=3234] &lt;process did exit: exitCode=1, signal=null&gt;
+  - [pid=3234] starting temporary directories cleanup
+  - [pid=3234] finished temporary directories cleanup
+  - [pid=3234] &lt;gracefully close end&gt;
 
 Also teardown failed:
 Error: Tried to take screenshot, but no page was open.</status>
 </test>
-<status status="FAIL" start="2026-01-08T14:46:03.628836" elapsed="1.383664"/>
+<status status="FAIL" start="2026-01-08T14:51:46.911863" elapsed="1.439217"/>
 </suite>
-<status status="FAIL" start="2026-01-08T14:46:03.628018" elapsed="1.388274"/>
+<status status="FAIL" start="2026-01-08T14:51:46.910595" elapsed="1.444579"/>
 </suite>
-<status status="FAIL" start="2026-01-08T14:46:03.627078" elapsed="1.389684"/>
+<status status="FAIL" start="2026-01-08T14:51:46.909262" elapsed="1.446394"/>
 </suite>
-<status status="FAIL" start="2026-01-08T14:46:03.605219" elapsed="1.411992"/>
+<status status="FAIL" start="2026-01-08T14:51:46.875949" elapsed="1.480112"/>
 </suite>
 <statistics>
 <total>
