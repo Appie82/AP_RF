@@ -1,41 +1,40 @@
-name: Robot Framework Tests
+name: Robot Framework Master Pipeline
 
-on: [push]
+on:
+  push:
+    branches: [ "main" ]
+
+permissions:
+  contents: write
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Code ophalen
-        uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
 
-      - name: Python instellen
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
 
-      - name: Install System Dependencies for Browser
-        run: npx playwright install-deps
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install robotframework robotframework-browser robotframework-pabot robotframework-requests
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install robotframework robotframework-browser robotframework-requests
-          rfbrowser init
+    - name: Initialize Browser Library
+      run: rfbrowser init
 
-      - name: Run Robot Framework Tests
-        # We voegen -v HEADLESS:True toe om Playwright te dwingen zonder scherm te draaien
-        run: python -m robot -d results -v BASE_URL:https://the-internet.herokuapp.com -v HEADLESS:True tests/
-        env:
-          RW_BROWSER_PAUSE_ON_FAILURE: "False"
-        # We halen continue-on-error weg als je wilt dat GitHub een rood kruisje geeft bij falende tests
-        # Zo zie je direct of je suite 100% gezond is
-        continue-on-error: false 
+    - name: Run All Tests Parallel
+      # In de cloud werkt het 'pabot' commando direct
+      run: pabot --processes 3 -d results tests
+      continue-on-error: true
 
-      - name: Upload Results
-        uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: robot-results-${{ github.run_number }}
-          path: results/
+    - name: Deploy Report to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./results
