@@ -29,7 +29,6 @@ jobs:
       run: rfbrowser init
 
     - name: Run All Tests Parallel
-      # In de cloud werkt het 'pabot' commando direct
       run: pabot --processes 3 -d results tests
       continue-on-error: true
 
@@ -38,3 +37,4 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./results
+        
