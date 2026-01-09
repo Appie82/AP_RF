@@ -4,8 +4,6 @@ Library     RequestsLibrary
 Library     Collections
 
 *** Variables ***
-# --- Algemene Instellingen ---
-*** Variables ***
 ${BROWSER}           chromium
 ${HEADLESS}          True
 ${SLOWMO}            0.0s    # Zet dit op 0.0s voor de cloud (snelheid!)
@@ -63,3 +61,14 @@ Vul Inloggegevens In En Verstuur
     [Arguments]    ${user}    ${pass}
     # We hergebruiken het bestaande login keyword om dubbele code te voorkomen
     Log In Met Gebruiker    ${user}    ${pass}
+
+Haal Gebruikersnaam Op Via API
+    [Documentation]    Gebruikt JSONPlaceholder als alternatief voor ReqRes.
+    Create Session    placeholder    https://jsonplaceholder.typicode.com    verify=True
+    ${response}=      GET On Session    placeholder    /users/1    expected_status=200
+    
+    # JSONPlaceholder geeft 'name' terug (bijv. "Leanne Graham")
+    ${volledige_naam}=    Set Variable      ${response.json()['name']}
+    # We pakken alleen de voornaam (alles voor de eerste spatie)
+    ${voornaam}=          Evaluate          "${volledige_naam}".split()[0]
+    RETURN                ${voornaam}

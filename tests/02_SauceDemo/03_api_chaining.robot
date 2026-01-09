@@ -8,8 +8,8 @@ Scenario: Log In Met Data Van API
     [Tags]             chaining
     
     # 1. Haal de data op
-    ${api_naam}=       Haal Gebruikersnaam Op Via API
-    
+    ${api_naam}=     common.Haal Gebruikersnaam Op Via API
+        
     # 2. Gebruik de data in de browser
     Start Test-Sessie    ${SAUCE_URL}
     Fill Text           id=user-name    ${api_naam}
@@ -20,3 +20,4 @@ Scenario: Log In Met Data Van API
     # SauceDemo geeft een melding dat de gebruiker niet bestaat.
     Get Text            css=[data-test="error"]    contains    Username and password do not match
     Log                 De test is geslaagd met API-naam: ${api_naam}
+    
