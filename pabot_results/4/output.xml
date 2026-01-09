@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-09T14:54:17.108795" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-09T15:39:39.932752" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="01 Basis" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis">
@@ -7,18 +7,18 @@
 <test id="s1-s1-s1-s1-t1" name="Scenario 05: Selecteer Optie Uit Dropdown" line="7">
 <kw name="Start Test-Sessie" owner="common" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-09T14:54:17.327569" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/4/browser/traces/temp/4b0a3f40-aa03-4dc5-9639-6878903a1d1d"}</msg>
-<msg time="2026-01-09T14:54:17.331447" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:45327</msg>
-<msg time="2026-01-09T14:54:17.948043" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/4/browser/traces/temp/4b0a3f40-aa03-4dc5-9639-6878903a1d1d"}</msg>
+<msg time="2026-01-09T15:39:40.167410" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/4/browser/traces/temp/1190db2e-c9fd-4111-ac80-2badc9287b0b"}</msg>
+<msg time="2026-01-09T15:39:40.171103" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:44091</msg>
+<msg time="2026-01-09T15:39:40.760616" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/4/browser/traces/temp/1190db2e-c9fd-4111-ac80-2badc9287b0b"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-09T14:54:17.326854" elapsed="0.621598"/>
+<status status="PASS" start="2026-01-09T15:39:40.166732" elapsed="0.594118"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2026-01-09T14:54:17.952140" level="INFO">{
+<msg time="2026-01-09T15:39:40.763012" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -32,44 +32,44 @@
     "height": 720
   }
 }</msg>
-<msg time="2026-01-09T14:54:17.965819" level="INFO">Successfully created context. </msg>
-<msg time="2026-01-09T14:54:17.965908" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2026-01-09T15:39:40.772507" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-09T15:39:40.772565" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
 <arg>viewport={'width': 1280, 'height': 720}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2026-01-09T14:54:17.949178" elapsed="0.016819"/>
+<status status="PASS" start="2026-01-09T15:39:40.761142" elapsed="0.011522"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-09T14:54:18.141977" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com</msg>
+<msg time="2026-01-09T15:39:41.226942" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com</msg>
 <arg>${START_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-09T14:54:17.966217" elapsed="0.176130"/>
+<status status="PASS" start="2026-01-09T15:39:40.772863" elapsed="0.454397"/>
 </kw>
-<status status="PASS" start="2026-01-09T14:54:17.326066" elapsed="0.816522"/>
+<status status="PASS" start="2026-01-09T15:39:40.165895" elapsed="1.061590"/>
 </kw>
 <kw name="Go To" owner="Browser">
-<msg time="2026-01-09T14:54:18.190319" level="INFO">Successfully opened URL https://the-internet.herokuapp.com/dropdown</msg>
+<msg time="2026-01-09T15:39:41.280236" level="INFO">Successfully opened URL https://the-internet.herokuapp.com/dropdown</msg>
 <arg>${BASE_URL}/dropdown</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Navigates to the given ``url``.</doc>
-<status status="PASS" start="2026-01-09T14:54:18.142851" elapsed="0.047764"/>
+<status status="PASS" start="2026-01-09T15:39:41.227823" elapsed="0.052682"/>
 </kw>
 <kw name="Select Options By" owner="Browser">
-<msg time="2026-01-09T14:54:18.191896" level="INFO">Selects the option(s) Option 2 by attribute SelectAttribute.label from element id=dropdown.</msg>
+<msg time="2026-01-09T15:39:41.281611" level="INFO">Selects the option(s) Option 2 by attribute SelectAttribute.label from element id=dropdown.</msg>
 <arg>id=dropdown</arg>
 <arg>text</arg>
 <arg>Option 2</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T14:54:18.191020" elapsed="0.081092"/>
+<status status="PASS" start="2026-01-09T15:39:41.280856" elapsed="0.061481"/>
 </kw>
 <kw name="Get Selected Options" owner="Browser">
-<msg time="2026-01-09T14:54:18.289193" level="INFO">entry {
+<msg time="2026-01-09T15:39:41.357668" level="INFO">entry {
   label: "Please select an option"
 }
 entry {
@@ -92,28 +92,28 @@ entry {
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the specified attribute of selected options of the ``select`` element.</doc>
-<status status="PASS" start="2026-01-09T14:54:18.272518" elapsed="0.016870"/>
+<status status="PASS" start="2026-01-09T15:39:41.342628" elapsed="0.015191"/>
 </kw>
 <kw name="Stop Test-Sessie" owner="common" type="TEARDOWN">
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-09T14:54:18.326436" level="INFO">Closed browser</msg>
+<msg time="2026-01-09T15:39:41.392448" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-09T14:54:18.290513" elapsed="0.036133"/>
+<status status="PASS" start="2026-01-09T15:39:41.358567" elapsed="0.034148"/>
 </kw>
-<status status="PASS" start="2026-01-09T14:54:18.289930" elapsed="0.036881"/>
+<status status="PASS" start="2026-01-09T15:39:41.358185" elapsed="0.034719"/>
 </kw>
 <doc>Verifieert of we een waarde kunnen kiezen uit een standaard HTML-select menu.</doc>
-<status status="PASS" start="2026-01-09T14:54:17.325319" elapsed="1.001598"/>
+<status status="PASS" start="2026-01-09T15:39:40.165101" elapsed="1.227909"/>
 </test>
-<status status="PASS" start="2026-01-09T14:54:17.142678" elapsed="1.193855"/>
+<status status="PASS" start="2026-01-09T15:39:39.965354" elapsed="1.437004"/>
 </suite>
-<status status="PASS" start="2026-01-09T14:54:17.141846" elapsed="1.201805"/>
+<status status="PASS" start="2026-01-09T15:39:39.964465" elapsed="1.442412"/>
 </suite>
-<status status="PASS" start="2026-01-09T14:54:17.141015" elapsed="1.203165"/>
+<status status="PASS" start="2026-01-09T15:39:39.963612" elapsed="1.443690"/>
 </suite>
-<status status="PASS" start="2026-01-09T14:54:17.119774" elapsed="1.224826"/>
+<status status="PASS" start="2026-01-09T15:39:39.943318" elapsed="1.464435"/>
 </suite>
 <statistics>
 <total>

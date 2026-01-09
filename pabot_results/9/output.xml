@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-09T14:54:22.868075" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-09T15:39:45.941973" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="01 Basis" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis">
@@ -7,18 +7,18 @@
 <test id="s1-s1-s1-s1-t1" name="Wisselen Tussen Tabbladen" line="11">
 <kw name="Start Test-Sessie" owner="common" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-09T14:54:23.147594" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/9/browser/traces/temp/2f12764c-7afe-4100-b00e-a801327aa98f"}</msg>
-<msg time="2026-01-09T14:54:23.151468" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:59413</msg>
-<msg time="2026-01-09T14:54:23.751570" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/9/browser/traces/temp/2f12764c-7afe-4100-b00e-a801327aa98f"}</msg>
+<msg time="2026-01-09T15:39:46.164950" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/9/browser/traces/temp/5612c73c-ecbb-4876-a48a-1806baa6fd0b"}</msg>
+<msg time="2026-01-09T15:39:46.168803" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:44267</msg>
+<msg time="2026-01-09T15:39:46.783743" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/9/browser/traces/temp/5612c73c-ecbb-4876-a48a-1806baa6fd0b"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-09T14:54:23.146900" elapsed="0.604992"/>
+<status status="PASS" start="2026-01-09T15:39:46.164255" elapsed="0.619813"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2026-01-09T14:54:23.756085" level="INFO">{
+<msg time="2026-01-09T15:39:46.787235" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -32,34 +32,34 @@
     "height": 720
   }
 }</msg>
-<msg time="2026-01-09T14:54:23.773718" level="INFO">Successfully created context. </msg>
-<msg time="2026-01-09T14:54:23.773802" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2026-01-09T15:39:46.800985" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-09T15:39:46.801069" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
 <arg>viewport={'width': 1280, 'height': 720}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2026-01-09T14:54:23.752280" elapsed="0.021645"/>
+<status status="PASS" start="2026-01-09T15:39:46.784453" elapsed="0.016720"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-09T14:54:23.963370" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com</msg>
+<msg time="2026-01-09T15:39:47.016366" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com</msg>
 <arg>${START_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-09T14:54:23.774178" elapsed="0.189490"/>
+<status status="PASS" start="2026-01-09T15:39:46.801442" elapsed="0.215267"/>
 </kw>
-<status status="PASS" start="2026-01-09T14:54:23.145999" elapsed="0.817837"/>
+<status status="PASS" start="2026-01-09T15:39:46.163412" elapsed="0.853545"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-09T14:54:23.964832" level="INFO">Clicks the element 'text=Multiple Windows'.</msg>
+<msg time="2026-01-09T15:39:47.017974" level="INFO">Clicks the element 'text=Multiple Windows'.</msg>
 <arg>text=Multiple Windows</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T14:54:23.964160" elapsed="0.091092"/>
+<status status="PASS" start="2026-01-09T15:39:47.017263" elapsed="0.076956"/>
 </kw>
 <kw name="Get Page Ids" owner="Browser">
-<msg time="2026-01-09T14:54:24.080132" level="INFO">${hoofd_pagina} = ['page=ea6f802f-4928-4c69-8302-76c3e20e6fc8']</msg>
+<msg time="2026-01-09T15:39:47.120960" level="INFO">${hoofd_pagina} = ['page=e3d31a8c-0ea0-43a1-9e67-71bc84ea90ff']</msg>
 <var>${hoofd_pagina}</var>
 <arg>active</arg>
 <tag>Assertion</tag>
@@ -67,103 +67,103 @@
 <tag>Getter</tag>
 <doc>Returns a list of page ids based on the context and browser selection.
 See `Browser, Context and Page` for more information about Page and related concepts.</doc>
-<status status="PASS" start="2026-01-09T14:54:24.056610" elapsed="0.023581"/>
+<status status="PASS" start="2026-01-09T15:39:47.094490" elapsed="0.026528"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-09T14:54:24.081052" level="INFO">Clicks the element 'text=Click Here'.</msg>
+<msg time="2026-01-09T15:39:47.121971" level="INFO">Clicks the element 'text=Click Here'.</msg>
 <arg>text=Click Here</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T14:54:24.080442" elapsed="0.066096"/>
+<status status="PASS" start="2026-01-09T15:39:47.121249" elapsed="0.058904"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Check Pagina Aantal">
 <kw name="Get Page Ids" owner="Browser">
-<msg time="2026-01-09T14:54:24.156254" level="INFO">${ids} = ['page=ea6f802f-4928-4c69-8302-76c3e20e6fc8']</msg>
+<msg time="2026-01-09T15:39:47.191133" level="INFO">${ids} = ['page=e3d31a8c-0ea0-43a1-9e67-71bc84ea90ff']</msg>
 <var>${ids}</var>
 <tag>Assertion</tag>
 <tag>BrowserControl</tag>
 <tag>Getter</tag>
 <doc>Returns a list of page ids based on the context and browser selection.
 See `Browser, Context and Page` for more information about Page and related concepts.</doc>
-<status status="PASS" start="2026-01-09T14:54:24.148511" elapsed="0.007811"/>
+<status status="PASS" start="2026-01-09T15:39:47.182027" elapsed="0.009179"/>
 </kw>
 <kw name="Get Length" owner="BuiltIn">
-<msg time="2026-01-09T14:54:24.157387" level="INFO">Length is 1.</msg>
-<msg time="2026-01-09T14:54:24.157606" level="INFO">${lengte} = 1</msg>
+<msg time="2026-01-09T15:39:47.192221" level="INFO">Length is 1.</msg>
+<msg time="2026-01-09T15:39:47.192341" level="INFO">${lengte} = 1</msg>
 <var>${lengte}</var>
 <arg>${ids}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="PASS" start="2026-01-09T14:54:24.156596" elapsed="0.001071"/>
+<status status="PASS" start="2026-01-09T15:39:47.191474" elapsed="0.001143"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
-<msg time="2026-01-09T14:54:24.158617" level="FAIL">'1 &gt; 1' should be true.</msg>
+<msg time="2026-01-09T15:39:47.193387" level="FAIL">'1 &gt; 1' should be true.</msg>
 <arg>${lengte} &gt; 1</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="FAIL" start="2026-01-09T14:54:24.157903" elapsed="0.000938">'1 &gt; 1' should be true.</status>
+<status status="FAIL" start="2026-01-09T15:39:47.192809" elapsed="0.000795">'1 &gt; 1' should be true.</status>
 </kw>
 <return>
 <value>${ids}</value>
-<status status="NOT RUN" start="2026-01-09T14:54:24.158999" elapsed="0.000123"/>
+<status status="NOT RUN" start="2026-01-09T15:39:47.193737" elapsed="0.000119"/>
 </return>
-<status status="FAIL" start="2026-01-09T14:54:24.148031" elapsed="0.011325">'1 &gt; 1' should be true.</status>
+<status status="FAIL" start="2026-01-09T15:39:47.181536" elapsed="0.012524">'1 &gt; 1' should be true.</status>
 </kw>
 <kw name="Check Pagina Aantal">
 <kw name="Get Page Ids" owner="Browser">
-<msg time="2026-01-09T14:54:24.670968" level="INFO">${ids} = ['page=d07524bb-fad3-404b-bc74-00b0d7963da4', 'page=ea6f802f-4928-4c69-8302-76c3e20e6fc8']</msg>
+<msg time="2026-01-09T15:39:47.706710" level="INFO">${ids} = ['page=7caef9c2-6863-44ce-bcf3-9cc2e1203b43', 'page=e3d31a8c-0ea0-43a1-9e67-71bc84ea90ff']</msg>
 <var>${ids}</var>
 <tag>Assertion</tag>
 <tag>BrowserControl</tag>
 <tag>Getter</tag>
 <doc>Returns a list of page ids based on the context and browser selection.
 See `Browser, Context and Page` for more information about Page and related concepts.</doc>
-<status status="PASS" start="2026-01-09T14:54:24.660763" elapsed="0.010282"/>
+<status status="PASS" start="2026-01-09T15:39:47.695232" elapsed="0.011547"/>
 </kw>
 <kw name="Get Length" owner="BuiltIn">
-<msg time="2026-01-09T14:54:24.671962" level="INFO">Length is 2.</msg>
-<msg time="2026-01-09T14:54:24.672103" level="INFO">${lengte} = 2</msg>
+<msg time="2026-01-09T15:39:47.707561" level="INFO">Length is 2.</msg>
+<msg time="2026-01-09T15:39:47.707705" level="INFO">${lengte} = 2</msg>
 <var>${lengte}</var>
 <arg>${ids}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="PASS" start="2026-01-09T14:54:24.671323" elapsed="0.000830"/>
+<status status="PASS" start="2026-01-09T15:39:47.707035" elapsed="0.000717"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
 <arg>${lengte} &gt; 1</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2026-01-09T14:54:24.672364" elapsed="0.000622"/>
+<status status="PASS" start="2026-01-09T15:39:47.707936" elapsed="0.000472"/>
 </kw>
 <return>
 <value>${ids}</value>
-<status status="PASS" start="2026-01-09T14:54:24.673101" elapsed="0.000167"/>
+<status status="PASS" start="2026-01-09T15:39:47.708507" elapsed="0.000159"/>
 </return>
-<status status="PASS" start="2026-01-09T14:54:24.660057" elapsed="0.013430"/>
+<status status="PASS" start="2026-01-09T15:39:47.694622" elapsed="0.014234"/>
 </kw>
-<msg time="2026-01-09T14:54:24.673660" level="INFO">${alle_ids} = ['page=d07524bb-fad3-404b-bc74-00b0d7963da4', 'page=ea6f802f-4928-4c69-8302-76c3e20e6fc8']</msg>
+<msg time="2026-01-09T15:39:47.708990" level="INFO">${alle_ids} = ['page=7caef9c2-6863-44ce-bcf3-9cc2e1203b43', 'page=e3d31a8c-0ea0-43a1-9e67-71bc84ea90ff']</msg>
 <var>${alle_ids}</var>
 <arg>5s</arg>
 <arg>0.5s</arg>
 <arg>Check Pagina Aantal</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2026-01-09T14:54:24.147000" elapsed="0.526713"/>
+<status status="PASS" start="2026-01-09T15:39:47.180541" elapsed="0.528492"/>
 </kw>
 <for flavor="IN">
 <iter>
 <if>
 <branch type="IF" condition="'${id}' != '${hoofd_pagina}[0]'">
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-01-09T14:54:24.675108" level="INFO">${nieuw_id} = page=d07524bb-fad3-404b-bc74-00b0d7963da4</msg>
+<msg time="2026-01-09T15:39:47.710640" level="INFO">${nieuw_id} = page=7caef9c2-6863-44ce-bcf3-9cc2e1203b43</msg>
 <var>${nieuw_id}</var>
 <arg>${id}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2026-01-09T14:54:24.674730" elapsed="0.000462"/>
+<status status="PASS" start="2026-01-09T15:39:47.710150" elapsed="0.000601"/>
 </kw>
-<status status="PASS" start="2026-01-09T14:54:24.674403" elapsed="0.000853"/>
+<status status="PASS" start="2026-01-09T15:39:47.709723" elapsed="0.001119"/>
 </branch>
-<status status="PASS" start="2026-01-09T14:54:24.674372" elapsed="0.000939"/>
+<status status="PASS" start="2026-01-09T15:39:47.709690" elapsed="0.001235"/>
 </if>
-<var name="${id}">page=d07524bb-fad3-404b-bc74-00b0d7963da4</var>
-<status status="PASS" start="2026-01-09T14:54:24.674234" elapsed="0.001104"/>
+<var name="${id}">page=7caef9c2-6863-44ce-bcf3-9cc2e1203b43</var>
+<status status="PASS" start="2026-01-09T15:39:47.709518" elapsed="0.001448"/>
 </iter>
 <iter>
 <if>
@@ -172,30 +172,30 @@ See `Browser, Context and Page` for more information about Page and related conc
 <var>${nieuw_id}</var>
 <arg>${id}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2026-01-09T14:54:24.675832" elapsed="0.000104"/>
+<status status="NOT RUN" start="2026-01-09T15:39:47.712002" elapsed="0.000112"/>
 </kw>
-<status status="NOT RUN" start="2026-01-09T14:54:24.675590" elapsed="0.000404"/>
+<status status="NOT RUN" start="2026-01-09T15:39:47.711326" elapsed="0.000999"/>
 </branch>
-<status status="PASS" start="2026-01-09T14:54:24.675571" elapsed="0.000472"/>
+<status status="PASS" start="2026-01-09T15:39:47.711299" elapsed="0.001107"/>
 </if>
-<var name="${id}">page=ea6f802f-4928-4c69-8302-76c3e20e6fc8</var>
-<status status="PASS" start="2026-01-09T14:54:24.675479" elapsed="0.000588"/>
+<var name="${id}">page=e3d31a8c-0ea0-43a1-9e67-71bc84ea90ff</var>
+<status status="PASS" start="2026-01-09T15:39:47.711169" elapsed="0.001278"/>
 </iter>
 <var>${id}</var>
 <value>@{alle_ids}</value>
-<status status="PASS" start="2026-01-09T14:54:24.673912" elapsed="0.002207"/>
+<status status="PASS" start="2026-01-09T15:39:47.709161" elapsed="0.003374"/>
 </for>
 <kw name="Switch Page" owner="Browser">
-<msg time="2026-01-09T14:54:24.676771" level="INFO">Switching to page page=d07524bb-fad3-404b-bc74-00b0d7963da4,context CURRENT, browser CURRENT</msg>
-<msg time="2026-01-09T14:54:24.686754" level="INFO">Successfully changed active page: page=d07524bb-fad3-404b-bc74-00b0d7963da4</msg>
+<msg time="2026-01-09T15:39:47.713475" level="INFO">Switching to page page=7caef9c2-6863-44ce-bcf3-9cc2e1203b43,context CURRENT, browser CURRENT</msg>
+<msg time="2026-01-09T15:39:47.727764" level="INFO">Successfully changed active page: page=7caef9c2-6863-44ce-bcf3-9cc2e1203b43</msg>
 <arg>${nieuw_id}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Switches the active browser page to another open page by ``id`` or ``NEW``.</doc>
-<status status="PASS" start="2026-01-09T14:54:24.676250" elapsed="0.010679"/>
+<status status="PASS" start="2026-01-09T15:39:47.712751" elapsed="0.015192"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-01-09T14:54:24.746141" level="INFO">Text: 'New Window'</msg>
+<msg time="2026-01-09T15:39:47.798660" level="INFO">Text: 'New Window'</msg>
 <arg>h3</arg>
 <arg>==</arg>
 <arg>New Window</arg>
@@ -203,19 +203,19 @@ See `Browser, Context and Page` for more information about Page and related conc
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T14:54:24.687155" elapsed="0.059118"/>
+<status status="PASS" start="2026-01-09T15:39:47.728236" elapsed="0.070585"/>
 </kw>
 <kw name="Switch Page" owner="Browser">
-<msg time="2026-01-09T14:54:24.747201" level="INFO">Switching to page page=ea6f802f-4928-4c69-8302-76c3e20e6fc8,context CURRENT, browser CURRENT</msg>
-<msg time="2026-01-09T14:54:24.754124" level="INFO">Successfully changed active page: page=ea6f802f-4928-4c69-8302-76c3e20e6fc8</msg>
+<msg time="2026-01-09T15:39:47.799852" level="INFO">Switching to page page=e3d31a8c-0ea0-43a1-9e67-71bc84ea90ff,context CURRENT, browser CURRENT</msg>
+<msg time="2026-01-09T15:39:47.808911" level="INFO">Successfully changed active page: page=e3d31a8c-0ea0-43a1-9e67-71bc84ea90ff</msg>
 <arg>${hoofd_pagina}[0]</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Switches the active browser page to another open page by ``id`` or ``NEW``.</doc>
-<status status="PASS" start="2026-01-09T14:54:24.746526" elapsed="0.007745"/>
+<status status="PASS" start="2026-01-09T15:39:47.799083" elapsed="0.010045"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-01-09T14:54:24.791042" level="INFO">Text: 'Opening a new window'</msg>
+<msg time="2026-01-09T15:39:47.846689" level="INFO">Text: 'Opening a new window'</msg>
 <arg>h3</arg>
 <arg>==</arg>
 <arg>Opening a new window</arg>
@@ -223,28 +223,28 @@ See `Browser, Context and Page` for more information about Page and related conc
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T14:54:24.754514" elapsed="0.036670"/>
+<status status="PASS" start="2026-01-09T15:39:47.809408" elapsed="0.037448"/>
 </kw>
 <kw name="Stop Test-Sessie" owner="common" type="TEARDOWN">
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-09T14:54:24.857640" level="INFO">Closed browser</msg>
+<msg time="2026-01-09T15:39:47.889475" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-09T14:54:24.792053" elapsed="0.065925"/>
+<status status="PASS" start="2026-01-09T15:39:47.847838" elapsed="0.041846"/>
 </kw>
-<status status="PASS" start="2026-01-09T14:54:24.791604" elapsed="0.066597"/>
+<status status="PASS" start="2026-01-09T15:39:47.847313" elapsed="0.042502"/>
 </kw>
 <doc>Schakelen door de exacte technische ID's te vangen.</doc>
-<status status="PASS" start="2026-01-09T14:54:23.145191" elapsed="1.713126"/>
+<status status="PASS" start="2026-01-09T15:39:46.162695" elapsed="1.727190"/>
 </test>
-<status status="PASS" start="2026-01-09T14:54:22.917980" elapsed="1.951078"/>
+<status status="PASS" start="2026-01-09T15:39:45.975349" elapsed="1.920169"/>
 </suite>
-<status status="PASS" start="2026-01-09T14:54:22.916659" elapsed="1.957750"/>
+<status status="PASS" start="2026-01-09T15:39:45.974080" elapsed="1.925080"/>
 </suite>
-<status status="PASS" start="2026-01-09T14:54:22.915577" elapsed="1.959600"/>
+<status status="PASS" start="2026-01-09T15:39:45.973000" elapsed="1.926622"/>
 </suite>
-<status status="PASS" start="2026-01-09T14:54:22.885619" elapsed="1.990205"/>
+<status status="PASS" start="2026-01-09T15:39:45.952716" elapsed="1.947305"/>
 </suite>
 <statistics>
 <total>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-09T15:39:55.058241" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
+<suite id="s1-s1" name="02 SauceDemo" source="/home/runner/work/AP_RF/AP_RF/tests/02_SauceDemo">
+<suite id="s1-s1-s1" name="03 Api Chaining" source="/home/runner/work/AP_RF/AP_RF/tests/02_SauceDemo/03_api_chaining.robot">
+<test id="s1-s1-s1-t1" name="Scenario: Log In Met Data Van API" line="6">
+<kw name="Haal Gebruikersnaam Op Via API">
+<msg time="2026-01-09T15:39:55.361345" level="FAIL">No keyword with name 'Haal Gebruikersnaam Op Via API' found.</msg>
+<var>${api_naam}</var>
+<status status="FAIL" start="2026-01-09T15:39:55.361162" elapsed="0.000276">No keyword with name 'Haal Gebruikersnaam Op Via API' found.</status>
+</kw>
+<kw name="Start Test-Sessie" owner="common">
+<arg>${SAUCE_URL}</arg>
+<status status="NOT RUN" start="2026-01-09T15:39:55.361873" elapsed="0.000131"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>id=user-name</arg>
+<arg>${api_naam}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-01-09T15:39:55.362222" elapsed="0.000113"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>id=password</arg>
+<arg>secret_sauce</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-01-09T15:39:55.362538" elapsed="0.000133"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>id=login-button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-01-09T15:39:55.362866" elapsed="0.000098"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<arg>css=[data-test="error"]</arg>
+<arg>contains</arg>
+<arg>Username and password do not match</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-01-09T15:39:55.363144" elapsed="0.000098"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>De test is geslaagd met API-naam: ${api_naam}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-01-09T15:39:55.363435" elapsed="0.000101"/>
+</kw>
+<kw name="Stop Test-Sessie" owner="common" type="TEARDOWN">
+<kw name="Close Browser" owner="Browser">
+<msg time="2026-01-09T15:39:55.370031" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:44475</msg>
+<msg time="2026-01-09T15:39:56.034152" level="INFO">No browser open, doing nothing</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-01-09T15:39:55.364537" elapsed="0.669824"/>
+</kw>
+<status status="PASS" start="2026-01-09T15:39:55.364002" elapsed="0.670518"/>
+</kw>
+<doc>Bewijst dat API data in de browser terechtkomt.</doc>
+<tag>chaining</tag>
+<status status="FAIL" start="2026-01-09T15:39:55.355815" elapsed="0.678810">No keyword with name 'Haal Gebruikersnaam Op Via API' found.</status>
+</test>
+<status status="FAIL" start="2026-01-09T15:39:55.095374" elapsed="0.946586"/>
+</suite>
+<status status="FAIL" start="2026-01-09T15:39:55.094459" elapsed="0.951590"/>
+</suite>
+<status status="FAIL" start="2026-01-09T15:39:55.072028" elapsed="0.974424"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">chaining</stat>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="0" fail="1" skip="0">Tests</stat>
+<stat name="02 SauceDemo" id="s1-s1" pass="0" fail="1" skip="0">Tests.02 SauceDemo</stat>
+<stat name="03 Api Chaining" id="s1-s1-s1" pass="0" fail="1" skip="0">Tests.02 SauceDemo.03 Api Chaining</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
