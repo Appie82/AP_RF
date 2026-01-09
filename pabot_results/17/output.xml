@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-09T16:07:26.360977" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-09T16:13:33.813840" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="02 Geavanceerd" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd">
 <suite id="s1-s1-s1-s1" name="18 File Upload" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd/18_file_upload.robot">
 <kw name="New Browser" owner="Browser" type="SETUP">
-<msg time="2026-01-09T16:07:26.692625" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/17/browser/traces/temp/222c0be5-a9ab-43e4-84aa-c277637486a5"}</msg>
-<msg time="2026-01-09T16:07:26.696909" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:45585</msg>
-<msg time="2026-01-09T16:07:27.310143" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/17/browser/traces/temp/222c0be5-a9ab-43e4-84aa-c277637486a5"}</msg>
+<msg time="2026-01-09T16:13:34.067390" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/17/browser/traces/temp/f994e3c9-a744-4760-ac86-f5b1b6564e50"}</msg>
+<msg time="2026-01-09T16:13:34.072209" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:41205</msg>
+<msg time="2026-01-09T16:13:34.798995" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/17/browser/traces/temp/f994e3c9-a744-4760-ac86-f5b1b6564e50"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-09T16:07:26.691733" elapsed="0.618703"/>
+<status status="PASS" start="2026-01-09T16:13:34.066684" elapsed="0.732635"/>
 </kw>
 <test id="s1-s1-s1-s1-t1" name="Scenario 18: Succesvol Een Bestand Uploaden" line="12">
 <kw name="New Page" owner="Browser" type="SETUP">
-<msg time="2026-01-09T16:07:28.243264" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/upload</msg>
-<msg time="2026-01-09T16:07:28.243377" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-01-09T16:13:35.028451" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/upload</msg>
+<msg time="2026-01-09T16:13:35.028583" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${BASE_URL}/upload</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-09T16:07:27.316010" elapsed="0.927607"/>
+<status status="PASS" start="2026-01-09T16:13:34.804529" elapsed="0.224304"/>
 </kw>
 <kw name="Upload File By Selector" owner="Browser">
 <arg>css=#file-upload</arg>
@@ -31,18 +31,18 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Uploads file from ``path`` to file input element matched by selector.</doc>
-<status status="PASS" start="2026-01-09T16:07:28.244097" elapsed="0.055916"/>
+<status status="PASS" start="2026-01-09T16:13:35.029252" elapsed="0.055874"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-09T16:07:28.301069" level="INFO">Clicks the element 'id=file-submit'.</msg>
+<msg time="2026-01-09T16:13:35.086282" level="INFO">Clicks the element 'id=file-submit'.</msg>
 <arg>id=file-submit</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T16:07:28.300350" elapsed="0.120775"/>
+<status status="PASS" start="2026-01-09T16:13:35.085513" elapsed="0.059023"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-01-09T16:07:28.490986" level="INFO">Text: 'File Uploaded!'</msg>
+<msg time="2026-01-09T16:13:35.236766" level="INFO">Text: 'File Uploaded!'</msg>
 <arg>css=h3</arg>
 <arg>==</arg>
 <arg>File Uploaded!</arg>
@@ -50,10 +50,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T16:07:28.421480" elapsed="0.069650"/>
+<status status="PASS" start="2026-01-09T16:13:35.144913" elapsed="0.092049"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-01-09T16:07:28.504656" level="INFO">Text: 'common.resource'</msg>
+<msg time="2026-01-09T16:13:35.254286" level="INFO">Text: 'common.resource'</msg>
 <arg>id=uploaded-files</arg>
 <arg>contains</arg>
 <arg>common.resource</arg>
@@ -61,29 +61,29 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T16:07:28.491432" elapsed="0.013361"/>
+<status status="PASS" start="2026-01-09T16:13:35.237348" elapsed="0.017096"/>
 </kw>
-<msg time="2026-01-09T16:07:28.516402" level="INFO">Switching context to context=345f8441-a848-4069-9453-0709c9286e6f in CURRENT</msg>
-<msg time="2026-01-09T16:07:28.522095" level="INFO">Successfully changed active context: context=345f8441-a848-4069-9453-0709c9286e6f</msg>
-<msg time="2026-01-09T16:07:28.529397" level="INFO">Successfully closed Context</msg>
+<msg time="2026-01-09T16:13:35.270576" level="INFO">Switching context to context=5e2f2b49-41ad-4958-bc8a-6b75144bddff in CURRENT</msg>
+<msg time="2026-01-09T16:13:35.276827" level="INFO">Successfully changed active context: context=5e2f2b49-41ad-4958-bc8a-6b75144bddff</msg>
+<msg time="2026-01-09T16:13:35.284146" level="INFO">Successfully closed Context</msg>
 <doc>Test of een lokaal bestand naar de server kan worden gestuurd.</doc>
 <tag>upload</tag>
-<status status="PASS" start="2026-01-09T16:07:27.310807" elapsed="1.194221"/>
+<status status="PASS" start="2026-01-09T16:13:34.799728" elapsed="0.455182"/>
 </test>
 <kw name="Close Browser" owner="Browser" type="TEARDOWN">
-<msg time="2026-01-09T16:07:28.566341" level="INFO">Closed browser</msg>
+<msg time="2026-01-09T16:13:35.312503" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-09T16:07:28.530399" elapsed="0.036142"/>
+<status status="PASS" start="2026-01-09T16:13:35.285044" elapsed="0.027629"/>
 </kw>
-<status status="PASS" start="2026-01-09T16:07:26.407618" elapsed="2.159029"/>
+<status status="PASS" start="2026-01-09T16:13:33.857799" elapsed="1.454981"/>
 </suite>
-<status status="PASS" start="2026-01-09T16:07:26.406230" elapsed="2.166586"/>
+<status status="PASS" start="2026-01-09T16:13:33.856746" elapsed="1.461877"/>
 </suite>
-<status status="PASS" start="2026-01-09T16:07:26.404695" elapsed="2.168635"/>
+<status status="PASS" start="2026-01-09T16:13:33.855575" elapsed="1.463457"/>
 </suite>
-<status status="PASS" start="2026-01-09T16:07:26.374876" elapsed="2.198856"/>
+<status status="PASS" start="2026-01-09T16:13:33.830618" elapsed="1.488774"/>
 </suite>
 <statistics>
 <total>

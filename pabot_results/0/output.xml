@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-09T16:07:03.544608" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-09T16:13:17.668424" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="01 Basis" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis">
@@ -8,61 +8,61 @@
 <kw name="Inloggen Met Verschillende Gegevens">
 <kw name="Open De Browser Op De Inlogpagina" owner="common">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-09T16:07:03.804632" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/0/browser/traces/temp/6edfa6be-1bf8-4c71-a409-69f631d5a0da"}</msg>
-<msg time="2026-01-09T16:07:03.808951" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:34469</msg>
-<msg time="2026-01-09T16:07:05.385771" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/0/browser/traces/temp/6edfa6be-1bf8-4c71-a409-69f631d5a0da"}</msg>
+<msg time="2026-01-09T16:13:17.989181" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/0/browser/traces/temp/1c04f09b-d95e-4097-965c-8b007317eecf"}</msg>
+<msg time="2026-01-09T16:13:17.993350" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:47767</msg>
+<msg time="2026-01-09T16:13:19.308766" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/0/browser/traces/temp/1c04f09b-d95e-4097-965c-8b007317eecf"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <arg>slowMo=${SLOWMO}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-09T16:07:03.803804" elapsed="1.582305"/>
+<status status="PASS" start="2026-01-09T16:13:17.988120" elapsed="1.320993"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-09T16:07:06.430043" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/login</msg>
-<msg time="2026-01-09T16:07:06.430172" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-01-09T16:13:19.637348" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/login</msg>
+<msg time="2026-01-09T16:13:19.637480" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${BASE_URL}/login</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-09T16:07:05.386485" elapsed="1.043928"/>
+<status status="PASS" start="2026-01-09T16:13:19.309505" elapsed="0.328234"/>
 </kw>
-<status status="PASS" start="2026-01-09T16:07:03.803020" elapsed="2.627631"/>
+<status status="PASS" start="2026-01-09T16:13:17.987043" elapsed="1.650926"/>
 </kw>
 <kw name="Log In Met Gebruiker" owner="common">
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-09T16:07:06.432380" level="INFO">Fills the text 'tomsmith' in the given field.</msg>
+<msg time="2026-01-09T16:13:19.641159" level="INFO">Fills the text 'tomsmith' in the given field.</msg>
 <arg>id=username</arg>
 <arg>${username}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T16:07:06.431700" elapsed="0.036666"/>
+<status status="PASS" start="2026-01-09T16:13:19.639028" elapsed="0.049167"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-09T16:07:06.469225" level="INFO">Fills the text 'SuperSecretPassword!' in the given field.</msg>
+<msg time="2026-01-09T16:13:19.689461" level="INFO">Fills the text 'SuperSecretPassword!' in the given field.</msg>
 <arg>id=password</arg>
 <arg>${password}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T16:07:06.468641" elapsed="0.009465"/>
+<status status="PASS" start="2026-01-09T16:13:19.688605" elapsed="0.015095"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-09T16:07:06.478867" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
+<msg time="2026-01-09T16:13:19.704786" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
 <arg>button[type="submit"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T16:07:06.478348" elapsed="0.192855"/>
+<status status="PASS" start="2026-01-09T16:13:19.704040" elapsed="0.076546"/>
 </kw>
 <arg>${user}</arg>
 <arg>${pass}</arg>
-<status status="PASS" start="2026-01-09T16:07:06.431042" elapsed="0.240386"/>
+<status status="PASS" start="2026-01-09T16:13:19.638357" elapsed="0.142418"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-01-09T16:07:06.739342" level="INFO">Text: ' You logged into a secure area!\n×\nSecure Area\nWelcome to the Secure Area. When you are done click logout below.\nLogout\nPowered by Elemental Selenium'</msg>
+<msg time="2026-01-09T16:13:19.840640" level="INFO">Text: ' You logged into a secure area!\n×\nSecure Area\nWelcome to the Secure Area. When you are done click logout below.\nLogout\nPowered by Elemental Selenium'</msg>
 <arg>body</arg>
 <arg>contains</arg>
 <arg>${check_tekst}</arg>
@@ -70,88 +70,88 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T16:07:06.671668" elapsed="0.067825"/>
+<status status="PASS" start="2026-01-09T16:13:19.780976" elapsed="0.059881"/>
 </kw>
 <arg>tomsmith</arg>
 <arg>SuperSecretPassword!</arg>
 <arg>Secure Area</arg>
-<status status="PASS" start="2026-01-09T16:07:03.802458" elapsed="2.937191"/>
+<status status="PASS" start="2026-01-09T16:13:17.986387" elapsed="1.854724"/>
 </kw>
 <kw name="Sluit Test En Maak Screenshot Bij Fout" owner="common" type="TEARDOWN">
 <kw name="Run Keyword If Test Failed" owner="BuiltIn">
 <arg>Take Screenshot</arg>
 <doc>Runs the given keyword with the given arguments, if the test failed.</doc>
-<status status="PASS" start="2026-01-09T16:07:06.740385" elapsed="0.000358"/>
+<status status="PASS" start="2026-01-09T16:13:19.842167" elapsed="0.000534"/>
 </kw>
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-09T16:07:06.768988" level="INFO">Closed browser</msg>
+<msg time="2026-01-09T16:13:19.876895" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-09T16:07:06.740874" elapsed="0.028319"/>
+<status status="PASS" start="2026-01-09T16:13:19.842888" elapsed="0.034246"/>
 </kw>
-<status status="PASS" start="2026-01-09T16:07:06.740000" elapsed="0.029327"/>
+<status status="PASS" start="2026-01-09T16:13:19.841577" elapsed="0.035698"/>
 </kw>
-<status status="PASS" start="2026-01-09T16:07:03.801734" elapsed="2.967667"/>
+<status status="PASS" start="2026-01-09T16:13:17.985527" elapsed="1.891819"/>
 </test>
 <test id="s1-s1-s1-s1-t2" name="Verkeerd Wachtwoord" line="8">
 <kw name="Inloggen Met Verschillende Gegevens">
 <kw name="Open De Browser Op De Inlogpagina" owner="common">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-09T16:07:06.780324" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/0/browser/traces/temp/69277b98-31c5-45d6-816d-ef8dfac280e5"}</msg>
-<msg time="2026-01-09T16:07:06.835667" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/0/browser/traces/temp/69277b98-31c5-45d6-816d-ef8dfac280e5"}</msg>
+<msg time="2026-01-09T16:13:19.888283" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/0/browser/traces/temp/0ec1104e-22c9-4149-8082-527d1fc69349"}</msg>
+<msg time="2026-01-09T16:13:19.961083" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/0/browser/traces/temp/0ec1104e-22c9-4149-8082-527d1fc69349"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <arg>slowMo=${SLOWMO}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-09T16:07:06.779469" elapsed="0.056679"/>
+<status status="PASS" start="2026-01-09T16:13:19.887145" elapsed="0.074250"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-09T16:07:07.805193" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/login</msg>
-<msg time="2026-01-09T16:07:07.805356" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-01-09T16:13:20.198292" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/login</msg>
+<msg time="2026-01-09T16:13:20.198413" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${BASE_URL}/login</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-09T16:07:06.836462" elapsed="0.969189"/>
+<status status="PASS" start="2026-01-09T16:13:19.961716" elapsed="0.236902"/>
 </kw>
-<status status="PASS" start="2026-01-09T16:07:06.779176" elapsed="1.026693"/>
+<status status="PASS" start="2026-01-09T16:13:19.886794" elapsed="0.311996"/>
 </kw>
 <kw name="Log In Met Gebruiker" owner="common">
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-09T16:07:07.807593" level="INFO">Fills the text 'tomsmith' in the given field.</msg>
+<msg time="2026-01-09T16:13:20.200387" level="INFO">Fills the text 'tomsmith' in the given field.</msg>
 <arg>id=username</arg>
 <arg>${username}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T16:07:07.806912" elapsed="0.031387"/>
+<status status="PASS" start="2026-01-09T16:13:20.199691" elapsed="0.036451"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-09T16:07:07.839125" level="INFO">Fills the text 'FoutWachtwoord' in the given field.</msg>
+<msg time="2026-01-09T16:13:20.237166" level="INFO">Fills the text 'FoutWachtwoord' in the given field.</msg>
 <arg>id=password</arg>
 <arg>${password}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T16:07:07.838546" elapsed="0.009186"/>
+<status status="PASS" start="2026-01-09T16:13:20.236506" elapsed="0.009729"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-09T16:07:07.848563" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
+<msg time="2026-01-09T16:13:20.247144" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
 <arg>button[type="submit"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T16:07:07.848007" elapsed="0.189337"/>
+<status status="PASS" start="2026-01-09T16:13:20.246494" elapsed="0.066568"/>
 </kw>
 <arg>${user}</arg>
 <arg>${pass}</arg>
-<status status="PASS" start="2026-01-09T16:07:07.806232" elapsed="0.231269"/>
+<status status="PASS" start="2026-01-09T16:13:20.199121" elapsed="0.114189"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-01-09T16:07:08.097186" level="INFO">Text: ' Your password is invalid!\n×\nLogin Page\nThis is where you can log into the secure area. Enter tomsmith for the username and SuperSecretPassword! for the password. If the information is wrong you should see error messages.\nUsername\nPassword\n Login\nPowered by Elemental Selenium'</msg>
+<msg time="2026-01-09T16:13:20.385452" level="INFO">Text: ' Your password is invalid!\n×\nLogin Page\nThis is where you can log into the secure area. Enter tomsmith for the username and SuperSecretPassword! for the password. If the information is wrong you should see error messages.\nUsername\nPassword\n Login\nPowered by Elemental Selenium'</msg>
 <arg>body</arg>
 <arg>contains</arg>
 <arg>${check_tekst}</arg>
@@ -159,88 +159,88 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T16:07:08.037669" elapsed="0.059658"/>
+<status status="PASS" start="2026-01-09T16:13:20.313540" elapsed="0.072104"/>
 </kw>
 <arg>tomsmith</arg>
 <arg>FoutWachtwoord</arg>
 <arg>Your password is invalid!</arg>
-<status status="PASS" start="2026-01-09T16:07:06.778708" elapsed="1.318759"/>
+<status status="PASS" start="2026-01-09T16:13:19.886270" elapsed="0.499571"/>
 </kw>
 <kw name="Sluit Test En Maak Screenshot Bij Fout" owner="common" type="TEARDOWN">
 <kw name="Run Keyword If Test Failed" owner="BuiltIn">
 <arg>Take Screenshot</arg>
 <doc>Runs the given keyword with the given arguments, if the test failed.</doc>
-<status status="PASS" start="2026-01-09T16:07:08.098183" elapsed="0.000304"/>
+<status status="PASS" start="2026-01-09T16:13:20.386697" elapsed="0.000433"/>
 </kw>
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-09T16:07:08.123107" level="INFO">Closed browser</msg>
+<msg time="2026-01-09T16:13:20.415116" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-09T16:07:08.098603" elapsed="0.024694"/>
+<status status="PASS" start="2026-01-09T16:13:20.387294" elapsed="0.028047"/>
 </kw>
-<status status="PASS" start="2026-01-09T16:07:08.097778" elapsed="0.025657"/>
+<status status="PASS" start="2026-01-09T16:13:20.386202" elapsed="0.029282"/>
 </kw>
-<status status="PASS" start="2026-01-09T16:07:06.776414" elapsed="1.347102"/>
+<status status="PASS" start="2026-01-09T16:13:19.883989" elapsed="0.531566"/>
 </test>
 <test id="s1-s1-s1-s1-t3" name="Onbekende Gebruiker" line="9">
 <kw name="Inloggen Met Verschillende Gegevens">
 <kw name="Open De Browser Op De Inlogpagina" owner="common">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-09T16:07:08.131867" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/0/browser/traces/temp/3b22c2f6-8535-47e3-98c7-514bb93ac574"}</msg>
-<msg time="2026-01-09T16:07:08.186454" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/0/browser/traces/temp/3b22c2f6-8535-47e3-98c7-514bb93ac574"}</msg>
+<msg time="2026-01-09T16:13:20.422771" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/0/browser/traces/temp/0781b6f7-465d-4a9e-8953-277108f12650"}</msg>
+<msg time="2026-01-09T16:13:20.494835" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/0/browser/traces/temp/0781b6f7-465d-4a9e-8953-277108f12650"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <arg>slowMo=${SLOWMO}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-09T16:07:08.130652" elapsed="0.056082"/>
+<status status="PASS" start="2026-01-09T16:13:20.422031" elapsed="0.073119"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-09T16:07:09.150349" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/login</msg>
-<msg time="2026-01-09T16:07:09.150455" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-01-09T16:13:20.823722" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/login</msg>
+<msg time="2026-01-09T16:13:20.823826" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${BASE_URL}/login</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-09T16:07:08.187443" elapsed="0.963206"/>
+<status status="PASS" start="2026-01-09T16:13:20.495458" elapsed="0.328533"/>
 </kw>
-<status status="PASS" start="2026-01-09T16:07:08.130338" elapsed="1.020477"/>
+<status status="PASS" start="2026-01-09T16:13:20.421810" elapsed="0.402347"/>
 </kw>
 <kw name="Log In Met Gebruiker" owner="common">
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-09T16:07:09.152254" level="INFO">Fills the text 'Alber123' in the given field.</msg>
+<msg time="2026-01-09T16:13:20.825280" level="INFO">Fills the text 'Alber123' in the given field.</msg>
 <arg>id=username</arg>
 <arg>${username}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T16:07:09.151634" elapsed="0.027887"/>
+<status status="PASS" start="2026-01-09T16:13:20.824814" elapsed="0.028049"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-09T16:07:09.180346" level="INFO">Fills the text 'SuperSecretPassword!' in the given field.</msg>
+<msg time="2026-01-09T16:13:20.853691" level="INFO">Fills the text 'SuperSecretPassword!' in the given field.</msg>
 <arg>id=password</arg>
 <arg>${password}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T16:07:09.179764" elapsed="0.009928"/>
+<status status="PASS" start="2026-01-09T16:13:20.853120" elapsed="0.007250"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-09T16:07:09.190474" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
+<msg time="2026-01-09T16:13:20.860984" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
 <arg>button[type="submit"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T16:07:09.189966" elapsed="0.199424"/>
+<status status="PASS" start="2026-01-09T16:13:20.860567" elapsed="0.100395"/>
 </kw>
 <arg>${user}</arg>
 <arg>${pass}</arg>
-<status status="PASS" start="2026-01-09T16:07:09.151092" elapsed="0.238532"/>
+<status status="PASS" start="2026-01-09T16:13:20.824390" elapsed="0.136756"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-01-09T16:07:09.449581" level="INFO">Text: ' Your username is invalid!\n×\nLogin Page\nThis is where you can log into the secure area. Enter tomsmith for the username and SuperSecretPassword! for the password. If the information is wrong you should see error messages.\nUsername\nPassword\n Login\nPowered by Elemental Selenium'</msg>
+<msg time="2026-01-09T16:13:21.021025" level="INFO">Text: ' Your username is invalid!\n×\nLogin Page\nThis is where you can log into the secure area. Enter tomsmith for the username and SuperSecretPassword! for the password. If the information is wrong you should see error messages.\nUsername\nPassword\n Login\nPowered by Elemental Selenium'</msg>
 <arg>body</arg>
 <arg>contains</arg>
 <arg>${check_tekst}</arg>
@@ -248,88 +248,88 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T16:07:09.389891" elapsed="0.059830"/>
+<status status="PASS" start="2026-01-09T16:13:20.961320" elapsed="0.059875"/>
 </kw>
 <arg>Alber123</arg>
 <arg>SuperSecretPassword!</arg>
 <arg>Your username is invalid!</arg>
-<status status="PASS" start="2026-01-09T16:07:08.129845" elapsed="1.320017"/>
+<status status="PASS" start="2026-01-09T16:13:20.421443" elapsed="0.599891"/>
 </kw>
 <kw name="Sluit Test En Maak Screenshot Bij Fout" owner="common" type="TEARDOWN">
 <kw name="Run Keyword If Test Failed" owner="BuiltIn">
 <arg>Take Screenshot</arg>
 <doc>Runs the given keyword with the given arguments, if the test failed.</doc>
-<status status="PASS" start="2026-01-09T16:07:09.450634" elapsed="0.000482"/>
+<status status="PASS" start="2026-01-09T16:13:21.022044" elapsed="0.000316"/>
 </kw>
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-09T16:07:09.473998" level="INFO">Closed browser</msg>
+<msg time="2026-01-09T16:13:21.044811" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-09T16:07:09.451254" elapsed="0.022932"/>
+<status status="PASS" start="2026-01-09T16:13:21.022475" elapsed="0.022506"/>
 </kw>
-<status status="PASS" start="2026-01-09T16:07:09.450205" elapsed="0.024107"/>
+<status status="PASS" start="2026-01-09T16:13:21.021661" elapsed="0.023464"/>
 </kw>
-<status status="PASS" start="2026-01-09T16:07:08.127774" elapsed="1.346609"/>
+<status status="PASS" start="2026-01-09T16:13:20.419276" elapsed="0.625919"/>
 </test>
 <test id="s1-s1-s1-s1-t4" name="Lege Velden" line="10">
 <kw name="Inloggen Met Verschillende Gegevens">
 <kw name="Open De Browser Op De Inlogpagina" owner="common">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-09T16:07:09.481441" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/0/browser/traces/temp/8a441255-d99d-45fc-88e9-65671d925f46"}</msg>
-<msg time="2026-01-09T16:07:09.532728" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/0/browser/traces/temp/8a441255-d99d-45fc-88e9-65671d925f46"}</msg>
+<msg time="2026-01-09T16:13:21.052571" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/0/browser/traces/temp/64cf1dc7-c0f1-465e-b5f5-40b6e90f07dd"}</msg>
+<msg time="2026-01-09T16:13:21.107798" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/0/browser/traces/temp/64cf1dc7-c0f1-465e-b5f5-40b6e90f07dd"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <arg>slowMo=${SLOWMO}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-09T16:07:09.480597" elapsed="0.052433"/>
+<status status="PASS" start="2026-01-09T16:13:21.051841" elapsed="0.056285"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-09T16:07:10.508240" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/login</msg>
-<msg time="2026-01-09T16:07:10.508356" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-01-09T16:13:21.334113" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/login</msg>
+<msg time="2026-01-09T16:13:21.334219" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${BASE_URL}/login</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-09T16:07:09.533334" elapsed="0.975255"/>
+<status status="PASS" start="2026-01-09T16:13:21.108457" elapsed="0.225940"/>
 </kw>
-<status status="PASS" start="2026-01-09T16:07:09.480335" elapsed="1.028463"/>
+<status status="PASS" start="2026-01-09T16:13:21.051609" elapsed="0.282922"/>
 </kw>
 <kw name="Log In Met Gebruiker" owner="common">
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-09T16:07:10.510381" level="INFO">Fills the text '' in the given field.</msg>
+<msg time="2026-01-09T16:13:21.335698" level="INFO">Fills the text '' in the given field.</msg>
 <arg>id=username</arg>
 <arg>${username}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T16:07:10.509721" elapsed="0.031554"/>
+<status status="PASS" start="2026-01-09T16:13:21.335226" elapsed="0.034136"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-09T16:07:10.542127" level="INFO">Fills the text '' in the given field.</msg>
+<msg time="2026-01-09T16:13:21.370196" level="INFO">Fills the text '' in the given field.</msg>
 <arg>id=password</arg>
 <arg>${password}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T16:07:10.541507" elapsed="0.009824"/>
+<status status="PASS" start="2026-01-09T16:13:21.369622" elapsed="0.007443"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-09T16:07:10.552052" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
+<msg time="2026-01-09T16:13:21.377735" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
 <arg>button[type="submit"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T16:07:10.551557" elapsed="0.190601"/>
+<status status="PASS" start="2026-01-09T16:13:21.377299" elapsed="0.070689"/>
 </kw>
 <arg>${user}</arg>
 <arg>${pass}</arg>
-<status status="PASS" start="2026-01-09T16:07:10.509147" elapsed="0.233233"/>
+<status status="PASS" start="2026-01-09T16:13:21.334764" elapsed="0.113433"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-01-09T16:07:10.820000" level="INFO">Text: ' Your username is invalid!\n×\nLogin Page\nThis is where you can log into the secure area. Enter tomsmith for the username and SuperSecretPassword! for the password. If the information is wrong you should see error messages.\nUsername\nPassword\n Login\nPowered by Elemental Selenium'</msg>
+<msg time="2026-01-09T16:13:21.503803" level="INFO">Text: ' Your username is invalid!\n×\nLogin Page\nThis is where you can log into the secure area. Enter tomsmith for the username and SuperSecretPassword! for the password. If the information is wrong you should see error messages.\nUsername\nPassword\n Login\nPowered by Elemental Selenium'</msg>
 <arg>body</arg>
 <arg>contains</arg>
 <arg>${check_tekst}</arg>
@@ -337,37 +337,37 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T16:07:10.742616" elapsed="0.077579"/>
+<status status="PASS" start="2026-01-09T16:13:21.448374" elapsed="0.055572"/>
 </kw>
 <arg>${EMPTY}</arg>
 <arg>${EMPTY}</arg>
 <arg>Your username is invalid!</arg>
-<status status="PASS" start="2026-01-09T16:07:09.479317" elapsed="1.341081"/>
+<status status="PASS" start="2026-01-09T16:13:21.050618" elapsed="0.453504"/>
 </kw>
 <kw name="Sluit Test En Maak Screenshot Bij Fout" owner="common" type="TEARDOWN">
 <kw name="Run Keyword If Test Failed" owner="BuiltIn">
 <arg>Take Screenshot</arg>
 <doc>Runs the given keyword with the given arguments, if the test failed.</doc>
-<status status="PASS" start="2026-01-09T16:07:10.822006" elapsed="0.000647"/>
+<status status="PASS" start="2026-01-09T16:13:21.504963" elapsed="0.000334"/>
 </kw>
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-09T16:07:10.851329" level="INFO">Closed browser</msg>
+<msg time="2026-01-09T16:13:21.532686" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-09T16:07:10.822907" elapsed="0.028614"/>
+<status status="PASS" start="2026-01-09T16:13:21.505409" elapsed="0.027528"/>
 </kw>
-<status status="PASS" start="2026-01-09T16:07:10.821350" elapsed="0.030296"/>
+<status status="PASS" start="2026-01-09T16:13:21.504522" elapsed="0.028596"/>
 </kw>
-<status status="PASS" start="2026-01-09T16:07:09.477670" elapsed="1.374048"/>
+<status status="PASS" start="2026-01-09T16:13:21.048779" elapsed="0.484436"/>
 </test>
-<status status="PASS" start="2026-01-09T16:07:03.579352" elapsed="7.276512"/>
+<status status="PASS" start="2026-01-09T16:13:17.717758" elapsed="3.820605"/>
 </suite>
-<status status="PASS" start="2026-01-09T16:07:03.578530" elapsed="7.281228"/>
+<status status="PASS" start="2026-01-09T16:13:17.716561" elapsed="3.826629"/>
 </suite>
-<status status="PASS" start="2026-01-09T16:07:03.577616" elapsed="7.282690"/>
+<status status="PASS" start="2026-01-09T16:13:17.715293" elapsed="3.828489"/>
 </suite>
-<status status="PASS" start="2026-01-09T16:07:03.555950" elapsed="7.304754"/>
+<status status="PASS" start="2026-01-09T16:13:17.684260" elapsed="3.860068"/>
 </suite>
 <statistics>
 <total>

@@ -1,52 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-09T16:07:28.242760" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-09T16:13:35.125345" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="02 Geavanceerd" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd">
 <suite id="s1-s1-s1-s1" name="20 Iframes" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd/20_iframes.robot">
 <kw name="New Browser" owner="Browser" type="SETUP">
-<msg time="2026-01-09T16:07:28.528107" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/19/browser/traces/temp/4ec50350-8d91-43a8-adfa-db67363c3c8d"}</msg>
-<msg time="2026-01-09T16:07:28.533076" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:36935</msg>
-<msg time="2026-01-09T16:07:29.166605" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/19/browser/traces/temp/4ec50350-8d91-43a8-adfa-db67363c3c8d"}</msg>
+<msg time="2026-01-09T16:13:35.394254" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/19/browser/traces/temp/3f7aece5-c202-4b67-a936-446198484aba"}</msg>
+<msg time="2026-01-09T16:13:35.399442" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:58075</msg>
+<msg time="2026-01-09T16:13:36.123644" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/19/browser/traces/temp/3f7aece5-c202-4b67-a936-446198484aba"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-09T16:07:28.526870" elapsed="0.640034"/>
+<status status="PASS" start="2026-01-09T16:13:35.393253" elapsed="0.730711"/>
 </kw>
 <test id="s1-s1-s1-s1-t1" name="Scenario 20: Tekst Typen In Een Iframe" line="11">
 <kw name="New Page" owner="Browser" type="SETUP">
-<msg time="2026-01-09T16:07:30.408168" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/tinymce</msg>
-<msg time="2026-01-09T16:07:30.408297" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-01-09T16:13:36.658382" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/tinymce</msg>
+<msg time="2026-01-09T16:13:36.658518" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${BASE_URL}/tinymce</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-09T16:07:29.172608" elapsed="1.235926"/>
+<status status="PASS" start="2026-01-09T16:13:36.129400" elapsed="0.529365"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-01-09T16:07:30.497901" level="INFO">Waited for Element with selector id=mce_0_ifr &gt;&gt;&gt; id=tinymce at state visible</msg>
+<msg time="2026-01-09T16:13:36.726202" level="INFO">Waited for Element with selector id=mce_0_ifr &gt;&gt;&gt; id=tinymce at state visible</msg>
 <arg>id=mce_0_ifr &gt;&gt;&gt; id=tinymce</arg>
 <arg>visible</arg>
 <arg>timeout=10s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-01-09T16:07:30.408986" elapsed="0.089216"/>
+<status status="PASS" start="2026-01-09T16:13:36.659188" elapsed="0.067232"/>
 </kw>
 <kw name="Evaluate JavaScript" owner="Browser">
-<msg time="2026-01-09T16:07:30.549860" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2026-01-09T16:13:36.759280" level="INFO">JavaScript executed successfully.</msg>
 <arg>id=mce_0_ifr &gt;&gt;&gt; id=tinymce</arg>
 <arg>(element) =&gt; element.innerHTML = 'Hallo Appie, de 20 tests zijn compleet!'</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Executes given javascript on the selected element(s) or on page.</doc>
-<status status="PASS" start="2026-01-09T16:07:30.498558" elapsed="0.051644"/>
+<status status="PASS" start="2026-01-09T16:13:36.726703" elapsed="0.032905"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-01-09T16:07:30.592565" level="INFO">Text: 'Hallo Appie, de 20 tests zijn compleet!'</msg>
+<msg time="2026-01-09T16:13:36.788189" level="INFO">Text: 'Hallo Appie, de 20 tests zijn compleet!'</msg>
 <arg>id=mce_0_ifr &gt;&gt;&gt; id=tinymce</arg>
 <arg>==</arg>
 <arg>Hallo Appie, de 20 tests zijn compleet!</arg>
@@ -54,29 +54,29 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T16:07:30.550569" elapsed="0.042829"/>
+<status status="PASS" start="2026-01-09T16:13:36.759970" elapsed="0.028415"/>
 </kw>
-<msg time="2026-01-09T16:07:30.621180" level="INFO">Switching context to context=d4f49ba9-91d7-4940-9b30-a9b58c053b01 in CURRENT</msg>
-<msg time="2026-01-09T16:07:30.633081" level="INFO">Successfully changed active context: context=d4f49ba9-91d7-4940-9b30-a9b58c053b01</msg>
-<msg time="2026-01-09T16:07:30.652519" level="INFO">Successfully closed Context</msg>
+<msg time="2026-01-09T16:13:36.806446" level="INFO">Switching context to context=c8b77461-1b13-46c5-9328-e6c7b9d12ae5 in CURRENT</msg>
+<msg time="2026-01-09T16:13:36.815053" level="INFO">Successfully changed active context: context=c8b77461-1b13-46c5-9328-e6c7b9d12ae5</msg>
+<msg time="2026-01-09T16:13:36.833147" level="INFO">Successfully closed Context</msg>
 <doc>Gebruik Evaluate JavaScript op het specifieke element binnen het iframe.</doc>
 <tag>iframe</tag>
-<status status="PASS" start="2026-01-09T16:07:29.167253" elapsed="1.427968"/>
+<status status="PASS" start="2026-01-09T16:13:36.124331" elapsed="0.664364"/>
 </test>
 <kw name="Close Browser" owner="Browser" type="TEARDOWN">
-<msg time="2026-01-09T16:07:30.713500" level="INFO">Closed browser</msg>
+<msg time="2026-01-09T16:13:36.867081" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-09T16:07:30.653542" elapsed="0.060251"/>
+<status status="PASS" start="2026-01-09T16:13:36.834215" elapsed="0.033161"/>
 </kw>
-<status status="PASS" start="2026-01-09T16:07:28.291858" elapsed="2.422141"/>
+<status status="PASS" start="2026-01-09T16:13:35.168397" elapsed="1.699129"/>
 </suite>
-<status status="PASS" start="2026-01-09T16:07:28.290199" elapsed="2.433938"/>
+<status status="PASS" start="2026-01-09T16:13:35.167527" elapsed="1.706950"/>
 </suite>
-<status status="PASS" start="2026-01-09T16:07:28.288403" elapsed="2.436632"/>
+<status status="PASS" start="2026-01-09T16:13:35.166207" elapsed="1.708669"/>
 </suite>
-<status status="PASS" start="2026-01-09T16:07:28.257733" elapsed="2.468059"/>
+<status status="PASS" start="2026-01-09T16:13:35.137884" elapsed="1.737360"/>
 </suite>
 <statistics>
 <total>
