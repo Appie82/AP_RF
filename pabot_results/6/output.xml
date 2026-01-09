@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-09T15:39:41.848766" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-09T16:00:33.763150" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="01 Basis" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis">
@@ -7,11 +7,11 @@
 <test id="s1-s1-s1-s1-t1" name="Verkeerd Wachtwoord" line="11">
 <kw name="Inloggen Met Ongeldige Gegevens Zou Moeten Falen">
 <kw name="Open Browser" owner="Browser">
-<msg time="2026-01-09T15:39:42.118724" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
-<msg time="2026-01-09T15:39:42.119164" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/6/browser/traces/temp/c6babb5e-18e3-44a6-bef8-ae6d4ab68025"}</msg>
-<msg time="2026-01-09T15:39:42.123628" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:60545</msg>
-<msg time="2026-01-09T15:39:42.721078" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/6/browser/traces/temp/c6babb5e-18e3-44a6-bef8-ae6d4ab68025"}</msg>
-<msg time="2026-01-09T15:39:42.723025" level="INFO">{
+<msg time="2026-01-09T16:00:33.982858" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2026-01-09T16:00:33.983132" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/6/browser/traces/temp/ba51db37-1187-4cfc-8e13-c2ee20d7061d"}</msg>
+<msg time="2026-01-09T16:00:33.986685" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:56207</msg>
+<msg time="2026-01-09T16:00:34.470675" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/6/browser/traces/temp/ba51db37-1187-4cfc-8e13-c2ee20d7061d"}</msg>
+<msg time="2026-01-09T16:00:34.472762" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": true,
   "forcedColors": "none",
@@ -25,54 +25,54 @@
     "height": 720
   }
 }</msg>
-<msg time="2026-01-09T15:39:42.734484" level="INFO">Successfully created context. </msg>
-<msg time="2026-01-09T15:39:42.734565" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
-<msg time="2026-01-09T15:39:42.926840" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/login</msg>
+<msg time="2026-01-09T16:00:34.485881" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-09T16:00:34.485964" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2026-01-09T16:00:34.704423" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/login</msg>
 <arg>${BASE_URL}/login</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
-<status status="PASS" start="2026-01-09T15:39:42.117899" elapsed="0.809190"/>
+<status status="PASS" start="2026-01-09T16:00:33.982301" elapsed="0.722397"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-09T15:39:42.927943" level="INFO">Fills the text 'tomsmith' in the given field.</msg>
+<msg time="2026-01-09T16:00:34.705549" level="INFO">Fills the text 'tomsmith' in the given field.</msg>
 <arg>id=username</arg>
 <arg>${username}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T15:39:42.927346" elapsed="0.034426"/>
+<status status="PASS" start="2026-01-09T16:00:34.704966" elapsed="0.035336"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-09T15:39:42.962956" level="INFO">Fills the text 'DitIsFout' in the given field.</msg>
+<msg time="2026-01-09T16:00:34.741218" level="INFO">Fills the text 'DitIsFout' in the given field.</msg>
 <arg>id=password</arg>
 <arg>${password}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T15:39:42.962146" elapsed="0.008986"/>
+<status status="PASS" start="2026-01-09T16:00:34.740623" elapsed="0.008735"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-09T15:39:42.971816" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
+<msg time="2026-01-09T16:00:34.750230" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
 <arg>button[type="submit"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T15:39:42.971339" elapsed="0.083141"/>
+<status status="PASS" start="2026-01-09T16:00:34.749652" elapsed="0.084190"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-01-09T15:39:43.090185" level="INFO">Waited for Element with selector id=flash at state visible</msg>
+<msg time="2026-01-09T16:00:34.868742" level="INFO">Waited for Element with selector id=flash at state visible</msg>
 <arg>id=flash</arg>
 <arg>visible</arg>
 <arg>timeout=3s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-01-09T15:39:43.054847" elapsed="0.035548"/>
+<status status="PASS" start="2026-01-09T16:00:34.834199" elapsed="0.034777"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-01-09T15:39:43.118922" level="INFO">Text: ' Your password is invalid!\n×'</msg>
+<msg time="2026-01-09T16:00:34.898009" level="INFO">Text: ' Your password is invalid!\n×'</msg>
 <arg>id=flash</arg>
 <arg>contains</arg>
 <arg>is invalid</arg>
@@ -80,25 +80,25 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T15:39:43.090692" elapsed="0.028366"/>
+<status status="PASS" start="2026-01-09T16:00:34.869315" elapsed="0.028835"/>
 </kw>
 <arg>tomsmith</arg>
 <arg>DitIsFout</arg>
-<status status="PASS" start="2026-01-09T15:39:42.116378" elapsed="1.002824"/>
+<status status="PASS" start="2026-01-09T16:00:33.981407" elapsed="0.916902"/>
 </kw>
-<msg time="2026-01-09T15:39:43.130277" level="INFO">Switching context to context=509f781c-d186-453b-abbf-ad2d14de2f79 in CURRENT</msg>
-<msg time="2026-01-09T15:39:43.134911" level="INFO">Successfully changed active context: context=509f781c-d186-453b-abbf-ad2d14de2f79</msg>
-<msg time="2026-01-09T15:39:43.141191" level="INFO">Successfully closed Context</msg>
-<status status="PASS" start="2026-01-09T15:39:42.115604" elapsed="1.003772"/>
+<msg time="2026-01-09T16:00:34.908841" level="INFO">Switching context to context=be593c3f-3f0f-4f4e-b234-8a694bf3feba in CURRENT</msg>
+<msg time="2026-01-09T16:00:34.913492" level="INFO">Successfully changed active context: context=be593c3f-3f0f-4f4e-b234-8a694bf3feba</msg>
+<msg time="2026-01-09T16:00:34.919648" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2026-01-09T16:00:33.980787" elapsed="0.917693"/>
 </test>
 <test id="s1-s1-s1-s1-t2" name="Onbekende Gebruiker" line="12">
 <kw name="Inloggen Met Ongeldige Gegevens Zou Moeten Falen">
 <kw name="Open Browser" owner="Browser">
-<msg time="2026-01-09T15:39:43.144785" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
-<msg time="2026-01-09T15:39:43.144898" level="INFO">Switching browser to browser=beeedeae-0a1a-4c23-9d06-177b15dbdc16</msg>
-<msg time="2026-01-09T15:39:43.146905" level="INFO">Successfully changed active browser: browser=beeedeae-0a1a-4c23-9d06-177b15dbdc16</msg>
-<msg time="2026-01-09T15:39:43.146972" level="INFO">Reusing existing browser with id: browser=beeedeae-0a1a-4c23-9d06-177b15dbdc16</msg>
-<msg time="2026-01-09T15:39:43.147997" level="INFO">{
+<msg time="2026-01-09T16:00:34.923090" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2026-01-09T16:00:34.923201" level="INFO">Switching browser to browser=7d6021e2-0551-4502-86d8-02880d3b496b</msg>
+<msg time="2026-01-09T16:00:34.925180" level="INFO">Successfully changed active browser: browser=7d6021e2-0551-4502-86d8-02880d3b496b</msg>
+<msg time="2026-01-09T16:00:34.925273" level="INFO">Reusing existing browser with id: browser=7d6021e2-0551-4502-86d8-02880d3b496b</msg>
+<msg time="2026-01-09T16:00:34.926629" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": true,
   "forcedColors": "none",
@@ -112,54 +112,54 @@
     "height": 720
   }
 }</msg>
-<msg time="2026-01-09T15:39:43.151727" level="INFO">Successfully created context. </msg>
-<msg time="2026-01-09T15:39:43.151777" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
-<msg time="2026-01-09T15:39:43.339513" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/login</msg>
+<msg time="2026-01-09T16:00:34.930349" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-09T16:00:34.930404" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2026-01-09T16:00:35.143773" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/login</msg>
 <arg>${BASE_URL}/login</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
-<status status="PASS" start="2026-01-09T15:39:43.144116" elapsed="0.195661"/>
+<status status="PASS" start="2026-01-09T16:00:34.922516" elapsed="0.221558"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-09T15:39:43.340596" level="INFO">Fills the text 'albert' in the given field.</msg>
+<msg time="2026-01-09T16:00:35.145188" level="INFO">Fills the text 'albert' in the given field.</msg>
 <arg>id=username</arg>
 <arg>${username}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T15:39:43.340022" elapsed="0.049253"/>
+<status status="PASS" start="2026-01-09T16:00:35.144388" elapsed="0.045369"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-09T15:39:43.390496" level="INFO">Fills the text 'Wachtwoord123' in the given field.</msg>
+<msg time="2026-01-09T16:00:35.190527" level="INFO">Fills the text 'Wachtwoord123' in the given field.</msg>
 <arg>id=password</arg>
 <arg>${password}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T15:39:43.389742" elapsed="0.011641"/>
+<status status="PASS" start="2026-01-09T16:00:35.189996" elapsed="0.006894"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-09T15:39:43.402277" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
+<msg time="2026-01-09T16:00:35.197496" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
 <arg>button[type="submit"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T15:39:43.401757" elapsed="0.072449"/>
+<status status="PASS" start="2026-01-09T16:00:35.197121" elapsed="0.081725"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-01-09T15:39:43.513509" level="INFO">Waited for Element with selector id=flash at state visible</msg>
+<msg time="2026-01-09T16:00:35.321543" level="INFO">Waited for Element with selector id=flash at state visible</msg>
 <arg>id=flash</arg>
 <arg>visible</arg>
 <arg>timeout=3s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-01-09T15:39:43.474528" elapsed="0.039419"/>
+<status status="PASS" start="2026-01-09T16:00:35.279179" elapsed="0.042671"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-01-09T15:39:43.549287" level="INFO">Text: ' Your username is invalid!\n×'</msg>
+<msg time="2026-01-09T16:00:35.359085" level="INFO">Text: ' Your username is invalid!\n×'</msg>
 <arg>id=flash</arg>
 <arg>contains</arg>
 <arg>is invalid</arg>
@@ -167,25 +167,25 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T15:39:43.514285" elapsed="0.035183"/>
+<status status="PASS" start="2026-01-09T16:00:35.322194" elapsed="0.037081"/>
 </kw>
 <arg>albert</arg>
 <arg>Wachtwoord123</arg>
-<status status="PASS" start="2026-01-09T15:39:43.143562" elapsed="0.406130"/>
+<status status="PASS" start="2026-01-09T16:00:34.922083" elapsed="0.437405"/>
 </kw>
-<msg time="2026-01-09T15:39:43.560557" level="INFO">Switching context to context=2d365a50-cadd-4b10-b45c-c90bdff275e2 in CURRENT</msg>
-<msg time="2026-01-09T15:39:43.565846" level="INFO">Successfully changed active context: context=2d365a50-cadd-4b10-b45c-c90bdff275e2</msg>
-<msg time="2026-01-09T15:39:43.572499" level="INFO">Successfully closed Context</msg>
-<status status="PASS" start="2026-01-09T15:39:43.141527" elapsed="0.408395"/>
+<msg time="2026-01-09T16:00:35.370844" level="INFO">Switching context to context=afdbbd27-ebf0-43f7-9749-e2138581d8e1 in CURRENT</msg>
+<msg time="2026-01-09T16:00:35.375656" level="INFO">Successfully changed active context: context=afdbbd27-ebf0-43f7-9749-e2138581d8e1</msg>
+<msg time="2026-01-09T16:00:35.383767" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2026-01-09T16:00:34.919983" elapsed="0.439770"/>
 </test>
 <test id="s1-s1-s1-s1-t3" name="Lege Velden" line="13">
 <kw name="Inloggen Met Ongeldige Gegevens Zou Moeten Falen">
 <kw name="Open Browser" owner="Browser">
-<msg time="2026-01-09T15:39:43.578773" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
-<msg time="2026-01-09T15:39:43.578925" level="INFO">Switching browser to browser=beeedeae-0a1a-4c23-9d06-177b15dbdc16</msg>
-<msg time="2026-01-09T15:39:43.581076" level="INFO">Successfully changed active browser: browser=beeedeae-0a1a-4c23-9d06-177b15dbdc16</msg>
-<msg time="2026-01-09T15:39:43.581145" level="INFO">Reusing existing browser with id: browser=beeedeae-0a1a-4c23-9d06-177b15dbdc16</msg>
-<msg time="2026-01-09T15:39:43.582184" level="INFO">{
+<msg time="2026-01-09T16:00:35.391179" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2026-01-09T16:00:35.391362" level="INFO">Switching browser to browser=7d6021e2-0551-4502-86d8-02880d3b496b</msg>
+<msg time="2026-01-09T16:00:35.393680" level="INFO">Successfully changed active browser: browser=7d6021e2-0551-4502-86d8-02880d3b496b</msg>
+<msg time="2026-01-09T16:00:35.393776" level="INFO">Reusing existing browser with id: browser=7d6021e2-0551-4502-86d8-02880d3b496b</msg>
+<msg time="2026-01-09T16:00:35.395308" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": true,
   "forcedColors": "none",
@@ -199,54 +199,54 @@
     "height": 720
   }
 }</msg>
-<msg time="2026-01-09T15:39:43.585979" level="INFO">Successfully created context. </msg>
-<msg time="2026-01-09T15:39:43.586043" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
-<msg time="2026-01-09T15:39:43.788292" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/login</msg>
+<msg time="2026-01-09T16:00:35.401481" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-09T16:00:35.401559" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2026-01-09T16:00:35.609792" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/login</msg>
 <arg>${BASE_URL}/login</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
-<status status="PASS" start="2026-01-09T15:39:43.578007" elapsed="0.210514"/>
+<status status="PASS" start="2026-01-09T16:00:35.390371" elapsed="0.219703"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-09T15:39:43.789297" level="INFO">Fills the text '' in the given field.</msg>
+<msg time="2026-01-09T16:00:35.611075" level="INFO">Fills the text '' in the given field.</msg>
 <arg>id=username</arg>
 <arg>${username}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T15:39:43.788764" elapsed="0.031440"/>
+<status status="PASS" start="2026-01-09T16:00:35.610356" elapsed="0.030504"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-09T15:39:43.821187" level="INFO">Fills the text '' in the given field.</msg>
+<msg time="2026-01-09T16:00:35.641872" level="INFO">Fills the text '' in the given field.</msg>
 <arg>id=password</arg>
 <arg>${password}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T15:39:43.820504" elapsed="0.007831"/>
+<status status="PASS" start="2026-01-09T16:00:35.641165" elapsed="0.007963"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-09T15:39:43.829205" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
+<msg time="2026-01-09T16:00:35.649985" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
 <arg>button[type="submit"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T15:39:43.828632" elapsed="0.075278"/>
+<status status="PASS" start="2026-01-09T16:00:35.649390" elapsed="0.079621"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-01-09T15:39:43.936527" level="INFO">Waited for Element with selector id=flash at state visible</msg>
+<msg time="2026-01-09T16:00:35.762746" level="INFO">Waited for Element with selector id=flash at state visible</msg>
 <arg>id=flash</arg>
 <arg>visible</arg>
 <arg>timeout=3s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-01-09T15:39:43.904157" elapsed="0.032604"/>
+<status status="PASS" start="2026-01-09T16:00:35.729336" elapsed="0.033613"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-01-09T15:39:43.961429" level="INFO">Text: ' Your username is invalid!\n×'</msg>
+<msg time="2026-01-09T16:00:35.788447" level="INFO">Text: ' Your username is invalid!\n×'</msg>
 <arg>id=flash</arg>
 <arg>contains</arg>
 <arg>is invalid</arg>
@@ -254,24 +254,24 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T15:39:43.936990" elapsed="0.024624"/>
+<status status="PASS" start="2026-01-09T16:00:35.763177" elapsed="0.025422"/>
 </kw>
 <arg>${EMPTY}</arg>
 <arg>${EMPTY}</arg>
-<status status="PASS" start="2026-01-09T15:39:43.576133" elapsed="0.385657"/>
+<status status="PASS" start="2026-01-09T16:00:35.388731" elapsed="0.400013"/>
 </kw>
-<msg time="2026-01-09T15:39:43.971330" level="INFO">Switching context to context=dcb02dfe-3fda-4b7a-80d5-3346d3811742 in CURRENT</msg>
-<msg time="2026-01-09T15:39:43.975869" level="INFO">Successfully changed active context: context=dcb02dfe-3fda-4b7a-80d5-3346d3811742</msg>
-<msg time="2026-01-09T15:39:43.981518" level="INFO">Successfully closed Context</msg>
-<status status="PASS" start="2026-01-09T15:39:43.573074" elapsed="0.388875"/>
+<msg time="2026-01-09T16:00:35.798947" level="INFO">Switching context to context=c9cb92cd-f90e-4532-8bf8-510e2ea5cdd3 in CURRENT</msg>
+<msg time="2026-01-09T16:00:35.804033" level="INFO">Successfully changed active context: context=c9cb92cd-f90e-4532-8bf8-510e2ea5cdd3</msg>
+<msg time="2026-01-09T16:00:35.809377" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2026-01-09T16:00:35.384361" elapsed="0.404544"/>
 </test>
-<status status="PASS" start="2026-01-09T15:39:41.881985" elapsed="2.100141"/>
+<status status="PASS" start="2026-01-09T16:00:33.797224" elapsed="2.012776"/>
 </suite>
-<status status="PASS" start="2026-01-09T15:39:41.881160" elapsed="2.104343"/>
+<status status="PASS" start="2026-01-09T16:00:33.796396" elapsed="2.018059"/>
 </suite>
-<status status="PASS" start="2026-01-09T15:39:41.880303" elapsed="2.105699"/>
+<status status="PASS" start="2026-01-09T16:00:33.795529" elapsed="2.019629"/>
 </suite>
-<status status="PASS" start="2026-01-09T15:39:41.859919" elapsed="2.126892"/>
+<status status="PASS" start="2026-01-09T16:00:33.774141" elapsed="2.041555"/>
 </suite>
 <statistics>
 <total>
@@ -287,8 +287,8 @@
 </suite>
 </statistics>
 <errors>
-<msg time="2026-01-09T15:39:42.118724" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
-<msg time="2026-01-09T15:39:43.144785" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
-<msg time="2026-01-09T15:39:43.578773" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2026-01-09T16:00:33.982858" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2026-01-09T16:00:34.923090" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2026-01-09T16:00:35.391179" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
 </errors>
 </robot>

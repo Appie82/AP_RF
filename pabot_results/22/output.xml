@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-09T15:39:55.058241" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-09T16:00:46.602532" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="02 SauceDemo" source="/home/runner/work/AP_RF/AP_RF/tests/02_SauceDemo">
 <suite id="s1-s1-s1" name="03 Api Chaining" source="/home/runner/work/AP_RF/AP_RF/tests/02_SauceDemo/03_api_chaining.robot">
 <test id="s1-s1-s1-t1" name="Scenario: Log In Met Data Van API" line="6">
 <kw name="Haal Gebruikersnaam Op Via API">
-<msg time="2026-01-09T15:39:55.361345" level="FAIL">No keyword with name 'Haal Gebruikersnaam Op Via API' found.</msg>
+<msg time="2026-01-09T16:00:46.933645" level="FAIL">No keyword with name 'Haal Gebruikersnaam Op Via API' found.</msg>
 <var>${api_naam}</var>
-<status status="FAIL" start="2026-01-09T15:39:55.361162" elapsed="0.000276">No keyword with name 'Haal Gebruikersnaam Op Via API' found.</status>
+<status status="FAIL" start="2026-01-09T16:00:46.933461" elapsed="0.000256">No keyword with name 'Haal Gebruikersnaam Op Via API' found.</status>
 </kw>
 <kw name="Start Test-Sessie" owner="common">
 <arg>${SAUCE_URL}</arg>
-<status status="NOT RUN" start="2026-01-09T15:39:55.361873" elapsed="0.000131"/>
+<status status="NOT RUN" start="2026-01-09T16:00:46.934038" elapsed="0.000095"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
 <arg>id=user-name</arg>
@@ -19,7 +19,7 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-01-09T15:39:55.362222" elapsed="0.000113"/>
+<status status="NOT RUN" start="2026-01-09T16:00:46.934274" elapsed="0.000074"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
 <arg>id=password</arg>
@@ -27,14 +27,14 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-01-09T15:39:55.362538" elapsed="0.000133"/>
+<status status="NOT RUN" start="2026-01-09T16:00:46.934476" elapsed="0.000067"/>
 </kw>
 <kw name="Click" owner="Browser">
 <arg>id=login-button</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-01-09T15:39:55.362866" elapsed="0.000098"/>
+<status status="NOT RUN" start="2026-01-09T16:00:46.934683" elapsed="0.000066"/>
 </kw>
 <kw name="Get Text" owner="Browser">
 <arg>css=[data-test="error"]</arg>
@@ -44,33 +44,33 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-01-09T15:39:55.363144" elapsed="0.000098"/>
+<status status="NOT RUN" start="2026-01-09T16:00:46.934861" elapsed="0.000063"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
 <arg>De test is geslaagd met API-naam: ${api_naam}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2026-01-09T15:39:55.363435" elapsed="0.000101"/>
+<status status="NOT RUN" start="2026-01-09T16:00:46.935044" elapsed="0.000063"/>
 </kw>
 <kw name="Stop Test-Sessie" owner="common" type="TEARDOWN">
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-09T15:39:55.370031" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:44475</msg>
-<msg time="2026-01-09T15:39:56.034152" level="INFO">No browser open, doing nothing</msg>
+<msg time="2026-01-09T16:00:46.940319" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:49129</msg>
+<msg time="2026-01-09T16:00:47.587242" level="INFO">No browser open, doing nothing</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-09T15:39:55.364537" elapsed="0.669824"/>
+<status status="PASS" start="2026-01-09T16:00:46.935734" elapsed="0.651665"/>
 </kw>
-<status status="PASS" start="2026-01-09T15:39:55.364002" elapsed="0.670518"/>
+<status status="PASS" start="2026-01-09T16:00:46.935395" elapsed="0.652160"/>
 </kw>
 <doc>Bewijst dat API data in de browser terechtkomt.</doc>
 <tag>chaining</tag>
-<status status="FAIL" start="2026-01-09T15:39:55.355815" elapsed="0.678810">No keyword with name 'Haal Gebruikersnaam Op Via API' found.</status>
+<status status="FAIL" start="2026-01-09T16:00:46.929239" elapsed="0.658431">No keyword with name 'Haal Gebruikersnaam Op Via API' found.</status>
 </test>
-<status status="FAIL" start="2026-01-09T15:39:55.095374" elapsed="0.946586"/>
+<status status="FAIL" start="2026-01-09T16:00:46.653660" elapsed="0.941327"/>
 </suite>
-<status status="FAIL" start="2026-01-09T15:39:55.094459" elapsed="0.951590"/>
+<status status="FAIL" start="2026-01-09T16:00:46.652446" elapsed="0.946766"/>
 </suite>
-<status status="FAIL" start="2026-01-09T15:39:55.072028" elapsed="0.974424"/>
+<status status="FAIL" start="2026-01-09T16:00:46.619313" elapsed="0.980565"/>
 </suite>
 <statistics>
 <total>

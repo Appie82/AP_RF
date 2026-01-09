@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-09T15:39:48.295605" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-09T16:00:39.429674" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="01 Basis" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis">
@@ -7,18 +7,18 @@
 <test id="s1-s1-s1-s1-t1" name="Check Of De Website Online Is Via API" line="11">
 <kw name="Start Test-Sessie" owner="common" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-09T15:39:48.592417" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/11/browser/traces/temp/4bddfe7d-2199-4633-ad0e-0f49f98e0a8c"}</msg>
-<msg time="2026-01-09T15:39:48.596838" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:51933</msg>
-<msg time="2026-01-09T15:39:49.355557" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/11/browser/traces/temp/4bddfe7d-2199-4633-ad0e-0f49f98e0a8c"}</msg>
+<msg time="2026-01-09T16:00:39.757422" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/11/browser/traces/temp/96ca4f29-ebb9-4d79-b387-abc43377bcdb"}</msg>
+<msg time="2026-01-09T16:00:39.761873" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:52213</msg>
+<msg time="2026-01-09T16:00:40.495402" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/11/browser/traces/temp/96ca4f29-ebb9-4d79-b387-abc43377bcdb"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-09T15:39:48.591716" elapsed="0.764142"/>
+<status status="PASS" start="2026-01-09T16:00:39.756717" elapsed="0.739018"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2026-01-09T15:39:49.358948" level="INFO">{
+<msg time="2026-01-09T16:00:40.499204" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -32,65 +32,65 @@
     "height": 720
   }
 }</msg>
-<msg time="2026-01-09T15:39:49.372829" level="INFO">Successfully created context. </msg>
-<msg time="2026-01-09T15:39:49.372930" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2026-01-09T16:00:40.515494" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-09T16:00:40.515645" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
 <arg>viewport={'width': 1280, 'height': 720}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2026-01-09T15:39:49.356177" elapsed="0.016884"/>
+<status status="PASS" start="2026-01-09T16:00:40.496133" elapsed="0.019679"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-09T15:39:49.575747" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com</msg>
+<msg time="2026-01-09T16:00:40.765937" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com</msg>
 <arg>${START_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-09T15:39:49.373374" elapsed="0.202691"/>
+<status status="PASS" start="2026-01-09T16:00:40.516158" elapsed="0.250124"/>
 </kw>
-<status status="PASS" start="2026-01-09T15:39:48.590769" elapsed="0.985505"/>
+<status status="PASS" start="2026-01-09T16:00:39.755873" elapsed="1.010646"/>
 </kw>
 <kw name="Http" owner="Browser">
-<msg time="2026-01-09T15:39:49.617592" level="INFO">{'status': 200, 'body': '&lt;!DOCTYPE html&gt;\n&lt;!--[if IE 8]&gt;         &lt;html class="no-js lt-ie9" lang="en" &gt; &lt;![endif]--&gt;\n&lt;!--[if gt IE 8]&gt;&lt;!--&gt; &lt;html class="no-js" lang="en" &gt; &lt;!--&lt;![endif]--&gt;\n\n&lt;html&gt;\n  &lt;head&gt;\n    &lt;script src="/js/vendor/298279967.js"&gt;&lt;/script&gt;\n    &lt;meta charset="utf-8" /&gt;\n    &lt;meta name="viewport" content="width=device-width" /&gt;\n    &lt;title&gt;The Internet&lt;/title&gt;\n    &lt;link href="/css/app.css" rel="stylesheet"&gt;\n    &lt;link href="/css/font-awesome.css" rel="stylesheet"&gt;\n    &lt;script src="/js/vendor/jquery-1.11.3.min.js"&gt;&lt;/script&gt;\n    &lt;script src="/js/vendor/jquery-ui-1.11.4/jquery-ui.js"&gt;&lt;/script&gt;\n    &lt;script src="/js/foundation/foundation.js"&gt;&lt;/script&gt;\n    &lt;script src="/js/foundation/foundation.alerts.js"&gt;&lt;/script&gt;\n    &lt;script&gt;\n      $(document).foundation();\n    &lt;/script&gt;\n  &lt;/head&gt;\n  &lt;body&gt;\n    &lt;div class="row"&gt;\n      &lt;div id="flash-messages" class="large-12 columns"&gt;\n      \n        \n      \n        \n      \n        \n      \n      &lt;/div&gt;\n    &lt;/div&gt;\n    &lt;div class="row"&gt;\n      &lt;a href="https://github.com/tourdedave/the-internet"&gt;&lt;img style="position: absolute; top: 0; right: 0; border: 0;" src="/img/forkme_right_green_007200.png" alt="Fork me on GitHub"&gt;&lt;/a&gt;\n      &lt;div id="content" class="large-12 columns"&gt;\n        &lt;div class="example"&gt;\n  &lt;h2&gt;Login Page&lt;/h2&gt;\n  &lt;h4 class="subheader"&gt;This is where you can log into the secure area. Enter &lt;em&gt;tomsmith&lt;/em&gt; for the username and &lt;em&gt;SuperSecretPassword!&lt;/em&gt; for the password. If the information is wrong you should see error messages.&lt;/h4&gt;\n  &lt;form name="login" id="login" action="/authenticate" method="post" &gt;\n     &lt;div class="row"&gt;\n      &lt;div class="large-6 small-12 columns"&gt;\n        &lt;label for="username"&gt;Username&lt;/label&gt;\n        &lt;input type="text" name="username" id="username" /&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;\n    &lt;div class="row"&gt;\n      &lt;div class="large-6 small-12 columns"&gt;\n        &lt;label for="password"&gt;Password&lt;/label&gt;\n        &lt;input type="password" name="password" id="password" /&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;\n      &lt;button class="radius" type="submit"&gt;&lt;i class="fa fa-2x fa-sign-in"&gt; Login&lt;/i&gt;&lt;/button&gt;\n  &lt;/form&gt;\n&lt;/div&gt;\n\n      &lt;/div&gt;\n    &lt;/div&gt;\n    &lt;div id=\'page-footer\' class="row"&gt;\n      &lt;div class="large-4 large-centered columns"&gt;\n        &lt;hr&gt;\n        &lt;div style="text-align: center;"&gt;Powered by &lt;a target="_blank" href="http://elementalselenium.com/"&gt;Elemental Selenium&lt;/a&gt;&lt;/div&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/body&gt;\n&lt;/html&gt;\n', 'headers': {'content-length': '2376', 'content-type': 'text/html;charset=utf-8', 'date': 'Fri, 09 Jan 2026 15:39:49 GMT', 'nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'report-to': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=%2BlBwfeTZ7mukoOGRjIfSuQ26zDSEqtocvUn6DNnIZBA%3D\\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\\u0026ts=1767973189"}],"max_age":3600}', 'reporting-endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=%2BlBwfeTZ7mukoOGRjIfSuQ26zDSEqtocvUn6DNnIZBA%3D&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts=1767973189"', 'server': 'Heroku', 'via': '1.1 heroku-router', 'x-content-type-options': 'nosniff', 'x-frame-options': 'SAMEORIGIN', 'x-xss-protection': '1; mode=block'}, 'type': 'basic', 'statusText': 'OK', 'url': 'https://the-internet.herokuapp.com/login', 'ok': True, 'redirected': False}</msg>
-<msg time="2026-01-09T15:39:49.618068" level="INFO">${response} = {'status': 200, 'body': '&lt;!DOCTYPE html&gt;\n&lt;!--[if IE 8]&gt;         &lt;html class="no-js lt-ie9" lang="en" &gt; &lt;![endif]--&gt;\n&lt;!--[if gt IE 8]&gt;&lt;!--&gt; &lt;html class="no-js" lang="en" &gt; &lt;!--&lt;![endif]--&gt;\n\n&lt;html&gt;\...</msg>
+<msg time="2026-01-09T16:00:40.813434" level="INFO">{'status': 200, 'body': '&lt;!DOCTYPE html&gt;\n&lt;!--[if IE 8]&gt;         &lt;html class="no-js lt-ie9" lang="en" &gt; &lt;![endif]--&gt;\n&lt;!--[if gt IE 8]&gt;&lt;!--&gt; &lt;html class="no-js" lang="en" &gt; &lt;!--&lt;![endif]--&gt;\n\n&lt;html&gt;\n  &lt;head&gt;\n    &lt;script src="/js/vendor/298279967.js"&gt;&lt;/script&gt;\n    &lt;meta charset="utf-8" /&gt;\n    &lt;meta name="viewport" content="width=device-width" /&gt;\n    &lt;title&gt;The Internet&lt;/title&gt;\n    &lt;link href="/css/app.css" rel="stylesheet"&gt;\n    &lt;link href="/css/font-awesome.css" rel="stylesheet"&gt;\n    &lt;script src="/js/vendor/jquery-1.11.3.min.js"&gt;&lt;/script&gt;\n    &lt;script src="/js/vendor/jquery-ui-1.11.4/jquery-ui.js"&gt;&lt;/script&gt;\n    &lt;script src="/js/foundation/foundation.js"&gt;&lt;/script&gt;\n    &lt;script src="/js/foundation/foundation.alerts.js"&gt;&lt;/script&gt;\n    &lt;script&gt;\n      $(document).foundation();\n    &lt;/script&gt;\n  &lt;/head&gt;\n  &lt;body&gt;\n    &lt;div class="row"&gt;\n      &lt;div id="flash-messages" class="large-12 columns"&gt;\n      \n        \n      \n        \n      \n        \n      \n      &lt;/div&gt;\n    &lt;/div&gt;\n    &lt;div class="row"&gt;\n      &lt;a href="https://github.com/tourdedave/the-internet"&gt;&lt;img style="position: absolute; top: 0; right: 0; border: 0;" src="/img/forkme_right_green_007200.png" alt="Fork me on GitHub"&gt;&lt;/a&gt;\n      &lt;div id="content" class="large-12 columns"&gt;\n        &lt;div class="example"&gt;\n  &lt;h2&gt;Login Page&lt;/h2&gt;\n  &lt;h4 class="subheader"&gt;This is where you can log into the secure area. Enter &lt;em&gt;tomsmith&lt;/em&gt; for the username and &lt;em&gt;SuperSecretPassword!&lt;/em&gt; for the password. If the information is wrong you should see error messages.&lt;/h4&gt;\n  &lt;form name="login" id="login" action="/authenticate" method="post" &gt;\n     &lt;div class="row"&gt;\n      &lt;div class="large-6 small-12 columns"&gt;\n        &lt;label for="username"&gt;Username&lt;/label&gt;\n        &lt;input type="text" name="username" id="username" /&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;\n    &lt;div class="row"&gt;\n      &lt;div class="large-6 small-12 columns"&gt;\n        &lt;label for="password"&gt;Password&lt;/label&gt;\n        &lt;input type="password" name="password" id="password" /&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;\n      &lt;button class="radius" type="submit"&gt;&lt;i class="fa fa-2x fa-sign-in"&gt; Login&lt;/i&gt;&lt;/button&gt;\n  &lt;/form&gt;\n&lt;/div&gt;\n\n      &lt;/div&gt;\n    &lt;/div&gt;\n    &lt;div id=\'page-footer\' class="row"&gt;\n      &lt;div class="large-4 large-centered columns"&gt;\n        &lt;hr&gt;\n        &lt;div style="text-align: center;"&gt;Powered by &lt;a target="_blank" href="http://elementalselenium.com/"&gt;Elemental Selenium&lt;/a&gt;&lt;/div&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/body&gt;\n&lt;/html&gt;\n', 'headers': {'content-length': '2376', 'content-type': 'text/html;charset=utf-8', 'date': 'Fri, 09 Jan 2026 16:00:40 GMT', 'nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'report-to': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=ocmESwONSC4BiIXD3jXjMmFGzAdjsI8jR96lAVXzP4I%3D\\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\\u0026ts=1767974440"}],"max_age":3600}', 'reporting-endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=ocmESwONSC4BiIXD3jXjMmFGzAdjsI8jR96lAVXzP4I%3D&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts=1767974440"', 'server': 'Heroku', 'via': '1.1 heroku-router', 'x-content-type-options': 'nosniff', 'x-frame-options': 'SAMEORIGIN', 'x-xss-protection': '1; mode=block'}, 'type': 'basic', 'statusText': 'OK', 'url': 'https://the-internet.herokuapp.com/login', 'ok': True, 'redirected': False}</msg>
+<msg time="2026-01-09T16:00:40.816886" level="INFO">${response} = {'status': 200, 'body': '&lt;!DOCTYPE html&gt;\n&lt;!--[if IE 8]&gt;         &lt;html class="no-js lt-ie9" lang="en" &gt; &lt;![endif]--&gt;\n&lt;!--[if gt IE 8]&gt;&lt;!--&gt; &lt;html class="no-js" lang="en" &gt; &lt;!--&lt;![endif]--&gt;\n\n&lt;html&gt;\...</msg>
 <var>${response}</var>
 <arg>${BASE_URL}/login</arg>
 <tag>HTTP</tag>
 <doc>Performs an HTTP request in the current browser context</doc>
-<status status="PASS" start="2026-01-09T15:39:49.576559" elapsed="0.041551"/>
+<status status="PASS" start="2026-01-09T16:00:40.766873" elapsed="0.050080"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${response}[status]</arg>
 <arg>${200}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2026-01-09T15:39:49.618350" elapsed="0.000798"/>
+<status status="PASS" start="2026-01-09T16:00:40.817258" elapsed="0.003961"/>
 </kw>
 <kw name="Should Contain" owner="BuiltIn">
 <arg>${response}[body]</arg>
 <arg>login</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2026-01-09T15:39:49.619328" elapsed="0.000502"/>
+<status status="PASS" start="2026-01-09T16:00:40.821518" elapsed="0.000757"/>
 </kw>
 <kw name="Stop Test-Sessie" owner="common" type="TEARDOWN">
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-09T15:39:49.662418" level="INFO">Closed browser</msg>
+<msg time="2026-01-09T16:00:40.876208" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-09T15:39:49.620433" elapsed="0.042271"/>
+<status status="PASS" start="2026-01-09T16:00:40.824095" elapsed="0.052305"/>
 </kw>
-<status status="PASS" start="2026-01-09T15:39:49.620107" elapsed="0.042817"/>
+<status status="PASS" start="2026-01-09T16:00:40.822691" elapsed="0.053861"/>
 </kw>
 <doc>We vuren een HTTP-verzoek af binnen een actieve browser-context.</doc>
-<status status="PASS" start="2026-01-09T15:39:48.589701" elapsed="1.073339"/>
+<status status="PASS" start="2026-01-09T16:00:39.755118" elapsed="1.121548"/>
 </test>
-<status status="PASS" start="2026-01-09T15:39:48.344537" elapsed="1.327609"/>
+<status status="PASS" start="2026-01-09T16:00:39.487441" elapsed="1.397396"/>
 </suite>
-<status status="PASS" start="2026-01-09T15:39:48.343568" elapsed="1.333910"/>
+<status status="PASS" start="2026-01-09T16:00:39.486202" elapsed="1.404029"/>
 </suite>
-<status status="PASS" start="2026-01-09T15:39:48.342315" elapsed="1.336177"/>
+<status status="PASS" start="2026-01-09T16:00:39.484742" elapsed="1.406292"/>
 </suite>
-<status status="PASS" start="2026-01-09T15:39:48.312470" elapsed="1.366734"/>
+<status status="PASS" start="2026-01-09T16:00:39.449709" elapsed="1.442071"/>
 </suite>
 <statistics>
 <total>
