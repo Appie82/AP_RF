@@ -1,9 +1,11 @@
 *** Settings ***
-Resource        ../../../common.resource
-Library         DataDriver    file=../../resources/data/testdata.csv
-Test Setup      Start Test-Sessie    ${HEROKU_URL}/login
-Test Teardown   Stop Test-Sessie
-Test Template   Inloggen Met Ongeldige Data Zou Moeten Falen
+Library    Browser
+Resource   ../../../common.resource
+Library    DataDriver    file=C:/Users/alber/RF/resources/data/testdata.csv    delimiter=;
+
+Test Template    Inloggen Met Data
+Suite Setup      Start Test-Sessie
+Suite Teardown   Stop Test-Sessie
 
 *** Variables ***
 ${username}      ${EMPTY}
@@ -11,11 +13,12 @@ ${password}      ${EMPTY}
 ${foutmelding}   ${EMPTY}
 
 *** Test Cases ***
-Inloggen met data uit bestand
+Inloggen met data uit bestand    ${username}    ${password}    ${foutmelding}
 
 *** Keywords ***
-Inloggen Met Ongeldige Data Zou Moeten Falen
+Inloggen Met Data
     [Arguments]    ${username}    ${password}    ${foutmelding}
+    Go To          ${HEROKU_URL}/login
     Fill Text    id=username    ${username}
     Fill Text    id=password    ${password}
     Click        button[type="submit"]

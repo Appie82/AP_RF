@@ -1,143 +1,33 @@
-{"level":30,"time":"2026-01-09T14:50:56.552Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Listening on 127.0.0.1:56924"}
-{"level":30,"time":"2026-01-09T14:50:56.649Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2026-01-09T14:50:57.745Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Adding browser to stack: chromium, version: 143.0.7499.4"}
-{"level":30,"time":"2026-01-09T14:50:57.745Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Adding 0 contexts to browser"}
-{"level":30,"time":"2026-01-09T14:50:57.745Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method newBrowser"}
-{"level":30,"time":"2026-01-09T14:50:57.750Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method newContext"}
-{"level":30,"time":"2026-01-09T14:50:57.750Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":true,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":720,\"width\":1280}}"}
-{"level":30,"time":"2026-01-09T14:50:57.750Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@4578ff4d0f670dcce981c9a21624cc25\"},\"headless\":true,\"_contextStack\":[],\"id\":\"browser=1a53b5e8-3443-416a-8309-4b8dcd7b2b80\"}"}
-{"level":30,"time":"2026-01-09T14:50:57.750Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Trace file: "}
-{"level":30,"time":"2026-01-09T14:50:57.759Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Setting default timeout for context context=80409605-fd90-4743-9bf7-ef4677bb375c to 10000"}
-{"level":30,"time":"2026-01-09T14:50:57.759Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Changed active context: context=80409605-fd90-4743-9bf7-ef4677bb375c"}
-{"level":30,"time":"2026-01-09T14:50:57.759Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method newContext"}
-{"level":30,"time":"2026-01-09T14:50:57.762Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method newPage"}
-{"level":30,"time":"2026-01-09T14:50:57.763Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@4578ff4d0f670dcce981c9a21624cc25\"},\"headless\":true,\"_contextStack\":[{\"id\":\"context=80409605-fd90-4743-9bf7-ef4677bb375c\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@ddf38e7cc106632b257c7f5e3aab2a5b\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":true,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":720,\"width\":1280}},\"traceFile\":\"\"}],\"id\":\"browser=1a53b5e8-3443-416a-8309-4b8dcd7b2b80\"}"}
-{"level":30,"time":"2026-01-09T14:50:57.961Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Video path: undefined"}
-{"level":30,"time":"2026-01-09T14:50:57.961Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Changed active page"}
-{"level":30,"time":"2026-01-09T14:51:02.706Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method newPage"}
-{"level":30,"time":"2026-01-09T14:51:02.721Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method fillText"}
-{"level":30,"time":"2026-01-09T14:51:02.722Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Strict mode is enabled, find Locator with id=username in page."}
-{"level":30,"time":"2026-01-09T14:51:02.820Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method fillText"}
-{"level":30,"time":"2026-01-09T14:51:02.828Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method fillText"}
-{"level":30,"time":"2026-01-09T14:51:02.828Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Strict mode is enabled, find Locator with id=password in page."}
-{"level":30,"time":"2026-01-09T14:51:02.848Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method fillText"}
-{"level":30,"time":"2026-01-09T14:51:02.854Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method click"}
-{"level":30,"time":"2026-01-09T14:51:02.854Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Strict mode is enabled, find Locator with button[type=\"submit\"] in page."}
-{"level":30,"time":"2026-01-09T14:51:03.443Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method click"}
-{"level":30,"time":"2026-01-09T14:51:03.451Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-01-09T14:51:03.452Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Strict mode is enabled, find Locator with id=flash in page."}
-{"level":30,"time":"2026-01-09T14:51:03.533Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-01-09T14:51:03.537Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method getText"}
-{"level":30,"time":"2026-01-09T14:51:03.537Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Strict mode is enabled, find Locator with id=flash in page."}
-{"level":30,"time":"2026-01-09T14:51:03.567Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Retrieved text for element id=flash containing  Your password is invalid!\n×"}
-{"level":30,"time":"2026-01-09T14:51:03.567Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method getText"}
-{"level":30,"time":"2026-01-09T14:51:03.574Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-09T14:51:03.576Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-09T14:51:03.577Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-09T14:51:03.578Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-09T14:51:03.579Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-09T14:51:03.580Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-09T14:51:03.582Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-09T14:51:03.583Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-09T14:51:03.584Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Changed active context: context=80409605-fd90-4743-9bf7-ef4677bb375c"}
-{"level":30,"time":"2026-01-09T14:51:03.585Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Changing current active page: page=51280fcf-cc12-4ee8-832d-9aefb02c352b"}
-{"level":30,"time":"2026-01-09T14:51:03.585Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Changed active page"}
-{"level":30,"time":"2026-01-09T14:51:03.586Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method closeContext"}
-{"level":30,"time":"2026-01-09T14:51:03.591Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Removed page=7f0b5fb4-31d3-4699-9ba9-05680e9ed16a from context=80409605-fd90-4743-9bf7-ef4677bb375c page stack"}
-{"level":30,"time":"2026-01-09T14:51:03.601Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method closeContext"}
-{"level":30,"time":"2026-01-09T14:51:03.607Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-09T14:51:03.607Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-09T14:51:03.611Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method switchBrowser"}
-{"level":30,"time":"2026-01-09T14:51:03.611Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method switchBrowser"}
-{"level":30,"time":"2026-01-09T14:51:03.613Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method newContext"}
-{"level":30,"time":"2026-01-09T14:51:03.613Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":true,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":720,\"width\":1280}}"}
-{"level":30,"time":"2026-01-09T14:51:03.613Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@4578ff4d0f670dcce981c9a21624cc25\"},\"headless\":true,\"_contextStack\":[],\"id\":\"browser=1a53b5e8-3443-416a-8309-4b8dcd7b2b80\"}"}
-{"level":30,"time":"2026-01-09T14:51:03.613Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Trace file: "}
-{"level":30,"time":"2026-01-09T14:51:03.617Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Setting default timeout for context context=a7758901-d7af-4377-838a-95a73dd2733a to 10000"}
-{"level":30,"time":"2026-01-09T14:51:03.617Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Changed active context: context=a7758901-d7af-4377-838a-95a73dd2733a"}
-{"level":30,"time":"2026-01-09T14:51:03.617Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method newContext"}
-{"level":30,"time":"2026-01-09T14:51:03.619Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method newPage"}
-{"level":30,"time":"2026-01-09T14:51:03.619Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@4578ff4d0f670dcce981c9a21624cc25\"},\"headless\":true,\"_contextStack\":[{\"id\":\"context=a7758901-d7af-4377-838a-95a73dd2733a\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@e055a16b605b1519e87e1f62bfbe0953\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":true,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":720,\"width\":1280}},\"traceFile\":\"\"}],\"id\":\"browser=1a53b5e8-3443-416a-8309-4b8dcd7b2b80\"}"}
-{"level":30,"time":"2026-01-09T14:51:03.711Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Video path: undefined"}
-{"level":30,"time":"2026-01-09T14:51:03.711Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Changed active page"}
-{"level":30,"time":"2026-01-09T14:51:05.457Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method newPage"}
-{"level":30,"time":"2026-01-09T14:51:05.468Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method fillText"}
-{"level":30,"time":"2026-01-09T14:51:05.468Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Strict mode is enabled, find Locator with id=username in page."}
-{"level":30,"time":"2026-01-09T14:51:05.531Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method fillText"}
-{"level":30,"time":"2026-01-09T14:51:05.538Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method fillText"}
-{"level":30,"time":"2026-01-09T14:51:05.538Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Strict mode is enabled, find Locator with id=password in page."}
-{"level":30,"time":"2026-01-09T14:51:05.552Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method fillText"}
-{"level":30,"time":"2026-01-09T14:51:05.557Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method click"}
-{"level":30,"time":"2026-01-09T14:51:05.557Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Strict mode is enabled, find Locator with button[type=\"submit\"] in page."}
-{"level":30,"time":"2026-01-09T14:51:05.900Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method click"}
-{"level":30,"time":"2026-01-09T14:51:05.910Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-01-09T14:51:05.910Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Strict mode is enabled, find Locator with id=flash in page."}
-{"level":30,"time":"2026-01-09T14:51:06.009Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-01-09T14:51:06.014Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method getText"}
-{"level":30,"time":"2026-01-09T14:51:06.014Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Strict mode is enabled, find Locator with id=flash in page."}
-{"level":30,"time":"2026-01-09T14:51:06.049Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Retrieved text for element id=flash containing  Your username is invalid!\n×"}
-{"level":30,"time":"2026-01-09T14:51:06.049Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method getText"}
-{"level":30,"time":"2026-01-09T14:51:06.054Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-09T14:51:06.056Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-09T14:51:06.058Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-09T14:51:06.059Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-09T14:51:06.060Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-09T14:51:06.061Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-09T14:51:06.062Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-09T14:51:06.063Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-09T14:51:06.064Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Changed active context: context=a7758901-d7af-4377-838a-95a73dd2733a"}
-{"level":30,"time":"2026-01-09T14:51:06.064Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Changing current active page: page=f76d591d-f967-4355-9198-54a2e1875721"}
-{"level":30,"time":"2026-01-09T14:51:06.064Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Changed active page"}
-{"level":30,"time":"2026-01-09T14:51:06.065Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method closeContext"}
-{"level":30,"time":"2026-01-09T14:51:06.068Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Removed page=4aa4d963-2f06-471c-9e7f-9c4d888ef875 from context=a7758901-d7af-4377-838a-95a73dd2733a page stack"}
-{"level":30,"time":"2026-01-09T14:51:06.076Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method closeContext"}
-{"level":30,"time":"2026-01-09T14:51:06.081Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-09T14:51:06.082Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-09T14:51:06.086Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method switchBrowser"}
-{"level":30,"time":"2026-01-09T14:51:06.086Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method switchBrowser"}
-{"level":30,"time":"2026-01-09T14:51:06.089Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method newContext"}
-{"level":30,"time":"2026-01-09T14:51:06.089Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":true,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":720,\"width\":1280}}"}
-{"level":30,"time":"2026-01-09T14:51:06.089Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@4578ff4d0f670dcce981c9a21624cc25\"},\"headless\":true,\"_contextStack\":[],\"id\":\"browser=1a53b5e8-3443-416a-8309-4b8dcd7b2b80\"}"}
-{"level":30,"time":"2026-01-09T14:51:06.089Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Trace file: "}
-{"level":30,"time":"2026-01-09T14:51:06.092Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Setting default timeout for context context=b094e3f5-0535-4817-9490-f7c9ac1b0f61 to 10000"}
-{"level":30,"time":"2026-01-09T14:51:06.092Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Changed active context: context=b094e3f5-0535-4817-9490-f7c9ac1b0f61"}
-{"level":30,"time":"2026-01-09T14:51:06.092Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method newContext"}
-{"level":30,"time":"2026-01-09T14:51:06.093Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method newPage"}
-{"level":30,"time":"2026-01-09T14:51:06.093Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@4578ff4d0f670dcce981c9a21624cc25\"},\"headless\":true,\"_contextStack\":[{\"id\":\"context=b094e3f5-0535-4817-9490-f7c9ac1b0f61\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@a183678fc2641019f6bbfa1cfa983fd1\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":true,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":720,\"width\":1280}},\"traceFile\":\"\"}],\"id\":\"browser=1a53b5e8-3443-416a-8309-4b8dcd7b2b80\"}"}
-{"level":30,"time":"2026-01-09T14:51:06.195Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Video path: undefined"}
-{"level":30,"time":"2026-01-09T14:51:06.195Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Changed active page"}
-{"level":30,"time":"2026-01-09T14:51:07.764Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method newPage"}
-{"level":30,"time":"2026-01-09T14:51:07.774Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method fillText"}
-{"level":30,"time":"2026-01-09T14:51:07.774Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Strict mode is enabled, find Locator with id=username in page."}
-{"level":30,"time":"2026-01-09T14:51:07.842Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method fillText"}
-{"level":30,"time":"2026-01-09T14:51:07.846Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method fillText"}
-{"level":30,"time":"2026-01-09T14:51:07.846Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Strict mode is enabled, find Locator with id=password in page."}
-{"level":30,"time":"2026-01-09T14:51:07.855Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method fillText"}
-{"level":30,"time":"2026-01-09T14:51:07.860Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method click"}
-{"level":30,"time":"2026-01-09T14:51:07.860Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Strict mode is enabled, find Locator with button[type=\"submit\"] in page."}
-{"level":30,"time":"2026-01-09T14:51:08.216Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method click"}
-{"level":30,"time":"2026-01-09T14:51:08.227Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-01-09T14:51:08.227Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Strict mode is enabled, find Locator with id=flash in page."}
-{"level":30,"time":"2026-01-09T14:51:08.299Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-01-09T14:51:08.303Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method getText"}
-{"level":30,"time":"2026-01-09T14:51:08.303Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Strict mode is enabled, find Locator with id=flash in page."}
-{"level":30,"time":"2026-01-09T14:51:08.333Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Retrieved text for element id=flash containing  Your username is invalid!\n×"}
-{"level":30,"time":"2026-01-09T14:51:08.333Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method getText"}
-{"level":30,"time":"2026-01-09T14:51:08.337Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-09T14:51:08.339Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-09T14:51:08.341Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-09T14:51:08.342Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-09T14:51:08.343Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-09T14:51:08.344Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-09T14:51:08.345Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-09T14:51:08.346Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-09T14:51:08.347Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Changed active context: context=b094e3f5-0535-4817-9490-f7c9ac1b0f61"}
-{"level":30,"time":"2026-01-09T14:51:08.347Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Changing current active page: page=b3aaf2fa-b80c-4936-bba3-220691274ccf"}
-{"level":30,"time":"2026-01-09T14:51:08.347Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Changed active page"}
-{"level":30,"time":"2026-01-09T14:51:08.348Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method closeContext"}
-{"level":30,"time":"2026-01-09T14:51:08.356Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Removed page=18438f13-87c2-4148-b34b-5bf24272f993 from context=b094e3f5-0535-4817-9490-f7c9ac1b0f61 page stack"}
-{"level":30,"time":"2026-01-09T14:51:08.358Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method closeContext"}
-{"level":30,"time":"2026-01-09T14:51:08.364Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-09T14:51:08.364Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-09T14:51:09.558Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method closeAllBrowsers"}
-{"level":30,"time":"2026-01-09T14:51:09.634Z","pid":21352,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2026-01-12T13:12:49.313Z","pid":20624,"hostname":"WIN-GFK10T3HCIL","msg":"Listening on 127.0.0.1:51609"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\alber\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\Browser\wrapper\index.js:12672:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\alber\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\Browser\wrapper\index.js:13622:59)
+    at PlaywrightServer.setTimeout (C:\Users\alber\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\Browser\wrapper\index.js:13873:57)
+    at Object.onReceiveHalfClose (C:\Users\alber\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\alber\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\alber\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\alber\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-12T13:12:49.611Z","pid":20624,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-12T13:12:49.611Z","pid":20624,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\alber\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\Browser\wrapper\index.js:12672:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\alber\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\Browser\wrapper\index.js:13622:59)
+    at PlaywrightServer.setTimeout (C:\Users\alber\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\Browser\wrapper\index.js:13873:57)
+    at Object.onReceiveHalfClose (C:\Users\alber\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\alber\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\alber\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\alber\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-12T13:12:49.632Z","pid":20624,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-12T13:12:49.632Z","pid":20624,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-12T13:12:49.668Z","pid":20624,"hostname":"WIN-GFK10T3HCIL","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-01-12T13:12:49.668Z","pid":20624,"hostname":"WIN-GFK10T3HCIL","msg":"End of node method closeAllBrowsers"}

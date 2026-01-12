@@ -12,4 +12,4 @@ Scenario 19: Tekst Lezen Uit Shadow DOM
     [Tags]    shadowdom
     
     # De Browser library vindt dit element automatisch, zelfs in de shadow root
-    Get Text    css=span[slot="my-text"]    contains    Let's have some different text!
+    Browser.Get Text    css=span[slot="my-text"]    contains    Let's have some different text!

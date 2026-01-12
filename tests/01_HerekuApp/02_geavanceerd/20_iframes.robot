@@ -20,4 +20,4 @@ Scenario 20: Tekst Typen In Een Iframe
     Evaluate JavaScript    id=mce_0_ifr >>> id=tinymce    (element) => element.innerHTML = 'Hallo Appie, de 20 tests zijn compleet!'
 
     # 3. Verificatie
-    Get Text     id=mce_0_ifr >>> id=tinymce    ==    Hallo Appie, de 20 tests zijn compleet!
+    Browser.Get Text     id=mce_0_ifr >>> id=tinymce    ==    Hallo Appie, de 20 tests zijn compleet!

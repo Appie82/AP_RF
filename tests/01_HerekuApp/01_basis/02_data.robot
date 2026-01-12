@@ -23,7 +23,7 @@ Zoek Waarde In Dynamische Tabel
     ${rijen}=      Get Elements    table >> tbody >> tr
     
     FOR    ${rij}    IN    @{rijen}
-        ${tekst}=    Get Text    ${rij} >> td:nth-child(2)
+        ${tekst}=    Browser.Get Text    ${rij} >> td:nth-child(2)
         
         IF    "Apeirian" in "${tekst}"
             Log    Gevonden: ${tekst}

@@ -18,8 +18,8 @@ Scenario 15: Profiel Validatie Na Login
     Click        css=button[type='submit']
     
     # Verifieer dat we in de secure area zijn
-    Get Text    css=h2    contains    Secure Area
+    Browser.Get Text    css=h2    contains    Secure Area
     
     # Nu we ingelogd zijn, kunnen we direct naar /secure gaan
     Go To       ${BASE_URL}/secure
-    Get Text    css=.subheader    contains    Welcome to the Secure Area
+    Browser.Get Text    css=.subheader    contains    Welcome to the Secure Area

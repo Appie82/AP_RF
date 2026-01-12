@@ -20,5 +20,5 @@ Scenario 18: Succesvol Een Bestand Uploaden
     Click    id=file-submit
     
     # Verificatie
-    Get Text    css=h3    ==    File Uploaded!
-    Get Text    id=uploaded-files    contains    common.resource
+    Browser.Get Text    css=h3    ==    File Uploaded!
+    Browser.Get Text    id=uploaded-files    contains    common.resource

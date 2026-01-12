@@ -25,8 +25,8 @@ ${VALID_USER}       tomsmith
 ${VALID_PW}         SuperSecretPassword!
 
 # Variabelen voor Sauce Labs (Cloud)
-${SAUCE_USERNAME}    %{SAUCE_USERNAME}
-${SAUCE_ACCESS_KEY}  %{SAUCE_ACCESS_KEY}
+${SAUCE_USERNAME}    %{SAUCE_USERNAME=placeholder_user}
+${SAUCE_ACCESS_KEY}  %{SAUCE_ACCESS_KEY=placeholder_key}
 ${REMOTE_URL}        https://ondemand.eu-central-1.saucelabs.com:443/wd/hub
 
 
@@ -37,8 +37,9 @@ Open De Browser Op De Inlogpagina
 
 Start Test-Sessie
     [Arguments]    ${START_URL}=${HEROKU_URL}
+    # Deze regel lost je huidige foutmeldingen op:
+    Set Library Search Order    Browser    Mobile
     New Browser    browser=${BROWSER}    headless=${HEADLESS}
-    # We maken een context aan die groot genoeg is voor beide sites
     New Context    viewport={'width': 1280, 'height': 720}
     New Page       ${START_URL}
 
