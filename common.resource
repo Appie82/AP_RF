@@ -2,6 +2,7 @@
 Library     Browser
 Library     RequestsLibrary
 Library     Collections
+Library     AppiumLibrary    # De nieuwe krachtpatser voor mobiel
 
 *** Variables ***
 ${BROWSER}           chromium
@@ -22,6 +23,10 @@ ${BASE_URL}         ${HEROKU_URL}
 ${VALID_USER}       tomsmith
 ${VALID_PW}         SuperSecretPassword!
 
+# Variabelen voor Sauce Labs (Cloud)
+${SAUCE_USERNAME}    %{SAUCE_USERNAME}
+${SAUCE_ACCESS_KEY}  %{SAUCE_ACCESS_KEY}
+${REMOTE_URL}        https://ondemand.eu-central-1.saucelabs.com:443/wd/hub
 
 
 *** Keywords ***
@@ -72,3 +77,16 @@ Haal Gebruikersnaam Op Via API
     # We pakken alleen de voornaam (alles voor de eerste spatie)
     ${voornaam}=          Evaluate          "${volledige_naam}".split()[0]
     RETURN                ${voornaam}
+
+Open Mobiele App
+    [Documentation]    Start de mobiele app in Sauce Labs
+    Open Application    ${REMOTE_URL}
+    ...                 platformName=Android
+    ...                 appium:deviceName=Android GoogleAPI Emulator
+    ...                 appium:platformVersion=12.0
+    ...                 appium:automationName=UiAutomator2
+    ...                 appium:app=storage:filename=Android-MyDemoAppRN.1.3.0.build-244.apk
+    ...                 sauce:options={'username': '${SAUCE_USERNAME}', 'accessKey': '${SAUCE_ACCESS_KEY}'}
+
+Sluit Mobiele App
+    Close Application

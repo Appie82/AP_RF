@@ -23,18 +23,25 @@ jobs:
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install robotframework robotframework-browser robotframework-pabot robotframework-requests robotframework-datadriver[XLS]
+        # AppiumLibrary hier toegevoegd:
+        pip install robotframework robotframework-browser robotframework-pabot robotframework-requests robotframework-datadriver[XLS] robotframework-appiumlibrary
         sudo apt-get update
         sudo apt-get install -y xvfb
 
     - name: Initialize Browser Library
       run: rfbrowser init
 
-    - name: Run All Tests Parallel
+    - name: Run All Tests (Web & Mobile)
+      env:
+        SAUCE_USERNAME: ${{ secrets.SAUCE_USERNAME }}
+        SAUCE_ACCESS_KEY: ${{ secrets.SAUCE_ACCESS_KEY }}
       run: |
+        # We gebruiken pabot voor snelheid, en geven de secrets mee als variabelen
         xvfb-run pabot --processes 3 \
         --variable HEADLESS:True \
         --variable SLOWMO:0.0s \
+        --variable SAUCE_USERNAME:${{ secrets.SAUCE_USERNAME }} \
+        --variable SAUCE_ACCESS_KEY:${{ secrets.SAUCE_ACCESS_KEY }} \
         -d results tests
 
     - name: Deploy Report to GitHub Pages
