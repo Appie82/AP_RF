@@ -1,114 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-12T12:19:26.920698" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-12T12:29:44.877739" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="01 Basis" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis">
 <suite id="s1-s1-s1-s1" name="02 Data" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/02_data.robot">
 <test id="s1-s1-s1-s1-t1" name="Wachten Op Dynamische Content" line="10">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-12T12:19:27.445175" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/1/browser/traces/temp/5b0c9b04-9910-4ac5-b3d3-a3f27ad94caa"}</msg>
-<msg time="2026-01-12T12:19:27.450798" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:37657</msg>
-<msg time="2026-01-12T12:19:28.176842" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/1/browser/traces/temp/5b0c9b04-9910-4ac5-b3d3-a3f27ad94caa"}</msg>
+<msg time="2026-01-12T12:29:45.338806" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/1/browser/traces/temp/7870e776-7b51-4087-bbdc-7a7004d90b3c"}</msg>
+<msg time="2026-01-12T12:29:45.344713" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:48485</msg>
+<msg time="2026-01-12T12:29:46.162423" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/1/browser/traces/temp/7870e776-7b51-4087-bbdc-7a7004d90b3c"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-12T12:19:27.443945" elapsed="0.734700"/>
+<status status="PASS" start="2026-01-12T12:29:45.337531" elapsed="0.825193"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-12T12:19:28.539263" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/dynamic_loading/1</msg>
-<msg time="2026-01-12T12:19:28.539399" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-01-12T12:29:46.798457" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/dynamic_loading/1</msg>
+<msg time="2026-01-12T12:29:46.798598" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${DYNAMIC_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-12T12:19:28.179078" elapsed="0.360621"/>
+<status status="PASS" start="2026-01-12T12:29:46.163156" elapsed="0.635752"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-12T12:19:28.540943" level="INFO">Clicks the element 'button &gt;&gt; text=Start'.</msg>
+<msg time="2026-01-12T12:29:46.800047" level="INFO">Clicks the element 'button &gt;&gt; text=Start'.</msg>
 <arg>button &gt;&gt; text=Start</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T12:19:28.540083" elapsed="0.090507"/>
+<status status="PASS" start="2026-01-12T12:29:46.799276" elapsed="0.072430"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-01-12T12:19:33.957884" level="INFO">Waited for Element with selector text=Hello World! at state visible</msg>
+<msg time="2026-01-12T12:29:52.200064" level="INFO">Waited for Element with selector text=Hello World! at state visible</msg>
 <arg>text=Hello World!</arg>
 <arg>visible</arg>
 <arg>timeout=10s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-01-12T12:19:28.630939" elapsed="5.327232"/>
+<status status="PASS" start="2026-01-12T12:29:46.872125" elapsed="5.328253"/>
 </kw>
-<kw name="Get Text">
-<msg time="2026-01-12T12:19:33.958835" level="FAIL">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    Browser.Get Text
-    Mobile.Get Text</msg>
+<kw name="Get Text" owner="Browser">
+<msg time="2026-01-12T12:29:52.230228" level="INFO">Text: 'Hello World!'</msg>
 <arg>text=Hello World!</arg>
 <arg>==</arg>
 <arg>Hello World!</arg>
-<status status="FAIL" start="2026-01-12T12:19:33.958657" elapsed="0.000262">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    Browser.Get Text
-    Mobile.Get Text</status>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-12T12:29:52.200808" elapsed="0.029564"/>
 </kw>
 <kw name="Sluit Test En Maak Screenshot Bij Fout" owner="common" type="TEARDOWN">
 <kw name="Run Keyword If Test Failed" owner="BuiltIn">
-<kw name="Take Screenshot" owner="Browser">
-<msg time="2026-01-12T12:19:34.007266" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2026-01-12T12:19:33.960838" elapsed="0.046630"/>
-</kw>
 <arg>Take Screenshot</arg>
 <doc>Runs the given keyword with the given arguments, if the test failed.</doc>
-<status status="PASS" start="2026-01-12T12:19:33.960155" elapsed="0.047472"/>
+<status status="PASS" start="2026-01-12T12:29:52.232095" elapsed="0.000569"/>
 </kw>
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-12T12:19:34.047516" level="INFO">Closed browser</msg>
+<msg time="2026-01-12T12:29:52.264396" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-12T12:19:34.007815" elapsed="0.039995"/>
+<status status="PASS" start="2026-01-12T12:29:52.232947" elapsed="0.031757"/>
 </kw>
-<status status="PASS" start="2026-01-12T12:19:33.959627" elapsed="0.088381"/>
+<status status="PASS" start="2026-01-12T12:29:52.231240" elapsed="0.033717"/>
 </kw>
-<status status="FAIL" start="2026-01-12T12:19:27.441906" elapsed="6.606210">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    Browser.Get Text
-    Mobile.Get Text</status>
+<status status="PASS" start="2026-01-12T12:29:45.335591" elapsed="6.929483"/>
 </test>
 <test id="s1-s1-s1-s1-t2" name="Zoek Waarde In Dynamische Tabel" line="19">
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-12T12:19:34.588632" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/challenging_dom</msg>
-<msg time="2026-01-12T12:19:34.588767" level="INFO">No browser and context was open. New browser and context was automatically opened when page is created.</msg>
+<msg time="2026-01-12T12:29:52.865013" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/challenging_dom</msg>
+<msg time="2026-01-12T12:29:52.865141" level="INFO">No browser and context was open. New browser and context was automatically opened when page is created.</msg>
 <arg>${TABEL_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-12T12:19:34.060512" elapsed="0.528513"/>
+<status status="PASS" start="2026-01-12T12:29:52.276708" elapsed="0.588698"/>
 </kw>
 <kw name="Get Elements" owner="Browser">
-<msg time="2026-01-12T12:19:34.646703" level="INFO">Found locator('table').locator('tbody').locator('tr').first(),locator('table').locator('tbody').locator('tr').nth(1),locator('table').locator('tbody').locator('tr').nth(2),locator('table').locator('tbody').locator('tr').nth(3),locator('table').locator('tbody').locator('tr').nth(4),locator('table').locator('tbody').locator('tr').nth(5),locator('table').locator('tbody').locator('tr').nth(6),locator('table').locator('tbody').locator('tr').nth(7),locator('table').locator('tbody').locator('tr').nth(8),locator('table').locator('tbody').locator('tr').nth(9) Locators successfully.</msg>
-<msg time="2026-01-12T12:19:34.647038" level="INFO">${rijen} = ['table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=0', 'table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=1', 'table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=2', 'table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=3', 'table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=4', 'table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=5', '...</msg>
+<msg time="2026-01-12T12:29:52.906978" level="INFO">Found locator('table').locator('tbody').locator('tr').first(),locator('table').locator('tbody').locator('tr').nth(1),locator('table').locator('tbody').locator('tr').nth(2),locator('table').locator('tbody').locator('tr').nth(3),locator('table').locator('tbody').locator('tr').nth(4),locator('table').locator('tbody').locator('tr').nth(5),locator('table').locator('tbody').locator('tr').nth(6),locator('table').locator('tbody').locator('tr').nth(7),locator('table').locator('tbody').locator('tr').nth(8),locator('table').locator('tbody').locator('tr').nth(9) Locators successfully.</msg>
+<msg time="2026-01-12T12:29:52.907296" level="INFO">${rijen} = ['table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=0', 'table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=1', 'table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=2', 'table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=3', 'table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=4', 'table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=5', '...</msg>
 <var>${rijen}</var>
 <arg>table &gt;&gt; tbody &gt;&gt; tr</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
 for all matched elements by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T12:19:34.589359" elapsed="0.057717"/>
+<status status="PASS" start="2026-01-12T12:29:52.865748" elapsed="0.041590"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Get Text">
-<msg time="2026-01-12T12:19:34.648290" level="FAIL">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+<msg time="2026-01-12T12:29:52.908275" level="FAIL">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
     Browser.Get Text
     Mobile.Get Text</msg>
 <var>${tekst}</var>
 <arg>${rij} &gt;&gt; td:nth-child(2)</arg>
-<status status="FAIL" start="2026-01-12T12:19:34.648154" elapsed="0.000218">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+<status status="FAIL" start="2026-01-12T12:29:52.908182" elapsed="0.000158">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
     Browser.Get Text
     Mobile.Get Text</status>
 </kw>
@@ -117,77 +109,77 @@ for all matched elements by ``selector``.</doc>
 <kw name="Log" owner="BuiltIn">
 <arg>Gevonden: ${tekst}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2026-01-12T12:19:34.648991" elapsed="0.000123"/>
+<status status="NOT RUN" start="2026-01-12T12:29:52.908773" elapsed="0.000098"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser">
 <arg>selector=${rij}</arg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="NOT RUN" start="2026-01-12T12:19:34.649316" elapsed="0.000116"/>
+<status status="NOT RUN" start="2026-01-12T12:29:52.909006" elapsed="0.000065"/>
 </kw>
 <break>
-<status status="NOT RUN" start="2026-01-12T12:19:34.649638" elapsed="0.000121"/>
+<status status="NOT RUN" start="2026-01-12T12:29:52.909135" elapsed="0.000070"/>
 </break>
-<status status="NOT RUN" start="2026-01-12T12:19:34.648713" elapsed="0.001130"/>
+<status status="NOT RUN" start="2026-01-12T12:29:52.908586" elapsed="0.000671"/>
 </branch>
-<status status="NOT RUN" start="2026-01-12T12:19:34.648671" elapsed="0.001262"/>
+<status status="NOT RUN" start="2026-01-12T12:29:52.908552" elapsed="0.000757"/>
 </if>
 <var name="${rij}">table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=0</var>
-<status status="FAIL" start="2026-01-12T12:19:34.647790" elapsed="0.002232">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+<status status="FAIL" start="2026-01-12T12:29:52.907899" elapsed="0.001483">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
     Browser.Get Text
     Mobile.Get Text</status>
 </iter>
 <var>${rij}</var>
 <value>@{rijen}</value>
-<status status="FAIL" start="2026-01-12T12:19:34.647242" elapsed="0.002945">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+<status status="FAIL" start="2026-01-12T12:29:52.907483" elapsed="0.001991">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
     Browser.Get Text
     Mobile.Get Text</status>
 </for>
 <kw name="Sluit Test En Maak Screenshot Bij Fout" owner="common" type="TEARDOWN">
 <kw name="Run Keyword If Test Failed" owner="BuiltIn">
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2026-01-12T12:19:34.722841" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-12T12:29:52.977283" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2026-01-12T12:19:34.651837" elapsed="0.071192"/>
+<status status="PASS" start="2026-01-12T12:29:52.910633" elapsed="0.066834"/>
 </kw>
 <arg>Take Screenshot</arg>
 <doc>Runs the given keyword with the given arguments, if the test failed.</doc>
-<status status="PASS" start="2026-01-12T12:19:34.651244" elapsed="0.071893"/>
+<status status="PASS" start="2026-01-12T12:29:52.910255" elapsed="0.067326"/>
 </kw>
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-12T12:19:34.749091" level="INFO">Closed browser</msg>
+<msg time="2026-01-12T12:29:53.006742" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-12T12:19:34.723307" elapsed="0.025992"/>
+<status status="PASS" start="2026-01-12T12:29:52.977748" elapsed="0.029234"/>
 </kw>
-<status status="PASS" start="2026-01-12T12:19:34.650699" elapsed="0.098739"/>
+<status status="PASS" start="2026-01-12T12:29:52.909891" elapsed="0.097240"/>
 </kw>
-<status status="FAIL" start="2026-01-12T12:19:34.057250" elapsed="0.692278">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+<status status="FAIL" start="2026-01-12T12:29:52.273580" elapsed="0.733637">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
     Browser.Get Text
     Mobile.Get Text</status>
 </test>
 <doc>Data-tests die gebruik maken van de centrale instellingen.</doc>
-<status status="FAIL" start="2026-01-12T12:19:26.978529" elapsed="7.775314"/>
+<status status="FAIL" start="2026-01-12T12:29:44.913018" elapsed="8.099029"/>
 </suite>
-<status status="FAIL" start="2026-01-12T12:19:26.976947" elapsed="7.780811"/>
+<status status="FAIL" start="2026-01-12T12:29:44.912165" elapsed="8.104259"/>
 </suite>
-<status status="FAIL" start="2026-01-12T12:19:26.975048" elapsed="7.783165"/>
+<status status="FAIL" start="2026-01-12T12:29:44.911186" elapsed="8.105783"/>
 </suite>
-<status status="FAIL" start="2026-01-12T12:19:26.939112" elapsed="7.819520"/>
+<status status="FAIL" start="2026-01-12T12:29:44.889524" elapsed="8.127913"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="2" skip="0">All Tests</stat>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Tests" id="s1" pass="0" fail="2" skip="0">Tests</stat>
-<stat name="01 HerekuApp" id="s1-s1" pass="0" fail="2" skip="0">Tests.01 HerekuApp</stat>
-<stat name="01 Basis" id="s1-s1-s1" pass="0" fail="2" skip="0">Tests.01 HerekuApp.01 Basis</stat>
-<stat name="02 Data" id="s1-s1-s1-s1" pass="0" fail="2" skip="0">Tests.01 HerekuApp.01 Basis.02 Data</stat>
+<stat name="Tests" id="s1" pass="1" fail="1" skip="0">Tests</stat>
+<stat name="01 HerekuApp" id="s1-s1" pass="1" fail="1" skip="0">Tests.01 HerekuApp</stat>
+<stat name="01 Basis" id="s1-s1-s1" pass="1" fail="1" skip="0">Tests.01 HerekuApp.01 Basis</stat>
+<stat name="02 Data" id="s1-s1-s1-s1" pass="1" fail="1" skip="0">Tests.01 HerekuApp.01 Basis.02 Data</stat>
 </suite>
 </statistics>
 <errors>

@@ -1,306 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-12T12:19:33.672648" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-12T12:29:52.558887" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="01 Basis" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis">
 <suite id="s1-s1-s1-s1" name="07 Data Driven" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/07_data_driven.robot">
-<test id="s1-s1-s1-s1-t1" name="Verkeerd Wachtwoord" line="11">
-<kw name="Inloggen Met Ongeldige Gegevens Zou Moeten Falen">
-<kw name="Open Browser" owner="Browser">
-<msg time="2026-01-12T12:19:34.010148" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
-<msg time="2026-01-12T12:19:34.010633" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/6/browser/traces/temp/8b47ef23-8e97-49b8-81d2-289f86de36e7"}</msg>
-<msg time="2026-01-12T12:19:34.016139" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:49395</msg>
-<msg time="2026-01-12T12:19:34.638025" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/6/browser/traces/temp/8b47ef23-8e97-49b8-81d2-289f86de36e7"}</msg>
-<msg time="2026-01-12T12:19:34.640273" level="INFO">{
-  "acceptDownloads": true,
-  "bypassCSP": true,
-  "forcedColors": "none",
-  "ignoreHTTPSErrors": false,
-  "javaScriptEnabled": true,
-  "offline": false,
-  "reducedMotion": "no-preference",
-  "serviceWorkers": "allow",
-  "viewport": {
-    "width": 1280,
-    "height": 720
-  }
-}</msg>
-<msg time="2026-01-12T12:19:34.656717" level="INFO">Successfully created context. </msg>
-<msg time="2026-01-12T12:19:34.656828" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
-<msg time="2026-01-12T12:19:35.034838" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/login</msg>
-<arg>${BASE_URL}/login</arg>
-<arg>headless=${HEADLESS}</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
-<status status="PASS" start="2026-01-12T12:19:34.009264" elapsed="1.025879"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2026-01-12T12:19:35.036099" level="INFO">Fills the text 'tomsmith' in the given field.</msg>
-<arg>id=username</arg>
-<arg>${username}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T12:19:35.035444" elapsed="0.040473"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2026-01-12T12:19:35.076874" level="INFO">Fills the text 'DitIsFout' in the given field.</msg>
-<arg>id=password</arg>
-<arg>${password}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T12:19:35.076225" elapsed="0.012164"/>
-</kw>
-<kw name="Click" owner="Browser">
-<msg time="2026-01-12T12:19:35.089472" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
-<arg>button[type="submit"]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T12:19:35.088805" elapsed="0.116496"/>
-</kw>
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-01-12T12:19:35.246923" level="INFO">Waited for Element with selector id=flash at state visible</msg>
-<arg>id=flash</arg>
-<arg>visible</arg>
-<arg>timeout=3s</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-01-12T12:19:35.205712" elapsed="0.041563"/>
-</kw>
-<kw name="Get Text">
-<msg time="2026-01-12T12:19:35.247909" level="FAIL">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    Browser.Get Text
-    Mobile.Get Text</msg>
-<arg>id=flash</arg>
-<arg>contains</arg>
-<arg>is invalid</arg>
-<status status="FAIL" start="2026-01-12T12:19:35.247772" elapsed="0.000205">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    Browser.Get Text
-    Mobile.Get Text</status>
-</kw>
-<arg>tomsmith</arg>
-<arg>DitIsFout</arg>
-<status status="FAIL" start="2026-01-12T12:19:34.008059" elapsed="1.240234">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    Browser.Get Text
-    Mobile.Get Text</status>
-</kw>
-<msg time="2026-01-12T12:19:35.266224" level="INFO">Switching context to context=3d8741aa-6036-4d23-9492-1c2d54f8c808 in CURRENT</msg>
-<msg time="2026-01-12T12:19:35.272178" level="INFO">Successfully changed active context: context=3d8741aa-6036-4d23-9492-1c2d54f8c808</msg>
-<msg time="2026-01-12T12:19:35.281371" level="INFO">Successfully closed Context</msg>
-<status status="FAIL" start="2026-01-12T12:19:34.007304" elapsed="1.241309">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    Browser.Get Text
-    Mobile.Get Text</status>
+<test id="s1-s1-s1-s1-t1" name="Inloggen met data uit bestand" line="14">
+<msg time="2026-01-12T12:29:52.943112" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:33159</msg>
+<status status="FAIL" start="2026-01-12T12:29:52.936923" elapsed="0.001005">Test cannot be empty.</status>
 </test>
-<test id="s1-s1-s1-s1-t2" name="Onbekende Gebruiker" line="12">
-<kw name="Inloggen Met Ongeldige Gegevens Zou Moeten Falen">
-<kw name="Open Browser" owner="Browser">
-<msg time="2026-01-12T12:19:35.287716" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
-<msg time="2026-01-12T12:19:35.287902" level="INFO">Switching browser to browser=2463db3e-7e50-4b15-9845-2bbbd311e441</msg>
-<msg time="2026-01-12T12:19:35.290664" level="INFO">Successfully changed active browser: browser=2463db3e-7e50-4b15-9845-2bbbd311e441</msg>
-<msg time="2026-01-12T12:19:35.290778" level="INFO">Reusing existing browser with id: browser=2463db3e-7e50-4b15-9845-2bbbd311e441</msg>
-<msg time="2026-01-12T12:19:35.292497" level="INFO">{
-  "acceptDownloads": true,
-  "bypassCSP": true,
-  "forcedColors": "none",
-  "ignoreHTTPSErrors": false,
-  "javaScriptEnabled": true,
-  "offline": false,
-  "reducedMotion": "no-preference",
-  "serviceWorkers": "allow",
-  "viewport": {
-    "width": 1280,
-    "height": 720
-  }
-}</msg>
-<msg time="2026-01-12T12:19:35.297309" level="INFO">Successfully created context. </msg>
-<msg time="2026-01-12T12:19:35.297388" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
-<msg time="2026-01-12T12:19:35.657638" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/login</msg>
-<arg>${BASE_URL}/login</arg>
-<arg>headless=${HEADLESS}</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
-<status status="PASS" start="2026-01-12T12:19:35.286809" elapsed="0.371202"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2026-01-12T12:19:35.659306" level="INFO">Fills the text 'albert' in the given field.</msg>
-<arg>id=username</arg>
-<arg>${username}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T12:19:35.658417" elapsed="0.031845"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2026-01-12T12:19:35.691211" level="INFO">Fills the text 'Wachtwoord123' in the given field.</msg>
-<arg>id=password</arg>
-<arg>${password}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T12:19:35.690634" elapsed="0.009404"/>
-</kw>
-<kw name="Click" owner="Browser">
-<msg time="2026-01-12T12:19:35.700881" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
-<arg>button[type="submit"]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T12:19:35.700305" elapsed="0.104812"/>
-</kw>
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-01-12T12:19:35.856158" level="INFO">Waited for Element with selector id=flash at state visible</msg>
-<arg>id=flash</arg>
-<arg>visible</arg>
-<arg>timeout=3s</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-01-12T12:19:35.805462" elapsed="0.051028"/>
-</kw>
-<kw name="Get Text">
-<msg time="2026-01-12T12:19:35.857140" level="FAIL">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    Browser.Get Text
-    Mobile.Get Text</msg>
-<arg>id=flash</arg>
-<arg>contains</arg>
-<arg>is invalid</arg>
-<status status="FAIL" start="2026-01-12T12:19:35.856954" elapsed="0.000274">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    Browser.Get Text
-    Mobile.Get Text</status>
-</kw>
-<arg>albert</arg>
-<arg>Wachtwoord123</arg>
-<status status="FAIL" start="2026-01-12T12:19:35.286136" elapsed="0.571433">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    Browser.Get Text
-    Mobile.Get Text</status>
-</kw>
-<msg time="2026-01-12T12:19:35.872492" level="INFO">Switching context to context=0e2b51f6-10a0-4f44-b0d7-de0878aa5289 in CURRENT</msg>
-<msg time="2026-01-12T12:19:35.878588" level="INFO">Successfully changed active context: context=0e2b51f6-10a0-4f44-b0d7-de0878aa5289</msg>
-<msg time="2026-01-12T12:19:35.884770" level="INFO">Successfully closed Context</msg>
-<status status="FAIL" start="2026-01-12T12:19:35.281935" elapsed="0.575953">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    Browser.Get Text
-    Mobile.Get Text</status>
-</test>
-<test id="s1-s1-s1-s1-t3" name="Lege Velden" line="13">
-<kw name="Inloggen Met Ongeldige Gegevens Zou Moeten Falen">
-<kw name="Open Browser" owner="Browser">
-<msg time="2026-01-12T12:19:35.891680" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
-<msg time="2026-01-12T12:19:35.891862" level="INFO">Switching browser to browser=2463db3e-7e50-4b15-9845-2bbbd311e441</msg>
-<msg time="2026-01-12T12:19:35.894508" level="INFO">Successfully changed active browser: browser=2463db3e-7e50-4b15-9845-2bbbd311e441</msg>
-<msg time="2026-01-12T12:19:35.894654" level="INFO">Reusing existing browser with id: browser=2463db3e-7e50-4b15-9845-2bbbd311e441</msg>
-<msg time="2026-01-12T12:19:35.896497" level="INFO">{
-  "acceptDownloads": true,
-  "bypassCSP": true,
-  "forcedColors": "none",
-  "ignoreHTTPSErrors": false,
-  "javaScriptEnabled": true,
-  "offline": false,
-  "reducedMotion": "no-preference",
-  "serviceWorkers": "allow",
-  "viewport": {
-    "width": 1280,
-    "height": 720
-  }
-}</msg>
-<msg time="2026-01-12T12:19:35.903070" level="INFO">Successfully created context. </msg>
-<msg time="2026-01-12T12:19:35.903191" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
-<msg time="2026-01-12T12:19:36.278880" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/login</msg>
-<arg>${BASE_URL}/login</arg>
-<arg>headless=${HEADLESS}</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
-<status status="PASS" start="2026-01-12T12:19:35.890819" elapsed="0.388444"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2026-01-12T12:19:36.280478" level="INFO">Fills the text '' in the given field.</msg>
-<arg>id=username</arg>
-<arg>${username}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T12:19:36.279633" elapsed="0.038360"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2026-01-12T12:19:36.318904" level="INFO">Fills the text '' in the given field.</msg>
-<arg>id=password</arg>
-<arg>${password}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T12:19:36.318263" elapsed="0.012778"/>
-</kw>
-<kw name="Click" owner="Browser">
-<msg time="2026-01-12T12:19:36.332244" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
-<arg>button[type="submit"]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T12:19:36.331432" elapsed="0.103417"/>
-</kw>
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-01-12T12:19:36.474251" level="INFO">Waited for Element with selector id=flash at state visible</msg>
-<arg>id=flash</arg>
-<arg>visible</arg>
-<arg>timeout=3s</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-01-12T12:19:36.435130" elapsed="0.039342"/>
-</kw>
-<kw name="Get Text">
-<msg time="2026-01-12T12:19:36.474957" level="FAIL">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    Browser.Get Text
-    Mobile.Get Text</msg>
-<arg>id=flash</arg>
-<arg>contains</arg>
-<arg>is invalid</arg>
-<status status="FAIL" start="2026-01-12T12:19:36.474817" elapsed="0.000201">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    Browser.Get Text
-    Mobile.Get Text</status>
-</kw>
-<arg>${EMPTY}</arg>
-<arg>${EMPTY}</arg>
-<status status="FAIL" start="2026-01-12T12:19:35.888923" elapsed="0.587078">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    Browser.Get Text
-    Mobile.Get Text</status>
-</kw>
-<msg time="2026-01-12T12:19:36.485776" level="INFO">Switching context to context=9971f7c7-c83b-479c-af39-d636267900e8 in CURRENT</msg>
-<msg time="2026-01-12T12:19:36.490460" level="INFO">Successfully changed active context: context=9971f7c7-c83b-479c-af39-d636267900e8</msg>
-<msg time="2026-01-12T12:19:36.496900" level="INFO">Successfully closed Context</msg>
-<status status="FAIL" start="2026-01-12T12:19:35.885405" elapsed="0.590795">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    Browser.Get Text
-    Mobile.Get Text</status>
-</test>
-<status status="FAIL" start="2026-01-12T12:19:33.708291" elapsed="2.790094"/>
+<status status="FAIL" start="2026-01-12T12:29:52.595070" elapsed="0.900283"/>
 </suite>
-<status status="FAIL" start="2026-01-12T12:19:33.707395" elapsed="2.795863"/>
+<status status="FAIL" start="2026-01-12T12:29:52.594183" elapsed="0.907282"/>
 </suite>
-<status status="FAIL" start="2026-01-12T12:19:33.706445" elapsed="2.797388"/>
+<status status="FAIL" start="2026-01-12T12:29:52.593151" elapsed="0.909180"/>
 </suite>
-<status status="FAIL" start="2026-01-12T12:19:33.685495" elapsed="2.818764"/>
+<status status="FAIL" start="2026-01-12T12:29:52.571276" elapsed="0.931733"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="3" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Tests" id="s1" pass="0" fail="3" skip="0">Tests</stat>
-<stat name="01 HerekuApp" id="s1-s1" pass="0" fail="3" skip="0">Tests.01 HerekuApp</stat>
-<stat name="01 Basis" id="s1-s1-s1" pass="0" fail="3" skip="0">Tests.01 HerekuApp.01 Basis</stat>
-<stat name="07 Data Driven" id="s1-s1-s1-s1" pass="0" fail="3" skip="0">Tests.01 HerekuApp.01 Basis.07 Data Driven</stat>
+<stat name="Tests" id="s1" pass="0" fail="1" skip="0">Tests</stat>
+<stat name="01 HerekuApp" id="s1-s1" pass="0" fail="1" skip="0">Tests.01 HerekuApp</stat>
+<stat name="01 Basis" id="s1-s1-s1" pass="0" fail="1" skip="0">Tests.01 HerekuApp.01 Basis</stat>
+<stat name="07 Data Driven" id="s1-s1-s1-s1" pass="0" fail="1" skip="0">Tests.01 HerekuApp.01 Basis.07 Data Driven</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2026-01-12T12:19:34.010148" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
-<msg time="2026-01-12T12:19:35.287716" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
-<msg time="2026-01-12T12:19:35.891680" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2026-01-12T12:29:52.935538" level="ERROR">[ DataDriver ] Error in robot file:
+  File "/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/07_data_driven.robot", line 0</msg>
+<msg time="2026-01-12T12:29:52.935626" level="ERROR">In source file:
+  File "../../resources/data/testdata.csv", line 0</msg>
+<msg time="2026-01-12T12:29:52.936714" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: FileNotFoundError: File attribute was not a full path. Tried to find /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/../../resources/data/testdata.csv but file does not exist.</msg>
 </errors>
 </robot>

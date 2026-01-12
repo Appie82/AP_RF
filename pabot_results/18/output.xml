@@ -1,64 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-12T12:19:46.002560" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-12T12:30:03.574742" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="02 Geavanceerd" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd">
 <suite id="s1-s1-s1-s1" name="19 Shadow Dom" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd/19_shadow_dom.robot">
 <kw name="New Browser" owner="Browser" type="SETUP">
-<msg time="2026-01-12T12:19:46.443791" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/18/browser/traces/temp/62386ecf-e0ca-4168-9676-028de35a8aef"}</msg>
-<msg time="2026-01-12T12:19:46.448240" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:43385</msg>
-<msg time="2026-01-12T12:19:47.203278" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/18/browser/traces/temp/62386ecf-e0ca-4168-9676-028de35a8aef"}</msg>
+<msg time="2026-01-12T12:30:03.959153" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/18/browser/traces/temp/64db2888-f312-4fa3-b3af-3fb72611b19d"}</msg>
+<msg time="2026-01-12T12:30:03.964530" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:52671</msg>
+<msg time="2026-01-12T12:30:04.697177" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/18/browser/traces/temp/64db2888-f312-4fa3-b3af-3fb72611b19d"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-12T12:19:46.442889" elapsed="0.760747"/>
+<status status="PASS" start="2026-01-12T12:30:03.957907" elapsed="0.739569"/>
 </kw>
 <test id="s1-s1-s1-s1-t1" name="Scenario 19: Tekst Lezen Uit Shadow DOM" line="10">
 <kw name="New Page" owner="Browser" type="SETUP">
-<msg time="2026-01-12T12:19:47.596238" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/shadowdom</msg>
-<msg time="2026-01-12T12:19:47.596366" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-01-12T12:30:05.236755" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/shadowdom</msg>
+<msg time="2026-01-12T12:30:05.236919" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${BASE_URL}/shadowdom</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-12T12:19:47.211833" elapsed="0.384812"/>
+<status status="PASS" start="2026-01-12T12:30:04.702615" elapsed="0.534544"/>
 </kw>
 <kw name="Get Text">
-<msg time="2026-01-12T12:19:47.597322" level="FAIL">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+<msg time="2026-01-12T12:30:05.237841" level="FAIL">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
     Browser.Get Text
     Mobile.Get Text</msg>
 <arg>css=span[slot="my-text"]</arg>
 <arg>contains</arg>
 <arg>Let's have some different text!</arg>
-<status status="FAIL" start="2026-01-12T12:19:47.597137" elapsed="0.000267">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+<status status="FAIL" start="2026-01-12T12:30:05.237638" elapsed="0.000287">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
     Browser.Get Text
     Mobile.Get Text</status>
 </kw>
-<msg time="2026-01-12T12:19:47.622113" level="INFO">Switching context to context=73297c5e-db3d-4277-9a33-8653775b374d in CURRENT</msg>
-<msg time="2026-01-12T12:19:47.632426" level="INFO">Successfully changed active context: context=73297c5e-db3d-4277-9a33-8653775b374d</msg>
-<msg time="2026-01-12T12:19:47.641876" level="INFO">Successfully closed Context</msg>
+<msg time="2026-01-12T12:30:05.266067" level="INFO">Switching context to context=c945d8d5-61cf-452d-a9fb-918839b06a22 in CURRENT</msg>
+<msg time="2026-01-12T12:30:05.276570" level="INFO">Successfully changed active context: context=c945d8d5-61cf-452d-a9fb-918839b06a22</msg>
+<msg time="2026-01-12T12:30:05.286381" level="INFO">Successfully closed Context</msg>
 <doc>Verifieer dat we elementen binnen een Shadow Root kunnen vinden.</doc>
 <tag>shadowdom</tag>
-<status status="FAIL" start="2026-01-12T12:19:47.204002" elapsed="0.393801">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+<status status="FAIL" start="2026-01-12T12:30:04.697824" elapsed="0.540470">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
     Browser.Get Text
     Mobile.Get Text</status>
 </test>
 <kw name="Close Browser" owner="Browser" type="TEARDOWN">
-<msg time="2026-01-12T12:19:47.679968" level="INFO">Closed browser</msg>
+<msg time="2026-01-12T12:30:05.320095" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-12T12:19:47.642893" elapsed="0.037335"/>
+<status status="PASS" start="2026-01-12T12:30:05.287321" elapsed="0.032975"/>
 </kw>
-<status status="FAIL" start="2026-01-12T12:19:46.056784" elapsed="1.623600"/>
+<status status="FAIL" start="2026-01-12T12:30:03.611943" elapsed="1.708472"/>
 </suite>
-<status status="FAIL" start="2026-01-12T12:19:46.055193" elapsed="1.633201"/>
+<status status="FAIL" start="2026-01-12T12:30:03.611054" elapsed="1.718293"/>
 </suite>
-<status status="FAIL" start="2026-01-12T12:19:46.053490" elapsed="1.635436"/>
+<status status="FAIL" start="2026-01-12T12:30:03.610140" elapsed="1.719952"/>
 </suite>
-<status status="FAIL" start="2026-01-12T12:19:46.022345" elapsed="1.666980"/>
+<status status="FAIL" start="2026-01-12T12:30:03.586317" elapsed="1.744353"/>
 </suite>
 <statistics>
 <total>

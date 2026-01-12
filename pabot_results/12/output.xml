@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-12T12:19:40.053068" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-12T12:29:58.420162" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="02 Geavanceerd" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd">
@@ -7,18 +7,18 @@
 <test id="s1-s1-s1-s1-t1" name="Scenario 13: Hybride Sessie Injectie" line="10">
 <kw name="Start Test-Sessie" owner="common" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-12T12:19:40.475702" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/12/browser/traces/temp/ad4c22fb-6ca1-4f67-bbe8-8178edf939e7"}</msg>
-<msg time="2026-01-12T12:19:40.479793" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:50233</msg>
-<msg time="2026-01-12T12:19:41.217230" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/12/browser/traces/temp/ad4c22fb-6ca1-4f67-bbe8-8178edf939e7"}</msg>
+<msg time="2026-01-12T12:29:58.822381" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/12/browser/traces/temp/fd9fe310-3f83-4b33-b03f-28db8b055ae5"}</msg>
+<msg time="2026-01-12T12:29:58.826811" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:36859</msg>
+<msg time="2026-01-12T12:29:59.547243" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/12/browser/traces/temp/fd9fe310-3f83-4b33-b03f-28db8b055ae5"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-12T12:19:40.474900" elapsed="0.742696"/>
+<status status="PASS" start="2026-01-12T12:29:58.821598" elapsed="0.725932"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2026-01-12T12:19:41.220695" level="INFO">{
+<msg time="2026-01-12T12:29:59.550866" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -32,35 +32,35 @@
     "height": 720
   }
 }</msg>
-<msg time="2026-01-12T12:19:41.235488" level="INFO">Successfully created context. </msg>
-<msg time="2026-01-12T12:19:41.235660" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2026-01-12T12:29:59.565567" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-12T12:29:59.565673" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
 <arg>viewport={'width': 1280, 'height': 720}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2026-01-12T12:19:41.218005" elapsed="0.017809"/>
+<status status="PASS" start="2026-01-12T12:29:59.547934" elapsed="0.017911"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-12T12:19:41.609807" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com</msg>
+<msg time="2026-01-12T12:30:00.055465" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com</msg>
 <arg>${START_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-12T12:19:41.236180" elapsed="0.373955"/>
+<status status="PASS" start="2026-01-12T12:29:59.566134" elapsed="0.489689"/>
 </kw>
-<status status="PASS" start="2026-01-12T12:19:40.473890" elapsed="1.136461"/>
+<status status="PASS" start="2026-01-12T12:29:58.820590" elapsed="1.235440"/>
 </kw>
 <kw name="Maak Gebruiker Klaar En Injecteer Sessie" owner="common">
 <kw name="Go To" owner="Browser">
-<msg time="2026-01-12T12:19:41.699893" level="INFO">Successfully opened URL https://the-internet.herokuapp.com</msg>
+<msg time="2026-01-12T12:30:00.163549" level="INFO">Successfully opened URL https://the-internet.herokuapp.com</msg>
 <arg>${BASE_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Navigates to the given ``url``.</doc>
-<status status="PASS" start="2026-01-12T12:19:41.611425" elapsed="0.088785"/>
+<status status="PASS" start="2026-01-12T12:30:00.056967" elapsed="0.106907"/>
 </kw>
 <kw name="Add Cookie" owner="Browser">
-<msg time="2026-01-12T12:19:41.708022" level="INFO">Cookie "rack.session" added.</msg>
+<msg time="2026-01-12T12:30:00.171181" level="INFO">Cookie "rack.session" added.</msg>
 <arg>rack.session</arg>
 <arg>123456789</arg>
 <arg>domain=the-internet.herokuapp.com</arg>
@@ -68,18 +68,18 @@
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Adds a cookie to currently active browser context.</doc>
-<status status="PASS" start="2026-01-12T12:19:41.700629" elapsed="0.007574"/>
+<status status="PASS" start="2026-01-12T12:30:00.164192" elapsed="0.007207"/>
 </kw>
 <kw name="Reload" owner="Browser">
-<msg time="2026-01-12T12:19:41.788149" level="INFO">Reloaded page with options: {"waitUntil": "load"}</msg>
+<msg time="2026-01-12T12:30:00.250079" level="INFO">Reloaded page with options: {"waitUntil": "load"}</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Reloads current active page.</doc>
-<status status="PASS" start="2026-01-12T12:19:41.708470" elapsed="0.079971"/>
+<status status="PASS" start="2026-01-12T12:30:00.171717" elapsed="0.078648"/>
 </kw>
 <arg>admin@test.nl</arg>
 <arg>Password123</arg>
-<status status="PASS" start="2026-01-12T12:19:41.610796" elapsed="0.177985"/>
+<status status="PASS" start="2026-01-12T12:30:00.056391" elapsed="0.194178"/>
 </kw>
 <kw name="Get Url" owner="Browser">
 <arg>contains</arg>
@@ -88,30 +88,30 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<status status="PASS" start="2026-01-12T12:19:41.789099" elapsed="0.004070"/>
+<status status="PASS" start="2026-01-12T12:30:00.250865" elapsed="0.003434"/>
 </kw>
 <kw name="Stop Test-Sessie" owner="common" type="TEARDOWN">
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-12T12:19:41.846748" level="INFO">Closed browser</msg>
+<msg time="2026-01-12T12:30:00.316279" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-12T12:19:41.794239" elapsed="0.052826"/>
+<status status="PASS" start="2026-01-12T12:30:00.255266" elapsed="0.061273"/>
 </kw>
-<status status="PASS" start="2026-01-12T12:19:41.793706" elapsed="0.053561"/>
+<status status="PASS" start="2026-01-12T12:30:00.254751" elapsed="0.061962"/>
 </kw>
 <doc>Test of we een sessie kunnen injecteren zonder opnieuw in te loggen.</doc>
 <tag>api</tag>
 <tag>geavanceerd</tag>
-<status status="PASS" start="2026-01-12T12:19:40.472996" elapsed="1.374388"/>
+<status status="PASS" start="2026-01-12T12:29:58.819678" elapsed="1.497157"/>
 </test>
-<status status="PASS" start="2026-01-12T12:19:40.098738" elapsed="1.761429"/>
+<status status="PASS" start="2026-01-12T12:29:58.458650" elapsed="1.868817"/>
 </suite>
-<status status="PASS" start="2026-01-12T12:19:40.097875" elapsed="1.768827"/>
+<status status="PASS" start="2026-01-12T12:29:58.457254" elapsed="1.876654"/>
 </suite>
-<status status="PASS" start="2026-01-12T12:19:40.096896" elapsed="1.770566"/>
+<status status="PASS" start="2026-01-12T12:29:58.456104" elapsed="1.878420"/>
 </suite>
-<status status="PASS" start="2026-01-12T12:19:40.070895" elapsed="1.797248"/>
+<status status="PASS" start="2026-01-12T12:29:58.433209" elapsed="1.901892"/>
 </suite>
 <statistics>
 <total>
