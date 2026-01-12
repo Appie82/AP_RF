@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-12T11:13:14.879832" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-12T12:19:39.001860" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="01 Basis" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis">
@@ -7,18 +7,18 @@
 <test id="s1-s1-s1-s1-t1" name="Correcte inlog" line="12">
 <kw name="Start Test-Sessie" owner="common" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-12T11:13:15.156445" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/10/browser/traces/temp/ff9c2917-75cc-44a4-9069-80f9d4c6fdc2"}</msg>
-<msg time="2026-01-12T11:13:15.160176" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:55447</msg>
-<msg time="2026-01-12T11:13:15.681573" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/10/browser/traces/temp/ff9c2917-75cc-44a4-9069-80f9d4c6fdc2"}</msg>
+<msg time="2026-01-12T12:19:39.326299" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/10/browser/traces/temp/94c33fd3-1c9b-43a7-90cf-d88e60a24cd2"}</msg>
+<msg time="2026-01-12T12:19:39.330474" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:38175</msg>
+<msg time="2026-01-12T12:19:39.994173" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/10/browser/traces/temp/94c33fd3-1c9b-43a7-90cf-d88e60a24cd2"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-12T11:13:15.155479" elapsed="0.526362"/>
+<status status="PASS" start="2026-01-12T12:19:39.325524" elapsed="0.668965"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2026-01-12T11:13:15.685056" level="INFO">{
+<msg time="2026-01-12T12:19:40.002967" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -32,129 +32,129 @@
     "height": 720
   }
 }</msg>
-<msg time="2026-01-12T11:13:15.704474" level="INFO">Successfully created context. </msg>
-<msg time="2026-01-12T11:13:15.704586" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2026-01-12T12:19:40.019913" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-12T12:19:40.020057" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
 <arg>viewport={'width': 1280, 'height': 720}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2026-01-12T11:13:15.682243" elapsed="0.022461"/>
+<status status="PASS" start="2026-01-12T12:19:39.994935" elapsed="0.025282"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-12T11:13:16.467166" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com</msg>
+<msg time="2026-01-12T12:19:40.405401" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com</msg>
 <arg>${START_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-12T11:13:15.705050" elapsed="0.762397"/>
+<status status="PASS" start="2026-01-12T12:19:40.020647" elapsed="0.385209"/>
 </kw>
-<status status="PASS" start="2026-01-12T11:13:15.154150" elapsed="1.313502"/>
+<status status="PASS" start="2026-01-12T12:19:39.324498" elapsed="1.082236"/>
 </kw>
 <kw name="Inloggen Met Verschillende Gegevens">
 <kw name="Go To" owner="Browser">
-<msg time="2026-01-12T11:13:16.644596" level="INFO">Successfully opened URL https://the-internet.herokuapp.com/login</msg>
+<msg time="2026-01-12T12:19:40.526621" level="INFO">Successfully opened URL https://the-internet.herokuapp.com/login</msg>
 <arg>${BASE_URL}/login</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Navigates to the given ``url``.</doc>
-<status status="PASS" start="2026-01-12T11:13:16.468843" elapsed="0.176005"/>
+<status status="PASS" start="2026-01-12T12:19:40.407772" elapsed="0.119161"/>
 </kw>
 <kw name="Vul Inloggegevens In En Verstuur" owner="common">
 <kw name="Log In Met Gebruiker" owner="common">
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-12T11:13:16.647126" level="INFO">Fills the text 'tomsmith' in the given field.</msg>
+<msg time="2026-01-12T12:19:40.529645" level="INFO">Fills the text 'tomsmith' in the given field.</msg>
 <arg>id=username</arg>
 <arg>${username}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T11:13:16.646602" elapsed="0.039746"/>
+<status status="PASS" start="2026-01-12T12:19:40.528922" elapsed="0.050527"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-12T11:13:16.687141" level="INFO">Fills the text 'SuperSecretPassword!' in the given field.</msg>
+<msg time="2026-01-12T12:19:40.580733" level="INFO">Fills the text 'SuperSecretPassword!' in the given field.</msg>
 <arg>id=password</arg>
 <arg>${password}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T11:13:16.686586" elapsed="0.008756"/>
+<status status="PASS" start="2026-01-12T12:19:40.579872" elapsed="0.011908"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-12T11:13:16.696025" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
+<msg time="2026-01-12T12:19:40.592891" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
 <arg>button[type="submit"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T11:13:16.695573" elapsed="0.158718"/>
+<status status="PASS" start="2026-01-12T12:19:40.592137" elapsed="0.156017"/>
 </kw>
 <arg>${user}</arg>
 <arg>${pass}</arg>
-<status status="PASS" start="2026-01-12T11:13:16.646051" elapsed="0.208397"/>
+<status status="PASS" start="2026-01-12T12:19:40.528164" elapsed="0.220236"/>
 </kw>
 <arg>${username}</arg>
 <arg>${password}</arg>
-<status status="PASS" start="2026-01-12T11:13:16.645285" elapsed="0.209230"/>
+<status status="PASS" start="2026-01-12T12:19:40.527371" elapsed="0.221121"/>
 </kw>
 <kw name="Get Text">
-<msg time="2026-01-12T11:13:16.855001" level="FAIL">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Get Text
-    Browser.Get Text</msg>
+<msg time="2026-01-12T12:19:40.749068" level="FAIL">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    Browser.Get Text
+    Mobile.Get Text</msg>
 <arg>id=flash</arg>
 <arg>contains</arg>
 <arg>${expected_message}</arg>
-<status status="FAIL" start="2026-01-12T11:13:16.854799" elapsed="0.000292">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Get Text
-    Browser.Get Text</status>
+<status status="FAIL" start="2026-01-12T12:19:40.748881" elapsed="0.000276">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    Browser.Get Text
+    Mobile.Get Text</status>
 </kw>
 <arg>tomsmith</arg>
 <arg>SuperSecretPassword!</arg>
 <arg>You logged into a secure area!</arg>
-<status status="FAIL" start="2026-01-12T11:13:16.468160" elapsed="0.387303">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Get Text
-    Browser.Get Text</status>
+<status status="FAIL" start="2026-01-12T12:19:40.407108" elapsed="0.342401">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    Browser.Get Text
+    Mobile.Get Text</status>
 </kw>
 <kw name="Afsluiten Test En Sessie" owner="common" type="TEARDOWN">
 <kw name="Sluit Test En Maak Screenshot Bij Fout" owner="common">
 <kw name="Run Keyword If Test Failed" owner="BuiltIn">
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2026-01-12T11:13:16.918521" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-12T12:19:40.836782" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2026-01-12T11:13:16.857457" elapsed="0.061309"/>
+<status status="PASS" start="2026-01-12T12:19:40.751510" elapsed="0.085468"/>
 </kw>
 <arg>Take Screenshot</arg>
 <doc>Runs the given keyword with the given arguments, if the test failed.</doc>
-<status status="PASS" start="2026-01-12T11:13:16.856901" elapsed="0.062041"/>
+<status status="PASS" start="2026-01-12T12:19:40.750863" elapsed="0.086227"/>
 </kw>
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-12T11:13:16.953843" level="INFO">Closed browser</msg>
+<msg time="2026-01-12T12:19:40.879721" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-12T11:13:16.919182" elapsed="0.034856"/>
+<status status="PASS" start="2026-01-12T12:19:40.837273" elapsed="0.042656"/>
 </kw>
-<status status="PASS" start="2026-01-12T11:13:16.856439" elapsed="0.097720"/>
+<status status="PASS" start="2026-01-12T12:19:40.750467" elapsed="0.129602"/>
 </kw>
-<status status="PASS" start="2026-01-12T11:13:16.855937" elapsed="0.098280"/>
+<status status="PASS" start="2026-01-12T12:19:40.749970" elapsed="0.130170"/>
 </kw>
-<status status="FAIL" start="2026-01-12T11:13:15.153082" elapsed="1.801196">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Get Text
-    Browser.Get Text</status>
+<status status="FAIL" start="2026-01-12T12:19:39.323708" elapsed="1.556506">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    Browser.Get Text
+    Mobile.Get Text</status>
 </test>
 <test id="s1-s1-s1-s1-t2" name="Foute gebruikersnaam" line="13">
 <kw name="Start Test-Sessie" owner="common" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-12T11:13:16.962925" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/10/browser/traces/temp/512d3c50-71d4-4b5f-9813-bdad37cbc751"}</msg>
-<msg time="2026-01-12T11:13:17.013389" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/10/browser/traces/temp/512d3c50-71d4-4b5f-9813-bdad37cbc751"}</msg>
+<msg time="2026-01-12T12:19:40.891380" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/10/browser/traces/temp/8182263b-8c50-491e-8ad6-8b3e212320f0"}</msg>
+<msg time="2026-01-12T12:19:40.973270" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/10/browser/traces/temp/8182263b-8c50-491e-8ad6-8b3e212320f0"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-12T11:13:16.962305" elapsed="0.051345"/>
+<status status="PASS" start="2026-01-12T12:19:40.890412" elapsed="0.083185"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2026-01-12T11:13:17.016339" level="INFO">{
+<msg time="2026-01-12T12:19:40.979593" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -168,129 +168,129 @@
     "height": 720
   }
 }</msg>
-<msg time="2026-01-12T11:13:17.021667" level="INFO">Successfully created context. </msg>
-<msg time="2026-01-12T11:13:17.021726" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2026-01-12T12:19:40.992789" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-12T12:19:40.992921" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
 <arg>viewport={'width': 1280, 'height': 720}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2026-01-12T11:13:17.013980" elapsed="0.007811"/>
+<status status="PASS" start="2026-01-12T12:19:40.973940" elapsed="0.019116"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-12T11:13:17.811064" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com</msg>
+<msg time="2026-01-12T12:19:41.379581" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com</msg>
 <arg>${START_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-12T11:13:17.022001" elapsed="0.789327"/>
+<status status="PASS" start="2026-01-12T12:19:40.993384" elapsed="0.386502"/>
 </kw>
-<status status="PASS" start="2026-01-12T11:13:16.961928" elapsed="0.849570"/>
+<status status="PASS" start="2026-01-12T12:19:40.889824" elapsed="0.490223"/>
 </kw>
 <kw name="Inloggen Met Verschillende Gegevens">
 <kw name="Go To" owner="Browser">
-<msg time="2026-01-12T11:13:17.968376" level="INFO">Successfully opened URL https://the-internet.herokuapp.com/login</msg>
+<msg time="2026-01-12T12:19:41.479705" level="INFO">Successfully opened URL https://the-internet.herokuapp.com/login</msg>
 <arg>${BASE_URL}/login</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Navigates to the given ``url``.</doc>
-<status status="PASS" start="2026-01-12T11:13:17.812389" elapsed="0.156229"/>
+<status status="PASS" start="2026-01-12T12:19:41.380990" elapsed="0.099046"/>
 </kw>
 <kw name="Vul Inloggegevens In En Verstuur" owner="common">
 <kw name="Log In Met Gebruiker" owner="common">
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-12T11:13:17.970637" level="INFO">Fills the text 'verkeerd' in the given field.</msg>
+<msg time="2026-01-12T12:19:41.482353" level="INFO">Fills the text 'verkeerd' in the given field.</msg>
 <arg>id=username</arg>
 <arg>${username}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T11:13:17.970070" elapsed="0.033509"/>
+<status status="PASS" start="2026-01-12T12:19:41.481689" elapsed="0.037208"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-12T11:13:18.004321" level="INFO">Fills the text 'SuperSecretPassword!' in the given field.</msg>
+<msg time="2026-01-12T12:19:41.520018" level="INFO">Fills the text 'SuperSecretPassword!' in the given field.</msg>
 <arg>id=password</arg>
 <arg>${password}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T11:13:18.003796" elapsed="0.008084"/>
+<status status="PASS" start="2026-01-12T12:19:41.519232" elapsed="0.012126"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-12T11:13:18.012486" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
+<msg time="2026-01-12T12:19:41.532289" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
 <arg>button[type="submit"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T11:13:18.012079" elapsed="0.165494"/>
+<status status="PASS" start="2026-01-12T12:19:41.531741" elapsed="0.108852"/>
 </kw>
 <arg>${user}</arg>
 <arg>${pass}</arg>
-<status status="PASS" start="2026-01-12T11:13:17.969604" elapsed="0.208171"/>
+<status status="PASS" start="2026-01-12T12:19:41.481150" elapsed="0.159670"/>
 </kw>
 <arg>${username}</arg>
 <arg>${password}</arg>
-<status status="PASS" start="2026-01-12T11:13:17.968942" elapsed="0.208964"/>
+<status status="PASS" start="2026-01-12T12:19:41.480441" elapsed="0.160498"/>
 </kw>
 <kw name="Get Text">
-<msg time="2026-01-12T11:13:18.178328" level="FAIL">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Get Text
-    Browser.Get Text</msg>
+<msg time="2026-01-12T12:19:41.641406" level="FAIL">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    Browser.Get Text
+    Mobile.Get Text</msg>
 <arg>id=flash</arg>
 <arg>contains</arg>
 <arg>${expected_message}</arg>
-<status status="FAIL" start="2026-01-12T11:13:18.178173" elapsed="0.000227">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Get Text
-    Browser.Get Text</status>
+<status status="FAIL" start="2026-01-12T12:19:41.641246" elapsed="0.000232">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    Browser.Get Text
+    Mobile.Get Text</status>
 </kw>
 <arg>verkeerd</arg>
 <arg>SuperSecretPassword!</arg>
 <arg>Your username is invalid!</arg>
-<status status="FAIL" start="2026-01-12T11:13:17.811803" elapsed="0.366909">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Get Text
-    Browser.Get Text</status>
+<status status="FAIL" start="2026-01-12T12:19:41.380348" elapsed="0.261464">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    Browser.Get Text
+    Mobile.Get Text</status>
 </kw>
 <kw name="Afsluiten Test En Sessie" owner="common" type="TEARDOWN">
 <kw name="Sluit Test En Maak Screenshot Bij Fout" owner="common">
 <kw name="Run Keyword If Test Failed" owner="BuiltIn">
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2026-01-12T11:13:18.267476" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-12T12:19:41.748073" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2026-01-12T11:13:18.184563" elapsed="0.083125"/>
+<status status="PASS" start="2026-01-12T12:19:41.644920" elapsed="0.103397"/>
 </kw>
 <arg>Take Screenshot</arg>
 <doc>Runs the given keyword with the given arguments, if the test failed.</doc>
-<status status="PASS" start="2026-01-12T11:13:18.183590" elapsed="0.084239"/>
+<status status="PASS" start="2026-01-12T12:19:41.644308" elapsed="0.104153"/>
 </kw>
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-12T11:13:18.306572" level="INFO">Closed browser</msg>
+<msg time="2026-01-12T12:19:41.787266" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-12T11:13:18.268055" elapsed="0.038745"/>
+<status status="PASS" start="2026-01-12T12:19:41.748711" elapsed="0.038861"/>
 </kw>
-<status status="PASS" start="2026-01-12T11:13:18.183133" elapsed="0.123870"/>
+<status status="PASS" start="2026-01-12T12:19:41.643662" elapsed="0.144115"/>
 </kw>
-<status status="PASS" start="2026-01-12T11:13:18.182362" elapsed="0.124730"/>
+<status status="PASS" start="2026-01-12T12:19:41.642238" elapsed="0.145667"/>
 </kw>
-<status status="FAIL" start="2026-01-12T11:13:16.960157" elapsed="1.347023">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Get Text
-    Browser.Get Text</status>
+<status status="FAIL" start="2026-01-12T12:19:40.887213" elapsed="0.900817">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    Browser.Get Text
+    Mobile.Get Text</status>
 </test>
 <test id="s1-s1-s1-s1-t3" name="Fout wachtwoord" line="14">
 <kw name="Start Test-Sessie" owner="common" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-12T11:13:18.316664" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/10/browser/traces/temp/a0780769-4423-473b-95eb-be87df42bb46"}</msg>
-<msg time="2026-01-12T11:13:18.381705" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/10/browser/traces/temp/a0780769-4423-473b-95eb-be87df42bb46"}</msg>
+<msg time="2026-01-12T12:19:41.800702" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/10/browser/traces/temp/3acea0c7-20a6-4af2-b2ae-b55ab1d09b4f"}</msg>
+<msg time="2026-01-12T12:19:41.896068" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/10/browser/traces/temp/3acea0c7-20a6-4af2-b2ae-b55ab1d09b4f"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-12T11:13:18.315714" elapsed="0.066272"/>
+<status status="PASS" start="2026-01-12T12:19:41.799566" elapsed="0.096784"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2026-01-12T11:13:18.386722" level="INFO">{
+<msg time="2026-01-12T12:19:41.900669" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -304,129 +304,129 @@
     "height": 720
   }
 }</msg>
-<msg time="2026-01-12T11:13:18.394724" level="INFO">Successfully created context. </msg>
-<msg time="2026-01-12T11:13:18.425814" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2026-01-12T12:19:41.912644" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-12T12:19:41.912770" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
 <arg>viewport={'width': 1280, 'height': 720}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2026-01-12T11:13:18.382283" elapsed="0.043741"/>
+<status status="PASS" start="2026-01-12T12:19:41.896704" elapsed="0.016263"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-12T11:13:19.127718" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com</msg>
+<msg time="2026-01-12T12:19:42.277704" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com</msg>
 <arg>${START_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-12T11:13:18.426307" elapsed="0.701733"/>
+<status status="PASS" start="2026-01-12T12:19:41.913266" elapsed="0.364752"/>
 </kw>
-<status status="PASS" start="2026-01-12T11:13:18.315159" elapsed="0.813080"/>
+<status status="PASS" start="2026-01-12T12:19:41.798788" elapsed="0.479413"/>
 </kw>
 <kw name="Inloggen Met Verschillende Gegevens">
 <kw name="Go To" owner="Browser">
-<msg time="2026-01-12T11:13:19.326854" level="INFO">Successfully opened URL https://the-internet.herokuapp.com/login</msg>
+<msg time="2026-01-12T12:19:42.393916" level="INFO">Successfully opened URL https://the-internet.herokuapp.com/login</msg>
 <arg>${BASE_URL}/login</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Navigates to the given ``url``.</doc>
-<status status="PASS" start="2026-01-12T11:13:19.129170" elapsed="0.197966"/>
+<status status="PASS" start="2026-01-12T12:19:42.279201" elapsed="0.114999"/>
 </kw>
 <kw name="Vul Inloggegevens In En Verstuur" owner="common">
 <kw name="Log In Met Gebruiker" owner="common">
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-12T11:13:19.328884" level="INFO">Fills the text 'tomsmith' in the given field.</msg>
+<msg time="2026-01-12T12:19:42.396489" level="INFO">Fills the text 'tomsmith' in the given field.</msg>
 <arg>id=username</arg>
 <arg>${username}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T11:13:19.328289" elapsed="0.026456"/>
+<status status="PASS" start="2026-01-12T12:19:42.395860" elapsed="0.044410"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-12T11:13:19.355488" level="INFO">Fills the text 'verkeerd' in the given field.</msg>
+<msg time="2026-01-12T12:19:42.441464" level="INFO">Fills the text 'verkeerd' in the given field.</msg>
 <arg>id=password</arg>
 <arg>${password}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T11:13:19.354995" elapsed="0.009368"/>
+<status status="PASS" start="2026-01-12T12:19:42.440650" elapsed="0.016163"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-12T11:13:19.365058" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
+<msg time="2026-01-12T12:19:42.457648" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
 <arg>button[type="submit"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T11:13:19.364577" elapsed="0.156593"/>
+<status status="PASS" start="2026-01-12T12:19:42.457089" elapsed="0.118864"/>
 </kw>
 <arg>${user}</arg>
 <arg>${pass}</arg>
-<status status="PASS" start="2026-01-12T11:13:19.327871" elapsed="0.193437"/>
+<status status="PASS" start="2026-01-12T12:19:42.395353" elapsed="0.180837"/>
 </kw>
 <arg>${username}</arg>
 <arg>${password}</arg>
-<status status="PASS" start="2026-01-12T11:13:19.327405" elapsed="0.193965"/>
+<status status="PASS" start="2026-01-12T12:19:42.394682" elapsed="0.181630"/>
 </kw>
 <kw name="Get Text">
-<msg time="2026-01-12T11:13:19.521661" level="FAIL">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Get Text
-    Browser.Get Text</msg>
+<msg time="2026-01-12T12:19:42.576851" level="FAIL">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    Browser.Get Text
+    Mobile.Get Text</msg>
 <arg>id=flash</arg>
 <arg>contains</arg>
 <arg>${expected_message}</arg>
-<status status="FAIL" start="2026-01-12T11:13:19.521553" elapsed="0.000156">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Get Text
-    Browser.Get Text</status>
+<status status="FAIL" start="2026-01-12T12:19:42.576665" elapsed="0.000268">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    Browser.Get Text
+    Mobile.Get Text</status>
 </kw>
 <arg>tomsmith</arg>
 <arg>verkeerd</arg>
 <arg>Your password is invalid!</arg>
-<status status="FAIL" start="2026-01-12T11:13:19.128559" elapsed="0.393358">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Get Text
-    Browser.Get Text</status>
+<status status="FAIL" start="2026-01-12T12:19:42.278521" elapsed="0.298743">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    Browser.Get Text
+    Mobile.Get Text</status>
 </kw>
 <kw name="Afsluiten Test En Sessie" owner="common" type="TEARDOWN">
 <kw name="Sluit Test En Maak Screenshot Bij Fout" owner="common">
 <kw name="Run Keyword If Test Failed" owner="BuiltIn">
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2026-01-12T11:13:19.588407" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-3.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-3.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-12T12:19:42.675117" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-3.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-3.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2026-01-12T11:13:19.523791" elapsed="0.064767"/>
+<status status="PASS" start="2026-01-12T12:19:42.583497" elapsed="0.091916"/>
 </kw>
 <arg>Take Screenshot</arg>
 <doc>Runs the given keyword with the given arguments, if the test failed.</doc>
-<status status="PASS" start="2026-01-12T11:13:19.523225" elapsed="0.065425"/>
+<status status="PASS" start="2026-01-12T12:19:42.582773" elapsed="0.092841"/>
 </kw>
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-12T11:13:19.607204" level="INFO">Closed browser</msg>
+<msg time="2026-01-12T12:19:42.721416" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-12T11:13:19.588802" elapsed="0.018557"/>
+<status status="PASS" start="2026-01-12T12:19:42.675860" elapsed="0.045836"/>
 </kw>
-<status status="PASS" start="2026-01-12T11:13:19.522803" elapsed="0.084665"/>
+<status status="PASS" start="2026-01-12T12:19:42.578275" elapsed="0.143593"/>
 </kw>
-<status status="PASS" start="2026-01-12T11:13:19.522254" elapsed="0.085268"/>
+<status status="PASS" start="2026-01-12T12:19:42.577777" elapsed="0.144192"/>
 </kw>
-<status status="FAIL" start="2026-01-12T11:13:18.312432" elapsed="1.295145">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Get Text
-    Browser.Get Text</status>
+<status status="FAIL" start="2026-01-12T12:19:41.795102" elapsed="0.926961">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    Browser.Get Text
+    Mobile.Get Text</status>
 </test>
 <test id="s1-s1-s1-s1-t4" name="Lege velden" line="15">
 <kw name="Start Test-Sessie" owner="common" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-12T11:13:19.613271" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/10/browser/traces/temp/fb3dfe61-6cce-45f1-852f-df9ed237129e"}</msg>
-<msg time="2026-01-12T11:13:19.660339" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/10/browser/traces/temp/fb3dfe61-6cce-45f1-852f-df9ed237129e"}</msg>
+<msg time="2026-01-12T12:19:42.731173" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/10/browser/traces/temp/d91cdbb2-986b-448b-afd9-9efd633af034"}</msg>
+<msg time="2026-01-12T12:19:42.804861" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/10/browser/traces/temp/d91cdbb2-986b-448b-afd9-9efd633af034"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-12T11:13:19.612640" elapsed="0.047941"/>
+<status status="PASS" start="2026-01-12T12:19:42.730269" elapsed="0.074870"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2026-01-12T11:13:19.663875" level="INFO">{
+<msg time="2026-01-12T12:19:42.808309" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -440,122 +440,122 @@
     "height": 720
   }
 }</msg>
-<msg time="2026-01-12T11:13:19.671416" level="INFO">Successfully created context. </msg>
-<msg time="2026-01-12T11:13:19.671511" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2026-01-12T12:19:42.818091" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-12T12:19:42.818216" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
 <arg>viewport={'width': 1280, 'height': 720}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2026-01-12T11:13:19.660901" elapsed="0.010695"/>
+<status status="PASS" start="2026-01-12T12:19:42.805446" elapsed="0.012898"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-12T11:13:20.366554" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com</msg>
+<msg time="2026-01-12T12:19:43.189667" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com</msg>
 <arg>${START_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-12T11:13:19.671817" elapsed="0.694925"/>
+<status status="PASS" start="2026-01-12T12:19:42.818684" elapsed="0.371330"/>
 </kw>
-<status status="PASS" start="2026-01-12T11:13:19.612299" elapsed="0.754613"/>
+<status status="PASS" start="2026-01-12T12:19:42.729759" elapsed="0.460467"/>
 </kw>
 <kw name="Inloggen Met Verschillende Gegevens">
 <kw name="Go To" owner="Browser">
-<msg time="2026-01-12T11:13:20.526618" level="INFO">Successfully opened URL https://the-internet.herokuapp.com/login</msg>
+<msg time="2026-01-12T12:19:43.315373" level="INFO">Successfully opened URL https://the-internet.herokuapp.com/login</msg>
 <arg>${BASE_URL}/login</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Navigates to the given ``url``.</doc>
-<status status="PASS" start="2026-01-12T11:13:20.368590" elapsed="0.158365"/>
+<status status="PASS" start="2026-01-12T12:19:43.192357" elapsed="0.123370"/>
 </kw>
 <kw name="Vul Inloggegevens In En Verstuur" owner="common">
 <kw name="Log In Met Gebruiker" owner="common">
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-12T11:13:20.528831" level="INFO">Fills the text '' in the given field.</msg>
+<msg time="2026-01-12T12:19:43.318978" level="INFO">Fills the text '' in the given field.</msg>
 <arg>id=username</arg>
 <arg>${username}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T11:13:20.528369" elapsed="0.035958"/>
+<status status="PASS" start="2026-01-12T12:19:43.317655" elapsed="0.042153"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-12T11:13:20.565048" level="INFO">Fills the text '' in the given field.</msg>
+<msg time="2026-01-12T12:19:43.362026" level="INFO">Fills the text '' in the given field.</msg>
 <arg>id=password</arg>
 <arg>${password}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T11:13:20.564554" elapsed="0.008270"/>
+<status status="PASS" start="2026-01-12T12:19:43.360182" elapsed="0.017942"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-12T11:13:20.573488" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
+<msg time="2026-01-12T12:19:43.379702" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
 <arg>button[type="submit"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T11:13:20.573063" elapsed="0.168287"/>
+<status status="PASS" start="2026-01-12T12:19:43.378485" elapsed="0.124163"/>
 </kw>
 <arg>${user}</arg>
 <arg>${pass}</arg>
-<status status="PASS" start="2026-01-12T11:13:20.528001" elapsed="0.213541"/>
+<status status="PASS" start="2026-01-12T12:19:43.317021" elapsed="0.185853"/>
 </kw>
 <arg>${username}</arg>
 <arg>${password}</arg>
-<status status="PASS" start="2026-01-12T11:13:20.527290" elapsed="0.214354"/>
+<status status="PASS" start="2026-01-12T12:19:43.316291" elapsed="0.186696"/>
 </kw>
 <kw name="Get Text">
-<msg time="2026-01-12T11:13:20.742082" level="FAIL">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Get Text
-    Browser.Get Text</msg>
+<msg time="2026-01-12T12:19:43.503455" level="FAIL">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    Browser.Get Text
+    Mobile.Get Text</msg>
 <arg>id=flash</arg>
 <arg>contains</arg>
 <arg>${expected_message}</arg>
-<status status="FAIL" start="2026-01-12T11:13:20.741935" elapsed="0.000217">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Get Text
-    Browser.Get Text</status>
+<status status="FAIL" start="2026-01-12T12:19:43.503280" elapsed="0.000248">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    Browser.Get Text
+    Mobile.Get Text</status>
 </kw>
 <arg>${EMPTY}</arg>
 <arg>${EMPTY}</arg>
 <arg>Your username is invalid!</arg>
-<status status="FAIL" start="2026-01-12T11:13:20.367196" elapsed="0.376241">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Get Text
-    Browser.Get Text</status>
+<status status="FAIL" start="2026-01-12T12:19:43.190623" elapsed="0.314284">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    Browser.Get Text
+    Mobile.Get Text</status>
 </kw>
 <kw name="Afsluiten Test En Sessie" owner="common" type="TEARDOWN">
 <kw name="Sluit Test En Maak Screenshot Bij Fout" owner="common">
 <kw name="Run Keyword If Test Failed" owner="BuiltIn">
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2026-01-12T11:13:20.833741" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-4.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-4.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-12T12:19:43.589743" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-4.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-4.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2026-01-12T11:13:20.748646" elapsed="0.085322"/>
+<status status="PASS" start="2026-01-12T12:19:43.506333" elapsed="0.083711"/>
 </kw>
 <arg>Take Screenshot</arg>
 <doc>Runs the given keyword with the given arguments, if the test failed.</doc>
-<status status="PASS" start="2026-01-12T11:13:20.748148" elapsed="0.085962"/>
+<status status="PASS" start="2026-01-12T12:19:43.505947" elapsed="0.084285"/>
 </kw>
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-12T11:13:20.870102" level="INFO">Closed browser</msg>
+<msg time="2026-01-12T12:19:43.656449" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-12T11:13:20.834324" elapsed="0.036023"/>
+<status status="PASS" start="2026-01-12T12:19:43.590508" elapsed="0.066408"/>
 </kw>
-<status status="PASS" start="2026-01-12T11:13:20.747729" elapsed="0.122797"/>
+<status status="PASS" start="2026-01-12T12:19:43.505663" elapsed="0.151456"/>
 </kw>
-<status status="PASS" start="2026-01-12T11:13:20.743842" elapsed="0.126780"/>
+<status status="PASS" start="2026-01-12T12:19:43.505273" elapsed="0.151961"/>
 </kw>
-<status status="FAIL" start="2026-01-12T11:13:19.610731" elapsed="1.259989">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Get Text
-    Browser.Get Text</status>
+<status status="FAIL" start="2026-01-12T12:19:42.727103" elapsed="0.930235">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    Browser.Get Text
+    Mobile.Get Text</status>
 </test>
-<status status="FAIL" start="2026-01-12T11:13:14.909458" elapsed="5.966712"/>
+<status status="FAIL" start="2026-01-12T12:19:39.038596" elapsed="4.624848"/>
 </suite>
-<status status="FAIL" start="2026-01-12T11:13:14.908715" elapsed="5.972661"/>
+<status status="FAIL" start="2026-01-12T12:19:39.037750" elapsed="4.642018"/>
 </suite>
-<status status="FAIL" start="2026-01-12T11:13:14.907931" elapsed="5.974185"/>
+<status status="FAIL" start="2026-01-12T12:19:39.036774" elapsed="4.643704"/>
 </suite>
-<status status="FAIL" start="2026-01-12T11:13:14.890299" elapsed="5.992433"/>
+<status status="FAIL" start="2026-01-12T12:19:39.015367" elapsed="4.667797"/>
 </suite>
 <statistics>
 <total>

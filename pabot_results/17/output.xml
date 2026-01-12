@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-12T11:13:21.358374" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-12T12:19:45.147178" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="02 Geavanceerd" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd">
 <suite id="s1-s1-s1-s1" name="18 File Upload" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd/18_file_upload.robot">
 <kw name="New Browser" owner="Browser" type="SETUP">
-<msg time="2026-01-12T11:13:21.758329" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/17/browser/traces/temp/7cec60dc-611d-4d74-917c-731eec731c2b"}</msg>
-<msg time="2026-01-12T11:13:21.762591" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:60257</msg>
-<msg time="2026-01-12T11:13:22.271822" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/17/browser/traces/temp/7cec60dc-611d-4d74-917c-731eec731c2b"}</msg>
+<msg time="2026-01-12T12:19:45.592113" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/17/browser/traces/temp/888190ec-8d1a-45a1-9ad8-9825088e8e1a"}</msg>
+<msg time="2026-01-12T12:19:45.596835" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:57267</msg>
+<msg time="2026-01-12T12:19:46.350663" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/17/browser/traces/temp/888190ec-8d1a-45a1-9ad8-9825088e8e1a"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-12T11:13:21.757442" elapsed="0.514666"/>
+<status status="PASS" start="2026-01-12T12:19:45.590752" elapsed="0.760240"/>
 </kw>
 <test id="s1-s1-s1-s1-t1" name="Scenario 18: Succesvol Een Bestand Uploaden" line="12">
 <kw name="New Page" owner="Browser" type="SETUP">
-<msg time="2026-01-12T11:13:22.998490" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/upload</msg>
-<msg time="2026-01-12T11:13:22.998607" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-01-12T12:19:46.732996" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/upload</msg>
+<msg time="2026-01-12T12:19:46.733135" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${BASE_URL}/upload</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-12T11:13:22.283041" elapsed="0.715782"/>
+<status status="PASS" start="2026-01-12T12:19:46.357410" elapsed="0.376001"/>
 </kw>
 <kw name="Upload File By Selector" owner="Browser">
 <arg>css=#file-upload</arg>
@@ -31,56 +31,56 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Uploads file from ``path`` to file input element matched by selector.</doc>
-<status status="PASS" start="2026-01-12T11:13:22.999235" elapsed="0.060320"/>
+<status status="PASS" start="2026-01-12T12:19:46.733869" elapsed="0.069372"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-12T11:13:23.060814" level="INFO">Clicks the element 'id=file-submit'.</msg>
+<msg time="2026-01-12T12:19:46.804599" level="INFO">Clicks the element 'id=file-submit'.</msg>
 <arg>id=file-submit</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T11:13:23.059948" elapsed="0.113833"/>
+<status status="PASS" start="2026-01-12T12:19:46.803689" elapsed="0.087184"/>
 </kw>
 <kw name="Get Text">
-<msg time="2026-01-12T11:13:23.174447" level="FAIL">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Get Text
-    Browser.Get Text</msg>
+<msg time="2026-01-12T12:19:46.891597" level="FAIL">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    Browser.Get Text
+    Mobile.Get Text</msg>
 <arg>css=h3</arg>
 <arg>==</arg>
 <arg>File Uploaded!</arg>
-<status status="FAIL" start="2026-01-12T11:13:23.174256" elapsed="0.000278">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Get Text
-    Browser.Get Text</status>
+<status status="FAIL" start="2026-01-12T12:19:46.891361" elapsed="0.000330">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    Browser.Get Text
+    Mobile.Get Text</status>
 </kw>
 <kw name="Get Text">
 <arg>id=uploaded-files</arg>
 <arg>contains</arg>
 <arg>common.resource</arg>
-<status status="NOT RUN" start="2026-01-12T11:13:23.174872" elapsed="0.000113"/>
+<status status="NOT RUN" start="2026-01-12T12:19:46.892040" elapsed="0.000129"/>
 </kw>
-<msg time="2026-01-12T11:13:23.215895" level="INFO">Switching context to context=efc022e3-cdcf-42dd-ac3a-8c3ec67d3d16 in CURRENT</msg>
-<msg time="2026-01-12T11:13:23.223952" level="INFO">Successfully changed active context: context=efc022e3-cdcf-42dd-ac3a-8c3ec67d3d16</msg>
-<msg time="2026-01-12T11:13:23.237250" level="INFO">Successfully closed Context</msg>
+<msg time="2026-01-12T12:19:46.949843" level="INFO">Switching context to context=4fd11b60-b262-4cb7-bcdb-d9bb0c70a97c in CURRENT</msg>
+<msg time="2026-01-12T12:19:46.961306" level="INFO">Successfully changed active context: context=4fd11b60-b262-4cb7-bcdb-d9bb0c70a97c</msg>
+<msg time="2026-01-12T12:19:46.986935" level="INFO">Successfully closed Context</msg>
 <doc>Test of een lokaal bestand naar de server kan worden gestuurd.</doc>
 <tag>upload</tag>
-<status status="FAIL" start="2026-01-12T11:13:22.272370" elapsed="0.902878">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Get Text
-    Browser.Get Text</status>
+<status status="FAIL" start="2026-01-12T12:19:46.351369" elapsed="0.542935">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    Browser.Get Text
+    Mobile.Get Text</status>
 </test>
 <kw name="Close Browser" owner="Browser" type="TEARDOWN">
-<msg time="2026-01-12T11:13:23.258389" level="INFO">Closed browser</msg>
+<msg time="2026-01-12T12:19:47.028656" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-12T11:13:23.238233" elapsed="0.020383"/>
+<status status="PASS" start="2026-01-12T12:19:46.988125" elapsed="0.040744"/>
 </kw>
-<status status="FAIL" start="2026-01-12T11:13:21.409287" elapsed="1.849477"/>
+<status status="FAIL" start="2026-01-12T12:19:45.189336" elapsed="1.839649"/>
 </suite>
-<status status="FAIL" start="2026-01-12T11:13:21.407990" elapsed="1.857915"/>
+<status status="FAIL" start="2026-01-12T12:19:45.187949" elapsed="1.847808"/>
 </suite>
-<status status="FAIL" start="2026-01-12T11:13:21.406521" elapsed="1.860210"/>
+<status status="FAIL" start="2026-01-12T12:19:45.186390" elapsed="1.849883"/>
 </suite>
-<status status="FAIL" start="2026-01-12T11:13:21.374242" elapsed="1.893203"/>
+<status status="FAIL" start="2026-01-12T12:19:45.159797" elapsed="1.876939"/>
 </suite>
 <statistics>
 <total>
