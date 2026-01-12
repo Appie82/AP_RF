@@ -7,20 +7,51 @@ Tests.01 HerekuApp.01 Basis
 ==============================================================================
 Tests.01 HerekuApp.01 Basis.02 Data :: Data-tests die gebruik maken van de ...
 ==============================================================================
-Wachten Op Dynamische Content                                         | PASS |
+Wachten Op Dynamische Content                                           
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/02_data.robot:10
+    T:  Wachten Op Dynamische Content    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/02_data.robot:17
+      Get Text    text=Hello World!    ==    Hello World!
+______________________________________________________________________________
+| FAIL |
+Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Get Text
+    Browser.Get Text
 ------------------------------------------------------------------------------
-Zoek Waarde In Dynamische Tabel                                       | PASS |
+Zoek Waarde In Dynamische Tabel                                         
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/02_data.robot:19
+    T:  Zoek Waarde In Dynamische Tabel    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/02_data.robot:25
+      ${rij}    IN    @{rijen}    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/02_data.robot:25
+      ${rij} = table >> tbody >> tr >> nth=0    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/02_data.robot:26
+      Get Text    ${rij} >> td:nth-child(2)
+      |  ${rij} >> td:nth-child(2) = table >> tbody >> tr >> nth=0 >> td:nth-child(2) (str)
+______________________________________________________________________________
+| FAIL |
+Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Get Text
+    Browser.Get Text
 ------------------------------------------------------------------------------
-Tests.01 HerekuApp.01 Basis.02 Data :: Data-tests die gebruik make... | PASS |
-2 tests, 2 passed, 0 failed
+Tests.01 HerekuApp.01 Basis.02 Data :: Data-tests die gebruik make... | FAIL |
+2 tests, 0 passed, 2 failed
 ==============================================================================
-Tests.01 HerekuApp.01 Basis                                           | PASS |
-2 tests, 2 passed, 0 failed
+Tests.01 HerekuApp.01 Basis                                           | FAIL |
+2 tests, 0 passed, 2 failed
 ==============================================================================
-Tests.01 HerekuApp                                                    | PASS |
-2 tests, 2 passed, 0 failed
+Tests.01 HerekuApp                                                    | FAIL |
+2 tests, 0 passed, 2 failed
 ==============================================================================
-Tests                                                                 | PASS |
-2 tests, 2 passed, 0 failed
+Tests                                                                 | FAIL |
+2 tests, 0 passed, 2 failed
 ==============================================================================
 Output:  /home/runner/work/AP_RF/AP_RF/results/pabot_results/1/output.xml

@@ -7,22 +7,69 @@ Tests.01 HerekuApp.01 Basis
 ==============================================================================
 Tests.01 HerekuApp.01 Basis.07 Data Driven                                    
 ==============================================================================
-Verkeerd Wachtwoord                                                   | PASS |
+Verkeerd Wachtwoord                                                     
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/07_data_driven.robot:11
+    T:  Verkeerd Wachtwoord    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/07_data_driven.robot:11
+      Inloggen Met Ongeldige Gegevens Zou Moeten Falen    tomsmith    DitIsFout
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/07_data_driven.robot:25
+      Get Text    id=flash    contains    is invalid
+______________________________________________________________________________
+| FAIL |
+Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Get Text
+    Browser.Get Text
 ------------------------------------------------------------------------------
-Onbekende Gebruiker                                                   | PASS |
+Onbekende Gebruiker                                                     
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/07_data_driven.robot:12
+    T:  Onbekende Gebruiker    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/07_data_driven.robot:12
+      Inloggen Met Ongeldige Gegevens Zou Moeten Falen    albert    Wachtwoord123
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/07_data_driven.robot:25
+      Get Text    id=flash    contains    is invalid
+______________________________________________________________________________
+| FAIL |
+Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Get Text
+    Browser.Get Text
 ------------------------------------------------------------------------------
-Lege Velden                                                           | PASS |
+Lege Velden                                                             
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/07_data_driven.robot:13
+    T:  Lege Velden    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/07_data_driven.robot:13
+      Inloggen Met Ongeldige Gegevens Zou Moeten Falen    ${EMPTY}    ${EMPTY}
+      |  ${EMPTY} =  (str)
+      |  ${EMPTY} =  (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/07_data_driven.robot:25
+      Get Text    id=flash    contains    is invalid
+______________________________________________________________________________
+| FAIL |
+Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Get Text
+    Browser.Get Text
 ------------------------------------------------------------------------------
-Tests.01 HerekuApp.01 Basis.07 Data Driven                            | PASS |
-3 tests, 3 passed, 0 failed
+Tests.01 HerekuApp.01 Basis.07 Data Driven                            | FAIL |
+3 tests, 0 passed, 3 failed
 ==============================================================================
-Tests.01 HerekuApp.01 Basis                                           | PASS |
-3 tests, 3 passed, 0 failed
+Tests.01 HerekuApp.01 Basis                                           | FAIL |
+3 tests, 0 passed, 3 failed
 ==============================================================================
-Tests.01 HerekuApp                                                    | PASS |
-3 tests, 3 passed, 0 failed
+Tests.01 HerekuApp                                                    | FAIL |
+3 tests, 0 passed, 3 failed
 ==============================================================================
-Tests                                                                 | PASS |
-3 tests, 3 passed, 0 failed
+Tests                                                                 | FAIL |
+3 tests, 0 passed, 3 failed
 ==============================================================================
 Output:  /home/runner/work/AP_RF/AP_RF/results/pabot_results/6/output.xml

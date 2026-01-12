@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-09T16:13:26.320157" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-12T11:13:12.685334" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="01 Basis" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis">
@@ -7,18 +7,18 @@
 <test id="s1-s1-s1-s1-t1" name="Scenario 09: Bevestig Een JavaScript Alert" line="9">
 <kw name="Start Test-Sessie" owner="common" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-09T16:13:26.533402" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/8/browser/traces/temp/b1de5a1c-11f9-442d-9dee-b90ca0069d18"}</msg>
-<msg time="2026-01-09T16:13:26.537725" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:44771</msg>
-<msg time="2026-01-09T16:13:27.149869" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/8/browser/traces/temp/b1de5a1c-11f9-442d-9dee-b90ca0069d18"}</msg>
+<msg time="2026-01-12T11:13:12.961490" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/8/browser/traces/temp/757c2386-9259-4854-a6ef-7af34f31a88a"}</msg>
+<msg time="2026-01-12T11:13:12.964648" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:56427</msg>
+<msg time="2026-01-12T11:13:13.570412" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/8/browser/traces/temp/757c2386-9259-4854-a6ef-7af34f31a88a"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-09T16:13:26.532717" elapsed="0.617487"/>
+<status status="PASS" start="2026-01-12T11:13:12.960794" elapsed="0.609868"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2026-01-09T16:13:27.153276" level="INFO">{
+<msg time="2026-01-12T11:13:13.573549" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -32,89 +32,91 @@
     "height": 720
   }
 }</msg>
-<msg time="2026-01-09T16:13:27.165434" level="INFO">Successfully created context. </msg>
-<msg time="2026-01-09T16:13:27.165509" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2026-01-12T11:13:13.584348" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-12T11:13:13.584443" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
 <arg>viewport={'width': 1280, 'height': 720}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2026-01-09T16:13:27.150602" elapsed="0.014994"/>
+<status status="PASS" start="2026-01-12T11:13:13.571060" elapsed="0.013501"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-09T16:13:27.370428" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com</msg>
+<msg time="2026-01-12T11:13:14.286350" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com</msg>
 <arg>${START_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-09T16:13:27.165829" elapsed="0.204880"/>
+<status status="PASS" start="2026-01-12T11:13:13.584907" elapsed="0.701647"/>
 </kw>
-<status status="PASS" start="2026-01-09T16:13:26.531891" elapsed="0.839002"/>
+<status status="PASS" start="2026-01-12T11:13:12.959912" elapsed="1.326776"/>
 </kw>
 <kw name="Go To" owner="Browser">
-<msg time="2026-01-09T16:13:27.426944" level="INFO">Successfully opened URL https://the-internet.herokuapp.com/javascript_alerts</msg>
+<msg time="2026-01-12T11:13:14.380202" level="INFO">Successfully opened URL https://the-internet.herokuapp.com/javascript_alerts</msg>
 <arg>${BASE_URL}/javascript_alerts</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Navigates to the given ``url``.</doc>
-<status status="PASS" start="2026-01-09T16:13:27.371156" elapsed="0.056115"/>
+<status status="PASS" start="2026-01-12T11:13:14.286905" elapsed="0.093568"/>
 </kw>
 <kw name="Handle Future Dialogs" owner="Browser">
 <arg>action=accept</arg>
 <tag>PageContent</tag>
 <doc>Handle next dialog on page with ``action``.</doc>
-<status status="PASS" start="2026-01-09T16:13:27.427611" elapsed="0.004270"/>
+<status status="PASS" start="2026-01-12T11:13:14.380711" elapsed="0.003268"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-09T16:13:27.432712" level="INFO">Clicks the element 'button &gt;&gt; text=Click for JS Confirm'.</msg>
+<msg time="2026-01-12T11:13:14.384608" level="INFO">Clicks the element 'button &gt;&gt; text=Click for JS Confirm'.</msg>
 <arg>button &gt;&gt; text=Click for JS Confirm</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T16:13:27.432157" elapsed="0.069730"/>
+<status status="PASS" start="2026-01-12T11:13:14.384194" elapsed="0.075937"/>
 </kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2026-01-09T16:13:27.532179" level="INFO">Text: 'You clicked: Ok'</msg>
+<kw name="Get Text">
+<msg time="2026-01-12T11:13:14.460933" level="FAIL">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Get Text
+    Browser.Get Text</msg>
 <arg>id=result</arg>
 <arg>==</arg>
 <arg>You clicked: Ok</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T16:13:27.502296" elapsed="0.030054"/>
+<status status="FAIL" start="2026-01-12T11:13:14.460601" elapsed="0.000441">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Get Text
+    Browser.Get Text</status>
 </kw>
 <kw name="Stop Test-Sessie" owner="common" type="TEARDOWN">
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-09T16:13:27.560566" level="INFO">Closed browser</msg>
+<msg time="2026-01-12T11:13:14.485365" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-09T16:13:27.533183" elapsed="0.027558"/>
+<status status="PASS" start="2026-01-12T11:13:14.462071" elapsed="0.023466"/>
 </kw>
-<status status="PASS" start="2026-01-09T16:13:27.532775" elapsed="0.028103"/>
+<status status="PASS" start="2026-01-12T11:13:14.461580" elapsed="0.024079"/>
 </kw>
 <doc>Test de interactie met browser-native popups (Alerts en Confirms).</doc>
-<status status="PASS" start="2026-01-09T16:13:26.531186" elapsed="1.029763"/>
+<status status="FAIL" start="2026-01-12T11:13:12.958840" elapsed="1.526886">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Get Text
+    Browser.Get Text</status>
 </test>
-<status status="PASS" start="2026-01-09T16:13:26.350883" elapsed="1.216512"/>
+<status status="FAIL" start="2026-01-12T11:13:12.719083" elapsed="1.773380"/>
 </suite>
-<status status="PASS" start="2026-01-09T16:13:26.350117" elapsed="1.220908"/>
+<status status="FAIL" start="2026-01-12T11:13:12.718338" elapsed="1.778591"/>
 </suite>
-<status status="PASS" start="2026-01-09T16:13:26.349293" elapsed="1.222143"/>
+<status status="FAIL" start="2026-01-12T11:13:12.717449" elapsed="1.779866"/>
 </suite>
-<status status="PASS" start="2026-01-09T16:13:26.331307" elapsed="1.240449"/>
+<status status="FAIL" start="2026-01-12T11:13:12.697437" elapsed="1.800191"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
-<stat name="01 HerekuApp" id="s1-s1" pass="1" fail="0" skip="0">Tests.01 HerekuApp</stat>
-<stat name="01 Basis" id="s1-s1-s1" pass="1" fail="0" skip="0">Tests.01 HerekuApp.01 Basis</stat>
-<stat name="09 Alerts" id="s1-s1-s1-s1" pass="1" fail="0" skip="0">Tests.01 HerekuApp.01 Basis.09 Alerts</stat>
+<stat name="Tests" id="s1" pass="0" fail="1" skip="0">Tests</stat>
+<stat name="01 HerekuApp" id="s1-s1" pass="0" fail="1" skip="0">Tests.01 HerekuApp</stat>
+<stat name="01 Basis" id="s1-s1-s1" pass="0" fail="1" skip="0">Tests.01 HerekuApp.01 Basis</stat>
+<stat name="09 Alerts" id="s1-s1-s1-s1" pass="0" fail="1" skip="0">Tests.01 HerekuApp.01 Basis.09 Alerts</stat>
 </suite>
 </statistics>
 <errors>

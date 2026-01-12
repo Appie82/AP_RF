@@ -7,24 +7,90 @@ Tests.01 HerekuApp.01 Basis
 ==============================================================================
 Tests.01 HerekuApp.01 Basis.11 Login Datadriven                               
 ==============================================================================
-Correcte inlog                                                        | PASS |
+Correcte inlog                                                          
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/11_login_datadriven.robot:12
+    T:  Correcte inlog    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/11_login_datadriven.robot:12
+      Inloggen Met Verschillende Gegevens    tomsmith    SuperSecretPassword!    You logged into a secure area!
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/11_login_datadriven.robot:23
+      Get Text    id=flash    contains    ${expected_message}
+      |  ${expected_message} = You logged into a secure area! (str)
+______________________________________________________________________________
+| FAIL |
+Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Get Text
+    Browser.Get Text
 ------------------------------------------------------------------------------
-Foute gebruikersnaam                                                  | PASS |
+Foute gebruikersnaam                                                    
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/11_login_datadriven.robot:13
+    T:  Foute gebruikersnaam    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/11_login_datadriven.robot:13
+      Inloggen Met Verschillende Gegevens    verkeerd    SuperSecretPassword!    Your username is invalid!
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/11_login_datadriven.robot:23
+      Get Text    id=flash    contains    ${expected_message}
+      |  ${expected_message} = Your username is invalid! (str)
+______________________________________________________________________________
+| FAIL |
+Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Get Text
+    Browser.Get Text
 ------------------------------------------------------------------------------
-Fout wachtwoord                                                       | PASS |
+Fout wachtwoord                                                         
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/11_login_datadriven.robot:14
+    T:  Fout wachtwoord    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/11_login_datadriven.robot:14
+      Inloggen Met Verschillende Gegevens    tomsmith    verkeerd    Your password is invalid!
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/11_login_datadriven.robot:23
+      Get Text    id=flash    contains    ${expected_message}
+      |  ${expected_message} = Your password is invalid! (str)
+______________________________________________________________________________
+| FAIL |
+Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Get Text
+    Browser.Get Text
 ------------------------------------------------------------------------------
-Lege velden                                                           | PASS |
+Lege velden                                                             
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/11_login_datadriven.robot:15
+    T:  Lege velden    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/11_login_datadriven.robot:15
+      Inloggen Met Verschillende Gegevens    ${EMPTY}    ${EMPTY}    Your username is invalid!
+      |  ${EMPTY} =  (str)
+      |  ${EMPTY} =  (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/11_login_datadriven.robot:23
+      Get Text    id=flash    contains    ${expected_message}
+      |  ${expected_message} = Your username is invalid! (str)
+______________________________________________________________________________
+| FAIL |
+Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Get Text
+    Browser.Get Text
 ------------------------------------------------------------------------------
-Tests.01 HerekuApp.01 Basis.11 Login Datadriven                       | PASS |
-4 tests, 4 passed, 0 failed
+Tests.01 HerekuApp.01 Basis.11 Login Datadriven                       | FAIL |
+4 tests, 0 passed, 4 failed
 ==============================================================================
-Tests.01 HerekuApp.01 Basis                                           | PASS |
-4 tests, 4 passed, 0 failed
+Tests.01 HerekuApp.01 Basis                                           | FAIL |
+4 tests, 0 passed, 4 failed
 ==============================================================================
-Tests.01 HerekuApp                                                    | PASS |
-4 tests, 4 passed, 0 failed
+Tests.01 HerekuApp                                                    | FAIL |
+4 tests, 0 passed, 4 failed
 ==============================================================================
-Tests                                                                 | PASS |
-4 tests, 4 passed, 0 failed
+Tests                                                                 | FAIL |
+4 tests, 0 passed, 4 failed
 ==============================================================================
 Output:  /home/runner/work/AP_RF/AP_RF/results/pabot_results/10/output.xml

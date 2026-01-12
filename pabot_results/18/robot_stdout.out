@@ -7,18 +7,30 @@ Tests.01 HerekuApp.02 Geavanceerd
 ==============================================================================
 Tests.01 HerekuApp.02 Geavanceerd.19 Shadow Dom                               
 ==============================================================================
-Scenario 19: Tekst Lezen Uit Shadow DOM :: Verifieer dat we elemen... | PASS |
+Scenario 19: Tekst Lezen Uit Shadow DOM :: Verifieer dat we elemen...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd/19_shadow_dom.robot:10
+    T:  Scenario 19: Tekst Lezen Uit Shadow DOM    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd/19_shadow_dom.robot:15
+      Get Text    css=span[slot="my-text"]    contains    Let's have some different text!
+______________________________________________________________________________
+| FAIL |
+Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Get Text
+    Browser.Get Text
 ------------------------------------------------------------------------------
-Tests.01 HerekuApp.02 Geavanceerd.19 Shadow Dom                       | PASS |
-1 test, 1 passed, 0 failed
+Tests.01 HerekuApp.02 Geavanceerd.19 Shadow Dom                       | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
-Tests.01 HerekuApp.02 Geavanceerd                                     | PASS |
-1 test, 1 passed, 0 failed
+Tests.01 HerekuApp.02 Geavanceerd                                     | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
-Tests.01 HerekuApp                                                    | PASS |
-1 test, 1 passed, 0 failed
+Tests.01 HerekuApp                                                    | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
-Tests                                                                 | PASS |
-1 test, 1 passed, 0 failed
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
 Output:  /home/runner/work/AP_RF/AP_RF/results/pabot_results/18/output.xml

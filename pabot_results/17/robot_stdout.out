@@ -7,18 +7,30 @@ Tests.01 HerekuApp.02 Geavanceerd
 ==============================================================================
 Tests.01 HerekuApp.02 Geavanceerd.18 File Upload                              
 ==============================================================================
-Scenario 18: Succesvol Een Bestand Uploaden :: Test of een lokaal ... | PASS |
+Scenario 18: Succesvol Een Bestand Uploaden :: Test of een lokaal ...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd/18_file_upload.robot:12
+    T:  Scenario 18: Succesvol Een Bestand Uploaden    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd/18_file_upload.robot:23
+      Get Text    css=h3    ==    File Uploaded!
+______________________________________________________________________________
+| FAIL |
+Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Get Text
+    Browser.Get Text
 ------------------------------------------------------------------------------
-Tests.01 HerekuApp.02 Geavanceerd.18 File Upload                      | PASS |
-1 test, 1 passed, 0 failed
+Tests.01 HerekuApp.02 Geavanceerd.18 File Upload                      | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
-Tests.01 HerekuApp.02 Geavanceerd                                     | PASS |
-1 test, 1 passed, 0 failed
+Tests.01 HerekuApp.02 Geavanceerd                                     | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
-Tests.01 HerekuApp                                                    | PASS |
-1 test, 1 passed, 0 failed
+Tests.01 HerekuApp                                                    | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
-Tests                                                                 | PASS |
-1 test, 1 passed, 0 failed
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
 Output:  /home/runner/work/AP_RF/AP_RF/results/pabot_results/17/output.xml

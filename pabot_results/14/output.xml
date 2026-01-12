@@ -1,129 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-09T16:13:32.169661" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-12T11:13:18.205372" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="02 Geavanceerd" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd">
 <suite id="s1-s1-s1-s1" name="15 User Profile" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd/15_user_profile.robot">
 <kw name="New Browser" owner="Browser" type="SETUP">
-<msg time="2026-01-09T16:13:32.501890" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/14/browser/traces/temp/733e604f-9268-4937-9a19-1dbf30aa8bb6"}</msg>
-<msg time="2026-01-09T16:13:32.507374" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:37269</msg>
-<msg time="2026-01-09T16:13:33.144780" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/14/browser/traces/temp/733e604f-9268-4937-9a19-1dbf30aa8bb6"}</msg>
+<msg time="2026-01-12T11:13:18.552690" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/14/browser/traces/temp/0f1d0fad-9554-486f-9cce-6cc7bc82c9e4"}</msg>
+<msg time="2026-01-12T11:13:18.555995" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:42453</msg>
+<msg time="2026-01-12T11:13:19.166499" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/14/browser/traces/temp/0f1d0fad-9554-486f-9cce-6cc7bc82c9e4"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-09T16:13:32.501073" elapsed="0.644075"/>
+<status status="PASS" start="2026-01-12T11:13:18.551623" elapsed="0.615143"/>
 </kw>
 <test id="s1-s1-s1-s1-t1" name="Scenario 15: Profiel Validatie Na Login" line="11">
 <kw name="New Page" owner="Browser" type="SETUP">
-<msg time="2026-01-09T16:13:33.421150" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/login</msg>
-<msg time="2026-01-09T16:13:33.421282" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-01-12T11:13:19.968740" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/login</msg>
+<msg time="2026-01-12T11:13:19.968827" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${BASE_URL}/login</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-09T16:13:33.154826" elapsed="0.266715"/>
+<status status="PASS" start="2026-01-12T11:13:19.172637" elapsed="0.796396"/>
 </kw>
 <kw name="Go To" owner="Browser">
-<msg time="2026-01-09T16:13:33.471389" level="INFO">Successfully opened URL https://the-internet.herokuapp.com/login</msg>
+<msg time="2026-01-12T11:13:20.064963" level="INFO">Successfully opened URL https://the-internet.herokuapp.com/login</msg>
 <arg>${BASE_URL}/login</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Navigates to the given ``url``.</doc>
-<status status="PASS" start="2026-01-09T16:13:33.421940" elapsed="0.049769"/>
+<status status="PASS" start="2026-01-12T11:13:19.969396" elapsed="0.095734"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-09T16:13:33.472757" level="INFO">Fills the text 'tomsmith' in the given field.</msg>
+<msg time="2026-01-12T11:13:20.065876" level="INFO">Fills the text 'tomsmith' in the given field.</msg>
 <arg>css=#username</arg>
 <arg>tomsmith</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T16:13:33.472133" elapsed="0.037255"/>
+<status status="PASS" start="2026-01-12T11:13:20.065364" elapsed="0.040610"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-09T16:13:33.510529" level="INFO">Fills the text 'SuperSecretPassword!' in the given field.</msg>
+<msg time="2026-01-12T11:13:20.106762" level="INFO">Fills the text 'SuperSecretPassword!' in the given field.</msg>
 <arg>css=#password</arg>
 <arg>SuperSecretPassword!</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T16:13:33.509749" elapsed="0.010266"/>
+<status status="PASS" start="2026-01-12T11:13:20.106252" elapsed="0.010415"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-09T16:13:33.520939" level="INFO">Clicks the element 'css=button[type='submit']'.</msg>
+<msg time="2026-01-12T11:13:20.117545" level="INFO">Clicks the element 'css=button[type='submit']'.</msg>
 <arg>css=button[type='submit']</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T16:13:33.520306" elapsed="0.081320"/>
+<status status="PASS" start="2026-01-12T11:13:20.116943" elapsed="0.171484"/>
 </kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2026-01-09T16:13:33.688250" level="INFO">Text: 'Secure Area'</msg>
+<kw name="Get Text">
+<msg time="2026-01-12T11:13:20.288877" level="FAIL">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Get Text
+    Browser.Get Text</msg>
 <arg>css=h2</arg>
 <arg>contains</arg>
 <arg>Secure Area</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T16:13:33.602009" elapsed="0.086432"/>
+<status status="FAIL" start="2026-01-12T11:13:20.288735" elapsed="0.000209">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Get Text
+    Browser.Get Text</status>
 </kw>
 <kw name="Go To" owner="Browser">
-<msg time="2026-01-09T16:13:33.742436" level="INFO">Successfully opened URL https://the-internet.herokuapp.com/secure</msg>
 <arg>${BASE_URL}/secure</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Navigates to the given ``url``.</doc>
-<status status="PASS" start="2026-01-09T16:13:33.688812" elapsed="0.053918"/>
+<status status="NOT RUN" start="2026-01-12T11:13:20.289220" elapsed="0.000145"/>
 </kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2026-01-09T16:13:33.790351" level="INFO">Text: 'Welcome to the Secure Area. When you are done click logout below.'</msg>
+<kw name="Get Text">
 <arg>css=.subheader</arg>
 <arg>contains</arg>
 <arg>Welcome to the Secure Area</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T16:13:33.743066" elapsed="0.047470"/>
+<status status="NOT RUN" start="2026-01-12T11:13:20.289591" elapsed="0.000103"/>
 </kw>
-<msg time="2026-01-09T16:13:33.810492" level="INFO">Switching context to context=12c95976-f13f-4202-85ee-f7b82e9bd27f in CURRENT</msg>
-<msg time="2026-01-09T16:13:33.817239" level="INFO">Successfully changed active context: context=12c95976-f13f-4202-85ee-f7b82e9bd27f</msg>
-<msg time="2026-01-09T16:13:33.828451" level="INFO">Successfully closed Context</msg>
+<msg time="2026-01-12T11:13:20.320615" level="INFO">Switching context to context=3cd82f08-125e-4383-9306-78dcf627a6e6 in CURRENT</msg>
+<msg time="2026-01-12T11:13:20.326676" level="INFO">Successfully changed active context: context=3cd82f08-125e-4383-9306-78dcf627a6e6</msg>
+<msg time="2026-01-12T11:13:20.334179" level="INFO">Successfully closed Context</msg>
 <tag>profile</tag>
 <tag>regression</tag>
-<status status="PASS" start="2026-01-09T16:13:33.145487" elapsed="0.645343"/>
+<status status="FAIL" start="2026-01-12T11:13:19.167083" elapsed="1.122900">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Get Text
+    Browser.Get Text</status>
 </test>
 <kw name="Close Browser" owner="Browser" type="TEARDOWN">
-<msg time="2026-01-09T16:13:33.871759" level="INFO">Closed browser</msg>
+<msg time="2026-01-12T11:13:20.356223" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-09T16:13:33.829423" elapsed="0.042579"/>
+<status status="PASS" start="2026-01-12T11:13:20.335110" elapsed="0.021350"/>
 </kw>
-<status status="PASS" start="2026-01-09T16:13:32.213917" elapsed="1.658253"/>
+<status status="FAIL" start="2026-01-12T11:13:18.247107" elapsed="2.109481"/>
 </suite>
-<status status="PASS" start="2026-01-09T16:13:32.212691" elapsed="1.667480"/>
+<status status="FAIL" start="2026-01-12T11:13:18.246001" elapsed="2.117739"/>
 </suite>
-<status status="PASS" start="2026-01-09T16:13:32.211329" elapsed="1.669455"/>
+<status status="FAIL" start="2026-01-12T11:13:18.244743" elapsed="2.119646"/>
 </suite>
-<status status="PASS" start="2026-01-09T16:13:32.183960" elapsed="1.697389"/>
+<status status="FAIL" start="2026-01-12T11:13:18.219749" elapsed="2.145254"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">profile</stat>
-<stat pass="1" fail="0" skip="0">regression</stat>
+<stat pass="0" fail="1" skip="0">profile</stat>
+<stat pass="0" fail="1" skip="0">regression</stat>
 </tag>
 <suite>
-<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
-<stat name="01 HerekuApp" id="s1-s1" pass="1" fail="0" skip="0">Tests.01 HerekuApp</stat>
-<stat name="02 Geavanceerd" id="s1-s1-s1" pass="1" fail="0" skip="0">Tests.01 HerekuApp.02 Geavanceerd</stat>
-<stat name="15 User Profile" id="s1-s1-s1-s1" pass="1" fail="0" skip="0">Tests.01 HerekuApp.02 Geavanceerd.15 User Profile</stat>
+<stat name="Tests" id="s1" pass="0" fail="1" skip="0">Tests</stat>
+<stat name="01 HerekuApp" id="s1-s1" pass="0" fail="1" skip="0">Tests.01 HerekuApp</stat>
+<stat name="02 Geavanceerd" id="s1-s1-s1" pass="0" fail="1" skip="0">Tests.01 HerekuApp.02 Geavanceerd</stat>
+<stat name="15 User Profile" id="s1-s1-s1-s1" pass="0" fail="1" skip="0">Tests.01 HerekuApp.02 Geavanceerd.15 User Profile</stat>
 </suite>
 </statistics>
 <errors>

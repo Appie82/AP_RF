@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-09T16:13:37.032655" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-12T11:13:24.851226" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="02 SauceDemo" source="/home/runner/work/AP_RF/AP_RF/tests/02_SauceDemo">
 <suite id="s1-s1-s1" name="03 Api Chaining" source="/home/runner/work/AP_RF/AP_RF/tests/02_SauceDemo/03_api_chaining.robot">
 <test id="s1-s1-s1-t1" name="Scenario: Log In Met Data Van API" line="6">
 <kw name="Haal Gebruikersnaam Op Via API" owner="common">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2026-01-09T16:13:37.298580" level="INFO">Creating Session using : alias=placeholder, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<msg time="2026-01-12T11:13:25.176666" level="INFO">Creating Session using : alias=placeholder, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
 <arg>placeholder</arg>
 <arg>https://jsonplaceholder.typicode.com</arg>
 <arg>verify=True</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2026-01-09T16:13:37.298233" elapsed="0.000644"/>
+<status status="PASS" start="2026-01-12T11:13:25.176303" elapsed="0.000663"/>
 </kw>
 <kw name="GET On Session" owner="RequestsLibrary">
-<msg time="2026-01-09T16:13:37.376941" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users/1 
+<msg time="2026-01-12T11:13:25.274019" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users/1 
  path_url=/users/1 
  headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg time="2026-01-09T16:13:37.377194" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users/1 
+<msg time="2026-01-12T11:13:25.274251" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users/1 
  status=200, reason=OK 
- headers={'Date': 'Fri, 09 Jan 2026 16:13:37 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'access-control-allow-credentials': 'true', 'Cache-Control': 'max-age=43200', 'etag': 'W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"', 'expires': '-1', 'nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'pragma': 'no-cache', 'report-to': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=KSfKOvAqbTFKJSAXN56ZqzphNC4WPeBmV%2FT3Ib52MpY%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1767921441"}],"max_age":3600}', 'reporting-endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=KSfKOvAqbTFKJSAXN56ZqzphNC4WPeBmV%2FT3Ib52MpY%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1767921441"', 'Server': 'cloudflare', 'vary': 'Origin, Accept-Encoding', 'via': '2.0 heroku-router', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Express', 'x-ratelimit-limit': '1000', 'x-ratelimit-remaining': '969', 'x-ratelimit-reset': '1767921498', 'Age': '16068', 'cf-cache-status': 'HIT', 'Content-Encoding': 'gzip', 'CF-RAY': '9bb539148a43f21e-EWR', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Mon, 12 Jan 2026 11:13:25 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'access-control-allow-credentials': 'true', 'Cache-Control': 'max-age=43200', 'etag': 'W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"', 'expires': '-1', 'nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'pragma': 'no-cache', 'report-to': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=TMaNCqI02fGqd%2FEfPKjaBctXyTewcZXYwNy%2BUGNLyeg%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1768130592"}],"max_age":3600}', 'reporting-endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=TMaNCqI02fGqd%2FEfPKjaBctXyTewcZXYwNy%2BUGNLyeg%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1768130592"', 'Server': 'cloudflare', 'vary': 'Origin, Accept-Encoding', 'via': '2.0 heroku-router', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Express', 'x-ratelimit-limit': '1000', 'x-ratelimit-remaining': '998', 'x-ratelimit-reset': '1768130595', 'Age': '27019', 'cf-cache-status': 'HIT', 'Content-Encoding': 'gzip', 'CF-RAY': '9bcc3974e92cf0ba-DFW', 'alt-svc': 'h3=":443"; ma=86400'} 
  body={
   "id": 1,
   "name": "Leanne Graham",
@@ -46,51 +46,51 @@
   }
 } 
  </msg>
-<msg time="2026-01-09T16:13:37.377414" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2026-01-12T11:13:25.274459" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>placeholder</arg>
 <arg>/users/1</arg>
 <arg>expected_status=200</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2026-01-09T16:13:37.299125" elapsed="0.078340"/>
+<status status="PASS" start="2026-01-12T11:13:25.177199" elapsed="0.097311"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-01-09T16:13:37.380504" level="INFO">${volledige_naam} = Leanne Graham</msg>
+<msg time="2026-01-12T11:13:25.275973" level="INFO">${volledige_naam} = Leanne Graham</msg>
 <var>${volledige_naam}</var>
 <arg>${response.json()['name']}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2026-01-09T16:13:37.377780" elapsed="0.002769"/>
+<status status="PASS" start="2026-01-12T11:13:25.274813" elapsed="0.001212"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2026-01-09T16:13:37.381318" level="INFO">${voornaam} = Leanne</msg>
+<msg time="2026-01-12T11:13:25.276773" level="INFO">${voornaam} = Leanne</msg>
 <var>${voornaam}</var>
 <arg>"${volledige_naam}".split()[0]</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2026-01-09T16:13:37.380750" elapsed="0.000609"/>
+<status status="PASS" start="2026-01-12T11:13:25.276240" elapsed="0.000565"/>
 </kw>
 <return>
 <value>${voornaam}</value>
-<status status="PASS" start="2026-01-09T16:13:37.381458" elapsed="0.000130"/>
+<status status="PASS" start="2026-01-12T11:13:25.276918" elapsed="0.000140"/>
 </return>
-<msg time="2026-01-09T16:13:37.381781" level="INFO">${api_naam} = Leanne</msg>
+<msg time="2026-01-12T11:13:25.277275" level="INFO">${api_naam} = Leanne</msg>
 <var>${api_naam}</var>
 <doc>Gebruikt JSONPlaceholder als alternatief voor ReqRes.</doc>
-<status status="PASS" start="2026-01-09T16:13:37.297012" elapsed="0.084803"/>
+<status status="PASS" start="2026-01-12T11:13:25.174721" elapsed="0.102595"/>
 </kw>
 <kw name="Start Test-Sessie" owner="common">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-09T16:13:37.383384" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/22/browser/traces/temp/2e937f1e-0754-4cfc-a4de-f697d177a7a1"}</msg>
-<msg time="2026-01-09T16:13:37.387357" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:57931</msg>
-<msg time="2026-01-09T16:13:38.017061" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/22/browser/traces/temp/2e937f1e-0754-4cfc-a4de-f697d177a7a1"}</msg>
+<msg time="2026-01-12T11:13:25.279461" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/22/browser/traces/temp/48b00a73-565e-4541-b494-175402c592a5"}</msg>
+<msg time="2026-01-12T11:13:25.284340" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:45497</msg>
+<msg time="2026-01-12T11:13:25.917453" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/22/browser/traces/temp/48b00a73-565e-4541-b494-175402c592a5"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-09T16:13:37.382528" elapsed="0.634843"/>
+<status status="PASS" start="2026-01-12T11:13:25.278506" elapsed="0.639219"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2026-01-09T16:13:38.020458" level="INFO">{
+<msg time="2026-01-12T11:13:25.927932" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -104,99 +104,100 @@
     "height": 720
   }
 }</msg>
-<msg time="2026-01-09T16:13:38.034103" level="INFO">Successfully created context. </msg>
-<msg time="2026-01-09T16:13:38.034187" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2026-01-12T11:13:25.941250" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-12T11:13:25.941380" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
 <arg>viewport={'width': 1280, 'height': 720}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2026-01-09T16:13:38.017724" elapsed="0.016551"/>
+<status status="PASS" start="2026-01-12T11:13:25.918102" elapsed="0.023411"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-09T16:13:38.319275" level="INFO">Successfully initialized new page object and opened url: https://www.saucedemo.com</msg>
+<msg time="2026-01-12T11:13:26.337744" level="INFO">Successfully initialized new page object and opened url: https://www.saucedemo.com</msg>
 <arg>${START_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-09T16:13:38.034519" elapsed="0.285076"/>
+<status status="PASS" start="2026-01-12T11:13:25.941845" elapsed="0.396199"/>
 </kw>
 <arg>${SAUCE_URL}</arg>
-<status status="PASS" start="2026-01-09T16:13:37.382054" elapsed="0.937741"/>
+<status status="PASS" start="2026-01-12T11:13:25.277585" elapsed="1.060673"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-09T16:13:38.321488" level="INFO">Fills the text 'Leanne' in the given field.</msg>
+<msg time="2026-01-12T11:13:26.339291" level="INFO">Fills the text 'Leanne' in the given field.</msg>
 <arg>id=user-name</arg>
 <arg>${api_naam}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T16:13:38.320057" elapsed="0.057158"/>
+<status status="PASS" start="2026-01-12T11:13:26.338516" elapsed="0.051657"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-09T16:13:38.378390" level="INFO">Fills the text 'secret_sauce' in the given field.</msg>
+<msg time="2026-01-12T11:13:26.390911" level="INFO">Fills the text 'secret_sauce' in the given field.</msg>
 <arg>id=password</arg>
 <arg>secret_sauce</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T16:13:38.377580" elapsed="0.026845"/>
+<status status="PASS" start="2026-01-12T11:13:26.390415" elapsed="0.027138"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-09T16:13:38.406020" level="INFO">Clicks the element 'id=login-button'.</msg>
+<msg time="2026-01-12T11:13:26.418687" level="INFO">Clicks the element 'id=login-button'.</msg>
 <arg>id=login-button</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T16:13:38.404825" elapsed="0.063491"/>
+<status status="PASS" start="2026-01-12T11:13:26.417978" elapsed="0.077449"/>
 </kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2026-01-09T16:13:38.516711" level="INFO">Text: 'Epic sadface: Username and password do not match any user in this service'</msg>
+<kw name="Get Text">
+<msg time="2026-01-12T11:13:26.496031" level="FAIL">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Get Text
+    Browser.Get Text</msg>
 <arg>css=[data-test="error"]</arg>
 <arg>contains</arg>
 <arg>Username and password do not match</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-09T16:13:38.468667" elapsed="0.048224"/>
+<status status="FAIL" start="2026-01-12T11:13:26.495844" elapsed="0.000268">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Get Text
+    Browser.Get Text</status>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-09T16:13:38.517891" level="INFO">De test is geslaagd met API-naam: Leanne</msg>
 <arg>De test is geslaagd met API-naam: ${api_naam}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-09T16:13:38.517237" elapsed="0.000723"/>
+<status status="NOT RUN" start="2026-01-12T11:13:26.496391" elapsed="0.000089"/>
 </kw>
 <kw name="Stop Test-Sessie" owner="common" type="TEARDOWN">
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-09T16:13:38.576607" level="INFO">Closed browser</msg>
+<msg time="2026-01-12T11:13:26.542079" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-09T16:13:38.518787" elapsed="0.058133"/>
+<status status="PASS" start="2026-01-12T11:13:26.499038" elapsed="0.043310"/>
 </kw>
-<status status="PASS" start="2026-01-09T16:13:38.518356" elapsed="0.058799"/>
+<status status="PASS" start="2026-01-12T11:13:26.498484" elapsed="0.044074"/>
 </kw>
 <doc>Bewijst dat API data in de browser terechtkomt.</doc>
 <tag>chaining</tag>
-<status status="PASS" start="2026-01-09T16:13:37.295961" elapsed="1.281311"/>
+<status status="FAIL" start="2026-01-12T11:13:25.173526" elapsed="1.369147">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Get Text
+    Browser.Get Text</status>
 </test>
-<status status="PASS" start="2026-01-09T16:13:37.072052" elapsed="1.514222"/>
+<status status="FAIL" start="2026-01-12T11:13:24.883884" elapsed="1.671015"/>
 </suite>
-<status status="PASS" start="2026-01-09T16:13:37.071044" elapsed="1.519960"/>
+<status status="FAIL" start="2026-01-12T11:13:24.882995" elapsed="1.677917"/>
 </suite>
-<status status="PASS" start="2026-01-09T16:13:37.044436" elapsed="1.547015"/>
+<status status="FAIL" start="2026-01-12T11:13:24.865087" elapsed="1.696431"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">chaining</stat>
+<stat pass="0" fail="1" skip="0">chaining</stat>
 </tag>
 <suite>
-<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
-<stat name="02 SauceDemo" id="s1-s1" pass="1" fail="0" skip="0">Tests.02 SauceDemo</stat>
-<stat name="03 Api Chaining" id="s1-s1-s1" pass="1" fail="0" skip="0">Tests.02 SauceDemo.03 Api Chaining</stat>
+<stat name="Tests" id="s1" pass="0" fail="1" skip="0">Tests</stat>
+<stat name="02 SauceDemo" id="s1-s1" pass="0" fail="1" skip="0">Tests.02 SauceDemo</stat>
+<stat name="03 Api Chaining" id="s1-s1-s1" pass="0" fail="1" skip="0">Tests.02 SauceDemo.03 Api Chaining</stat>
 </suite>
 </statistics>
 <errors>

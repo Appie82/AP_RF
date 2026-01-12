@@ -7,18 +7,30 @@ Tests.01 HerekuApp.02 Geavanceerd
 ==============================================================================
 Tests.01 HerekuApp.02 Geavanceerd.20 Iframes                                  
 ==============================================================================
-Scenario 20: Tekst Typen In Een Iframe :: Gebruik Evaluate JavaScr... | PASS |
+Scenario 20: Tekst Typen In Een Iframe :: Gebruik Evaluate JavaScr...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd/20_iframes.robot:11
+    T:  Scenario 20: Tekst Typen In Een Iframe    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd/20_iframes.robot:23
+      Get Text    id=mce_0_ifr >>> id=tinymce    ==    Hallo Appie, de 20 tests zijn compleet!
+______________________________________________________________________________
+| FAIL |
+Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Get Text
+    Browser.Get Text
 ------------------------------------------------------------------------------
-Tests.01 HerekuApp.02 Geavanceerd.20 Iframes                          | PASS |
-1 test, 1 passed, 0 failed
+Tests.01 HerekuApp.02 Geavanceerd.20 Iframes                          | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
-Tests.01 HerekuApp.02 Geavanceerd                                     | PASS |
-1 test, 1 passed, 0 failed
+Tests.01 HerekuApp.02 Geavanceerd                                     | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
-Tests.01 HerekuApp                                                    | PASS |
-1 test, 1 passed, 0 failed
+Tests.01 HerekuApp                                                    | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
-Tests                                                                 | PASS |
-1 test, 1 passed, 0 failed
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
 Output:  /home/runner/work/AP_RF/AP_RF/results/pabot_results/19/output.xml

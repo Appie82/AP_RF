@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-09T16:13:36.335738" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-12T11:13:24.254537" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="02 SauceDemo" source="/home/runner/work/AP_RF/AP_RF/tests/02_SauceDemo">
 <suite id="s1-s1-s1" name="02 Api Check" source="/home/runner/work/AP_RF/AP_RF/tests/02_SauceDemo/02_api_check.robot">
 <test id="s1-s1-s1-t1" name="Scenario 24: API Health Check SauceDemo" line="6">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2026-01-09T16:13:36.437543" level="INFO">Creating Session using : alias=sauce_api, url=https://www.saucedemo.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2026-01-12T11:13:24.335554" level="INFO">Creating Session using : alias=sauce_api, url=https://www.saucedemo.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>sauce_api</arg>
 <arg>https://www.saucedemo.com</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2026-01-09T16:13:36.437292" elapsed="0.000428"/>
+<status status="PASS" start="2026-01-12T11:13:24.335364" elapsed="0.000357"/>
 </kw>
 <kw name="GET On Session" owner="RequestsLibrary">
-<msg time="2026-01-09T16:13:36.586615" level="INFO">GET Request : url=https://www.saucedemo.com/ 
+<msg time="2026-01-12T11:13:24.489499" level="INFO">GET Request : url=https://www.saucedemo.com/ 
  path_url=/ 
  headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg time="2026-01-09T16:13:36.586785" level="INFO">GET Response : url=https://www.saucedemo.com/ 
+<msg time="2026-01-12T11:13:24.489663" level="INFO">GET Response : url=https://www.saucedemo.com/ 
  status=200, reason=OK 
- headers={'Connection': 'keep-alive', 'Content-Length': '601', 'Server': 'GitHub.com', 'Content-Type': 'text/html; charset=utf-8', 'Last-Modified': 'Mon, 03 Nov 2025 18:08:56 GMT', 'Access-Control-Allow-Origin': '*', 'ETag': 'W/"6908efb8-41f"', 'expires': 'Tue, 23 Dec 2025 12:26:30 GMT', 'Cache-Control': 'max-age=600', 'Content-Encoding': 'gzip', 'x-proxy-cache': 'MISS', 'X-GitHub-Request-Id': 'F22D:246602:171B668:1869EE3:694A881E', 'Accept-Ranges': 'bytes', 'Date': 'Fri, 09 Jan 2026 16:13:36 GMT', 'Via': '1.1 varnish', 'Age': '26', 'X-Served-By': 'cache-iad-kcgs7200071-IAD', 'X-Cache': 'HIT', 'X-Cache-Hits': '1', 'X-Timer': 'S1767975217.581030,VS0,VE2', 'Vary': 'Accept-Encoding', 'X-Fastly-Request-ID': 'f74788039241b2bb0ed6758fef5a5933159cad56'} 
+ headers={'Connection': 'keep-alive', 'Content-Length': '601', 'Server': 'GitHub.com', 'Content-Type': 'text/html; charset=utf-8', 'Last-Modified': 'Mon, 03 Nov 2025 18:08:56 GMT', 'Access-Control-Allow-Origin': '*', 'ETag': 'W/"6908efb8-41f"', 'expires': 'Fri, 09 Jan 2026 12:24:04 GMT', 'Cache-Control': 'max-age=600', 'Content-Encoding': 'gzip', 'x-proxy-cache': 'MISS', 'X-GitHub-Request-Id': 'C3CF:2D384:5059B9:5F3A4A:6960F10A', 'Accept-Ranges': 'bytes', 'Age': '249', 'Date': 'Mon, 12 Jan 2026 11:13:24 GMT', 'Via': '1.1 varnish', 'X-Served-By': 'cache-dfw-kdfw8210099-DFW', 'X-Cache': 'HIT', 'X-Cache-Hits': '0', 'X-Timer': 'S1768216404.478363,VS0,VE1', 'Vary': 'Accept-Encoding', 'X-Fastly-Request-ID': 'e9ad584f2cc35f9baaf0bbb2bb3b32fdb99ee83d'} 
  body=&lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="utf-8"/&gt;&lt;link rel="icon" href="/favicon.ico"/&gt;&lt;meta name="robots" content="noindex"&gt;&lt;meta name="viewport" content="width=device-width,initial-scale=1"/&gt;&lt;meta name="theme-color" content="#ffffff"/&gt;&lt;meta name="description" content="Sauce Labs Swag Labs app"/&gt;&lt;link rel="apple-touch-icon" href="/icon/icon-192x192.png"/&gt;&lt;link rel="manifest" href="/manifest.json"/&gt;&lt;script type="text/javascript"&gt;!function(n){if("/"===n.search[1]){var a=n.search.slice(1).split("&amp;").map(function(n){return n.replace(/~and~/g,"&amp;")}).join("?");window.history.replaceState(null,null,n.pathname.slice(0,-1)+a+n.hash)}}(window.location)&lt;/script&gt;&lt;link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=DM+Sans:wght@400;500"&gt;&lt;title&gt;Swag Labs&lt;/title&gt;&lt;script defer="defer" src="/static/js/main.bcf4bc5f.js"&gt;&lt;/script&gt;&lt;link href="/static/css/main.8a7d64a1.css" rel="stylesheet"&gt;&lt;/head&gt;&lt;body&gt;&lt;noscript&gt;You need to enable JavaScript to run this app.&lt;/noscript&gt;&lt;div id="root"&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt; 
  </msg>
-<msg time="2026-01-09T16:13:36.586874" level="INFO">/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'www.saucedemo.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+<msg time="2026-01-12T11:13:24.489742" level="INFO">/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'www.saucedemo.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
   warnings.warn(</msg>
-<msg time="2026-01-09T16:13:36.587039" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2026-01-12T11:13:24.489916" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>sauce_api</arg>
 <arg>/</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2026-01-09T16:13:36.437868" elapsed="0.149203"/>
+<status status="PASS" start="2026-01-12T11:13:24.335876" elapsed="0.154073"/>
 </kw>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
-<msg time="2026-01-09T16:13:36.588422" level="INFO">Argument types are:
+<msg time="2026-01-12T11:13:24.490820" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
 <arg>${response.status_code}</arg>
 <arg>200</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2026-01-09T16:13:36.587395" elapsed="0.001124"/>
+<status status="PASS" start="2026-01-12T11:13:24.490150" elapsed="0.000748"/>
 </kw>
 <doc>Controleert of de server van de webshop online is via de API.</doc>
 <tag>api</tag>
 <tag>smoke</tag>
-<status status="PASS" start="2026-01-09T16:13:36.436345" elapsed="0.152364"/>
+<status status="PASS" start="2026-01-12T11:13:24.334572" elapsed="0.156451"/>
 </test>
-<status status="PASS" start="2026-01-09T16:13:36.379457" elapsed="0.209783"/>
+<status status="PASS" start="2026-01-12T11:13:24.284034" elapsed="0.207348"/>
 </suite>
-<status status="PASS" start="2026-01-09T16:13:36.378558" elapsed="0.211330"/>
+<status status="PASS" start="2026-01-12T11:13:24.282781" elapsed="0.209131"/>
 </suite>
-<status status="PASS" start="2026-01-09T16:13:36.352511" elapsed="0.237917"/>
+<status status="PASS" start="2026-01-12T11:13:24.264750" elapsed="0.227481"/>
 </suite>
 <statistics>
 <total>
