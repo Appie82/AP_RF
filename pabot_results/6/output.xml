@@ -1,39 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-12T12:29:52.558887" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-12T13:50:09.778354" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="01 Basis" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis">
 <suite id="s1-s1-s1-s1" name="07 Data Driven" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/07_data_driven.robot">
-<test id="s1-s1-s1-s1-t1" name="Inloggen met data uit bestand" line="14">
-<msg time="2026-01-12T12:29:52.943112" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:33159</msg>
-<status status="FAIL" start="2026-01-12T12:29:52.936923" elapsed="0.001005">Test cannot be empty.</status>
+<kw name="Start Test-Sessie" owner="common" type="SETUP">
+<kw name="Set Library Search Order" owner="BuiltIn">
+<arg>Browser</arg>
+<arg>Mobile</arg>
+<doc>Sets the resolution order to use when a name matches multiple keywords.</doc>
+<status status="PASS" start="2026-01-12T13:50:10.120986" elapsed="0.000405"/>
+</kw>
+<kw name="New Browser" owner="Browser">
+<msg time="2026-01-12T13:50:10.122297" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/6/browser/traces/temp/f64db1eb-fb4b-44e6-b508-446ce0ed320b"}</msg>
+<msg time="2026-01-12T13:50:10.126190" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:59411</msg>
+<msg time="2026-01-12T13:50:10.622423" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/6/browser/traces/temp/f64db1eb-fb4b-44e6-b508-446ce0ed320b"}</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=${HEADLESS}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-01-12T13:50:10.121575" elapsed="0.501162"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2026-01-12T13:50:10.625928" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg time="2026-01-12T13:50:10.638132" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-12T13:50:10.638238" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<arg>viewport={'width': 1280, 'height': 720}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2026-01-12T13:50:10.623154" elapsed="0.015184"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-01-12T13:50:10.997095" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com</msg>
+<arg>${START_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-01-12T13:50:10.638590" elapsed="0.358833"/>
+</kw>
+<status status="PASS" start="2026-01-12T13:50:10.119956" elapsed="0.877710"/>
+</kw>
+<test id="s1-s1-s1-s1-t1" name="Inloggen met data uit bestand" line="16">
+<kw name="Inloggen Met Data">
+<kw name="Go To" owner="Browser">
+<msg time="2026-01-12T13:50:11.129945" level="INFO">Successfully opened URL https://the-internet.herokuapp.com/login</msg>
+<arg>${HEROKU_URL}/login</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2026-01-12T13:50:11.019200" elapsed="0.110979"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-12T13:50:11.131189" level="INFO">Fills the text '' in the given field.</msg>
+<arg>id=username</arg>
+<arg>${username}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-12T13:50:11.130491" elapsed="0.036551"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-12T13:50:11.167912" level="INFO">Fills the text '' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-12T13:50:11.167327" elapsed="0.009460"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-01-12T13:50:11.177899" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
+<arg>button[type="submit"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-12T13:50:11.177142" elapsed="0.108368"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2026-01-12T13:50:11.347761" level="INFO">Text: ' Your username is invalid!\n×'</msg>
+<arg>id=flash</arg>
+<arg>contains</arg>
+<arg>${foutmelding}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-12T13:50:11.285940" elapsed="0.062006"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<arg>${foutmelding}</arg>
+<status status="PASS" start="2026-01-12T13:50:11.018435" elapsed="0.329662"/>
+</kw>
+<status status="PASS" start="2026-01-12T13:50:10.997829" elapsed="0.350453"/>
 </test>
-<status status="FAIL" start="2026-01-12T12:29:52.595070" elapsed="0.900283"/>
+<kw name="Stop Test-Sessie" owner="common" type="TEARDOWN">
+<kw name="Close Browser" owner="Browser">
+<msg time="2026-01-12T13:50:11.391374" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-01-12T13:50:11.355106" elapsed="0.036494"/>
+</kw>
+<status status="PASS" start="2026-01-12T13:50:11.354726" elapsed="0.037011"/>
+</kw>
+<status status="PASS" start="2026-01-12T13:50:09.814582" elapsed="1.577212"/>
 </suite>
-<status status="FAIL" start="2026-01-12T12:29:52.594183" elapsed="0.907282"/>
+<status status="PASS" start="2026-01-12T13:50:09.813600" elapsed="1.585103"/>
 </suite>
-<status status="FAIL" start="2026-01-12T12:29:52.593151" elapsed="0.909180"/>
+<status status="PASS" start="2026-01-12T13:50:09.812504" elapsed="1.586953"/>
 </suite>
-<status status="FAIL" start="2026-01-12T12:29:52.571276" elapsed="0.931733"/>
+<status status="PASS" start="2026-01-12T13:50:09.790881" elapsed="1.609235"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Tests" id="s1" pass="0" fail="1" skip="0">Tests</stat>
-<stat name="01 HerekuApp" id="s1-s1" pass="0" fail="1" skip="0">Tests.01 HerekuApp</stat>
-<stat name="01 Basis" id="s1-s1-s1" pass="0" fail="1" skip="0">Tests.01 HerekuApp.01 Basis</stat>
-<stat name="07 Data Driven" id="s1-s1-s1-s1" pass="0" fail="1" skip="0">Tests.01 HerekuApp.01 Basis.07 Data Driven</stat>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="01 HerekuApp" id="s1-s1" pass="1" fail="0" skip="0">Tests.01 HerekuApp</stat>
+<stat name="01 Basis" id="s1-s1-s1" pass="1" fail="0" skip="0">Tests.01 HerekuApp.01 Basis</stat>
+<stat name="07 Data Driven" id="s1-s1-s1-s1" pass="1" fail="0" skip="0">Tests.01 HerekuApp.01 Basis.07 Data Driven</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2026-01-12T12:29:52.935538" level="ERROR">[ DataDriver ] Error in robot file:
+<msg time="2026-01-12T13:50:10.117945" level="ERROR">[ DataDriver ] Error in robot file:
   File "/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/07_data_driven.robot", line 0</msg>
-<msg time="2026-01-12T12:29:52.935626" level="ERROR">In source file:
-  File "../../resources/data/testdata.csv", line 0</msg>
-<msg time="2026-01-12T12:29:52.936714" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: FileNotFoundError: File attribute was not a full path. Tried to find /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/../../resources/data/testdata.csv but file does not exist.</msg>
+<msg time="2026-01-12T13:50:10.118060" level="ERROR">In source file:
+  File "C:/Users/alber/RF/resources/data/testdata.csv", line 0</msg>
+<msg time="2026-01-12T13:50:10.119231" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: FileNotFoundError: File attribute was not a full path. Tried to find /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/C:/Users/alber/RF/resources/data/testdata.csv but file does not exist.</msg>
 </errors>
 </robot>

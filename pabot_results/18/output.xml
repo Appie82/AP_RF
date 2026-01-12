@@ -1,77 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-12T12:30:03.574742" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-12T13:50:22.137886" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="02 Geavanceerd" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd">
 <suite id="s1-s1-s1-s1" name="19 Shadow Dom" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd/19_shadow_dom.robot">
 <kw name="New Browser" owner="Browser" type="SETUP">
-<msg time="2026-01-12T12:30:03.959153" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/18/browser/traces/temp/64db2888-f312-4fa3-b3af-3fb72611b19d"}</msg>
-<msg time="2026-01-12T12:30:03.964530" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:52671</msg>
-<msg time="2026-01-12T12:30:04.697177" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/18/browser/traces/temp/64db2888-f312-4fa3-b3af-3fb72611b19d"}</msg>
+<msg time="2026-01-12T13:50:22.578089" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/18/browser/traces/temp/6baa2770-809a-48e8-80c2-5ee12297b503"}</msg>
+<msg time="2026-01-12T13:50:22.583579" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:60823</msg>
+<msg time="2026-01-12T13:50:23.315703" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/18/browser/traces/temp/6baa2770-809a-48e8-80c2-5ee12297b503"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-12T12:30:03.957907" elapsed="0.739569"/>
+<status status="PASS" start="2026-01-12T13:50:22.577137" elapsed="0.738915"/>
 </kw>
 <test id="s1-s1-s1-s1-t1" name="Scenario 19: Tekst Lezen Uit Shadow DOM" line="10">
 <kw name="New Page" owner="Browser" type="SETUP">
-<msg time="2026-01-12T12:30:05.236755" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/shadowdom</msg>
-<msg time="2026-01-12T12:30:05.236919" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-01-12T13:50:23.685351" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/shadowdom</msg>
+<msg time="2026-01-12T13:50:23.685487" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${BASE_URL}/shadowdom</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-12T12:30:04.702615" elapsed="0.534544"/>
+<status status="PASS" start="2026-01-12T13:50:23.323361" elapsed="0.362390"/>
 </kw>
-<kw name="Get Text">
-<msg time="2026-01-12T12:30:05.237841" level="FAIL">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    Browser.Get Text
-    Mobile.Get Text</msg>
+<kw name="Get Text" owner="Browser">
+<msg time="2026-01-12T13:50:23.782557" level="INFO">Text: "Let's have some different text!"</msg>
 <arg>css=span[slot="my-text"]</arg>
 <arg>contains</arg>
 <arg>Let's have some different text!</arg>
-<status status="FAIL" start="2026-01-12T12:30:05.237638" elapsed="0.000287">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    Browser.Get Text
-    Mobile.Get Text</status>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-12T13:50:23.686183" elapsed="0.096578"/>
 </kw>
-<msg time="2026-01-12T12:30:05.266067" level="INFO">Switching context to context=c945d8d5-61cf-452d-a9fb-918839b06a22 in CURRENT</msg>
-<msg time="2026-01-12T12:30:05.276570" level="INFO">Successfully changed active context: context=c945d8d5-61cf-452d-a9fb-918839b06a22</msg>
-<msg time="2026-01-12T12:30:05.286381" level="INFO">Successfully closed Context</msg>
+<msg time="2026-01-12T13:50:23.802766" level="INFO">Switching context to context=bec7bce2-8da2-4ea5-8e82-3248673a814c in CURRENT</msg>
+<msg time="2026-01-12T13:50:23.813103" level="INFO">Successfully changed active context: context=bec7bce2-8da2-4ea5-8e82-3248673a814c</msg>
+<msg time="2026-01-12T13:50:23.824045" level="INFO">Successfully closed Context</msg>
 <doc>Verifieer dat we elementen binnen een Shadow Root kunnen vinden.</doc>
 <tag>shadowdom</tag>
-<status status="FAIL" start="2026-01-12T12:30:04.697824" elapsed="0.540470">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    Browser.Get Text
-    Mobile.Get Text</status>
+<status status="PASS" start="2026-01-12T13:50:23.316417" elapsed="0.466704"/>
 </test>
 <kw name="Close Browser" owner="Browser" type="TEARDOWN">
-<msg time="2026-01-12T12:30:05.320095" level="INFO">Closed browser</msg>
+<msg time="2026-01-12T13:50:23.872843" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-12T12:30:05.287321" elapsed="0.032975"/>
+<status status="PASS" start="2026-01-12T13:50:23.825197" elapsed="0.047971"/>
 </kw>
-<status status="FAIL" start="2026-01-12T12:30:03.611943" elapsed="1.708472"/>
+<status status="PASS" start="2026-01-12T13:50:22.179403" elapsed="1.693927"/>
 </suite>
-<status status="FAIL" start="2026-01-12T12:30:03.611054" elapsed="1.718293"/>
+<status status="PASS" start="2026-01-12T13:50:22.178538" elapsed="1.704937"/>
 </suite>
-<status status="FAIL" start="2026-01-12T12:30:03.610140" elapsed="1.719952"/>
+<status status="PASS" start="2026-01-12T13:50:22.177576" elapsed="1.706764"/>
 </suite>
-<status status="FAIL" start="2026-01-12T12:30:03.586317" elapsed="1.744353"/>
+<status status="PASS" start="2026-01-12T13:50:22.150153" elapsed="1.735027"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">shadowdom</stat>
+<stat pass="1" fail="0" skip="0">shadowdom</stat>
 </tag>
 <suite>
-<stat name="Tests" id="s1" pass="0" fail="1" skip="0">Tests</stat>
-<stat name="01 HerekuApp" id="s1-s1" pass="0" fail="1" skip="0">Tests.01 HerekuApp</stat>
-<stat name="02 Geavanceerd" id="s1-s1-s1" pass="0" fail="1" skip="0">Tests.01 HerekuApp.02 Geavanceerd</stat>
-<stat name="19 Shadow Dom" id="s1-s1-s1-s1" pass="0" fail="1" skip="0">Tests.01 HerekuApp.02 Geavanceerd.19 Shadow Dom</stat>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="01 HerekuApp" id="s1-s1" pass="1" fail="0" skip="0">Tests.01 HerekuApp</stat>
+<stat name="02 Geavanceerd" id="s1-s1-s1" pass="1" fail="0" skip="0">Tests.01 HerekuApp.02 Geavanceerd</stat>
+<stat name="19 Shadow Dom" id="s1-s1-s1-s1" pass="1" fail="0" skip="0">Tests.01 HerekuApp.02 Geavanceerd.19 Shadow Dom</stat>
 </suite>
 </statistics>
 <errors>

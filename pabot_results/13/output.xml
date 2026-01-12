@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-12T12:30:00.632801" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-12T13:50:17.890142" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="02 Geavanceerd" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd">
 <suite id="s1-s1-s1-s1" name="14 Product Search" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd/14_product_search.robot">
 <kw name="New Browser" owner="Browser" type="SETUP">
-<msg time="2026-01-12T12:30:01.046295" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/13/browser/traces/temp/79d8e477-dd2e-4733-b603-7a0f02596096"}</msg>
-<msg time="2026-01-12T12:30:01.050871" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:41993</msg>
-<msg time="2026-01-12T12:30:01.778342" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/13/browser/traces/temp/79d8e477-dd2e-4733-b603-7a0f02596096"}</msg>
+<msg time="2026-01-12T13:50:18.330088" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/13/browser/traces/temp/7c04ec59-7ccf-4029-a80b-bc2c6c532504"}</msg>
+<msg time="2026-01-12T13:50:18.335692" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:60587</msg>
+<msg time="2026-01-12T13:50:18.958958" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/13/browser/traces/temp/7c04ec59-7ccf-4029-a80b-bc2c6c532504"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-12T12:30:01.044876" elapsed="0.733804"/>
+<status status="PASS" start="2026-01-12T13:50:18.328906" elapsed="0.630388"/>
 </kw>
 <test id="s1-s1-s1-s1-t1" name="Scenario 14: Data Driven Product Search" line="10">
 <kw name="New Page" owner="Browser" type="SETUP">
-<msg time="2026-01-12T12:30:02.334104" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/login</msg>
-<msg time="2026-01-12T12:30:02.334237" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-01-12T13:50:19.420098" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/login</msg>
+<msg time="2026-01-12T13:50:19.420217" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>https://the-internet.herokuapp.com/login</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-12T12:30:01.785949" elapsed="0.548549"/>
+<status status="PASS" start="2026-01-12T13:50:18.967875" elapsed="0.452608"/>
 </kw>
 <kw name="Zoek En Verifieer Product">
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-12T12:30:02.336359" level="INFO">Fills the text 'laptop' in the given field.</msg>
+<msg time="2026-01-12T13:50:19.422492" level="INFO">Fills the text 'laptop' in the given field.</msg>
 <arg>css=#username</arg>
 <arg>${zoekterm}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T12:30:02.335712" elapsed="0.041450"/>
+<status status="PASS" start="2026-01-12T13:50:19.421719" elapsed="0.063366"/>
 </kw>
 <kw name="Get Property" owner="Browser">
-<msg time="2026-01-12T12:30:02.412197" level="INFO">Property: 'laptop'</msg>
+<msg time="2026-01-12T13:50:19.533372" level="INFO">Property: 'laptop'</msg>
 <arg>css=#username</arg>
 <arg>value</arg>
 <arg>==</arg>
@@ -45,24 +45,24 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T12:30:02.377451" elapsed="0.034931"/>
+<status status="PASS" start="2026-01-12T13:50:19.485507" elapsed="0.048068"/>
 </kw>
 <arg>laptop</arg>
 <arg>laptop</arg>
-<status status="PASS" start="2026-01-12T12:30:02.335054" elapsed="0.077560"/>
+<status status="PASS" start="2026-01-12T13:50:19.421048" elapsed="0.112777"/>
 </kw>
 <kw name="Zoek En Verifieer Product">
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-12T12:30:02.414139" level="INFO">Fills the text 'iphone' in the given field.</msg>
+<msg time="2026-01-12T13:50:19.535569" level="INFO">Fills the text 'iphone' in the given field.</msg>
 <arg>css=#username</arg>
 <arg>${zoekterm}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T12:30:02.413457" elapsed="0.011584"/>
+<status status="PASS" start="2026-01-12T13:50:19.534820" elapsed="0.011163"/>
 </kw>
 <kw name="Get Property" owner="Browser">
-<msg time="2026-01-12T12:30:02.439187" level="INFO">Property: 'iphone'</msg>
+<msg time="2026-01-12T13:50:19.562410" level="INFO">Property: 'iphone'</msg>
 <arg>css=#username</arg>
 <arg>value</arg>
 <arg>==</arg>
@@ -71,24 +71,24 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T12:30:02.425401" elapsed="0.013967"/>
+<status status="PASS" start="2026-01-12T13:50:19.546358" elapsed="0.016246"/>
 </kw>
 <arg>iphone</arg>
 <arg>iphone</arg>
-<status status="PASS" start="2026-01-12T12:30:02.412948" elapsed="0.026632"/>
+<status status="PASS" start="2026-01-12T13:50:19.534187" elapsed="0.028652"/>
 </kw>
 <kw name="Zoek En Verifieer Product">
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-12T12:30:02.440859" level="INFO">Fills the text 'camera' in the given field.</msg>
+<msg time="2026-01-12T13:50:19.564459" level="INFO">Fills the text 'camera' in the given field.</msg>
 <arg>css=#username</arg>
 <arg>${zoekterm}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T12:30:02.440359" elapsed="0.010819"/>
+<status status="PASS" start="2026-01-12T13:50:19.563789" elapsed="0.011737"/>
 </kw>
 <kw name="Get Property" owner="Browser">
-<msg time="2026-01-12T12:30:02.463758" level="INFO">Property: 'camera'</msg>
+<msg time="2026-01-12T13:50:19.586890" level="INFO">Property: 'camera'</msg>
 <arg>css=#username</arg>
 <arg>value</arg>
 <arg>==</arg>
@@ -97,31 +97,31 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T12:30:02.451475" elapsed="0.012474"/>
+<status status="PASS" start="2026-01-12T13:50:19.575891" elapsed="0.011143"/>
 </kw>
 <arg>camera</arg>
 <arg>camera</arg>
-<status status="PASS" start="2026-01-12T12:30:02.439929" elapsed="0.024206"/>
+<status status="PASS" start="2026-01-12T13:50:19.563207" elapsed="0.023979"/>
 </kw>
-<msg time="2026-01-12T12:30:02.482946" level="INFO">Switching context to context=bbcd3547-59f4-405c-b724-2553675c526d in CURRENT</msg>
-<msg time="2026-01-12T12:30:02.488370" level="INFO">Successfully changed active context: context=bbcd3547-59f4-405c-b724-2553675c526d</msg>
-<msg time="2026-01-12T12:30:02.496432" level="INFO">Successfully closed Context</msg>
-<status status="PASS" start="2026-01-12T12:30:01.779061" elapsed="0.685291"/>
+<msg time="2026-01-12T13:50:19.598525" level="INFO">Switching context to context=424d8cc6-2944-486c-8a4a-e6f906e98f48 in CURRENT</msg>
+<msg time="2026-01-12T13:50:19.603950" level="INFO">Successfully changed active context: context=424d8cc6-2944-486c-8a4a-e6f906e98f48</msg>
+<msg time="2026-01-12T13:50:19.612906" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2026-01-12T13:50:18.959651" elapsed="0.627700"/>
 </test>
 <kw name="Close Browser" owner="Browser" type="TEARDOWN">
-<msg time="2026-01-12T12:30:02.530234" level="INFO">Closed browser</msg>
+<msg time="2026-01-12T13:50:19.657936" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-12T12:30:02.497439" elapsed="0.033044"/>
+<status status="PASS" start="2026-01-12T13:50:19.613908" elapsed="0.044307"/>
 </kw>
-<status status="PASS" start="2026-01-12T12:30:00.684629" elapsed="1.845986"/>
+<status status="PASS" start="2026-01-12T13:50:17.947437" elapsed="1.710924"/>
 </suite>
-<status status="PASS" start="2026-01-12T12:30:00.683237" elapsed="1.858593"/>
+<status status="PASS" start="2026-01-12T13:50:17.945953" elapsed="1.720631"/>
 </suite>
-<status status="PASS" start="2026-01-12T12:30:00.681544" elapsed="1.860817"/>
+<status status="PASS" start="2026-01-12T13:50:17.944458" elapsed="1.722852"/>
 </suite>
-<status status="PASS" start="2026-01-12T12:30:00.646874" elapsed="1.895905"/>
+<status status="PASS" start="2026-01-12T13:50:17.911880" elapsed="1.756110"/>
 </suite>
 <statistics>
 <total>

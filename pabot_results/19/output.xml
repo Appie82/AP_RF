@@ -1,97 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-12T12:30:05.508333" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-12T13:50:22.952727" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="02 Geavanceerd" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd">
 <suite id="s1-s1-s1-s1" name="20 Iframes" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd/20_iframes.robot">
 <kw name="New Browser" owner="Browser" type="SETUP">
-<msg time="2026-01-12T12:30:05.835020" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/19/browser/traces/temp/eecce8e6-baee-48f8-867d-3671154e4162"}</msg>
-<msg time="2026-01-12T12:30:05.839050" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:42433</msg>
-<msg time="2026-01-12T12:30:06.457730" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/19/browser/traces/temp/eecce8e6-baee-48f8-867d-3671154e4162"}</msg>
+<msg time="2026-01-12T13:50:23.369309" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/19/browser/traces/temp/6537e1cc-a061-492d-8bec-23c29a3b7bde"}</msg>
+<msg time="2026-01-12T13:50:23.374201" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:59119</msg>
+<msg time="2026-01-12T13:50:24.101418" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/19/browser/traces/temp/6537e1cc-a061-492d-8bec-23c29a3b7bde"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-12T12:30:05.834244" elapsed="0.624027"/>
+<status status="PASS" start="2026-01-12T13:50:23.368034" elapsed="0.733704"/>
 </kw>
 <test id="s1-s1-s1-s1-t1" name="Scenario 20: Tekst Typen In Een Iframe" line="11">
 <kw name="New Page" owner="Browser" type="SETUP">
-<msg time="2026-01-12T12:30:07.303333" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/tinymce</msg>
-<msg time="2026-01-12T12:30:07.303464" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-01-12T13:50:24.838951" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/tinymce</msg>
+<msg time="2026-01-12T13:50:24.839081" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${BASE_URL}/tinymce</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-12T12:30:06.464253" elapsed="0.839457"/>
+<status status="PASS" start="2026-01-12T13:50:24.109196" elapsed="0.730127"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-01-12T12:30:07.433600" level="INFO">Waited for Element with selector id=mce_0_ifr &gt;&gt;&gt; id=tinymce at state visible</msg>
+<msg time="2026-01-12T13:50:24.915459" level="INFO">Waited for Element with selector id=mce_0_ifr &gt;&gt;&gt; id=tinymce at state visible</msg>
 <arg>id=mce_0_ifr &gt;&gt;&gt; id=tinymce</arg>
 <arg>visible</arg>
 <arg>timeout=10s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-01-12T12:30:07.304138" elapsed="0.129754"/>
+<status status="PASS" start="2026-01-12T13:50:24.839728" elapsed="0.075956"/>
 </kw>
 <kw name="Evaluate JavaScript" owner="Browser">
-<msg time="2026-01-12T12:30:07.477850" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2026-01-12T13:50:24.948775" level="INFO">JavaScript executed successfully.</msg>
 <arg>id=mce_0_ifr &gt;&gt;&gt; id=tinymce</arg>
 <arg>(element) =&gt; element.innerHTML = 'Hallo Appie, de 20 tests zijn compleet!'</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Executes given javascript on the selected element(s) or on page.</doc>
-<status status="PASS" start="2026-01-12T12:30:07.434365" elapsed="0.043774"/>
+<status status="PASS" start="2026-01-12T13:50:24.915993" elapsed="0.033049"/>
 </kw>
-<kw name="Get Text">
-<msg time="2026-01-12T12:30:07.478822" level="FAIL">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    Browser.Get Text
-    Mobile.Get Text</msg>
+<kw name="Get Text" owner="Browser">
+<msg time="2026-01-12T13:50:24.972294" level="INFO">Text: 'Hallo Appie, de 20 tests zijn compleet!'</msg>
 <arg>id=mce_0_ifr &gt;&gt;&gt; id=tinymce</arg>
 <arg>==</arg>
 <arg>Hallo Appie, de 20 tests zijn compleet!</arg>
-<status status="FAIL" start="2026-01-12T12:30:07.478582" elapsed="0.000332">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    Browser.Get Text
-    Mobile.Get Text</status>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-12T13:50:24.949338" elapsed="0.023108"/>
 </kw>
-<msg time="2026-01-12T12:30:07.503895" level="INFO">Switching context to context=4e6324f9-e8a4-4b1d-abcf-3f232a2083ba in CURRENT</msg>
-<msg time="2026-01-12T12:30:07.519050" level="INFO">Successfully changed active context: context=4e6324f9-e8a4-4b1d-abcf-3f232a2083ba</msg>
-<msg time="2026-01-12T12:30:07.545938" level="INFO">Successfully closed Context</msg>
+<msg time="2026-01-12T13:50:24.987374" level="INFO">Switching context to context=58f6bebc-c6b6-45db-bb1f-04e53a96373e in CURRENT</msg>
+<msg time="2026-01-12T13:50:24.994448" level="INFO">Successfully changed active context: context=58f6bebc-c6b6-45db-bb1f-04e53a96373e</msg>
+<msg time="2026-01-12T13:50:25.004586" level="INFO">Successfully closed Context</msg>
 <doc>Gebruik Evaluate JavaScript op het specifieke element binnen het iframe.</doc>
 <tag>iframe</tag>
-<status status="FAIL" start="2026-01-12T12:30:06.458601" elapsed="1.021096">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    Browser.Get Text
-    Mobile.Get Text</status>
+<status status="PASS" start="2026-01-12T13:50:24.102118" elapsed="0.870562"/>
 </test>
 <kw name="Close Browser" owner="Browser" type="TEARDOWN">
-<msg time="2026-01-12T12:30:07.607368" level="INFO">Closed browser</msg>
+<msg time="2026-01-12T13:50:25.040164" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-12T12:30:07.546864" elapsed="0.060761"/>
+<status status="PASS" start="2026-01-12T13:50:25.005730" elapsed="0.034712"/>
 </kw>
-<status status="FAIL" start="2026-01-12T12:30:05.541980" elapsed="2.065787"/>
+<status status="PASS" start="2026-01-12T13:50:23.000639" elapsed="2.039970"/>
 </suite>
-<status status="FAIL" start="2026-01-12T12:30:05.541070" elapsed="2.077305"/>
+<status status="PASS" start="2026-01-12T13:50:22.999462" elapsed="2.057869"/>
 </suite>
-<status status="FAIL" start="2026-01-12T12:30:05.540203" elapsed="2.079010"/>
+<status status="PASS" start="2026-01-12T13:50:22.998340" elapsed="2.059707"/>
 </suite>
-<status status="FAIL" start="2026-01-12T12:30:05.519617" elapsed="2.100552"/>
+<status status="PASS" start="2026-01-12T13:50:22.968405" elapsed="2.090192"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">iframe</stat>
+<stat pass="1" fail="0" skip="0">iframe</stat>
 </tag>
 <suite>
-<stat name="Tests" id="s1" pass="0" fail="1" skip="0">Tests</stat>
-<stat name="01 HerekuApp" id="s1-s1" pass="0" fail="1" skip="0">Tests.01 HerekuApp</stat>
-<stat name="02 Geavanceerd" id="s1-s1-s1" pass="0" fail="1" skip="0">Tests.01 HerekuApp.02 Geavanceerd</stat>
-<stat name="20 Iframes" id="s1-s1-s1-s1" pass="0" fail="1" skip="0">Tests.01 HerekuApp.02 Geavanceerd.20 Iframes</stat>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="01 HerekuApp" id="s1-s1" pass="1" fail="0" skip="0">Tests.01 HerekuApp</stat>
+<stat name="02 Geavanceerd" id="s1-s1-s1" pass="1" fail="0" skip="0">Tests.01 HerekuApp.02 Geavanceerd</stat>
+<stat name="20 Iframes" id="s1-s1-s1-s1" pass="1" fail="0" skip="0">Tests.01 HerekuApp.02 Geavanceerd.20 Iframes</stat>
 </suite>
 </statistics>
 <errors>

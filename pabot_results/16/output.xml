@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-12T12:30:03.054323" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-12T13:50:20.546690" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="02 Geavanceerd" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd">
 <suite id="s1-s1-s1-s1" name="17 Visual Regression" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd/17_visual_regression.robot">
 <kw name="New Browser" owner="Browser" type="SETUP">
-<msg time="2026-01-12T12:30:03.429395" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/16/browser/traces/temp/589bbecb-2906-4eea-98ca-0f62a5bd09b3"}</msg>
-<msg time="2026-01-12T12:30:03.434887" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:49989</msg>
-<msg time="2026-01-12T12:30:04.177930" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/16/browser/traces/temp/589bbecb-2906-4eea-98ca-0f62a5bd09b3"}</msg>
+<msg time="2026-01-12T13:50:20.919044" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/16/browser/traces/temp/002f4e3f-5495-405a-ba2e-870f159926a3"}</msg>
+<msg time="2026-01-12T13:50:20.924780" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:51621</msg>
+<msg time="2026-01-12T13:50:21.669619" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/16/browser/traces/temp/002f4e3f-5495-405a-ba2e-870f159926a3"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-12T12:30:03.428210" elapsed="0.750056"/>
+<status status="PASS" start="2026-01-12T13:50:20.917832" elapsed="0.752178"/>
 </kw>
 <test id="s1-s1-s1-s1-t1" name="Scenario 17: Visuele Controle En Styling" line="10">
 <kw name="New Page" owner="Browser" type="SETUP">
-<msg time="2026-01-12T12:30:04.772844" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com</msg>
-<msg time="2026-01-12T12:30:04.772977" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-01-12T13:50:22.054172" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com</msg>
+<msg time="2026-01-12T13:50:22.054300" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${BASE_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-12T12:30:04.189698" elapsed="0.583536"/>
+<status status="PASS" start="2026-01-12T13:50:21.678496" elapsed="0.376048"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2026-01-12T12:30:04.894223" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-12T13:50:22.215430" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <arg>fullPage=True</arg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2026-01-12T12:30:04.773659" elapsed="0.120739"/>
+<status status="PASS" start="2026-01-12T13:50:22.054963" elapsed="0.160746"/>
 </kw>
 <kw name="Get Style" owner="Browser">
-<msg time="2026-01-12T12:30:04.932379" level="INFO">Value of key: color</msg>
-<msg time="2026-01-12T12:30:04.932467" level="INFO">Value of selected property: rgb(34, 34, 34)</msg>
+<msg time="2026-01-12T13:50:22.257148" level="INFO">Value of key: color</msg>
+<msg time="2026-01-12T13:50:22.257241" level="INFO">Value of selected property: rgb(34, 34, 34)</msg>
 <arg>h1</arg>
 <arg>color</arg>
 <arg>==</arg>
@@ -43,10 +43,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Gets the computed style properties of the element selected by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T12:30:04.894654" elapsed="0.037930"/>
+<status status="PASS" start="2026-01-12T13:50:22.216112" elapsed="0.041249"/>
 </kw>
 <kw name="Get Element States" owner="Browser">
-<msg time="2026-01-12T12:30:04.963782" level="INFO">States are: ['attached', 'visible', 'enabled', 'defocused']</msg>
+<msg time="2026-01-12T13:50:22.293412" level="INFO">States are: ['attached', 'visible', 'enabled', 'defocused']</msg>
 <arg>id=page-footer</arg>
 <arg>contains</arg>
 <arg>visible</arg>
@@ -54,29 +54,29 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T12:30:04.932875" elapsed="0.031081"/>
+<status status="PASS" start="2026-01-12T13:50:22.257649" elapsed="0.035950"/>
 </kw>
-<msg time="2026-01-12T12:30:04.978381" level="INFO">Switching context to context=ce53ca4f-0194-4491-ad1d-aa0a3844b8a9 in CURRENT</msg>
-<msg time="2026-01-12T12:30:04.985910" level="INFO">Successfully changed active context: context=ce53ca4f-0194-4491-ad1d-aa0a3844b8a9</msg>
-<msg time="2026-01-12T12:30:04.992353" level="INFO">Successfully closed Context</msg>
+<msg time="2026-01-12T13:50:22.317103" level="INFO">Switching context to context=f684fe31-9070-4296-8a30-a9755db13266 in CURRENT</msg>
+<msg time="2026-01-12T13:50:22.328642" level="INFO">Successfully changed active context: context=f684fe31-9070-4296-8a30-a9755db13266</msg>
+<msg time="2026-01-12T13:50:22.344717" level="INFO">Successfully closed Context</msg>
 <doc>Test of de pagina visueel correct is en specifieke stijlen heeft.</doc>
 <tag>visual</tag>
-<status status="PASS" start="2026-01-12T12:30:04.178614" elapsed="0.785568"/>
+<status status="PASS" start="2026-01-12T13:50:21.670336" elapsed="0.623607"/>
 </test>
 <kw name="Close Browser" owner="Browser" type="TEARDOWN">
-<msg time="2026-01-12T12:30:05.017522" level="INFO">Closed browser</msg>
+<msg time="2026-01-12T13:50:22.395179" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-12T12:30:04.993055" elapsed="0.024667"/>
+<status status="PASS" start="2026-01-12T13:50:22.345972" elapsed="0.049492"/>
 </kw>
-<status status="PASS" start="2026-01-12T12:30:03.097341" elapsed="1.920538"/>
+<status status="PASS" start="2026-01-12T13:50:20.592005" elapsed="1.803624"/>
 </suite>
-<status status="PASS" start="2026-01-12T12:30:03.096459" elapsed="1.929032"/>
+<status status="PASS" start="2026-01-12T13:50:20.590934" elapsed="1.814020"/>
 </suite>
-<status status="PASS" start="2026-01-12T12:30:03.095328" elapsed="1.931010"/>
+<status status="PASS" start="2026-01-12T13:50:20.589811" elapsed="1.815984"/>
 </suite>
-<status status="PASS" start="2026-01-12T12:30:03.066768" elapsed="1.960075"/>
+<status status="PASS" start="2026-01-12T13:50:20.565459" elapsed="1.841084"/>
 </suite>
 <statistics>
 <total>

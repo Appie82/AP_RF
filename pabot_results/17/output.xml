@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-12T12:30:03.358946" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-12T13:50:21.116176" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="02 Geavanceerd" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd">
 <suite id="s1-s1-s1-s1" name="18 File Upload" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/02_geavanceerd/18_file_upload.robot">
 <kw name="New Browser" owner="Browser" type="SETUP">
-<msg time="2026-01-12T12:30:03.832699" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/17/browser/traces/temp/39f5401c-3f21-4cf4-925c-e5982753ce14"}</msg>
-<msg time="2026-01-12T12:30:03.838085" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:51391</msg>
-<msg time="2026-01-12T12:30:04.558720" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/17/browser/traces/temp/39f5401c-3f21-4cf4-925c-e5982753ce14"}</msg>
+<msg time="2026-01-12T13:50:21.568797" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/17/browser/traces/temp/7d44b787-c16e-46cf-b45d-b18ccd948035"}</msg>
+<msg time="2026-01-12T13:50:21.573489" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:47893</msg>
+<msg time="2026-01-12T13:50:22.324842" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/17/browser/traces/temp/7d44b787-c16e-46cf-b45d-b18ccd948035"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-12T12:30:03.831492" elapsed="0.727543"/>
+<status status="PASS" start="2026-01-12T13:50:21.567993" elapsed="0.757550"/>
 </kw>
 <test id="s1-s1-s1-s1-t1" name="Scenario 18: Succesvol Een Bestand Uploaden" line="12">
 <kw name="New Page" owner="Browser" type="SETUP">
-<msg time="2026-01-12T12:30:05.093627" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/upload</msg>
-<msg time="2026-01-12T12:30:05.093760" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-01-12T13:50:22.717232" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/upload</msg>
+<msg time="2026-01-12T13:50:22.717372" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${BASE_URL}/upload</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-12T12:30:04.566085" elapsed="0.527927"/>
+<status status="PASS" start="2026-01-12T13:50:22.331995" elapsed="0.385631"/>
 </kw>
 <kw name="Upload File By Selector" owner="Browser">
 <arg>css=#file-upload</arg>
@@ -31,69 +31,72 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Uploads file from ``path`` to file input element matched by selector.</doc>
-<status status="PASS" start="2026-01-12T12:30:05.094413" elapsed="0.049138"/>
+<status status="PASS" start="2026-01-12T13:50:22.718061" elapsed="0.065757"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-12T12:30:05.144617" level="INFO">Clicks the element 'id=file-submit'.</msg>
+<msg time="2026-01-12T13:50:22.784962" level="INFO">Clicks the element 'id=file-submit'.</msg>
 <arg>id=file-submit</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T12:30:05.143895" elapsed="0.100459"/>
+<status status="PASS" start="2026-01-12T13:50:22.784214" elapsed="0.092575"/>
 </kw>
-<kw name="Get Text">
-<msg time="2026-01-12T12:30:05.245011" level="FAIL">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    Browser.Get Text
-    Mobile.Get Text</msg>
+<kw name="Get Text" owner="Browser">
+<msg time="2026-01-12T13:50:22.965041" level="INFO">Text: 'File Uploaded!'</msg>
 <arg>css=h3</arg>
 <arg>==</arg>
 <arg>File Uploaded!</arg>
-<status status="FAIL" start="2026-01-12T12:30:05.244823" elapsed="0.000269">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    Browser.Get Text
-    Mobile.Get Text</status>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-12T13:50:22.877246" elapsed="0.087998"/>
 </kw>
-<kw name="Get Text">
+<kw name="Get Text" owner="Browser">
+<msg time="2026-01-12T13:50:22.983676" level="INFO">Text: 'common.resource'</msg>
 <arg>id=uploaded-files</arg>
 <arg>contains</arg>
 <arg>common.resource</arg>
-<status status="NOT RUN" start="2026-01-12T12:30:05.245411" elapsed="0.000120"/>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-12T13:50:22.965678" elapsed="0.018220"/>
 </kw>
-<msg time="2026-01-12T12:30:05.307016" level="INFO">Switching context to context=fa4fe2b8-a840-4a0d-8b0e-1ed3652a3c7e in CURRENT</msg>
-<msg time="2026-01-12T12:30:05.317415" level="INFO">Successfully changed active context: context=fa4fe2b8-a840-4a0d-8b0e-1ed3652a3c7e</msg>
-<msg time="2026-01-12T12:30:05.330466" level="INFO">Successfully closed Context</msg>
+<msg time="2026-01-12T13:50:23.002511" level="INFO">Switching context to context=bbfb58d4-e3ec-4254-876c-a8ec99463259 in CURRENT</msg>
+<msg time="2026-01-12T13:50:23.014489" level="INFO">Successfully changed active context: context=bbfb58d4-e3ec-4254-876c-a8ec99463259</msg>
+<msg time="2026-01-12T13:50:23.027105" level="INFO">Successfully closed Context</msg>
 <doc>Test of een lokaal bestand naar de server kan worden gestuurd.</doc>
 <tag>upload</tag>
-<status status="FAIL" start="2026-01-12T12:30:04.559364" elapsed="0.686491">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
-    Browser.Get Text
-    Mobile.Get Text</status>
+<status status="PASS" start="2026-01-12T13:50:22.325904" elapsed="0.658318"/>
 </test>
 <kw name="Close Browser" owner="Browser" type="TEARDOWN">
-<msg time="2026-01-12T12:30:05.373006" level="INFO">Closed browser</msg>
+<msg time="2026-01-12T13:50:23.067035" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-12T12:30:05.331552" elapsed="0.041714"/>
+<status status="PASS" start="2026-01-12T13:50:23.028102" elapsed="0.039227"/>
 </kw>
-<status status="FAIL" start="2026-01-12T12:30:03.394089" elapsed="1.979326"/>
+<status status="PASS" start="2026-01-12T13:50:21.164120" elapsed="1.903378"/>
 </suite>
-<status status="FAIL" start="2026-01-12T12:30:03.393203" elapsed="1.987541"/>
+<status status="PASS" start="2026-01-12T13:50:21.162909" elapsed="1.913731"/>
 </suite>
-<status status="FAIL" start="2026-01-12T12:30:03.392311" elapsed="1.988997"/>
+<status status="PASS" start="2026-01-12T13:50:21.161742" elapsed="1.915667"/>
 </suite>
-<status status="FAIL" start="2026-01-12T12:30:03.370285" elapsed="2.011447"/>
+<status status="PASS" start="2026-01-12T13:50:21.134648" elapsed="1.943443"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">upload</stat>
+<stat pass="1" fail="0" skip="0">upload</stat>
 </tag>
 <suite>
-<stat name="Tests" id="s1" pass="0" fail="1" skip="0">Tests</stat>
-<stat name="01 HerekuApp" id="s1-s1" pass="0" fail="1" skip="0">Tests.01 HerekuApp</stat>
-<stat name="02 Geavanceerd" id="s1-s1-s1" pass="0" fail="1" skip="0">Tests.01 HerekuApp.02 Geavanceerd</stat>
-<stat name="18 File Upload" id="s1-s1-s1-s1" pass="0" fail="1" skip="0">Tests.01 HerekuApp.02 Geavanceerd.18 File Upload</stat>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="01 HerekuApp" id="s1-s1" pass="1" fail="0" skip="0">Tests.01 HerekuApp</stat>
+<stat name="02 Geavanceerd" id="s1-s1-s1" pass="1" fail="0" skip="0">Tests.01 HerekuApp.02 Geavanceerd</stat>
+<stat name="18 File Upload" id="s1-s1-s1-s1" pass="1" fail="0" skip="0">Tests.01 HerekuApp.02 Geavanceerd.18 File Upload</stat>
 </suite>
 </statistics>
 <errors>
