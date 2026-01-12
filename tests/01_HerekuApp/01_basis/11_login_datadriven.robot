@@ -20,4 +20,4 @@ Inloggen Met Verschillende Gegevens
     Go To    ${BASE_URL}/login
     # Hier gebruiken we nu ons eigen "super-keyword"
     Vul Inloggegevens In En Verstuur    ${username}    ${password}
-    Get Text     id=flash    contains    ${expected_message}
+    Browser.Get Text     id=flash    contains    ${expected_message}

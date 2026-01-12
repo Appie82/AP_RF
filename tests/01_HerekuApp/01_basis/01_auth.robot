@@ -14,7 +14,7 @@ Inloggen Met Verschillende Gegevens
     [Arguments]    ${user}    ${pass}    ${check_tekst}
     Open De Browser Op De Inlogpagina
     Log In Met Gebruiker    ${user}    ${pass}
-    Get Text    body    contains    ${check_tekst}
+    Browser.Get Text    body    contains    ${check_tekst}
 
     #Controleert de standaard inlogfunctionaliteit. 
     # De test vult handmatig gebruikersnaam en wachtwoord in 

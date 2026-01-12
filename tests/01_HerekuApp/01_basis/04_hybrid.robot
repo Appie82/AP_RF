@@ -39,7 +39,7 @@ Snel Inloggen Via API En Verifiëren In Browser
 
     # 5. Verificatie in de Browser
     Wait For Elements State    css=.flash.success    visible    timeout=10s
-    Get Text    h2    contains    Secure Area
+    Browser.Get Text    h2    contains    Secure Area
     Take Screenshot    success-login
 
     # 6. Hybride check: Gebruik browser sessie voor API

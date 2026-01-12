@@ -10,7 +10,7 @@ Scenario 21: Succesvolle Inlog en Product Check
     Fill Text          id=user-name    standard_user
     Fill Text          id=password     secret_sauce
     Click              id=login-button
-    Get Text           .title    ==    Products
+    Browser.Get Text           .title    ==    Products
     Get Element Count  .inventory_item    >    5
 
 Scenario 22: Sorteren op Prijs en Validatie
@@ -27,8 +27,8 @@ Scenario 22: Sorteren op Prijs en Validatie
     Select Options By  .product_sort_container    value    lohi
     
     # Haal de prijzen op van de eerste twee producten
-    ${prijs_1}    Get Text    css=.inventory_item_price >> nth=0
-    ${prijs_2}    Get Text    css=.inventory_item_price >> nth=1
+    ${prijs_1}    Browser.Get Text    css=.inventory_item_price >> nth=0
+    ${prijs_2}    Browser.Get Text    css=.inventory_item_price >> nth=1
     
     # Log de prijzen voor je rapport
     Log    Eerste product: ${prijs_1}, Tweede product: ${prijs_2}
@@ -47,11 +47,11 @@ Scenario 23: Volledige Checkout Flow (Master)
     
     # 2. Product selecteren en toevoegen
     Click              id=add-to-cart-sauce-labs-backpack
-    Get Text           .shopping_cart_badge    ==    1
+    Browser.Get Text           .shopping_cart_badge    ==    1
     
     # 3. Naar winkelwagen
     Click              .shopping_cart_link
-    Get Text           .inventory_item_name    ==    Sauce Labs Backpack
+    Browser.Get Text           .inventory_item_name    ==    Sauce Labs Backpack
     Click              id=checkout
     
     # 4. Verzendgegevens invullen
@@ -61,9 +61,9 @@ Scenario 23: Volledige Checkout Flow (Master)
     Click              id=continue
     
     # 5. Overzicht controleren en afronden
-    Get Text           .summary_subtotal_label    contains    29.99
+    Browser.Get Text           .summary_subtotal_label    contains    29.99
     Click              id=finish
     
     # 6. Bevestiging
-    Get Text           .complete-header    ==    Thank you for your order!
-    Get Element States     .pony_express       contains    visible
+    Browser.Get Text           .complete-header    ==    Thank you for your order!
+    Browser.Get Element States     .pony_express       contains    visible

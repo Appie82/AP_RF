@@ -17,4 +17,4 @@ Scenario 09: Bevestig Een JavaScript Alert
     Click    button >> text=Click for JS Confirm
     
     # Verifieer of de pagina de bevestiging herkent
-    Get Text    id=result    ==    You clicked: Ok
+    Browser.Get Text    id=result    ==    You clicked: Ok

@@ -14,7 +14,7 @@ Wachten Op Dynamische Content
     
     Click          button >> text=Start
     Wait For Elements State    text=Hello World!    visible    timeout=10s
-    Get Text       text=Hello World!    ==    Hello World!
+    Browser.Get Text       text=Hello World!    ==    Hello World!
 
 Zoek Waarde In Dynamische Tabel
     # We openen een nieuwe pagina in dezelfde browser

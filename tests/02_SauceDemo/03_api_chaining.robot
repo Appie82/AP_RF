@@ -18,6 +18,5 @@ Scenario: Log In Met Data Van API
     
     # 3. Check of de foutmelding de naam van de API bevat
     # SauceDemo geeft een melding dat de gebruiker niet bestaat.
-    Get Text            css=[data-test="error"]    contains    Username and password do not match
+    Browser.Get Text            css=[data-test="error"]    contains    Username and password do not match
     Log                 De test is geslaagd met API-naam: ${api_naam}
-    

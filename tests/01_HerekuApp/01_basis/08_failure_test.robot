@@ -22,4 +22,4 @@ Test Negatieve Scenario Bevestiging
     Click        button[type="submit"]
     
     # Nu checken we of de foutmelding verschijnt (dit wordt een PASS)
-    Get Text     id=flash    contains    Your username is invalid!
+    Browser.Get Text     id=flash    contains    Your username is invalid!

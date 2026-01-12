@@ -17,5 +17,5 @@ Wachten Op Dynamisch Element
     # We wachten maximaal 10 seconden tot de tekst 'Hello World!' echt zichtbaar is
     Wait For Elements State    text=Hello World!    visible    timeout=10s
     
-    ${bericht}=    Get Text    id=finish
+    ${bericht}=   Browser.Get Text    id=finish
     Should Be Equal    ${bericht}    Hello World!
