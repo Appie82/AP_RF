@@ -1,8 +1,9 @@
 *** Settings ***
-Library     Browser
-Library     RequestsLibrary
-Library     Collections
-Library     AppiumLibrary    # De nieuwe krachtpatser voor mobiel
+Library    Browser
+Library    RequestsLibrary
+Library    Collections
+# Geef AppiumLibrary een alias 'Mobile'
+Library    AppiumLibrary    WITH NAME    Mobile
 
 *** Variables ***
 ${BROWSER}           chromium
@@ -80,7 +81,7 @@ Haal Gebruikersnaam Op Via API
 
 Open Mobiele App
     [Documentation]    Start de mobiele app in Sauce Labs
-    Open Application    ${REMOTE_URL}
+    Mobile.Open Application    ${REMOTE_URL}
     ...                 platformName=Android
     ...                 appium:deviceName=Android GoogleAPI Emulator
     ...                 appium:platformVersion=12.0
@@ -89,4 +90,4 @@ Open Mobiele App
     ...                 sauce:options={'username': '${SAUCE_USERNAME}', 'accessKey': '${SAUCE_ACCESS_KEY}'}
 
 Sluit Mobiele App
-    Close Application
+    Mobile.Close Application
