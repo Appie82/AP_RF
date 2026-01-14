@@ -1,36 +1,36 @@
-{"level":30,"time":"2026-01-12T13:50:26.309Z","pid":5522,"hostname":"runnervmi13qx","msg":"Listening on 127.0.0.1:33853"}
-{"level":30,"time":"2026-01-12T13:50:26.414Z","pid":5522,"hostname":"runnervmi13qx","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2026-01-12T13:50:26.510Z","pid":5522,"hostname":"runnervmi13qx","msg":"Adding browser to stack: chromium, version: 143.0.7499.4"}
-{"level":30,"time":"2026-01-12T13:50:26.510Z","pid":5522,"hostname":"runnervmi13qx","msg":"Adding 0 contexts to browser"}
-{"level":30,"time":"2026-01-12T13:50:26.511Z","pid":5522,"hostname":"runnervmi13qx","msg":"End of node method newBrowser"}
-{"level":30,"time":"2026-01-12T13:50:26.520Z","pid":5522,"hostname":"runnervmi13qx","msg":"Start of node method newContext"}
-{"level":30,"time":"2026-01-12T13:50:26.520Z","pid":5522,"hostname":"runnervmi13qx","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1280,\"height\":720}}"}
-{"level":30,"time":"2026-01-12T13:50:26.520Z","pid":5522,"hostname":"runnervmi13qx","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@d9c2223202519db26fe0659f262747ca\"},\"headless\":true,\"_contextStack\":[],\"id\":\"browser=ff44e697-64ab-49f7-9c26-baa0cd02269a\"}"}
-{"level":30,"time":"2026-01-12T13:50:26.520Z","pid":5522,"hostname":"runnervmi13qx","msg":"Trace file: "}
-{"level":30,"time":"2026-01-12T13:50:26.531Z","pid":5522,"hostname":"runnervmi13qx","msg":"Setting default timeout for context context=d13bd3a2-5198-4b35-8e6e-7ba0ac9fce42 to 10000"}
-{"level":30,"time":"2026-01-12T13:50:26.531Z","pid":5522,"hostname":"runnervmi13qx","msg":"Changed active context: context=d13bd3a2-5198-4b35-8e6e-7ba0ac9fce42"}
-{"level":30,"time":"2026-01-12T13:50:26.532Z","pid":5522,"hostname":"runnervmi13qx","msg":"End of node method newContext"}
-{"level":30,"time":"2026-01-12T13:50:26.537Z","pid":5522,"hostname":"runnervmi13qx","msg":"Start of node method newPage"}
-{"level":30,"time":"2026-01-12T13:50:26.537Z","pid":5522,"hostname":"runnervmi13qx","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@d9c2223202519db26fe0659f262747ca\"},\"headless\":true,\"_contextStack\":[{\"id\":\"context=d13bd3a2-5198-4b35-8e6e-7ba0ac9fce42\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@49115a1769eb3492e787790e72bcad94\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1280,\"height\":720}},\"traceFile\":\"\"}],\"id\":\"browser=ff44e697-64ab-49f7-9c26-baa0cd02269a\"}"}
-{"level":30,"time":"2026-01-12T13:50:26.573Z","pid":5522,"hostname":"runnervmi13qx","msg":"Video path: undefined"}
-{"level":30,"time":"2026-01-12T13:50:26.574Z","pid":5522,"hostname":"runnervmi13qx","msg":"Changed active page"}
-{"level":30,"time":"2026-01-12T13:50:26.786Z","pid":5522,"hostname":"runnervmi13qx","msg":"End of node method newPage"}
-{"level":30,"time":"2026-01-12T13:50:26.794Z","pid":5522,"hostname":"runnervmi13qx","msg":"Start of node method fillText"}
-{"level":30,"time":"2026-01-12T13:50:26.794Z","pid":5522,"hostname":"runnervmi13qx","msg":"Strict mode is enabled, find Locator with id=user-name in page."}
-{"level":30,"time":"2026-01-12T13:50:26.841Z","pid":5522,"hostname":"runnervmi13qx","msg":"End of node method fillText"}
-{"level":30,"time":"2026-01-12T13:50:26.846Z","pid":5522,"hostname":"runnervmi13qx","msg":"Start of node method fillText"}
-{"level":30,"time":"2026-01-12T13:50:26.846Z","pid":5522,"hostname":"runnervmi13qx","msg":"Strict mode is enabled, find Locator with id=password in page."}
-{"level":30,"time":"2026-01-12T13:50:26.871Z","pid":5522,"hostname":"runnervmi13qx","msg":"End of node method fillText"}
-{"level":30,"time":"2026-01-12T13:50:26.876Z","pid":5522,"hostname":"runnervmi13qx","msg":"Start of node method click"}
-{"level":30,"time":"2026-01-12T13:50:26.876Z","pid":5522,"hostname":"runnervmi13qx","msg":"Strict mode is enabled, find Locator with id=login-button in page."}
-{"level":30,"time":"2026-01-12T13:50:26.947Z","pid":5522,"hostname":"runnervmi13qx","msg":"End of node method click"}
-{"level":30,"time":"2026-01-12T13:50:26.952Z","pid":5522,"hostname":"runnervmi13qx","msg":"Start of node method getText"}
-{"level":30,"time":"2026-01-12T13:50:26.953Z","pid":5522,"hostname":"runnervmi13qx","msg":"Strict mode is enabled, find Locator with css=[data-test=\"error\"] in page."}
-{"level":30,"time":"2026-01-12T13:50:26.991Z","pid":5522,"hostname":"runnervmi13qx","msg":"Retrieved text for element css=[data-test=\"error\"] containing Epic sadface: Username and password do not match any user in this service"}
-{"level":30,"time":"2026-01-12T13:50:26.991Z","pid":5522,"hostname":"runnervmi13qx","msg":"End of node method getText"}
-{"level":30,"time":"2026-01-12T13:50:26.997Z","pid":5522,"hostname":"runnervmi13qx","msg":"Start of node method closeBrowser"}
-{"level":30,"time":"2026-01-12T13:50:27.004Z","pid":5522,"hostname":"runnervmi13qx","msg":"Removed page=2cef838f-16ae-44c0-aa79-af7e9eeb6060 from context=d13bd3a2-5198-4b35-8e6e-7ba0ac9fce42 page stack"}
-{"level":30,"time":"2026-01-12T13:50:27.036Z","pid":5522,"hostname":"runnervmi13qx","msg":"End of node method closeBrowser"}
+{"level":30,"time":"2026-01-14T10:38:47.657Z","pid":5471,"hostname":"runnervmi13qx","msg":"Listening on 127.0.0.1:40059"}
+{"level":30,"time":"2026-01-14T10:38:47.771Z","pid":5471,"hostname":"runnervmi13qx","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-01-14T10:38:47.845Z","pid":5471,"hostname":"runnervmi13qx","msg":"Adding browser to stack: chromium, version: 143.0.7499.4"}
+{"level":30,"time":"2026-01-14T10:38:47.845Z","pid":5471,"hostname":"runnervmi13qx","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-01-14T10:38:47.845Z","pid":5471,"hostname":"runnervmi13qx","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-01-14T10:38:47.854Z","pid":5471,"hostname":"runnervmi13qx","msg":"Start of node method newContext"}
+{"level":30,"time":"2026-01-14T10:38:47.854Z","pid":5471,"hostname":"runnervmi13qx","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1280,\"height\":720}}"}
+{"level":30,"time":"2026-01-14T10:38:47.854Z","pid":5471,"hostname":"runnervmi13qx","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@67635b33d5b422c20c3a238d1da7c6df\"},\"headless\":true,\"_contextStack\":[],\"id\":\"browser=91218764-9b07-4e6e-b626-f75404123585\"}"}
+{"level":30,"time":"2026-01-14T10:38:47.854Z","pid":5471,"hostname":"runnervmi13qx","msg":"Trace file: "}
+{"level":30,"time":"2026-01-14T10:38:47.863Z","pid":5471,"hostname":"runnervmi13qx","msg":"Setting default timeout for context context=1f0418ea-d939-4dc4-baae-340c748c6828 to 10000"}
+{"level":30,"time":"2026-01-14T10:38:47.863Z","pid":5471,"hostname":"runnervmi13qx","msg":"Changed active context: context=1f0418ea-d939-4dc4-baae-340c748c6828"}
+{"level":30,"time":"2026-01-14T10:38:47.863Z","pid":5471,"hostname":"runnervmi13qx","msg":"End of node method newContext"}
+{"level":30,"time":"2026-01-14T10:38:47.868Z","pid":5471,"hostname":"runnervmi13qx","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-01-14T10:38:47.868Z","pid":5471,"hostname":"runnervmi13qx","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@67635b33d5b422c20c3a238d1da7c6df\"},\"headless\":true,\"_contextStack\":[{\"id\":\"context=1f0418ea-d939-4dc4-baae-340c748c6828\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@f5f06d9a3ffa5779aa1490d3ce5f677c\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1280,\"height\":720}},\"traceFile\":\"\"}],\"id\":\"browser=91218764-9b07-4e6e-b626-f75404123585\"}"}
+{"level":30,"time":"2026-01-14T10:38:47.906Z","pid":5471,"hostname":"runnervmi13qx","msg":"Video path: undefined"}
+{"level":30,"time":"2026-01-14T10:38:47.907Z","pid":5471,"hostname":"runnervmi13qx","msg":"Changed active page"}
+{"level":30,"time":"2026-01-14T10:38:48.157Z","pid":5471,"hostname":"runnervmi13qx","msg":"End of node method newPage"}
+{"level":30,"time":"2026-01-14T10:38:48.181Z","pid":5471,"hostname":"runnervmi13qx","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-14T10:38:48.182Z","pid":5471,"hostname":"runnervmi13qx","msg":"Strict mode is enabled, find Locator with id=user-name in page."}
+{"level":30,"time":"2026-01-14T10:38:48.269Z","pid":5471,"hostname":"runnervmi13qx","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-14T10:38:48.276Z","pid":5471,"hostname":"runnervmi13qx","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-14T10:38:48.276Z","pid":5471,"hostname":"runnervmi13qx","msg":"Strict mode is enabled, find Locator with id=password in page."}
+{"level":30,"time":"2026-01-14T10:38:48.296Z","pid":5471,"hostname":"runnervmi13qx","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-14T10:38:48.303Z","pid":5471,"hostname":"runnervmi13qx","msg":"Start of node method click"}
+{"level":30,"time":"2026-01-14T10:38:48.303Z","pid":5471,"hostname":"runnervmi13qx","msg":"Strict mode is enabled, find Locator with id=login-button in page."}
+{"level":30,"time":"2026-01-14T10:38:48.391Z","pid":5471,"hostname":"runnervmi13qx","msg":"End of node method click"}
+{"level":30,"time":"2026-01-14T10:38:48.396Z","pid":5471,"hostname":"runnervmi13qx","msg":"Start of node method getText"}
+{"level":30,"time":"2026-01-14T10:38:48.397Z","pid":5471,"hostname":"runnervmi13qx","msg":"Strict mode is enabled, find Locator with css=[data-test=\"error\"] in page."}
+{"level":30,"time":"2026-01-14T10:38:48.456Z","pid":5471,"hostname":"runnervmi13qx","msg":"Retrieved text for element css=[data-test=\"error\"] containing Epic sadface: Username and password do not match any user in this service"}
+{"level":30,"time":"2026-01-14T10:38:48.456Z","pid":5471,"hostname":"runnervmi13qx","msg":"End of node method getText"}
+{"level":30,"time":"2026-01-14T10:38:48.462Z","pid":5471,"hostname":"runnervmi13qx","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2026-01-14T10:38:48.468Z","pid":5471,"hostname":"runnervmi13qx","msg":"Removed page=1b4de279-80ca-499c-8e00-f1d66b38fd13 from context=1f0418ea-d939-4dc4-baae-340c748c6828 page stack"}
+{"level":30,"time":"2026-01-14T10:38:48.513Z","pid":5471,"hostname":"runnervmi13qx","msg":"End of node method closeBrowser"}
 ================= Original suppressed error =================
 Error: Browser has been closed.
     at PlaywrightState.getActiveBrowser (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:12672:15)
@@ -44,8 +44,8 @@ Error: Browser has been closed.
     at endReadableNT (node:internal/streams/readable:1698:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 =============================================================
-{"level":30,"time":"2026-01-12T13:50:27.045Z","pid":5522,"hostname":"runnervmi13qx","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-12T13:50:27.046Z","pid":5522,"hostname":"runnervmi13qx","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-14T10:38:48.523Z","pid":5471,"hostname":"runnervmi13qx","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-14T10:38:48.523Z","pid":5471,"hostname":"runnervmi13qx","msg":"End of node method getBrowserCatalog"}
 ================= Original suppressed error =================
 Error: Browser has been closed.
     at PlaywrightState.getActiveBrowser (/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js:12672:15)
@@ -59,7 +59,7 @@ Error: Browser has been closed.
     at endReadableNT (node:internal/streams/readable:1698:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 =============================================================
-{"level":30,"time":"2026-01-12T13:50:27.051Z","pid":5522,"hostname":"runnervmi13qx","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-12T13:50:27.051Z","pid":5522,"hostname":"runnervmi13qx","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-01-12T13:50:27.057Z","pid":5522,"hostname":"runnervmi13qx","msg":"Start of node method closeAllBrowsers"}
-{"level":30,"time":"2026-01-12T13:50:27.057Z","pid":5522,"hostname":"runnervmi13qx","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2026-01-14T10:38:48.529Z","pid":5471,"hostname":"runnervmi13qx","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-14T10:38:48.529Z","pid":5471,"hostname":"runnervmi13qx","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-14T10:38:48.536Z","pid":5471,"hostname":"runnervmi13qx","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-01-14T10:38:48.536Z","pid":5471,"hostname":"runnervmi13qx","msg":"End of node method closeAllBrowsers"}

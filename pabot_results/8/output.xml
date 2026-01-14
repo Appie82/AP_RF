@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-12T13:50:12.029996" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-14T10:38:33.030506" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="01 Basis" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis">
@@ -10,21 +10,21 @@
 <arg>Browser</arg>
 <arg>Mobile</arg>
 <doc>Sets the resolution order to use when a name matches multiple keywords.</doc>
-<status status="PASS" start="2026-01-12T13:50:12.358229" elapsed="0.000360"/>
+<status status="PASS" start="2026-01-14T10:38:33.370455" elapsed="0.000346"/>
 </kw>
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-12T13:50:12.359441" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/8/browser/traces/temp/7d5b6415-4312-445b-82eb-f283af7308a4"}</msg>
-<msg time="2026-01-12T13:50:12.363317" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:42919</msg>
-<msg time="2026-01-12T13:50:12.971891" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/8/browser/traces/temp/7d5b6415-4312-445b-82eb-f283af7308a4"}</msg>
+<msg time="2026-01-14T10:38:33.371831" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/8/browser/traces/temp/0661154f-0093-44e1-b024-4d137ccfcd32"}</msg>
+<msg time="2026-01-14T10:38:33.375723" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:53909</msg>
+<msg time="2026-01-14T10:38:33.986234" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/8/browser/traces/temp/0661154f-0093-44e1-b024-4d137ccfcd32"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-12T13:50:12.358754" elapsed="0.613437"/>
+<status status="PASS" start="2026-01-14T10:38:33.370999" elapsed="0.615519"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2026-01-12T13:50:12.975696" level="INFO">{
+<msg time="2026-01-14T10:38:33.989648" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -38,48 +38,48 @@
     "height": 720
   }
 }</msg>
-<msg time="2026-01-12T13:50:12.988625" level="INFO">Successfully created context. </msg>
-<msg time="2026-01-12T13:50:12.988726" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2026-01-14T10:38:34.002566" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-14T10:38:34.002619" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
 <arg>viewport={'width': 1280, 'height': 720}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2026-01-12T13:50:12.972556" elapsed="0.016271"/>
+<status status="PASS" start="2026-01-14T10:38:33.986903" elapsed="0.015783"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-12T13:50:13.328346" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com</msg>
+<msg time="2026-01-14T10:38:34.955692" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com</msg>
 <arg>${START_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-12T13:50:12.989134" elapsed="0.339564"/>
+<status status="PASS" start="2026-01-14T10:38:34.002886" elapsed="0.953091"/>
 </kw>
-<status status="PASS" start="2026-01-12T13:50:12.357245" elapsed="0.971709"/>
+<status status="PASS" start="2026-01-14T10:38:33.369472" elapsed="1.586678"/>
 </kw>
 <kw name="Go To" owner="Browser">
-<msg time="2026-01-12T13:50:13.400756" level="INFO">Successfully opened URL https://the-internet.herokuapp.com/javascript_alerts</msg>
+<msg time="2026-01-14T10:38:35.069034" level="INFO">Successfully opened URL https://the-internet.herokuapp.com/javascript_alerts</msg>
 <arg>${BASE_URL}/javascript_alerts</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Navigates to the given ``url``.</doc>
-<status status="PASS" start="2026-01-12T13:50:13.329277" elapsed="0.071816"/>
+<status status="PASS" start="2026-01-14T10:38:34.956463" elapsed="0.112786"/>
 </kw>
 <kw name="Handle Future Dialogs" owner="Browser">
 <arg>action=accept</arg>
 <tag>PageContent</tag>
 <doc>Handle next dialog on page with ``action``.</doc>
-<status status="PASS" start="2026-01-12T13:50:13.401457" elapsed="0.006327"/>
+<status status="PASS" start="2026-01-14T10:38:35.069508" elapsed="0.003119"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-12T13:50:13.408834" level="INFO">Clicks the element 'button &gt;&gt; text=Click for JS Confirm'.</msg>
+<msg time="2026-01-14T10:38:35.073279" level="INFO">Clicks the element 'button &gt;&gt; text=Click for JS Confirm'.</msg>
 <arg>button &gt;&gt; text=Click for JS Confirm</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T13:50:13.408123" elapsed="0.091899"/>
+<status status="PASS" start="2026-01-14T10:38:35.072827" elapsed="0.065676"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-01-12T13:50:13.539062" level="INFO">Text: 'You clicked: Ok'</msg>
+<msg time="2026-01-14T10:38:35.170567" level="INFO">Text: 'You clicked: Ok'</msg>
 <arg>id=result</arg>
 <arg>==</arg>
 <arg>You clicked: Ok</arg>
@@ -87,28 +87,28 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T13:50:13.500409" elapsed="0.038810"/>
+<status status="PASS" start="2026-01-14T10:38:35.138782" elapsed="0.031912"/>
 </kw>
 <kw name="Stop Test-Sessie" owner="common" type="TEARDOWN">
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-12T13:50:13.571470" level="INFO">Closed browser</msg>
+<msg time="2026-01-14T10:38:35.198982" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-12T13:50:13.540047" elapsed="0.031635"/>
+<status status="PASS" start="2026-01-14T10:38:35.171480" elapsed="0.027675"/>
 </kw>
-<status status="PASS" start="2026-01-12T13:50:13.539613" elapsed="0.032209"/>
+<status status="PASS" start="2026-01-14T10:38:35.171085" elapsed="0.028196"/>
 </kw>
 <doc>Test de interactie met browser-native popups (Alerts en Confirms).</doc>
-<status status="PASS" start="2026-01-12T13:50:12.356379" elapsed="1.215553"/>
+<status status="PASS" start="2026-01-14T10:38:33.368571" elapsed="1.830783"/>
 </test>
-<status status="PASS" start="2026-01-12T13:50:12.066317" elapsed="1.513290"/>
+<status status="PASS" start="2026-01-14T10:38:33.063101" elapsed="2.143055"/>
 </suite>
-<status status="PASS" start="2026-01-12T13:50:12.065473" elapsed="1.518552"/>
+<status status="PASS" start="2026-01-14T10:38:33.062285" elapsed="2.147524"/>
 </suite>
-<status status="PASS" start="2026-01-12T13:50:12.064525" elapsed="1.519977"/>
+<status status="PASS" start="2026-01-14T10:38:33.061429" elapsed="2.148872"/>
 </suite>
-<status status="PASS" start="2026-01-12T13:50:12.041966" elapsed="1.542959"/>
+<status status="PASS" start="2026-01-14T10:38:33.041082" elapsed="2.169644"/>
 </suite>
 <statistics>
 <total>

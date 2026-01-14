@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-12T13:50:11.839481" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-14T10:38:31.166538" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="01 Basis" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis">
 <suite id="s1-s1-s1-s1" name="08 Failure Test" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/08_failure_test.robot">
 <test id="s1-s1-s1-s1-t1" name="Test Negatieve Scenario Bevestiging" line="10">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-12T13:50:12.181233" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/7/browser/traces/temp/12a70c45-0290-43e2-b7ef-64535769c017"}</msg>
-<msg time="2026-01-12T13:50:12.185470" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:51885</msg>
-<msg time="2026-01-12T13:50:12.803882" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/7/browser/traces/temp/12a70c45-0290-43e2-b7ef-64535769c017"}</msg>
+<msg time="2026-01-14T10:38:31.466522" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/7/browser/traces/temp/5410510d-032c-49c9-9c58-bce1aa5e5bf3"}</msg>
+<msg time="2026-01-14T10:38:31.470279" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:45165</msg>
+<msg time="2026-01-14T10:38:32.072830" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/7/browser/traces/temp/5410510d-032c-49c9-9c58-bce1aa5e5bf3"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-12T13:50:12.180402" elapsed="0.623773"/>
+<status status="PASS" start="2026-01-14T10:38:31.465798" elapsed="0.607296"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2026-01-12T13:50:12.810133" level="INFO">{
+<msg time="2026-01-14T10:38:32.075970" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -31,50 +31,50 @@
     "height": 720
   }
 }</msg>
-<msg time="2026-01-12T13:50:12.826038" level="INFO">Successfully created context. </msg>
-<msg time="2026-01-12T13:50:12.826142" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2026-01-14T10:38:32.087839" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-14T10:38:32.087930" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2026-01-12T13:50:12.804556" elapsed="0.021686"/>
+<status status="PASS" start="2026-01-14T10:38:32.073460" elapsed="0.014538"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-12T13:50:13.220535" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/login</msg>
+<msg time="2026-01-14T10:38:33.073670" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/login</msg>
 <arg>${BASE_URL}/login</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-12T13:50:12.826513" elapsed="0.394391"/>
+<status status="PASS" start="2026-01-14T10:38:32.088193" elapsed="0.985855"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-01-12T13:50:13.261411" level="INFO">Waited for Element with selector button#niet-bestaande-knop at state detached</msg>
+<msg time="2026-01-14T10:38:33.111598" level="INFO">Waited for Element with selector button#niet-bestaande-knop at state detached</msg>
 <arg>button#niet-bestaande-knop</arg>
 <arg>state=detached</arg>
 <arg>timeout=2s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-01-12T13:50:13.221291" elapsed="0.040343"/>
+<status status="PASS" start="2026-01-14T10:38:33.074409" elapsed="0.037476"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-12T13:50:13.262682" level="INFO">Fills the text 'verkeerde_gebruiker' in the given field.</msg>
+<msg time="2026-01-14T10:38:33.112997" level="INFO">Fills the text 'verkeerde_gebruiker' in the given field.</msg>
 <arg>id=username</arg>
 <arg>verkeerde_gebruiker</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T13:50:13.261960" elapsed="0.016140"/>
+<status status="PASS" start="2026-01-14T10:38:33.112236" elapsed="0.015041"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-12T13:50:13.279110" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
+<msg time="2026-01-14T10:38:33.127986" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
 <arg>button[type="submit"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T13:50:13.278471" elapsed="0.107688"/>
+<status status="PASS" start="2026-01-14T10:38:33.127502" elapsed="0.198136"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-01-12T13:50:13.461544" level="INFO">Text: ' Your username is invalid!\n×'</msg>
+<msg time="2026-01-14T10:38:33.390065" level="INFO">Text: ' Your username is invalid!\n×'</msg>
 <arg>id=flash</arg>
 <arg>contains</arg>
 <arg>Your username is invalid!</arg>
@@ -82,21 +82,21 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-12T13:50:13.386548" elapsed="0.075154"/>
+<status status="PASS" start="2026-01-14T10:38:33.326049" elapsed="0.064159"/>
 </kw>
-<msg time="2026-01-12T13:50:13.474252" level="INFO">Switching context to context=5fd11c8b-4b9f-4fec-9eaa-2e0eab98bdc2 in CURRENT</msg>
-<msg time="2026-01-12T13:50:13.481899" level="INFO">Successfully changed active context: context=5fd11c8b-4b9f-4fec-9eaa-2e0eab98bdc2</msg>
-<msg time="2026-01-12T13:50:13.491305" level="INFO">Successfully closed Context</msg>
+<msg time="2026-01-14T10:38:33.403385" level="INFO">Switching context to context=046da659-b411-4464-ac0f-160c14197995 in CURRENT</msg>
+<msg time="2026-01-14T10:38:33.409587" level="INFO">Successfully changed active context: context=046da659-b411-4464-ac0f-160c14197995</msg>
+<msg time="2026-01-14T10:38:33.415883" level="INFO">Successfully closed Context</msg>
 <doc>Controleert of een niet-bestaand element inderdaad afwezig is.</doc>
-<status status="PASS" start="2026-01-12T13:50:12.179100" elapsed="1.282861"/>
+<status status="PASS" start="2026-01-14T10:38:31.464603" elapsed="1.925851"/>
 </test>
-<status status="PASS" start="2026-01-12T13:50:11.875635" elapsed="1.616513"/>
+<status status="PASS" start="2026-01-14T10:38:31.199322" elapsed="2.217227"/>
 </suite>
-<status status="PASS" start="2026-01-12T13:50:11.874688" elapsed="1.624274"/>
+<status status="PASS" start="2026-01-14T10:38:31.198494" elapsed="2.223258"/>
 </suite>
-<status status="PASS" start="2026-01-12T13:50:11.873586" elapsed="1.625992"/>
+<status status="PASS" start="2026-01-14T10:38:31.197583" elapsed="2.224757"/>
 </suite>
-<status status="PASS" start="2026-01-12T13:50:11.851770" elapsed="1.648480"/>
+<status status="PASS" start="2026-01-14T10:38:31.177402" elapsed="2.245334"/>
 </suite>
 <statistics>
 <total>
