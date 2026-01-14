@@ -1,6 +1,3 @@
-Protocol Validatie. Gebruikt het Http keyword binnen de browser om direct de statuscode (200 OK) 
-en de ruwe body-content van de loginpagina te verifiëren.
-
 *** Settings ***
 Resource          ../../../common.resource
 Library           Browser
@@ -8,14 +5,23 @@ Test Setup        Start Test-Sessie
 Test Teardown     Stop Test-Sessie
 
 *** Test Cases ***
-Check Of De Website Online Is Via API
-    [Documentation]    We vuren een HTTP-verzoek af binnen een actieve browser-context.
+Scenario 12: Check Of De Website Online Is Via API
+    [Documentation]    Voert een snelle protocol-validatie uit binnen de actieve 
+    ...                browser-context om de serverstatus en body-content te verifiëren.
     
-    # Het Http keyword gebruikt de huidige browser-sessie
+    # STAP 1: HTTP-aanroep binnen de Browser
+    # Het 'Http' keyword deelt de cookies en headers van de huidige browser-sessie.
+    # Dit is sneller dan een volledige 'Go To' omdat er geen rendering plaatsvindt.
     ${response}=    Http    ${BASE_URL}/login
     
-    # We controleren de statuscode (moet 200 zijn)
+    # STAP 2: Statuscode Validatie
+    # We verifiëren of de server antwoordt met de standaard '200 OK' status.
+    # Let op: ${200} wordt als integer vergeleken voor maximale nauwkeurigheid.
     Should Be Equal    ${response}[status]    ${200}
     
-    # We checken of de body de juiste tekst bevat
+    # STAP 3: Raw Body Inspectie
+    # We scannen de ruwe HTML-broncode (body) op de aanwezigheid van kritieke termen.
+    # Dit bevestigt dat niet alleen de server online is, maar ook de juiste pagina serveert.
     Should Contain     ${response}[body]      login
+    
+    Log    Protocol-check succesvol: Server status 200 en 'login' keyword gevonden in body.

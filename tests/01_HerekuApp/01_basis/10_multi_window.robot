@@ -1,44 +1,48 @@
-Context Management. Opent een nieuw venster, vangt de unieke Page IDs op, 
-en gebruikt een FOR-loop om doelgericht tussen tabbladen te schakelen en 
-teksten te verifiëren.
-
 *** Settings ***
 Resource          ../../../common.resource
 Test Setup        Start Test-Sessie
 Test Teardown     Stop Test-Sessie
 
 *** Test Cases ***
-Wisselen Tussen Tabbladen
-    [Documentation]    Schakelen door de exacte technische ID's te vangen.
+Scenario 10: Wisselen Tussen Tabbladen
+    [Documentation]    Valideert navigatie over meerdere vensters door Page IDs te 
+    ...                identificeren en de focus van de browser gericht te verplaatsen.
+    
     Click    text=Multiple Windows
     
-    # 1. Sla het ID van de huidige (hoofd) pagina op
+    # STAP 1: Context vastleggen
+    # We slaan het ID van de huidige hoofdpagina op om later terug te kunnen keren.
     ${hoofd_pagina}=    Get Page Ids    active
     
-    # 2. Klik op de link die een nieuw tabblad opent
+    # STAP 2: Actie triggeren
+    # Deze klik opent een nieuwe 'target="_blank"' link in een nieuw tabblad.
     Click    text=Click Here
     
-    # 3. Wacht tot er een tweede ID bij komt en pak de lijst
+    # STAP 3: Wachten op het nieuwe venster
+    # We gebruiken een retry-mechanisme om te wachten tot de browser de nieuwe pagina herkent.
     ${alle_ids}=    Wait Until Keyword Succeeds    5s    0.5s    Check Pagina Aantal
     
-    # 4. Zoek het ID dat NIET gelijk is aan onze hoofdpagina
+    # STAP 4: Logica om het juiste ID te filteren
+    # We loopen door alle geopende IDs om de referentie naar het nieuwe tabblad te vinden.
     FOR    ${id}    IN    @{alle_ids}
         IF    '${id}' != '${hoofd_pagina}[0]'
             ${nieuw_id}=    Set Variable    ${id}
         END
     END
     
-    # 5. Schakel naar het nieuwe ID en controleer tekst
+    # STAP 5: Focus verplaatsen naar Nieuw Venster
     Switch Page    ${nieuw_id}
-    Get Text       h3    ==    New Window
+    Browser.Get Text       h3    ==    New Window
     
-    # 6. Schakel terug naar het opgeslagen hoofd ID
+    # STAP 6: Focus herstellen naar Hoofdvenster
+    # Dit bewijst dat we de controle behouden over de volledige browser-sessie.
     Switch Page    ${hoofd_pagina}[0]
-    Get Text       h3    ==    Opening a new window
+    Browser.Get Text       h3    ==    Opening a new window
 
 *** Keywords ***
 Check Pagina Aantal
-    ${ids}=    Get Page Ids
+    [Documentation]    Hulpmiddel om te verifiëren of de browser meerdere pagina-IDs heeft.
+    ${ids}=       Get Page Ids
     ${lengte}=    Get Length    ${ids}
     Should Be True    ${lengte} > 1
     RETURN    ${ids}

@@ -1,21 +1,28 @@
-Synchronisatie-test. Navigeert naar de /dynamic_loading/2 pagina, 
-klikt op start en gebruikt Wait For Elements State om tot 10s te wachten 
-op de tekst "Hello World!". 
-Dit voorkomt het gebruik van onbetrouwbare Sleep commando's.
-
 *** Settings ***
-Resource    ../../../common.resource
+Resource          ../../../common.resource
+# We gebruiken hier geen Test Setup omdat de browser specifiek in de test wordt geopend met settings
+Test Teardown     Stop Test-Sessie
 
 *** Test Cases ***
-Wachten Op Dynamisch Element
-    [Documentation]    Test hoe we omgaan met elementen die traag laden (geen Sleep gebruiken!).
+Scenario 06: Wachten Op Dynamisch Element
+    [Documentation]    Valideert de afhandeling van asynchrone content (AJAX). 
+    ...                Deze test voorkomt 'flakiness' door intelligent te wachten op de UI-staat.
+    
+    # Navigeer naar de testpagina voor dynamisch laden
     Open Browser    ${BASE_URL}/dynamic_loading/2    headless=${HEADLESS}
     
-    # We klikken op start
+    # STAP 1: Actie triggeren
+    # We klikken op start; dit start een laadproces achter de schermen.
     Click    button >> text=Start
     
-    # We wachten maximaal 10 seconden tot de tekst 'Hello World!' echt zichtbaar is
+    # STAP 2: Intelligent Wachten (Synchronisatie)
+    # In plaats van 'Sleep 5s', gebruiken we een dynamische wachtstap. 
+    # De test gaat direct verder zodra de tekst zichtbaar is, wat tijd bespaart.
     Wait For Elements State    text=Hello World!    visible    timeout=10s
     
-    ${bericht}=   Browser.Get Text    id=finish
+    # STAP 3: Validatie
+    # We halen de tekst op van het element dat zojuist verschenen is.
+    ${bericht}=    Browser.Get Text    id=finish
     Should Be Equal    ${bericht}    Hello World!
+    
+    Log    Dynamische content succesvol geladen na synchronisatie-wachtstap.
