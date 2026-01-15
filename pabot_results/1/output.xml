@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-14T13:44:17.724862" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-15T09:10:22.649598" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="01 Basis" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis">
 <suite id="s1-s1-s1-s1" name="02 Data" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/02_data.robot">
 <test id="s1-s1-s1-s1-t1" name="Wachten Op Dynamische Content" line="7">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-14T13:44:18.191089" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/1/browser/traces/temp/1b3c35da-8b16-49af-b29d-1d47e02dc624"}</msg>
-<msg time="2026-01-14T13:44:18.196483" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:38313</msg>
-<msg time="2026-01-14T13:44:18.885460" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/1/browser/traces/temp/1b3c35da-8b16-49af-b29d-1d47e02dc624"}</msg>
+<msg time="2026-01-15T09:10:23.045961" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/1/browser/traces/temp/adcde757-184e-4886-aefa-dfba0561ab72"}</msg>
+<msg time="2026-01-15T09:10:23.049996" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:44383</msg>
+<msg time="2026-01-15T09:10:24.581953" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/1/browser/traces/temp/adcde757-184e-4886-aefa-dfba0561ab72"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-14T13:44:18.190008" elapsed="0.695779"/>
+<status status="PASS" start="2026-01-15T09:10:23.044946" elapsed="1.537303"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-14T13:44:19.324577" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/dynamic_loading/1</msg>
-<msg time="2026-01-14T13:44:19.324731" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-01-15T09:10:25.614960" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/dynamic_loading/1</msg>
+<msg time="2026-01-15T09:10:25.615092" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${DYNAMIC_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-14T13:44:18.886182" elapsed="0.438805"/>
+<status status="PASS" start="2026-01-15T09:10:24.582643" elapsed="1.032706"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-14T13:44:19.326143" level="INFO">Clicks the element 'button &gt;&gt; text=Start'.</msg>
+<msg time="2026-01-15T09:10:25.616453" level="INFO">Clicks the element 'button &gt;&gt; text=Start'.</msg>
 <arg>button &gt;&gt; text=Start</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-14T13:44:19.325367" elapsed="0.087322"/>
+<status status="PASS" start="2026-01-15T09:10:25.615730" elapsed="0.071743"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-01-14T13:44:24.737409" level="INFO">Waited for Element with selector text=Hello World! at state visible</msg>
+<msg time="2026-01-15T09:10:31.004681" level="INFO">Waited for Element with selector text=Hello World! at state visible</msg>
 <arg>text=Hello World!</arg>
 <arg>visible</arg>
 <arg>timeout=10s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-01-14T13:44:19.413094" elapsed="5.324637"/>
+<status status="PASS" start="2026-01-15T09:10:25.687830" elapsed="5.317141"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-01-14T13:44:24.771423" level="INFO">Text: 'Hello World!'</msg>
+<msg time="2026-01-15T09:10:31.061518" level="INFO">Text: 'Hello World!'</msg>
 <arg>text=Hello World!</arg>
 <arg>==</arg>
 <arg>Hello World!</arg>
@@ -52,116 +52,116 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-14T13:44:24.738114" elapsed="0.033460"/>
+<status status="PASS" start="2026-01-15T09:10:31.005329" elapsed="0.056369"/>
 </kw>
 <kw name="Sluit Test En Maak Screenshot Bij Fout" owner="common" type="TEARDOWN">
 <kw name="Run Keyword If Test Failed" owner="BuiltIn">
 <arg>Take Screenshot</arg>
 <doc>Runs the given keyword with the given arguments, if the test failed.</doc>
-<status status="PASS" start="2026-01-14T13:44:24.772526" elapsed="0.000406"/>
+<status status="PASS" start="2026-01-15T09:10:31.062938" elapsed="0.000540"/>
 </kw>
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-14T13:44:24.806855" level="INFO">Closed browser</msg>
+<msg time="2026-01-15T09:10:31.114904" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-14T13:44:24.773080" elapsed="0.034035"/>
+<status status="PASS" start="2026-01-15T09:10:31.063695" elapsed="0.051468"/>
 </kw>
-<status status="PASS" start="2026-01-14T13:44:24.772120" elapsed="0.035193"/>
+<status status="PASS" start="2026-01-15T09:10:31.062358" elapsed="0.052996"/>
 </kw>
 <doc>Valideert de stabiliteit van de test bij AJAX-aanroepen.
 Voorkomt crashes door dynamisch te wachten in plaats van statische pauzes.</doc>
-<status status="PASS" start="2026-01-14T13:44:18.188047" elapsed="6.619392"/>
+<status status="PASS" start="2026-01-15T09:10:23.043000" elapsed="8.072469"/>
 </test>
 <test id="s1-s1-s1-s1-t2" name="Zoek Waarde In Dynamische Tabel" line="23">
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-14T13:44:25.278343" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/challenging_dom</msg>
-<msg time="2026-01-14T13:44:25.278476" level="INFO">No browser and context was open. New browser and context was automatically opened when page is created.</msg>
+<msg time="2026-01-15T09:10:32.202385" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/challenging_dom</msg>
+<msg time="2026-01-15T09:10:32.202507" level="INFO">No browser and context was open. New browser and context was automatically opened when page is created.</msg>
 <arg>${TABEL_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-14T13:44:24.819361" elapsed="0.459359"/>
+<status status="PASS" start="2026-01-15T09:10:31.127056" elapsed="1.075709"/>
 </kw>
 <kw name="Get Elements" owner="Browser">
-<msg time="2026-01-14T13:44:25.317410" level="INFO">Found locator('table').locator('tbody').locator('tr').first(),locator('table').locator('tbody').locator('tr').nth(1),locator('table').locator('tbody').locator('tr').nth(2),locator('table').locator('tbody').locator('tr').nth(3),locator('table').locator('tbody').locator('tr').nth(4),locator('table').locator('tbody').locator('tr').nth(5),locator('table').locator('tbody').locator('tr').nth(6),locator('table').locator('tbody').locator('tr').nth(7),locator('table').locator('tbody').locator('tr').nth(8),locator('table').locator('tbody').locator('tr').nth(9) Locators successfully.</msg>
-<msg time="2026-01-14T13:44:25.317844" level="INFO">${rijen} = ['table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=0', 'table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=1', 'table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=2', 'table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=3', 'table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=4', 'table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=5', '...</msg>
+<msg time="2026-01-15T09:10:32.241291" level="INFO">Found locator('table').locator('tbody').locator('tr').first(),locator('table').locator('tbody').locator('tr').nth(1),locator('table').locator('tbody').locator('tr').nth(2),locator('table').locator('tbody').locator('tr').nth(3),locator('table').locator('tbody').locator('tr').nth(4),locator('table').locator('tbody').locator('tr').nth(5),locator('table').locator('tbody').locator('tr').nth(6),locator('table').locator('tbody').locator('tr').nth(7),locator('table').locator('tbody').locator('tr').nth(8),locator('table').locator('tbody').locator('tr').nth(9) Locators successfully.</msg>
+<msg time="2026-01-15T09:10:32.241737" level="INFO">${rijen} = ['table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=0', 'table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=1', 'table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=2', 'table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=3', 'table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=4', 'table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=5', '...</msg>
 <var>${rijen}</var>
 <arg>table &gt;&gt; tbody &gt;&gt; tr</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
 for all matched elements by ``selector``.</doc>
-<status status="PASS" start="2026-01-14T13:44:25.278956" elapsed="0.038928"/>
+<status status="PASS" start="2026-01-15T09:10:32.203081" elapsed="0.038739"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-01-14T13:44:25.352715" level="INFO">Text: 'Apeirian0'</msg>
-<msg time="2026-01-14T13:44:25.352895" level="INFO">${tekst} = Apeirian0</msg>
+<msg time="2026-01-15T09:10:32.273680" level="INFO">Text: 'Apeirian0'</msg>
+<msg time="2026-01-15T09:10:32.273884" level="INFO">${tekst} = Apeirian0</msg>
 <var>${tekst}</var>
 <arg>${rij} &gt;&gt; td:nth-child(2)</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-14T13:44:25.318668" elapsed="0.034260"/>
+<status status="PASS" start="2026-01-15T09:10:32.242883" elapsed="0.031034"/>
 </kw>
 <if>
 <branch type="IF" condition="&quot;Apeirian&quot; in &quot;${tekst}&quot;">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-14T13:44:25.353874" level="INFO">Gevonden resultaat: Apeirian0</msg>
+<msg time="2026-01-15T09:10:32.274772" level="INFO">Gevonden resultaat: Apeirian0</msg>
 <arg>Gevonden resultaat: ${tekst}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-14T13:44:25.353473" elapsed="0.000452"/>
+<status status="PASS" start="2026-01-15T09:10:32.274408" elapsed="0.000416"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2026-01-14T13:44:25.414342" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-15T09:10:32.330029" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <arg>selector=${rij}</arg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2026-01-14T13:44:25.354052" elapsed="0.060466"/>
+<status status="PASS" start="2026-01-15T09:10:32.274947" elapsed="0.055248"/>
 </kw>
 <break>
-<status status="PASS" start="2026-01-14T13:44:25.414669" elapsed="0.000147"/>
+<status status="PASS" start="2026-01-15T09:10:32.330310" elapsed="0.000127"/>
 </break>
-<status status="PASS" start="2026-01-14T13:44:25.353125" elapsed="0.061759"/>
+<status status="PASS" start="2026-01-15T09:10:32.274086" elapsed="0.056412"/>
 </branch>
-<status status="PASS" start="2026-01-14T13:44:25.353082" elapsed="0.061907"/>
+<status status="PASS" start="2026-01-15T09:10:32.274050" elapsed="0.056547"/>
 </if>
 <var name="${rij}">table &gt;&gt; tbody &gt;&gt; tr &gt;&gt; nth=0</var>
-<status status="PASS" start="2026-01-14T13:44:25.318423" elapsed="0.096607"/>
+<status status="PASS" start="2026-01-15T09:10:32.242512" elapsed="0.088127"/>
 </iter>
 <var>${rij}</var>
 <value>@{rijen}</value>
-<status status="PASS" start="2026-01-14T13:44:25.318031" elapsed="0.097089"/>
+<status status="PASS" start="2026-01-15T09:10:32.242023" elapsed="0.088689"/>
 </for>
 <kw name="Sluit Test En Maak Screenshot Bij Fout" owner="common" type="TEARDOWN">
 <kw name="Run Keyword If Test Failed" owner="BuiltIn">
 <arg>Take Screenshot</arg>
 <doc>Runs the given keyword with the given arguments, if the test failed.</doc>
-<status status="PASS" start="2026-01-14T13:44:25.415953" elapsed="0.000420"/>
+<status status="PASS" start="2026-01-15T09:10:32.331394" elapsed="0.000322"/>
 </kw>
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-14T13:44:25.446580" level="INFO">Closed browser</msg>
+<msg time="2026-01-15T09:10:32.352878" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-14T13:44:25.416500" elapsed="0.030328"/>
+<status status="PASS" start="2026-01-15T09:10:32.331875" elapsed="0.021172"/>
 </kw>
-<status status="PASS" start="2026-01-14T13:44:25.415520" elapsed="0.031497"/>
+<status status="PASS" start="2026-01-15T09:10:32.331050" elapsed="0.022120"/>
 </kw>
 <doc>Demonstreert het itereren door een HTML-tabel om specifieke data te valideren.</doc>
-<status status="PASS" start="2026-01-14T13:44:24.815988" elapsed="0.631108"/>
+<status status="PASS" start="2026-01-15T09:10:31.123685" elapsed="1.229555"/>
 </test>
 <doc>Validatie van dynamische content-opbouw en tabel-interactie.</doc>
-<status status="PASS" start="2026-01-14T13:44:17.775962" elapsed="7.675420"/>
+<status status="PASS" start="2026-01-15T09:10:22.701793" elapsed="9.655135"/>
 </suite>
-<status status="PASS" start="2026-01-14T13:44:17.774683" elapsed="7.680314"/>
+<status status="PASS" start="2026-01-15T09:10:22.700478" elapsed="9.659934"/>
 </suite>
-<status status="PASS" start="2026-01-14T13:44:17.773292" elapsed="7.682153"/>
+<status status="PASS" start="2026-01-15T09:10:22.699144" elapsed="9.661742"/>
 </suite>
-<status status="PASS" start="2026-01-14T13:44:17.740980" elapsed="7.714879"/>
+<status status="PASS" start="2026-01-15T09:10:22.665739" elapsed="9.695537"/>
 </suite>
 <statistics>
 <total>

@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-14T13:44:38.552327" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-15T09:10:48.191868" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="02 SauceDemo" source="/home/runner/work/AP_RF/AP_RF/tests/02_SauceDemo">
 <suite id="s1-s1-s1" name="03 Api Chaining" source="/home/runner/work/AP_RF/AP_RF/tests/02_SauceDemo/03_api_chaining.robot">
 <test id="s1-s1-s1-t1" name="Scenario: Log In Met Data Van API" line="6">
 <kw name="Haal Gebruikersnaam Op Via API" owner="common">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2026-01-14T13:44:38.970976" level="INFO">Creating Session using : alias=placeholder, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<msg time="2026-01-15T09:10:48.610704" level="INFO">Creating Session using : alias=placeholder, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
 <arg>placeholder</arg>
 <arg>https://jsonplaceholder.typicode.com</arg>
 <arg>verify=True</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2026-01-14T13:44:38.970668" elapsed="0.000550"/>
+<status status="PASS" start="2026-01-15T09:10:48.610346" elapsed="0.000690"/>
 </kw>
 <kw name="GET On Session" owner="RequestsLibrary">
-<msg time="2026-01-14T13:44:39.014444" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users/1 
+<msg time="2026-01-15T09:10:48.673843" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users/1 
  path_url=/users/1 
  headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg time="2026-01-14T13:44:39.014612" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users/1 
+<msg time="2026-01-15T09:10:48.674109" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users/1 
  status=200, reason=OK 
- headers={'Date': 'Wed, 14 Jan 2026 13:44:39 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'access-control-allow-credentials': 'true', 'Cache-Control': 'max-age=43200', 'etag': 'W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"', 'expires': '-1', 'nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'pragma': 'no-cache', 'report-to': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=TJube9LLh5TVnssAsCs4oyA3%2F9yJs8wJxcCaiarJ3Gg%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1761148125"}],"max_age":3600}', 'reporting-endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=TJube9LLh5TVnssAsCs4oyA3%2F9yJs8wJxcCaiarJ3Gg%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1761148125"', 'Server': 'cloudflare', 'vary': 'Origin, Accept-Encoding', 'via': '2.0 heroku-router', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Express', 'x-ratelimit-limit': '1000', 'x-ratelimit-remaining': '999', 'x-ratelimit-reset': '1761148144', 'Age': '17010', 'cf-cache-status': 'HIT', 'Content-Encoding': 'gzip', 'CF-RAY': '9bdd91bbd8cddc06-ORD', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Thu, 15 Jan 2026 09:10:48 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'access-control-allow-credentials': 'true', 'Cache-Control': 'max-age=43200', 'etag': 'W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"', 'expires': '-1', 'nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'pragma': 'no-cache', 'report-to': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=sSJwi3VEEh5tNUWjzUyOVJE2%2FZylTHYGwn2fd2rRZ1k%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1768341965"}],"max_age":3600}', 'reporting-endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=sSJwi3VEEh5tNUWjzUyOVJE2%2FZylTHYGwn2fd2rRZ1k%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1768341965"', 'Server': 'cloudflare', 'vary': 'Origin, Accept-Encoding', 'via': '2.0 heroku-router', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Express', 'x-ratelimit-limit': '1000', 'x-ratelimit-remaining': '968', 'x-ratelimit-reset': '1768341989', 'Age': '10942', 'cf-cache-status': 'HIT', 'Content-Encoding': 'gzip', 'CF-RAY': '9be43dfa2bd10c60-SJC', 'alt-svc': 'h3=":443"; ma=86400'} 
  body={
   "id": 1,
   "name": "Leanne Graham",
@@ -46,57 +46,57 @@
   }
 } 
  </msg>
-<msg time="2026-01-14T13:44:39.014819" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2026-01-15T09:10:48.674364" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>placeholder</arg>
 <arg>/users/1</arg>
 <arg>expected_status=200</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2026-01-14T13:44:38.971418" elapsed="0.043444"/>
+<status status="PASS" start="2026-01-15T09:10:48.611277" elapsed="0.063153"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-01-14T13:44:39.015868" level="INFO">${volledige_naam} = Leanne Graham</msg>
+<msg time="2026-01-15T09:10:48.675904" level="INFO">${volledige_naam} = Leanne Graham</msg>
 <var>${volledige_naam}</var>
 <arg>${response.json()['name']}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2026-01-14T13:44:39.015080" elapsed="0.000820"/>
+<status status="PASS" start="2026-01-15T09:10:48.674810" elapsed="0.001138"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2026-01-14T13:44:39.016428" level="INFO">${voornaam} = Leanne</msg>
+<msg time="2026-01-15T09:10:48.676636" level="INFO">${voornaam} = Leanne</msg>
 <var>${voornaam}</var>
 <arg>"${volledige_naam}".split()[0]</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2026-01-14T13:44:39.016029" elapsed="0.000430"/>
+<status status="PASS" start="2026-01-15T09:10:48.676127" elapsed="0.000550"/>
 </kw>
 <return>
 <value>${voornaam}</value>
-<status status="PASS" start="2026-01-14T13:44:39.016537" elapsed="0.000106"/>
+<status status="PASS" start="2026-01-15T09:10:48.676804" elapsed="0.000132"/>
 </return>
-<msg time="2026-01-14T13:44:39.016815" level="INFO">${api_naam} = Leanne</msg>
+<msg time="2026-01-15T09:10:48.677136" level="INFO">${api_naam} = Leanne</msg>
 <var>${api_naam}</var>
 <doc>Gebruikt JSONPlaceholder als alternatief voor ReqRes.</doc>
-<status status="PASS" start="2026-01-14T13:44:38.969074" elapsed="0.047771"/>
+<status status="PASS" start="2026-01-15T09:10:48.608700" elapsed="0.068471"/>
 </kw>
 <kw name="Start Test-Sessie" owner="common">
 <kw name="Set Library Search Order" owner="BuiltIn">
 <arg>Browser</arg>
 <arg>Mobile</arg>
 <doc>Sets the resolution order to use when a name matches multiple keywords.</doc>
-<status status="PASS" start="2026-01-14T13:44:39.017382" elapsed="0.000308"/>
+<status status="PASS" start="2026-01-15T09:10:48.677895" elapsed="0.000370"/>
 </kw>
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-14T13:44:39.018439" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/22/browser/traces/temp/054fd088-ce60-4d15-b1b4-b742f40b69f9"}</msg>
-<msg time="2026-01-14T13:44:39.022256" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:32921</msg>
-<msg time="2026-01-14T13:44:39.755974" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/22/browser/traces/temp/054fd088-ce60-4d15-b1b4-b742f40b69f9"}</msg>
+<msg time="2026-01-15T09:10:48.679500" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/22/browser/traces/temp/84505aa2-4f60-4490-9ccc-c5f0539a225d"}</msg>
+<msg time="2026-01-15T09:10:48.684626" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:42825</msg>
+<msg time="2026-01-15T09:10:49.442607" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/22/browser/traces/temp/84505aa2-4f60-4490-9ccc-c5f0539a225d"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-14T13:44:39.017827" elapsed="0.738458"/>
+<status status="PASS" start="2026-01-15T09:10:48.678443" elapsed="0.764482"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2026-01-14T13:44:39.760275" level="INFO">{
+<msg time="2026-01-15T09:10:49.446117" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -110,53 +110,53 @@
     "height": 720
   }
 }</msg>
-<msg time="2026-01-14T13:44:39.774500" level="INFO">Successfully created context. </msg>
-<msg time="2026-01-14T13:44:39.774599" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2026-01-15T09:10:49.458806" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-15T09:10:49.458876" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
 <arg>viewport={'width': 1280, 'height': 720}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2026-01-14T13:44:39.756702" elapsed="0.018044"/>
+<status status="PASS" start="2026-01-15T09:10:49.443249" elapsed="0.015729"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-14T13:44:40.045297" level="INFO">Successfully initialized new page object and opened url: https://www.saucedemo.com</msg>
+<msg time="2026-01-15T09:10:49.811786" level="INFO">Successfully initialized new page object and opened url: https://www.saucedemo.com</msg>
 <arg>${START_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-14T13:44:39.775043" elapsed="0.270658"/>
+<status status="PASS" start="2026-01-15T09:10:49.459295" elapsed="0.352813"/>
 </kw>
 <arg>${SAUCE_URL}</arg>
-<status status="PASS" start="2026-01-14T13:44:39.017032" elapsed="1.028891"/>
+<status status="PASS" start="2026-01-15T09:10:48.677427" elapsed="1.134892"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-14T13:44:40.047086" level="INFO">Fills the text 'Leanne' in the given field.</msg>
+<msg time="2026-01-15T09:10:49.813386" level="INFO">Fills the text 'Leanne' in the given field.</msg>
 <arg>id=user-name</arg>
 <arg>${api_naam}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-14T13:44:40.046207" elapsed="0.062335"/>
+<status status="PASS" start="2026-01-15T09:10:49.812591" elapsed="0.076717"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-14T13:44:40.109723" level="INFO">Fills the text 'secret_sauce' in the given field.</msg>
+<msg time="2026-01-15T09:10:49.890432" level="INFO">Fills the text 'secret_sauce' in the given field.</msg>
 <arg>id=password</arg>
 <arg>secret_sauce</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-14T13:44:40.108967" elapsed="0.014096"/>
+<status status="PASS" start="2026-01-15T09:10:49.889721" elapsed="0.020060"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-14T13:44:40.124217" level="INFO">Clicks the element 'id=login-button'.</msg>
+<msg time="2026-01-15T09:10:49.910530" level="INFO">Clicks the element 'id=login-button'.</msg>
 <arg>id=login-button</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-14T13:44:40.123374" elapsed="0.064158"/>
+<status status="PASS" start="2026-01-15T09:10:49.910033" elapsed="0.074248"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-01-14T13:44:40.233376" level="INFO">Text: 'Epic sadface: Username and password do not match any user in this service'</msg>
+<msg time="2026-01-15T09:10:50.040668" level="INFO">Text: 'Epic sadface: Username and password do not match any user in this service'</msg>
 <arg>css=[data-test="error"]</arg>
 <arg>contains</arg>
 <arg>Username and password do not match</arg>
@@ -164,35 +164,35 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-14T13:44:40.187836" elapsed="0.045729"/>
+<status status="PASS" start="2026-01-15T09:10:49.984618" elapsed="0.056269"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-14T13:44:40.234596" level="INFO">De test is geslaagd met API-naam: Leanne</msg>
+<msg time="2026-01-15T09:10:50.042862" level="INFO">De test is geslaagd met API-naam: Leanne</msg>
 <arg>De test is geslaagd met API-naam: ${api_naam}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-14T13:44:40.233956" elapsed="0.000759"/>
+<status status="PASS" start="2026-01-15T09:10:50.041258" elapsed="0.001679"/>
 </kw>
 <kw name="Stop Test-Sessie" owner="common" type="TEARDOWN">
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-14T13:44:40.277324" level="INFO">Closed browser</msg>
+<msg time="2026-01-15T09:10:50.085996" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-14T13:44:40.235603" elapsed="0.041911"/>
+<status status="PASS" start="2026-01-15T09:10:50.043719" elapsed="0.042462"/>
 </kw>
-<status status="PASS" start="2026-01-14T13:44:40.235136" elapsed="0.042546"/>
+<status status="PASS" start="2026-01-15T09:10:50.043292" elapsed="0.043020"/>
 </kw>
 <doc>Verifieert de keten-integratie door een gebruikersnaam uit een API-call
 direct te gebruiken als input voor het browser-inlogformulier.</doc>
 <tag>chaining</tag>
 <tag>integration</tag>
-<status status="PASS" start="2026-01-14T13:44:38.967792" elapsed="1.310012"/>
+<status status="PASS" start="2026-01-15T09:10:48.607404" elapsed="1.478980"/>
 </test>
-<status status="PASS" start="2026-01-14T13:44:38.596571" elapsed="1.691330"/>
+<status status="PASS" start="2026-01-15T09:10:48.234857" elapsed="1.857836"/>
 </suite>
-<status status="PASS" start="2026-01-14T13:44:38.594953" elapsed="1.697076"/>
+<status status="PASS" start="2026-01-15T09:10:48.233362" elapsed="1.862747"/>
 </suite>
-<status status="PASS" start="2026-01-14T13:44:38.564786" elapsed="1.727914"/>
+<status status="PASS" start="2026-01-15T09:10:48.207106" elapsed="1.889399"/>
 </suite>
 <statistics>
 <total>
