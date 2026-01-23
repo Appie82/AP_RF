@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-15T09:10:30.302710" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-23T12:42:37.598927" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="01 Basis" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis">
 <suite id="s1-s1-s1-s1" name="06 Dynamic Loading.Robot" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/06_dynamic_loading.robot.robot">
 <test id="s1-s1-s1-s1-t1" name="Scenario 06: Wachten Op Dynamisch Element" line="7">
 <kw name="Open Browser" owner="Browser">
-<msg time="2026-01-15T09:10:30.636187" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
-<msg time="2026-01-15T09:10:30.636475" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/5/browser/traces/temp/7f79dd6f-1839-410c-9850-163eeb1e5bea"}</msg>
-<msg time="2026-01-15T09:10:30.640039" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:37651</msg>
-<msg time="2026-01-15T09:10:31.179266" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/5/browser/traces/temp/7f79dd6f-1839-410c-9850-163eeb1e5bea"}</msg>
-<msg time="2026-01-15T09:10:31.182764" level="INFO">{
+<msg time="2026-01-23T12:42:37.823938" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2026-01-23T12:42:37.824213" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/5/browser/traces/temp/1d7e6474-5fd5-4b3c-b43f-b158838623a0"}</msg>
+<msg time="2026-01-23T12:42:37.828177" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:45979</msg>
+<msg time="2026-01-23T12:42:38.441285" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/5/browser/traces/temp/1d7e6474-5fd5-4b3c-b43f-b158838623a0"}</msg>
+<msg time="2026-01-23T12:42:38.443366" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": true,
   "forcedColors": "none",
@@ -24,78 +24,78 @@
     "height": 720
   }
 }</msg>
-<msg time="2026-01-15T09:10:31.210524" level="INFO">Successfully created context. </msg>
-<msg time="2026-01-15T09:10:31.210646" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
-<msg time="2026-01-15T09:10:32.168481" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/dynamic_loading/2</msg>
+<msg time="2026-01-23T12:42:38.456510" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-23T12:42:38.456627" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2026-01-23T12:42:38.664399" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/dynamic_loading/2</msg>
 <arg>${BASE_URL}/dynamic_loading/2</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
-<status status="PASS" start="2026-01-15T09:10:30.635609" elapsed="1.533238"/>
+<status status="PASS" start="2026-01-23T12:42:37.823350" elapsed="0.841453"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-15T09:10:32.169969" level="INFO">Clicks the element 'button &gt;&gt; text=Start'.</msg>
+<msg time="2026-01-23T12:42:38.665996" level="INFO">Clicks the element 'button &gt;&gt; text=Start'.</msg>
 <arg>button &gt;&gt; text=Start</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-15T09:10:32.169213" elapsed="0.070400"/>
+<status status="PASS" start="2026-01-23T12:42:38.665197" elapsed="0.071363"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-01-15T09:10:37.553308" level="INFO">Waited for Element with selector text=Hello World! at state visible</msg>
+<msg time="2026-01-23T12:42:44.062666" level="INFO">Waited for Element with selector text=Hello World! at state visible</msg>
 <arg>text=Hello World!</arg>
 <arg>visible</arg>
 <arg>timeout=10s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-01-15T09:10:32.239938" elapsed="5.313647"/>
+<status status="PASS" start="2026-01-23T12:42:38.737248" elapsed="5.325687"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-01-15T09:10:37.585565" level="INFO">Text: 'Hello World!'</msg>
-<msg time="2026-01-15T09:10:37.585777" level="INFO">${bericht} = Hello World!</msg>
+<msg time="2026-01-23T12:42:44.095951" level="INFO">Text: 'Hello World!'</msg>
+<msg time="2026-01-23T12:42:44.096133" level="INFO">${bericht} = Hello World!</msg>
 <var>${bericht}</var>
 <arg>id=finish</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-15T09:10:37.553999" elapsed="0.031817"/>
+<status status="PASS" start="2026-01-23T12:42:44.063299" elapsed="0.032870"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${bericht}</arg>
 <arg>Hello World!</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2026-01-15T09:10:37.586075" elapsed="0.000482"/>
+<status status="PASS" start="2026-01-23T12:42:44.096415" elapsed="0.000518"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T09:10:37.586955" level="INFO">Dynamische content succesvol geladen na synchronisatie-wachtstap.</msg>
+<msg time="2026-01-23T12:42:44.097350" level="INFO">Dynamische content succesvol geladen na synchronisatie-wachtstap.</msg>
 <arg>Dynamische content succesvol geladen na synchronisatie-wachtstap.</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T09:10:37.586692" elapsed="0.000312"/>
+<status status="PASS" start="2026-01-23T12:42:44.097084" elapsed="0.000318"/>
 </kw>
 <kw name="Stop Test-Sessie" owner="common" type="TEARDOWN">
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-15T09:10:37.617842" level="INFO">Closed browser</msg>
+<msg time="2026-01-23T12:42:44.132159" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-15T09:10:37.587686" elapsed="0.030438"/>
+<status status="PASS" start="2026-01-23T12:42:44.098133" elapsed="0.034222"/>
 </kw>
-<status status="PASS" start="2026-01-15T09:10:37.587354" elapsed="0.031001"/>
+<status status="PASS" start="2026-01-23T12:42:44.097790" elapsed="0.034714"/>
 </kw>
 <doc>Valideert de afhandeling van asynchrone content (AJAX).
 Deze test voorkomt 'flakiness' door intelligent te wachten op de UI-staat.</doc>
-<status status="PASS" start="2026-01-15T09:10:30.634359" elapsed="6.984134"/>
+<status status="PASS" start="2026-01-23T12:42:37.822216" elapsed="6.310408"/>
 </test>
-<status status="PASS" start="2026-01-15T09:10:30.344964" elapsed="7.282572"/>
+<status status="PASS" start="2026-01-23T12:42:37.632358" elapsed="6.509753"/>
 </suite>
-<status status="PASS" start="2026-01-15T09:10:30.343867" elapsed="7.288628"/>
+<status status="PASS" start="2026-01-23T12:42:37.631501" elapsed="6.516267"/>
 </suite>
-<status status="PASS" start="2026-01-15T09:10:30.342646" elapsed="7.290344"/>
+<status status="PASS" start="2026-01-23T12:42:37.630614" elapsed="6.517850"/>
 </suite>
-<status status="PASS" start="2026-01-15T09:10:30.316525" elapsed="7.316854"/>
+<status status="PASS" start="2026-01-23T12:42:37.609887" elapsed="6.539230"/>
 </suite>
 <statistics>
 <total>
@@ -111,6 +111,6 @@ Deze test voorkomt 'flakiness' door intelligent te wachten op de UI-staat.</doc>
 </suite>
 </statistics>
 <errors>
-<msg time="2026-01-15T09:10:30.636187" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2026-01-23T12:42:37.823938" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
 </errors>
 </robot>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-15T09:10:30.786214" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-23T12:42:39.105272" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="01 Basis" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis">
@@ -9,21 +9,21 @@
 <arg>Browser</arg>
 <arg>Mobile</arg>
 <doc>Sets the resolution order to use when a name matches multiple keywords.</doc>
-<status status="PASS" start="2026-01-15T09:10:31.172265" elapsed="0.000544"/>
+<status status="PASS" start="2026-01-23T12:42:39.336061" elapsed="0.000322"/>
 </kw>
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-15T09:10:31.174024" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/6/browser/traces/temp/18dd2c48-f493-40ce-a60a-d7ed1fdb5ec2"}</msg>
-<msg time="2026-01-15T09:10:31.181522" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:53019</msg>
-<msg time="2026-01-15T09:10:31.803590" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/6/browser/traces/temp/18dd2c48-f493-40ce-a60a-d7ed1fdb5ec2"}</msg>
+<msg time="2026-01-23T12:42:39.337227" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/6/browser/traces/temp/f0e01ba1-f801-44a7-a705-0456a8f51eae"}</msg>
+<msg time="2026-01-23T12:42:39.340982" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:58781</msg>
+<msg time="2026-01-23T12:42:39.831638" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/6/browser/traces/temp/f0e01ba1-f801-44a7-a705-0456a8f51eae"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-15T09:10:31.173066" elapsed="0.630850"/>
+<status status="PASS" start="2026-01-23T12:42:39.336556" elapsed="0.495382"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2026-01-15T09:10:31.807132" level="INFO">{
+<msg time="2026-01-23T12:42:39.835139" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -37,62 +37,62 @@
     "height": 720
   }
 }</msg>
-<msg time="2026-01-15T09:10:31.821151" level="INFO">Successfully created context. </msg>
-<msg time="2026-01-15T09:10:31.821234" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2026-01-23T12:42:39.847065" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-23T12:42:39.847136" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
 <arg>viewport={'width': 1280, 'height': 720}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2026-01-15T09:10:31.804303" elapsed="0.017046"/>
+<status status="PASS" start="2026-01-23T12:42:39.832332" elapsed="0.014888"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-15T09:10:32.771554" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com</msg>
+<msg time="2026-01-23T12:42:40.024245" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com</msg>
 <arg>${START_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-15T09:10:31.821642" elapsed="0.950189"/>
+<status status="PASS" start="2026-01-23T12:42:39.847436" elapsed="0.177177"/>
 </kw>
-<status status="PASS" start="2026-01-15T09:10:31.169610" elapsed="1.602382"/>
+<status status="PASS" start="2026-01-23T12:42:39.335284" elapsed="0.689509"/>
 </kw>
 <test id="s1-s1-s1-s1-t1" name="Scenario 11: Inloggen met data uit bestand" line="18">
 <kw name="Inloggen Met Data">
 <kw name="Go To" owner="Browser">
-<msg time="2026-01-15T09:10:32.987280" level="INFO">Successfully opened URL https://the-internet.herokuapp.com/login</msg>
+<msg time="2026-01-23T12:42:40.109666" level="INFO">Successfully opened URL https://the-internet.herokuapp.com/login</msg>
 <arg>${HEROKU_URL}/login</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Navigates to the given ``url``.</doc>
-<status status="PASS" start="2026-01-15T09:10:32.787247" elapsed="0.200308"/>
+<status status="PASS" start="2026-01-23T12:42:40.037653" elapsed="0.072334"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-15T09:10:32.988723" level="INFO">Fills the text '' in the given field.</msg>
+<msg time="2026-01-23T12:42:40.111070" level="INFO">Fills the text '' in the given field.</msg>
 <arg>id=username</arg>
 <arg>${username}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-15T09:10:32.987949" elapsed="0.040428"/>
+<status status="PASS" start="2026-01-23T12:42:40.110322" elapsed="0.031389"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-15T09:10:33.029520" level="INFO">Fills the text '' in the given field.</msg>
+<msg time="2026-01-23T12:42:40.142552" level="INFO">Fills the text '' in the given field.</msg>
 <arg>id=password</arg>
 <arg>${password}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-15T09:10:33.028766" elapsed="0.011272"/>
+<status status="PASS" start="2026-01-23T12:42:40.141975" elapsed="0.008788"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-15T09:10:33.041029" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
+<msg time="2026-01-23T12:42:40.151419" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
 <arg>button[type="submit"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-15T09:10:33.040376" elapsed="0.207477"/>
+<status status="PASS" start="2026-01-23T12:42:40.150985" elapsed="0.075570"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-01-15T09:10:33.311033" level="INFO">Text: ' Your username is invalid!\n×'</msg>
+<msg time="2026-01-23T12:42:40.280461" level="INFO">Text: ' Your username is invalid!\n×'</msg>
 <arg>id=flash</arg>
 <arg>contains</arg>
 <arg>${foutmelding}</arg>
@@ -100,40 +100,40 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-15T09:10:33.248211" elapsed="0.063030"/>
+<status status="PASS" start="2026-01-23T12:42:40.226861" elapsed="0.053783"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T09:10:33.312055" level="INFO">Data-driven run succesvol voor gebruiker: </msg>
+<msg time="2026-01-23T12:42:40.281333" level="INFO">Data-driven run succesvol voor gebruiker: </msg>
 <arg>Data-driven run succesvol voor gebruiker: ${username}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T09:10:33.311576" elapsed="0.000530"/>
+<status status="PASS" start="2026-01-23T12:42:40.280888" elapsed="0.000503"/>
 </kw>
 <arg>${username}</arg>
 <arg>${password}</arg>
 <arg>${foutmelding}</arg>
 <doc>De kern-logica die wordt herhaald voor elke dataset uit de CSV.</doc>
-<status status="PASS" start="2026-01-15T09:10:32.786723" elapsed="0.525474"/>
+<status status="PASS" start="2026-01-23T12:42:40.037114" elapsed="0.244374"/>
 </kw>
 <doc>Voert een inlogpoging uit voor elke rij in het gekoppelde CSV-bestand.</doc>
-<status status="PASS" start="2026-01-15T09:10:32.772100" elapsed="0.540245"/>
+<status status="PASS" start="2026-01-23T12:42:40.024907" elapsed="0.256755"/>
 </test>
 <kw name="Stop Test-Sessie" owner="common" type="TEARDOWN">
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-15T09:10:33.349096" level="INFO">Closed browser</msg>
+<msg time="2026-01-23T12:42:40.312669" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-15T09:10:33.317958" elapsed="0.031319"/>
+<status status="PASS" start="2026-01-23T12:42:40.287416" elapsed="0.025433"/>
 </kw>
-<status status="PASS" start="2026-01-15T09:10:33.317675" elapsed="0.031738"/>
+<status status="PASS" start="2026-01-23T12:42:40.287122" elapsed="0.025862"/>
 </kw>
-<status status="PASS" start="2026-01-15T09:10:30.823463" elapsed="2.526008"/>
+<status status="PASS" start="2026-01-23T12:42:39.138734" elapsed="1.174304"/>
 </suite>
-<status status="PASS" start="2026-01-15T09:10:30.822338" elapsed="2.533276"/>
+<status status="PASS" start="2026-01-23T12:42:39.137914" elapsed="1.180726"/>
 </suite>
-<status status="PASS" start="2026-01-15T09:10:30.821431" elapsed="2.534669"/>
+<status status="PASS" start="2026-01-23T12:42:39.137034" elapsed="1.182065"/>
 </suite>
-<status status="PASS" start="2026-01-15T09:10:30.797463" elapsed="2.559034"/>
+<status status="PASS" start="2026-01-23T12:42:39.116276" elapsed="1.203218"/>
 </suite>
 <statistics>
 <total>
@@ -149,10 +149,10 @@
 </suite>
 </statistics>
 <errors>
-<msg time="2026-01-15T09:10:31.166977" level="ERROR">[ DataDriver ] Error in robot file:
+<msg time="2026-01-23T12:42:39.333743" level="ERROR">[ DataDriver ] Error in robot file:
   File "/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/07_data_driven.robot", line 0</msg>
-<msg time="2026-01-15T09:10:31.167110" level="ERROR">In source file:
+<msg time="2026-01-23T12:42:39.333828" level="ERROR">In source file:
   File "C:/Users/alber/RF/resources/data/testdata.csv", line 0</msg>
-<msg time="2026-01-15T09:10:31.168697" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: FileNotFoundError: File attribute was not a full path. Tried to find /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/C:/Users/alber/RF/resources/data/testdata.csv but file does not exist.</msg>
+<msg time="2026-01-23T12:42:39.334826" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: FileNotFoundError: File attribute was not a full path. Tried to find /home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/C:/Users/alber/RF/resources/data/testdata.csv but file does not exist.</msg>
 </errors>
 </robot>
