@@ -2,13 +2,12 @@
 Library    Browser
 Library    RequestsLibrary
 Library    Collections
-# Geef AppiumLibrary een alias 'Mobile'
-Library    AppiumLibrary    WITH NAME    Mobile
+
 
 *** Variables ***
 ${BROWSER}           chromium
-${HEADLESS}          True
-${SLOWMO}            0.0s    # Zet dit op 0.0s voor de cloud (snelheid!)
+${HEADLESS}          False
+${SLOWMO}            00:00:02  #Langzamer voor de demo
 # --- Object 1: The Internet (Heroku) ---
 ${HEROKU_URL}       https://the-internet.herokuapp.com
 ${DYNAMIC_URL}      ${HEROKU_URL}/dynamic_loading/1
@@ -31,6 +30,11 @@ ${REMOTE_URL}        https://ondemand.eu-central-1.saucelabs.com:443/wd/hub
 
 
 *** Keywords ***
+*** Keywords ***
+Initialiseer Database Connectie
+    # We vertellen de robot: Gebruik SQLite, en dit is het bestand
+    Connect To Database    sqlite3    keten_test.db
+
 Open De Browser Op De Inlogpagina
     New Browser    browser=${BROWSER}    headless=${HEADLESS}    slowMo=${SLOWMO}
     New Page       ${BASE_URL}/login
@@ -80,15 +84,3 @@ Haal Gebruikersnaam Op Via API
     ${voornaam}=          Evaluate          "${volledige_naam}".split()[0]
     RETURN                ${voornaam}
 
-Open Mobiele App
-    [Documentation]    Start de mobiele app in Sauce Labs
-    Mobile.Open Application    ${REMOTE_URL}
-    ...                 platformName=Android
-    ...                 appium:deviceName=Android GoogleAPI Emulator
-    ...                 appium:platformVersion=12.0
-    ...                 appium:automationName=UiAutomator2
-    ...                 appium:app=storage:filename=Android-MyDemoAppRN.1.3.0.build-244.apk
-    ...                 sauce:options={'username': '${SAUCE_USERNAME}', 'accessKey': '${SAUCE_ACCESS_KEY}'}
-
-Sluit Mobiele App
-    Mobile.Close Application
