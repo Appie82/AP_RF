@@ -22,3 +22,4 @@ Scenario 05: Selecteer Optie Uit Dropdown
     Get Selected Options    id=dropdown    label    ==    Option 2
     
     Log    Dropdown succesvol ingesteld op 'Option 2'.
+    

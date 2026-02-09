@@ -7,7 +7,7 @@ Library    Collections
 *** Variables ***
 ${BROWSER}           chromium
 ${HEADLESS}          False
-${SLOWMO}            00:00:02  #Langzamer voor de demo
+${SLOWMO}            00:00:01  #Langzamer voor de demo
 # --- Object 1: The Internet (Heroku) ---
 ${HEROKU_URL}       https://the-internet.herokuapp.com
 ${DYNAMIC_URL}      ${HEROKU_URL}/dynamic_loading/1

@@ -27,3 +27,4 @@ Scenario: Log In Met Data Van API
     # STAP 4: Rapportage
     # We loggen de specifieke waarde zodat we in de log.html precies zien welke naam is gebruikt.
     Log    De test is geslaagd met API-naam: ${api_naam}
+    
