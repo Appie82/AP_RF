@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-01-26T09:12:21.315575" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.14 on linux)" generated="2026-02-09T13:23:03.522034" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/AP_RF/AP_RF/tests">
 <suite id="s1-s1" name="01 HerekuApp" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp">
 <suite id="s1-s1-s1" name="01 Basis" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis">
 <suite id="s1-s1-s1-s1" name="04 Hybrid" source="/home/runner/work/AP_RF/AP_RF/tests/01_HerekuApp/01_basis/04_hybrid.robot">
 <test id="s1-s1-s1-s1-t1" name="Snel Inloggen Via API En Verifiëren In Browser" line="8">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-26T09:12:21.515124" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/3/browser/traces/temp/993a8819-d625-43e1-9d51-6aba0cdb6a0a"}</msg>
-<msg time="2026-01-26T09:12:21.518456" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:46709</msg>
-<msg time="2026-01-26T09:12:22.018107" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/3/browser/traces/temp/993a8819-d625-43e1-9d51-6aba0cdb6a0a"}</msg>
+<msg time="2026-02-09T13:23:03.796972" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/AP_RF/AP_RF/results/pabot_results/3/browser/traces/temp/c76d95ba-2490-4970-8ffd-681de885a5ca"}</msg>
+<msg time="2026-02-09T13:23:03.800692" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:46945</msg>
+<msg time="2026-02-09T13:23:04.623112" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/AP_RF/AP_RF/results/pabot_results/3/browser/traces/temp/c76d95ba-2490-4970-8ffd-681de885a5ca"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-26T09:12:21.514408" elapsed="0.504028"/>
+<status status="PASS" start="2026-02-09T13:23:03.796279" elapsed="0.827108"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2026-01-26T09:12:22.024560" level="INFO">{
+<msg time="2026-02-09T13:23:04.626128" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -31,50 +31,50 @@
     "height": 720
   }
 }</msg>
-<msg time="2026-01-26T09:12:22.041666" level="INFO">Successfully created context. </msg>
-<msg time="2026-01-26T09:12:22.041792" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2026-02-09T13:23:04.637918" level="INFO">Successfully created context. </msg>
+<msg time="2026-02-09T13:23:04.637982" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
 <arg>viewport={'width': 1280, 'height': 720}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2026-01-26T09:12:22.018849" elapsed="0.023077"/>
+<status status="PASS" start="2026-02-09T13:23:04.623772" elapsed="0.014289"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-26T09:12:22.495499" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/login</msg>
+<msg time="2026-02-09T13:23:04.851171" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/login</msg>
 <arg>${BASE_URL}/login</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-26T09:12:22.042290" elapsed="0.453517"/>
+<status status="PASS" start="2026-02-09T13:23:04.638271" elapsed="0.213136"/>
 </kw>
 <kw name="Wait For Load State" owner="Browser">
-<msg time="2026-01-26T09:12:22.497167" level="INFO">Waiting page load to state to receive networkidle in 15000.0</msg>
-<msg time="2026-01-26T09:12:22.994878" level="INFO">Load state networkidle got in 15000</msg>
+<msg time="2026-02-09T13:23:04.852286" level="INFO">Waiting page load to state to receive networkidle in 15000.0</msg>
+<msg time="2026-02-09T13:23:05.351928" level="INFO">Load state networkidle got in 15000</msg>
 <arg>networkidle</arg>
 <arg>timeout=15s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits that the page reaches the required load state.</doc>
-<status status="PASS" start="2026-01-26T09:12:22.496158" elapsed="0.498967"/>
+<status status="PASS" start="2026-02-09T13:23:04.851682" elapsed="0.500494"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-01-26T09:12:23.035921" level="INFO">Waited for Element with selector css=input#username at state visible</msg>
+<msg time="2026-02-09T13:23:05.389183" level="INFO">Waited for Element with selector css=input#username at state visible</msg>
 <arg>css=input#username</arg>
 <arg>visible</arg>
 <arg>timeout=10s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-01-26T09:12:22.995405" elapsed="0.040773"/>
+<status status="PASS" start="2026-02-09T13:23:05.352520" elapsed="0.036855"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-01-26T09:12:23.037331" level="INFO">Fills the text 'tomsmith' in the given field.</msg>
+<msg time="2026-02-09T13:23:05.390309" level="INFO">Fills the text 'tomsmith' in the given field.</msg>
 <arg>css=input#username</arg>
 <arg>${VALID_USER}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-26T09:12:23.036535" elapsed="0.014449"/>
+<status status="PASS" start="2026-02-09T13:23:05.389677" elapsed="0.014251"/>
 </kw>
 <kw name="Fill Secret" owner="Browser">
 <arg>css=input#password</arg>
@@ -83,28 +83,28 @@
 <tag>Setter</tag>
 <doc>Fills the given secret from ``variable_name`` into the
 text field found by ``selector``.</doc>
-<status status="PASS" start="2026-01-26T09:12:23.051258" elapsed="0.008716"/>
+<status status="PASS" start="2026-02-09T13:23:05.404239" elapsed="0.009156"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-26T09:12:23.060819" level="INFO">Clicks the element 'css=button[type="submit"]'.</msg>
+<msg time="2026-02-09T13:23:05.414056" level="INFO">Clicks the element 'css=button[type="submit"]'.</msg>
 <arg>css=button[type="submit"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-26T09:12:23.060315" elapsed="0.264206"/>
+<status status="PASS" start="2026-02-09T13:23:05.413649" elapsed="0.084839"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-01-26T09:12:23.362500" level="INFO">Waited for Element with selector css=.flash.success at state visible</msg>
+<msg time="2026-02-09T13:23:05.554152" level="INFO">Waited for Element with selector css=.flash.success at state visible</msg>
 <arg>css=.flash.success</arg>
 <arg>visible</arg>
 <arg>timeout=10s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-01-26T09:12:23.324880" elapsed="0.037875"/>
+<status status="PASS" start="2026-02-09T13:23:05.500843" elapsed="0.053554"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-01-26T09:12:23.398522" level="INFO">Text: 'Secure Area'</msg>
+<msg time="2026-02-09T13:23:05.591882" level="INFO">Text: 'Secure Area'</msg>
 <arg>h2</arg>
 <arg>contains</arg>
 <arg>Secure Area</arg>
@@ -112,55 +112,55 @@ text field found by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-26T09:12:23.363068" elapsed="0.035629"/>
+<status status="PASS" start="2026-02-09T13:23:05.554716" elapsed="0.037304"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2026-01-26T09:12:23.447704" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/success-login.png" target="_blank"&gt;&lt;img src="browser/screenshot/success-login.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-09T13:23:05.646106" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/success-login.png" target="_blank"&gt;&lt;img src="browser/screenshot/success-login.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <arg>success-login</arg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2026-01-26T09:12:23.399002" elapsed="0.048837"/>
+<status status="PASS" start="2026-02-09T13:23:05.592230" elapsed="0.054074"/>
 </kw>
 <kw name="Get Cookies" owner="Browser">
-<msg time="2026-01-26T09:12:23.452161" level="INFO">Found cookies: optimizelySegments,optimizelyEndUserId,optimizelyBuckets,rack.session,optimizelyPendingLogEvents</msg>
-<msg time="2026-01-26T09:12:23.452438" level="INFO">${browser_cookies} = [{'name': 'optimizelySegments', 'value': '%7B%7D', 'domain': '.the-internet.herokuapp.com', 'path': '/', 'expires': datetime.datetime(2027, 3, 2, 9, 12, 22, 365946, tzinfo=datetime.timezone.utc), 'htt...</msg>
+<msg time="2026-02-09T13:23:05.651533" level="INFO">Found cookies: optimizelySegments,optimizelyEndUserId,optimizelyBuckets,rack.session,optimizelyPendingLogEvents</msg>
+<msg time="2026-02-09T13:23:05.651841" level="INFO">${browser_cookies} = [{'name': 'optimizelySegments', 'value': '%7B%7D', 'domain': '.the-internet.herokuapp.com', 'path': '/', 'expires': datetime.datetime(2027, 3, 16, 13, 23, 4, 779670, tzinfo=datetime.timezone.utc), 'ht...</msg>
 <var>${browser_cookies}</var>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns cookies from the current active browser context.</doc>
-<status status="PASS" start="2026-01-26T09:12:23.448024" elapsed="0.004442"/>
+<status status="PASS" start="2026-02-09T13:23:05.646558" elapsed="0.005333"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-01-26T09:12:23.453368" level="INFO">${session_value} = %7B%7D</msg>
+<msg time="2026-02-09T13:23:05.653185" level="INFO">${session_value} = %7B%7D</msg>
 <var>${session_value}</var>
 <arg>${browser_cookies[0].value}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2026-01-26T09:12:23.452642" elapsed="0.000760"/>
+<status status="PASS" start="2026-02-09T13:23:05.652090" elapsed="0.001136"/>
 </kw>
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2026-01-26T09:12:23.453739" level="INFO">Creating Session using : alias=api_check, url=https://the-internet.herokuapp.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<msg time="2026-02-09T13:23:05.653703" level="INFO">Creating Session using : alias=api_check, url=https://the-internet.herokuapp.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
 <arg>api_check</arg>
 <arg>${BASE_URL}</arg>
 <arg>verify=True</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2026-01-26T09:12:23.453537" elapsed="0.000362"/>
+<status status="PASS" start="2026-02-09T13:23:05.653393" elapsed="0.000578"/>
 </kw>
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2026-01-26T09:12:23.454517" level="INFO">${cookies_dict} = {'rack.session': '%7B%7D'}</msg>
+<msg time="2026-02-09T13:23:05.654963" level="INFO">${cookies_dict} = {'rack.session': '%7B%7D'}</msg>
 <var>${cookies_dict}</var>
 <arg>rack.session=${session_value}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2026-01-26T09:12:23.454065" elapsed="0.000481"/>
+<status status="PASS" start="2026-02-09T13:23:05.654235" elapsed="0.000772"/>
 </kw>
 <kw name="GET On Session" owner="RequestsLibrary">
-<msg time="2026-01-26T09:12:23.602239" level="INFO">GET Request : url=https://the-internet.herokuapp.com/secure (redirected) 
+<msg time="2026-02-09T13:23:05.749501" level="INFO">GET Request : url=https://the-internet.herokuapp.com/secure (redirected) 
  path_url=/secure 
  headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'rack.session=%7B%7D'} 
  body=None 
  </msg>
-<msg time="2026-01-26T09:12:23.602395" level="INFO">GET Response : url=https://the-internet.herokuapp.com/login 
+<msg time="2026-02-09T13:23:05.749643" level="INFO">GET Response : url=https://the-internet.herokuapp.com/login 
  status=200, reason=OK 
- headers={'Content-Length': '2376', 'Content-Type': 'text/html;charset=utf-8', 'Date': 'Mon, 26 Jan 2026 09:12:23 GMT', 'Nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'Report-To': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=YqGX%2FU6mmNbqBChoURmggRCH%2BKL7XTNkHD14ZCZ29do%3D\\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\\u0026ts=1769418743"}],"max_age":3600}', 'Reporting-Endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=YqGX%2FU6mmNbqBChoURmggRCH%2BKL7XTNkHD14ZCZ29do%3D&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts=1769418743"', 'Server': 'Heroku', 'Set-Cookie': 'rack.session=BAh7CUkiD3Nlc3Npb25faWQGOgZFVEkiRTdiYzIxMGFkMThjMjdiNjVjMzU4%0ANmY3NWIwMzIxOGY4MjI5Y2Y3YzdlYzg2MzM1MzI1YmFiNWNhMDIzOTJiMmUG%0AOwBGSSIJY3NyZgY7AEZJIiVlOGEzZTgxNjVhNTAwZTYzNGUwNzQ2MzBiOTE3%0AMjk4ZQY7AEZJIg10cmFja2luZwY7AEZ7B0kiFEhUVFBfVVNFUl9BR0VOVAY7%0AAFRJIi1mMzQzZjljMWU2YjRiZDEyMTRjOTUwNTI3MDYwOWQ5M2E1YTljZjQz%0ABjsARkkiGUhUVFBfQUNDRVBUX0xBTkdVQUdFBjsAVEkiLWRhMzlhM2VlNWU2%0AYjRiMGQzMjU1YmZlZjk1NjAxODkwYWZkODA3MDkGOwBGSSIKZmxhc2gGOwBG%0AewA%3D%0A--e642eec98b18fa9c73f382509fb155fc0e6a4c99; path=/; HttpOnly', 'Via': '1.1 heroku-router', 'X-Content-Type-Options': 'nosniff', 'X-Frame-Options': 'SAMEORIGIN', 'X-Xss-Protection': '1; mode=block'} 
+ headers={'Content-Length': '2376', 'Content-Type': 'text/html;charset=utf-8', 'Date': 'Mon, 09 Feb 2026 13:23:05 GMT', 'Nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'Report-To': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=dEkOK7KLYkxnW%2Fk8DNbUm%2BoFNqVv%2F9VrVuozPAW1OCQ%3D\\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\\u0026ts=1770643385"}],"max_age":3600}', 'Reporting-Endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=dEkOK7KLYkxnW%2Fk8DNbUm%2BoFNqVv%2F9VrVuozPAW1OCQ%3D&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts=1770643385"', 'Server': 'Heroku', 'Set-Cookie': 'rack.session=BAh7CUkiD3Nlc3Npb25faWQGOgZFVEkiRTM3OWNlOGUyMzk1YjJmN2E1YWY0%0ANjczYTk0MzUxNjMwMTJjNzZlNTUwMDQzYmZkMDg5ODc3YmVjYTJjMjc1MWMG%0AOwBGSSIJY3NyZgY7AEZJIiUzZTIwZDJiYzZjZWM4ZmZhODI0N2VjODM1MWYz%0ANzZkMgY7AEZJIg10cmFja2luZwY7AEZ7B0kiFEhUVFBfVVNFUl9BR0VOVAY7%0AAFRJIi1mMzQzZjljMWU2YjRiZDEyMTRjOTUwNTI3MDYwOWQ5M2E1YTljZjQz%0ABjsARkkiGUhUVFBfQUNDRVBUX0xBTkdVQUdFBjsAVEkiLWRhMzlhM2VlNWU2%0AYjRiMGQzMjU1YmZlZjk1NjAxODkwYWZkODA3MDkGOwBGSSIKZmxhc2gGOwBG%0AewA%3D%0A--6b54bebbc0663fa87c1c4e652281ad67492cf488; path=/; HttpOnly', 'Via': '1.1 heroku-router', 'X-Content-Type-Options': 'nosniff', 'X-Frame-Options': 'SAMEORIGIN', 'X-Xss-Protection': '1; mode=block'} 
  body=&lt;!DOCTYPE html&gt;
 &lt;!--[if IE 8]&gt;         &lt;html class="no-js lt-ie9" lang="en" &gt; &lt;![endif]--&gt;
 &lt;!--[if gt IE 8]&gt;&lt;!--&gt; &lt;html class="no-js" lang="en" &gt; &lt;!--&lt;![endif]--&gt;
@@ -228,34 +228,34 @@ text field found by ``selector``.</doc>
 &lt;/html&gt;
  
  </msg>
-<msg time="2026-01-26T09:12:23.602565" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2026-02-09T13:23:05.749815" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>api_check</arg>
 <arg>url=/secure</arg>
 <arg>cookies=${cookies_dict}</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2026-01-26T09:12:23.454652" elapsed="0.147943"/>
+<status status="PASS" start="2026-02-09T13:23:05.655178" elapsed="0.094665"/>
 </kw>
 <kw name="Status Should Be" owner="RequestsLibrary">
 <arg>200</arg>
 <doc>Fails if response status code is different than the expected.</doc>
-<status status="PASS" start="2026-01-26T09:12:23.602802" elapsed="0.000206"/>
+<status status="PASS" start="2026-02-09T13:23:05.750031" elapsed="0.000199"/>
 </kw>
-<msg time="2026-01-26T09:12:23.614648" level="INFO">Switching context to context=9d75c520-3f24-49e5-b7c8-c73c9d71c108 in CURRENT</msg>
-<msg time="2026-01-26T09:12:23.619733" level="INFO">Successfully changed active context: context=9d75c520-3f24-49e5-b7c8-c73c9d71c108</msg>
-<msg time="2026-01-26T09:12:23.626606" level="INFO">Successfully closed Context</msg>
+<msg time="2026-02-09T13:23:05.762649" level="INFO">Switching context to context=aca94f7a-626d-434a-b554-f289272dfe36 in CURRENT</msg>
+<msg time="2026-02-09T13:23:05.772221" level="INFO">Successfully changed active context: context=aca94f7a-626d-434a-b554-f289272dfe36</msg>
+<msg time="2026-02-09T13:23:05.781000" level="INFO">Successfully closed Context</msg>
 <doc>Inloggen via de UI en de verkregen sessie-cookie hergebruiken
 voor een geautoriseerde API-aanroep (Status 200 check).</doc>
-<status status="PASS" start="2026-01-26T09:12:21.512351" elapsed="2.090780"/>
+<status status="PASS" start="2026-02-09T13:23:03.794143" elapsed="1.956216"/>
 </test>
 <doc>Geavanceerde hybride test: Valideert sessie-overdracht tussen Browser en API.</doc>
-<status status="PASS" start="2026-01-26T09:12:21.345628" elapsed="2.281502"/>
+<status status="PASS" start="2026-02-09T13:23:03.562152" elapsed="2.219520"/>
 </suite>
-<status status="PASS" start="2026-01-26T09:12:21.344900" elapsed="2.286928"/>
+<status status="PASS" start="2026-02-09T13:23:03.561290" elapsed="2.225578"/>
 </suite>
-<status status="PASS" start="2026-01-26T09:12:21.344023" elapsed="2.288481"/>
+<status status="PASS" start="2026-02-09T13:23:03.560268" elapsed="2.227213"/>
 </suite>
-<status status="PASS" start="2026-01-26T09:12:21.326135" elapsed="2.306902"/>
+<status status="PASS" start="2026-02-09T13:23:03.523420" elapsed="2.264590"/>
 </suite>
 <statistics>
 <total>
